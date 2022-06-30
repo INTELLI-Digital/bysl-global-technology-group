@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Slider from "../../shared/Slider";
 
 const MobileTechSlider = () => {
@@ -13,11 +14,18 @@ const MobileTechSlider = () => {
         <Slider size={5} />
       </div>
       <div className="centered">
-        <img
+        {/* <img
           src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.svg"
           alt=""
           className="h-96 xxs:h-[340px] xl:h-[430px] w-[230px]"
-        />
+        /> */}
+        <div className="h-96 xxs:h-[340px] xl:h-[430px] w-[230px] relative">
+          <Image
+            src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.svg"
+            layout="fill"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

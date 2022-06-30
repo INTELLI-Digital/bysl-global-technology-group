@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
 import { FaPinterestP } from "react-icons/fa";
@@ -6,7 +7,6 @@ import { IoMailOutline } from "react-icons/io5";
 
 import Button from "../shared/buttons/Button";
 import { footerData } from "../../public/data/footerData";
-import Image from "next/image";
 
 const Footer = () => {
   return (

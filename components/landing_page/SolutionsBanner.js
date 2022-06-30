@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const SolutionsBanner = () => {
   return (
     <div className="relative my-8 2xl:my-16 bg-gradient-to-r from-blue-900 to-blue-700 min-h-max 2xl:h-96 3xl:h-[531px] p-5 md:p-7 xl:p-10 3xl:p-16 lg:pl-16 xl:pl-32 text-center text-white rounded-xl lg:rounded-3xl 2xl:rounded-[40px]">
@@ -11,11 +13,12 @@ const SolutionsBanner = () => {
             "WOW" animations. I can build them all.
           </p>
         </div>
-        <div className="sm:w-1/2 flex justify-center sm:justify-end">
-          <img
+        <div className="sm:w-1/2 xs:px-12 sm:px-0 2xl:pl-10 flex justify-center sm:justify-end">
+          <Image
             src="/images/banners/landing_solution_banner.svg"
             alt=""
-            className="h-56 xl:h-60 2xl:h-72 3xl:h-[400px]"
+            height={403}
+            width={536}
           />
         </div>
       </div>

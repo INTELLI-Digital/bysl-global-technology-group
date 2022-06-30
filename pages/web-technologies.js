@@ -14,7 +14,9 @@ import {
 
 const WebTechnologies = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Web Technologies">
+      {/* banner section  */}
       <PrimaryBanner
         title="Web Technologies"
         img="web_technologies"
@@ -24,20 +26,28 @@ const WebTechnologies = () => {
         Powerful solutions for Your&nbsp;
         <TextGradient text="Business" />
       </PrimaryBanner>
+
+      {/* business values section  */}
       <RowSpanGrid data={businessValuesData}>
         Best Web Technologies Grow <br />
         <TextGradient text="Business Values" />
       </RowSpanGrid>
+
+      {/* services section  */}
       <TextBanner data={webServicesBannerData}>
         Best soluation with required
         <TextGradient text=" Services" />
       </TextBanner>
+
+      {/* process section  */}
       <Overview4Items type="Process" data={webProcessData} large={true}>
         Good <TextGradient text="Process " />
         Drives
         <br />
         Good <TextGradient text=" Results" />
       </Overview4Items>
+
+      {/* features section  */}
       <FeaturedBanner data={webFeaturesData}>
         Powerful Solutions for Your
         <TextGradient text=" Business " />

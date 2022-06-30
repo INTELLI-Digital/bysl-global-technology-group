@@ -8,7 +8,9 @@ import { userExperienceData } from "../public/data/mobileTechnologiesData";
 
 const MobileTechnologies = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Mobile Technologies">
+      {/* banner section  */}
       <PrimaryBanner
         title="Mobile Technologies"
         img="mobile_technologies"
@@ -18,8 +20,14 @@ const MobileTechnologies = () => {
         <br />
         <TextGradient text="Simple" /> & <TextGradient text="Affordable" />
       </PrimaryBanner>
+
+      {/* features section  */}
       <MobileFeatures />
+
+      {/* user experience section  */}
       <BannerWithBulletSingle data={userExperienceData} />
+
+      {/* slider section  */}
       <MobileTechSlider />
     </BasicLayout>
   );

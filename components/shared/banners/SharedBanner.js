@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getPath } from "../../../utils/paths";
 import {
   SectionTitleType,
@@ -14,17 +15,24 @@ const SectionBanner = ({ data }) => {
           {title}
         </p>
         <p className="text-gray-600 leading-5 text-xs sm:text-sm 2xl:text-base text-justify">
-          <span >{subTitle1}</span>
+          <span>{subTitle1}</span>
           {subTitle2 && (
             <span className="mt-2 2xl:mt-3 block">{subTitle2}</span>
           )}
         </p>
       </div>
-      <img
-        src={`/images/banners/${title}_banner.svg`}
-        alt=""
-        className={`h-48 lg:h-52 2xl:h-64 3xl:h-72 w-4/5 sm:w-1/2 mx-auto order-1 md:order-2 ${getPath("/culture") && "px-4 2xl:px-12"}`}
-      />
+      <div
+        className={`w-4/5 md:w-1/2 mx-auto flex justify-end order-1 md:order-2 ${
+          getPath("/culture") && "px-4 2xl:px-12"
+        }`}
+      >
+        <Image
+          src={`/images/banners/${title}_banner.svg`}
+          height={283}
+          width={452}
+          alt=""
+        />
+      </div>
     </div>
   );
 };
@@ -48,13 +56,9 @@ const TextBanner = (props) => {
           {subTitle}
         </p>
       </div>
-      <img
-        src={img}
-        alt=""
-        className={`lg:w-1/2 mx-auto max-h-52 xl:max-h-72 2xl:max-h-96 ${
-          reversed && "lg:order-1"
-        }`}
-      />
+      <div className={`lg:w-1/2 mx-auto  ${reversed && "lg:order-1"}`}>
+        <Image src={img} height={409} width={648} alt="" />
+      </div>
     </div>
   );
 };

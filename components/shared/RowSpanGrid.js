@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const RowSpanGrid = (props) => {
@@ -19,11 +21,13 @@ const RowSpanGrid = (props) => {
                 } border-[1px] border-[#393E50]/10`}
               >
                 <div
-                  className={`p-2.5 xl:p-3 3xl:p-4 bg-blue-200 h-10 xl:h-12 3xl:h-16 w-10 xl:w-12 3xl:w-16 rounded-full flex items-center justify-center ${
+                  className={`bg-blue-200 h-10 xl:h-12 2xl:h-16 w-10 xl:w-12 2xl:w-16 rounded-full flex items-center justify-center ${
                     id !== 0 && "xl:mx-auto"
                   }`}
                 >
-                  <img src={img} alt="" className="" />
+                  <div className="h-5 w-5 2xl:h-8 2xl:w-8 relative">
+                    <Image src={img} layout="fill" alt="" />
+                  </div>
                 </div>
                 <p
                   className={`text-lg xl:text-xl 2xl:text-2xl 3xl:text-[32px] font-bold text-gray-800 leading-7 xl:leading-[48px] my-2.5 xl:my-3 3xl:my-6 ${
@@ -45,7 +49,12 @@ const RowSpanGrid = (props) => {
                     </p>
                     {benefits.map((item, i) => (
                       <div key={i} className="flex items-center mt-1 3xl:mt-3">
-                        <img src="/images/items_icon.svg" alt="" />
+                        <Image
+                          src="/images/items_icon.svg"
+                          alt=""
+                          height={24}
+                          width={24}
+                        />
                         <p className="text-gray-300 ml-3">{item}</p>
                       </div>
                     ))}

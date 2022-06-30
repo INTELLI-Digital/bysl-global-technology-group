@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import FeaturesCard from "../FeaturesCard";
 import {
   SectionTitleType,
@@ -10,7 +12,7 @@ const FeaturedBanner = (props) => {
 
   return (
     <div className="py-10 xl:py-16 lg:flex items-center gap-6">
-      <div>
+      <div className="lg:w-1/2">
         {type && <SectionTitleType title={type} start={true} />}
         <TechnologiesSectionTitle start={true}>
           {children}
@@ -22,11 +24,14 @@ const FeaturedBanner = (props) => {
         )}
         <FeaturesCard data={features} />
       </div>
-      <img
+      {/* <img
         src={img}
         alt=""
         className="lg:w-1/2 h-52 sm:h-64 xl:h-full mx-auto"
-      />
+      /> */}
+      <div className="lg:w-1/2 mx-auto">
+        <Image src={img} height={419} width={687} alt="" />
+      </div>
     </div>
   );
 };

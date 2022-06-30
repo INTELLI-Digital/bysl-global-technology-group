@@ -10,7 +10,7 @@ import {
 
 const AboutUs = () => {
   return (
-    <div className="text-center py-16">
+    <div className="text-center pb-10 pt-0 xs:pt-5 sm:pt-10 lg:py-16">
       <SectionTitleType title="About Us" />
       <div className="mx-4 lg:mx-12 2xl:mx-20 mb-6 lg:mb-12 2xl:mb-20">
         <SectionTitleGradient>

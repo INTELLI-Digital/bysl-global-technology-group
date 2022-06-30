@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
 const PrimaryBanner = ({ title, sub, img, children }) => {
@@ -15,11 +17,13 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
         </div>
       </div>
       <div className="md:w-[45%]">
-        <img
-          src={`/images/banners/${img}_banner.svg`}
-          alt=""
-          className="h-[30vh] md:h-full 2xl:h-[45vh] w-full"
-        />
+        <div className="h-[30vh] md:h-full 2xl:h-[45vh] w-full relative">
+          <Image
+            src={`/images/banners/${img}_banner.svg`}
+            layout="fill"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import { techData } from "../../public/data/technologiesData";
 import { SectionTitle } from "../shared/SharedTextgroups";
 
@@ -28,11 +30,15 @@ const Technologies = () => {
                 (id === 9 && "sm:col-span-6")
               } relative`}
               >
-                <img
-                  src={img}
-                  alt=""
-                  className="w-full h-32 sm:h-full object-cover"
-                />
+                <div
+                  className={`w-full h-32 lg:h-44 xl:h-52  ${
+                    id === 2 || id === 3 || id === 4
+                      ? "2xl:h-64"
+                      : "2xl:h-72 3xl:h-96"
+                  } object-cover relative`}
+                >
+                  <Image src={img} layout="fill" objectFit="cover" alt="" />
+                </div>
                 <p
                   className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-[40px] font-semibold text-center leading-4 md:leading-5 lg:leading-8 2xl:leading-[48px] absolute py-6 md:py-8 xl:py-14 px-5 xl:px-8 ${
                     id !== 0 && id !== 9 && "text-position-middle"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import {
   SectionTitleGradient,
   SectionTitleType,
@@ -17,7 +19,12 @@ const Investments = () => {
       </div>
       <div className="grid grid-cols-2 gap-4 3xl:gap-10">
         <div className="3xl:h-[610px] rounded-[20px] bg-white pb-8 xl:pb-16 flex flex-col justify-between">
-          <img src="/images/IT_platform.svg" alt="" />
+          <Image
+            src="/images/IT_platform.svg"
+            alt=""
+            height={373}
+            width={640}
+          />
           <p className="md:text-xl xl:text-3xl font-bold text-blue-900/75">
             IT platforms
           </p>
