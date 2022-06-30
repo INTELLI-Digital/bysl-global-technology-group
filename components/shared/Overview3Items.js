@@ -1,0 +1,44 @@
+import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
+
+const Overview3Items = (props) => {
+  const { data, children, type } = props;
+
+  return (
+    <div className="py-10 xl:py-16">
+      {type && <SectionTitleType title={type} />}
+      {children && (
+        <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
+      )}
+      <div
+        className={`w-full flex flex-wrap md:flex-nowrap justify-evenly gap-6 ${
+          children && "mt-10 md:mt-16 xl:mt-20 "
+        }`}
+      >
+        {data.map(({ id, title, img, subTitle }) => {
+          return (
+            <div
+              key={id}
+              className="p-3 xl:p-5 3xl:p-10 text-center max-w-[100px] xxs:max-w-none"
+            >
+              <img
+                src={img}
+                alt=""
+                className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16"
+              />
+              <p className="2xl:text-xl font-medium text-gray-800 mt-5">
+                {title}
+              </p>
+              {subTitle && (
+                <p className="hidden md:block text-gray-300 2xl:text-lg font-medium mt-5 3xl:w-5/6 mx-auto">
+                  {subTitle}
+                </p>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default Overview3Items;
