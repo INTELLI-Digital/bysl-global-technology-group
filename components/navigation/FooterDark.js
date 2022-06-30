@@ -6,6 +6,7 @@ import { IoMailOutline } from "react-icons/io5";
 
 import { footerData } from "../../public/data/footerData";
 import ButtonWhite from "../shared/buttons/ButtonWhite";
+import Image from "next/image";
 
 const FooterDark = () => {
   return (
@@ -13,11 +14,9 @@ const FooterDark = () => {
       <div className="box pt-16 pb-8">
         <div className="grid grid-cols-12 gap-4">
           <div className="col-span-12 md:col-span-3 2xl:col-span-3">
-            <img
-              src="/images/logo_light.svg"
-              alt=""
-              className="h-7 lg:h-10 w-16 lg:w-20 mb-4 xl:mb-12 mx-auto md:mx-0"
-            />
+            <div className="h-7 lg:h-10 w-16 lg:w-20 mb-4 xl:mb-12 mx-auto md:mx-0 relative">
+              <Image src="/images/logo_light.svg" layout="fill" alt="" />
+            </div>
             <div className="flex justify-center md:justify-start gap-6 md:gap-4 lg:gap-6">
               <Link passHref href="/">
                 <a>
