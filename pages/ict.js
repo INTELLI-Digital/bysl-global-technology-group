@@ -13,7 +13,9 @@ import { TextBanner } from "../components/shared/banners/SharedBanner";
 
 const ICT = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="ICT">
+      {/* banner section  */}
       <PrimaryBanner
         title="Information & Communication Technologies - Division"
         img="ict_division"
@@ -23,18 +25,24 @@ const ICT = () => {
         <br />
         <TextGradient text="Superior" /> Experiences
       </PrimaryBanner>
+
+      {/* sectors section  */}
       <Overview4Items data={ictSectorsData}>
         We are Experts in all
         <br />
         Those <TextGradient text="Sectors" />
       </Overview4Items>
+
+      {/* erp section  */}
       <TextBanner data={erpBannerData} reversed={true}>
-        <div className="3xl:w-11/12">
-          Wide range of <TextGradient text="ERP " />
-          Application
-        </div>
+        Wide range of <TextGradient text="ERP " />
+        Application
       </TextBanner>
+
+      {/* Powerful product section  */}
       <PowerfulProducts />
+
+      {/* Solutions section  */}
       <BannerWithBulletSingle data={ictSolutionsData} reversed={true}>
         All kind of <TextGradient text=" ICT Solutions " />
         at One Place

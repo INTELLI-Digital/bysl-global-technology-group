@@ -11,7 +11,9 @@ import {
 
 const FoodTech = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Digital Commerce">
+      {/* banner section  */}
       <PrimaryBanner
         title="Digital Commerce - Division"
         img="digital_commerce_division"
@@ -21,7 +23,11 @@ const FoodTech = () => {
         <br />
         <TextGradient text="Marketing " /> Together
       </PrimaryBanner>
+
+      {/* overview section  */}
       <Overview4Items data={digitalCommerceOverviewData} />
+
+      {/* e-commerce app section  */}
       <ImageShowcase
         sub="Get a kick off on building your pages and bulletins! Pick a plan that accommodates your business needs and make it your own. Our drag and drop editors make it very simple for anybody to tweak formats like an ace."
         img="/images/divisions/digital_commerce/digital_commerce_app.svg"
@@ -31,6 +37,8 @@ const FoodTech = () => {
         <TextGradient text="Application " />
         is Ready to Serve
       </ImageShowcase>
+
+      {/* solutions section  */}
       <BannerWithBulletSingle
         data={digitalCommerceSolutionsData}
         reversed={true}

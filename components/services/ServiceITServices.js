@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+
 import { servicesServiceData } from "../../public/data/servicesData";
 import HoverImage from "../shared/HoverImage";
 import {
@@ -22,7 +24,9 @@ const ServiceITServices = () => {
               <div
                 className={`group bg-white rounded-[20px] shadow-lg shadow-gray-200 p-5 sm:p-6 sm:pb-10 relative hover:cursor-pointer`}
               >
-                <img src={img} alt="" className="h-9 sm:h-16 w-full" />
+                <div className="relative h-9 sm:h-16 w-full">
+                  <Image src={img} layout="fill" alt="" />
+                </div>
                 <p className="text-sm lg:text-base 3xl:text-xl font-medium sm:font-bold text-center text-gray-800 transition-all duration-500 mt-4 sm:my-3 2xl:my-5">
                   {title}
                 </p>

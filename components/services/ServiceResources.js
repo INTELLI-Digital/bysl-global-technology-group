@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import Button from "../shared/buttons/Button";
 import {
   SectionTitleType,
@@ -18,11 +20,14 @@ const ServiceResources = () => {
         {[...Array(6)].map((item, i) => {
           return (
             <div key={i} className="relative group">
-              <img
-                src={`/images/services/home/resources/services_resource_${i}.svg`}
-                alt=""
-                className="rounded-md w-full h-44 sm:h-52 3xl:h-64 object-cover"
-              />
+              <div className="relative rounded-md w-full h-44 sm:h-52 3xl:h-64 overflow-hidden">
+                <Image
+                  src={`/images/services/home/resources/services_resource_${i}.svg`}
+                  layout="fill"
+                  objectFit="cover"
+                  alt=""
+                />
+              </div>
               <div className="centered opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500">
                 <Button title="View Project" link="" px={48} />
               </div>

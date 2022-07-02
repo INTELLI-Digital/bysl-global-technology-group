@@ -50,9 +50,11 @@ const TextBanner = (props) => {
         }`}
       >
         {type && <SectionTitleType title={type} start={true} />}
-        <TechnologiesSectionTitle start={true}>
-          {children}
-        </TechnologiesSectionTitle>
+        {children && (
+          <TechnologiesSectionTitle start={true}>
+            {children}
+          </TechnologiesSectionTitle>
+        )}
         <p className="mt-5 text-gray-300 leading-5 text-sm md:text-base text-justify lg:w-11/12">
           {subTitle}
         </p>

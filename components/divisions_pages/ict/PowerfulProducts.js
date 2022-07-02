@@ -1,12 +1,7 @@
+import Image from "next/image";
+
 import Button from "../../shared/buttons/Button";
 import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
-
-const ictProductsData = [
-  {
-    id: 0,
-    title: "",
-  },
-];
 
 const PowerfulProducts = () => {
   return (
@@ -34,15 +29,20 @@ const PowerfulProducts = () => {
               }`}
             >
               <div className="rounded-xl lg:rounded-[20px] overflow-hidden">
-                <img
-                  src={`/images/divisions/ict/products/${i}.gif`}
-                  alt=""
-                  className={`w-full object-cover ${
+                <div
+                  className={`w-full relative ${
                     i === 0 || i === 1
                       ? "h-32 xxs:h-52 xs:h-32 sm:h-52 lg:h-64 2xl:h-[300px]"
                       : "h-32 xxs:h-52 xs:h-32 lg:h-40 xl:h-44 2xl:h-52"
                   }`}
-                />
+                >
+                  <Image
+                    src={`/images/divisions/ict/products/${i}.gif`}
+                    layout="fill"
+                    objectFit="cover"
+                    alt=""
+                  />
+                </div>
               </div>
               <p className="mt-2.5 text-gray-800 text-sm lg:text-base 2xl:text-lg">
                 {item}

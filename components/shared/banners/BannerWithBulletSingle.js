@@ -44,11 +44,11 @@ const BannerWithBulletSingle = (props) => {
         </div>
       </div>
       <div
-        className={`w-full xxs:w-4/5 xs:w-3/5 lg:w-[45%] mx-auto flex justify-center mt-10 lg:mt-0 order-2 ${
+        className={`w-full xxs:w-4/5 xs:w-3/5 lg:w-[45%] mx-auto flex justify-center items-start mt-10 lg:mt-0 order-2 ${
           reversed && "lg:order-1"
         } ${getPath("/ites") && "lg:px-8 2xl:px-16"}`}
       >
-        <Image src={img} height={588} width={588} alt="" />
+        <Image src={img} height={450} width={588} alt="" />
       </div>
     </div>
   );

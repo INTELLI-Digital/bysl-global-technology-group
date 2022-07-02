@@ -12,7 +12,9 @@ import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner"
 
 const SupplyChain = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Supply Chain">
+      {/* banner section  */}
       <PrimaryBanner
         title="Supply Chain - Division"
         img="supply_chain_division"
@@ -22,6 +24,8 @@ const SupplyChain = () => {
         <br />
         <TextGradient text="Evolution" />,<TextGradient text=" Innovation" />.
       </PrimaryBanner>
+
+      {/* connectivity section  */}
       <TriangleCardBanner
         data={supplyChainConnectivityData}
         img="/images/divisions/supply_chain/connectivity/connectivity_banner.svg"
@@ -32,7 +36,11 @@ const SupplyChain = () => {
         <br />
         <TextGradient text="Compliance" />
       </TriangleCardBanner>
+
+      {/* overview section  */}
       <Overview4Items data={supplyChainOverviewData} />
+
+      {/* PERCEIVABILITY section  */}
       <BannerWithBulletSingle data={supplyChainPerceivabilityData}>
         PERCEIVABILITY. <TextGradient text="INSIGHT." />
         <br />

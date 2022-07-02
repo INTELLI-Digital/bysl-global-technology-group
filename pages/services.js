@@ -8,7 +8,9 @@ import BasicLayout from "../layouts/BasicLayout";
 
 const services = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="IT Services">
+      {/* banner section  */}
       <PrimaryBanner
         title="IT Services"
         img="services"
@@ -17,9 +19,17 @@ const services = () => {
         Creating Value Through True
         <TextGradient text=" Convergence" />
       </PrimaryBanner>
+
+      {/* features section  */}
       <ServiceFeatures />
+
+      {/* services section  */}
       <ServiceITServices />
+
+      {/* resources section  */}
       <ServiceResources />
+
+      {/* blogs section  */}
       <ServiceBlogs />
     </BasicLayout>
   );

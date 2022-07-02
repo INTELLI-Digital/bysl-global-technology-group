@@ -11,7 +11,9 @@ import {
 
 const FoodTech = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Food Tech">
+      {/* banner section  */}
       <PrimaryBanner
         title="Food Tech - Division"
         img="food_tech_division"
@@ -21,10 +23,14 @@ const FoodTech = () => {
         <br />
         <TextGradient text="Restaurant " /> System
       </PrimaryBanner>
+
+      {/* overview section  */}
       <Overview4Items data={foodTechOverviewData}>
         <TextGradient text="Proficiency " />
         is only the start
       </Overview4Items>
+
+      {/* app section  */}
       <ImageShowcase
         sub="Medical care systems in each nation  are battling with the issue of information siloes, implying that patients and their medical services"
         img="/images/divisions/food_tech/food_tech_delivery_app.svg"
@@ -33,6 +39,8 @@ const FoodTech = () => {
         <TextGradient text=" Delivery App" />
         <br /> is Burning
       </ImageShowcase>
+
+      {/* areas section  */}
       <IconCardGroup4 data={foodTechAreasData}>
         We Targeted those
         <br />

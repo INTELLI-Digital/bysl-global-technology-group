@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -31,15 +32,17 @@ const Navbar = () => {
     >
       <div className="box flex justify-between items-center w-full">
         <Link passHref href="/">
-          <img
-            src={
-              arvrPath && !colorChange
-                ? "/images/logo_white.svg"
-                : "/images/logo.svg"
-            }
-            alt=""
-            className="h-10 w-16 2xl:w-20 hover:cursor-pointer"
-          />
+          <div className="relative h-10 w-16 2xl:w-20 hover:cursor-pointer">
+            <Image
+              src={
+                arvrPath && !colorChange
+                  ? "/images/logo_white.svg"
+                  : "/images/logo.svg"
+              }
+              layout="fill"
+              alt=""
+            />
+          </div>
         </Link>
         <div className="flex items-center">
           {navbars.map(({ id, title, link, dropdowns }) => {

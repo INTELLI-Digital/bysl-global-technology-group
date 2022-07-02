@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 
 import {
@@ -11,11 +12,14 @@ const ServiceBlogs = () => {
   const BlogCard = ({ i }) => {
     return (
       <div className="bg-white rounded-md shadow-sm shadow-gray-200/50 max-w-sm lg:max-w-lg mx-auto">
-        <img
-          src={`/images/services/home/resources/services_resource_${i}.svg`}
-          alt=""
-          className="rounded-t-md w-full h-52 object-cover"
-        />
+        <div className="relative rounded-t-md w-full h-52 overflow-hidden">
+          <Image
+            src={`/images/services/home/resources/services_resource_${i}.svg`}
+            layout="fill"
+            objectFit="cover"
+            alt=""
+          />
+        </div>
         <div className="px-5 pt-10 pb-6">
           <p className="text-xs font-medium">
             <TextGradient text="#E-commerce Solution" />
