@@ -19,7 +19,7 @@ const MobileTechSlider = () => {
           alt=""
           className="h-96 xxs:h-[340px] xl:h-[430px] w-[230px]"
         /> */}
-        <div className="h-96 xxs:h-[340px] xl:h-[430px] w-[230px] relative">
+        <div className="h-[277px] xxxs:h-[270px] xxs:h-[340px] xl:h-[430px] w-[230px] relative">
           <Image
             src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.svg"
             layout="fill"

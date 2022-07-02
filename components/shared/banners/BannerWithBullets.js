@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { TechnologiesSectionTitle } from "../SharedTextgroups";
 
 const BannerWithBullets = (props) => {
@@ -19,7 +21,12 @@ const BannerWithBullets = (props) => {
         <div className="grid grid-cols-1 xxs:grid-cols-2 my-5 sm:my-10 lg:mb-0">
           {features.map((item, i) => (
             <div key={i} className="flex items-center mt-1 3xl:mt-3">
-              <img src="/images/items_icon.svg" alt="" />
+              <Image
+                src="/images/items_icon.svg"
+                alt=""
+                height={24}
+                width={24}
+              />
               <p className="text-gray-300 text-sm lg:text-base 3xl:text-xl ml-3">
                 {item}
               </p>
@@ -27,13 +34,13 @@ const BannerWithBullets = (props) => {
           ))}
         </div>
       </div>
-      <img
-        src={img}
-        alt=""
-        className={`lg:w-[45%] mx-auto max-h-80 lg:max-h-[400px] mt-5 lg:mt-0 order-2 ${
+      <div
+        className={`relative lg:w-[45%] mx-auto h-48 xs:h-64 sm:h-80 lg:h-[400px] mt-5 lg:mt-0 order-2 ${
           reversed && "lg:order-1"
         }`}
-      />
+      >
+        <Image src={img} layout="fill" alt="" />
+      </div>
     </div>
   );
 };

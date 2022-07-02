@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <div
       className={`z-50 h-[100px] flex items-center fixed w-full 
-      ${arvrPath && !colorChange && "backdrop-blur-sm bg-white/10 h-20"} 
+      ${arvrPath && !colorChange && "backdrop-blur-sm bg-white/[10%] h-20"} 
       ${
         colorChange ? "bg-white h-20 shadow shadow-gray-200" : "bg-transparent"
       }`}

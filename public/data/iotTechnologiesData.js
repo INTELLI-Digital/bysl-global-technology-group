@@ -51,4 +51,15 @@ const iotSupportData = {
   img: "/images/technologies/iot/iot_innovative_solution_banner.svg",
 };
 
-export { iotServicesData, iotSolutionsData, iotSupportData };
+const iotAppDevelopmentBannerData = {
+  img: "/images/technologies/iot/iot_app_development_banner.svg",
+  subTitle:
+    "A smart house or office with advance features that you can control a mobile application. And save the power consumption at your placeA smart house or office with advance atures that you can control a mobile application.And save the power consumption at your place",
+};
+
+export {
+  iotAppDevelopmentBannerData,
+  iotServicesData,
+  iotSolutionsData,
+  iotSupportData,
+};

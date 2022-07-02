@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getPath } from "../../../utils/paths";
 
+import { getPath } from "../../../utils/paths";
 import { TechnologiesSectionTitle, TextGradient } from "../SharedTextgroups";
 
 const BannerWithBulletSingle = (props) => {

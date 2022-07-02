@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { getPath } from "../../utils/paths";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
@@ -13,14 +15,14 @@ const ImageShowcase = (props) => {
           {sub}
         </p>
       )}
-      <img
-        src={img}
-        alt=""
-        className={`mx-auto mt-10 xl:mt-16 max-h-56 md:max-h-64 lg:max-h-72 xl:max-h-96 3xl:max-h-full ${
+      <div
+        className={`relative mx-auto mt-10 xl:mt-16 w-full h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] ${
           getPath("/ites") ||
           (getPath("/data-science") && "shadow-2xl shadow-blue-500/25")
-        } rounded-[20px]`}
-      />
+        } rounded-[20px] overflow-hidden`}
+      >
+        <Image src={img} layout="fill" alt="" />
+      </div>
     </div>
   );
 };

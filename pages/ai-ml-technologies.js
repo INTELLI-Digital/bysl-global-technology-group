@@ -12,7 +12,9 @@ import ImageShowcase from "../components/shared/ImageShowcase";
 
 const AIMLTechnologies = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="AI/ML Technologies">
+      {/* banner section  */}
       <PrimaryBanner
         title="AI/ML Technologies"
         img="ai-ml_technologies"
@@ -22,9 +24,17 @@ const AIMLTechnologies = () => {
         <br />
         <TextGradient text="City Mobility" /> solutions
       </PrimaryBanner>
+
+      {/* overview items section  */}
       <Overview4Items data={aimlFeaturesData} />
+
+      {/* services section  */}
       <AIMLServices />
+
+      {/* Big Data Analysis section  */}
       <BannerWithBulletSingle data={aimlUserExperienceData} />
+
+      {/* Solutions section  */}
       <ImageShowcase
         type="Solutions"
         img="/images/technologies/ai_ml/aiml_solutions.svg"

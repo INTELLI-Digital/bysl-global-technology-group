@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview3Items = (props) => {
@@ -20,11 +21,9 @@ const Overview3Items = (props) => {
               key={id}
               className="p-3 xl:p-5 3xl:p-10 text-center max-w-[100px] xxs:max-w-none"
             >
-              <img
-                src={img}
-                alt=""
-                className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16"
-              />
+              <div className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16 relative">
+                <Image src={img} layout="fill" alt="" />
+              </div>
               <p className="2xl:text-xl font-medium text-gray-800 mt-5">
                 {title}
               </p>

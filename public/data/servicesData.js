@@ -4,7 +4,8 @@ const servicesFeaturesData = [
     title: "Dedicated Resources",
     subTitle:
       "Experience and skills are what we specialize in. We’re highly qualified professionals crafting innovative ideas and transforming those into better solutions.",
-    img: "/images/services/home/features/icon_1.svg",
+    img: "/images/services/home/features/icon_0.svg",
+    hoverImg: "/images/services/home/features/hover_icon_0.svg",
   },
   {
     id: 1,
@@ -12,34 +13,39 @@ const servicesFeaturesData = [
     subTitle:
       "Our technological competency enables us to utilize the right resources, detect and apply the right tools, monitor and analyze outcomes, and deploy new solutions to enhance the profitability and productivity of any industry.",
     img: "/images/services/home/features/icon_1.svg",
+    hoverImg: "/images/services/home/features/hover_icon_0.svg",
   },
   {
     id: 2,
     title: "Next-generation Technologies",
     subTitle:
       "Employing cutting-edge arsenals of futuristic technology that is fast, secure, well-synchronized, highly accessible, easily deployable, modular, and dynamic, we operate on improved architecture and fine-tuned codes, and ensure flawless solutions to meet and exceed our client’s expectations.",
-    img: "/images/services/home/features/icon_1.svg",
+    img: "/images/services/home/features/icon_2.svg",
+    hoverImg: "/images/services/home/features/hover_icon_0.svg",
   },
   {
     id: 3,
     title: "Guaranteed Timeliness & Quality",
     subTitle:
       "We equally value timeliness and the quality of our services. For us, meeting deadlines is as important as maintaining the quality and reliability of our solutions. ",
-    img: "/images/services/home/features/icon_1.svg",
+    img: "/images/services/home/features/icon_3.svg",
+    hoverImg: "/images/services/home/features/hover_icon_0.svg",
   },
   {
     id: 4,
     title: "Cost Savings",
     subTitle:
       "We understand that even small businesses require big tech-integration. So, we’ve devised comprehensive, flexible and smart solution packages to reduce costs for our clients.",
-    img: "/images/services/home/features/icon_1.svg",
+    img: "/images/services/home/features/icon_4.svg",
+    hoverImg: "/images/services/home/features/hover_icon_0.svg",
   },
   {
     id: 5,
     title: "Secure Exchange of Information",
     subTitle:
       "We go the extra mile to ensure the maximum data security for our clients. From customized data access to business and private communications, you are totally protected in all types of information exchanges.",
-    img: "/images/services/home/features/icon_1.svg",
+    img: "/images/services/home/features/icon_5.svg",
+    hoverImg: "/images/services/home/features/hover_icon_0.svg",
   },
 ];
 

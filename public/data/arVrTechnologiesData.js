@@ -1,26 +1,30 @@
-const arVrFeaturesData = [
-  {
-    id: 0,
-    title: "Interaction",
-    subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/ar_vr/features/ar_vr_features_icon_0.svg",
-  },
-  {
-    id: 1,
-    title: "Interaction",
-    subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/ar_vr/features/ar_vr_features_icon_1.svg",
-  },
-  {
-    id: 2,
-    title: "Interaction",
-    subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/ar_vr/features/ar_vr_features_icon_2.svg",
-  },
-];
+const arVrFeaturesData = {
+  type: "Features",
+  img: "/images/technologies/ar_vr/features/ar_vr_features.svg",
+  features: [
+    {
+      id: 0,
+      title: "Interaction",
+      subTitle:
+        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      img: "/images/technologies/ar_vr/features/ar_vr_features_icon_0.svg",
+    },
+    {
+      id: 1,
+      title: "Interaction",
+      subTitle:
+        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      img: "/images/technologies/ar_vr/features/ar_vr_features_icon_1.svg",
+    },
+    {
+      id: 2,
+      title: "Interaction",
+      subTitle:
+        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      img: "/images/technologies/ar_vr/features/ar_vr_features_icon_2.svg",
+    },
+  ],
+};
 
 const arVrWorldData = [
   {

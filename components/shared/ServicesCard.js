@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { TextGradient } from "./SharedTextgroups";
 
 const ServicesCard = (props) => {
@@ -15,7 +17,9 @@ const ServicesCard = (props) => {
             ${padding && "3xl:py-16"} `}
           >
             <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-2xl shadow-blue-500/25">
-              <img src={img} alt="" className="h-6 w-6 xl:h-12 xl:w-12" />
+              <div className="h-6 w-6 xl:h-12 xl:w-12 relative">
+                <Image src={img} layout="fill" alt="" />
+              </div>
             </div>
             <div className="text-sm lg:text-base 3xl:text-2xl font-bold">
               {black ? (

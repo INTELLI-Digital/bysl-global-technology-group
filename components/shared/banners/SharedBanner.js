@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { getPath } from "../../../utils/paths";
 import {
   SectionTitleType,

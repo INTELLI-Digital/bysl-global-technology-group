@@ -114,7 +114,7 @@ a {
 .mobileTech .swiper-wrapper {
   align-items: center;
 }
-.mobileTech .swiper-slide-active img {
+.mobileTech .swiper-slide-active .mobileTechImg {
   height: 260px;
   filter: none;
 }
@@ -127,7 +127,7 @@ a {
 /* swiper slider */
 
 @media (min-width: 360px) {
-  .mobileTech .swiper-slide-active img {
+  .mobileTech .swiper-slide-active .mobileTechImg {
     height: 325px;
   }
 }
@@ -140,6 +140,9 @@ a {
   .box {
     margin: 0 128px;
   }
+  .mobileTech .swiper-slide-active .mobileTechImg {
+   width: 150px;
+  }
 }
 @media (min-width: 1024px) {
   .box {
@@ -150,8 +153,9 @@ a {
   .box {
     margin: 0 215px;
   }
-  .mobileTech .swiper-slide-active img {
+  .mobileTech .swiper-slide-active .mobileTechImg {
     height: 410px;
+    width: 190px;
   }
 }
 @media (min-width: 1536px) {

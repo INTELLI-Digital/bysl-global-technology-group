@@ -24,11 +24,6 @@ const FeaturedBanner = (props) => {
         )}
         <FeaturesCard data={features} />
       </div>
-      {/* <img
-        src={img}
-        alt=""
-        className="lg:w-1/2 h-52 sm:h-64 xl:h-full mx-auto"
-      /> */}
       <div className="lg:w-1/2 mx-auto">
         <Image src={img} height={419} width={687} alt="" />
       </div>

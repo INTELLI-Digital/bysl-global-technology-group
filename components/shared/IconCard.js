@@ -9,18 +9,6 @@ const IconCard = ({ data }) => {
             key={id}
             className={`group gradient-bg p-5 ${!subTitle && "sm:py-10"}`}
           >
-            {/* <div className="h-10 lg:h-16 w-10 lg:w-16 mx-auto relative ">
-              <img
-                src={img}
-                alt=""
-                className="w-full h-full group-hover:opacity-0 transition-all duration-500"
-              />
-              <img
-                src="/images/technologies/cloud/features/cloud_features_1.svg"
-                alt=""
-                className="w-full h-full absolute top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-              />
-            </div> */}
             <div className="h-10 lg:h-16 w-10 lg:w-16 mx-auto relative ">
               <HoverImage
                 img1={img}

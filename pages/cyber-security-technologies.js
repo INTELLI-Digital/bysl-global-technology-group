@@ -14,7 +14,9 @@ import {
 
 const CyberSecurityTechnologies = () => {
   return (
+    // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Cyber Security Technologies">
+      {/* banner section  */}
       <PrimaryBanner
         title="Cyber Security Technologies"
         img="cyber-security_technologies"
@@ -24,7 +26,11 @@ const CyberSecurityTechnologies = () => {
         <br />
         <TextGradient text="Cyber Protection" />
       </PrimaryBanner>
+
+      {/* overview section  */}
       <Overview3Items data={cyberBenefitsData} />
+
+      {/* features section  */}
       <TriangleCardBanner
         type="Features"
         data={cyberFeaturesData}
@@ -34,9 +40,13 @@ const CyberSecurityTechnologies = () => {
       >
         World Class <TextGradient text="Protection" />
       </TriangleCardBanner>
+
+      {/* Solutions section  */}
       <IconCardGroup3 data={cyberSolutionsData} type="Solutions">
         <TextGradient text="Cyber Security" /> Services
       </IconCardGroup3>
+
+      {/* protection data  */}
       <BannerWithBullets data={cyberProtectionData} />
     </BasicLayout>
   );
