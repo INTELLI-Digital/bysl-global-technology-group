@@ -30,8 +30,8 @@ const AIMLServices = () => {
                 <div
                   key={id}
                   className={`bg-white ${
-                    (id === 0 && "md:mt-40") || (id === 3 && "md:-mt-40")
-                  } rounded-[10px] xl::rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-4 lg:py-8 lg:px-5 2xl:px-8 3xl:px-10 w-full h-full md:h-auto self-center`}
+                    (id === 0 && "md:mt-40") || (id === 3 && "md:-mt-40 custom-gap")
+                  } rounded-[10px] xl:rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-4 lg:py-8 lg:px-3 2xl:px-8 3xl:px-10 w-full h-full md:h-auto self-center`}
                 >
                   <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-2xl shadow-blue-500/25">
                     <div className="h-6 w-6 xl:h-12 xl:w-12 relative">

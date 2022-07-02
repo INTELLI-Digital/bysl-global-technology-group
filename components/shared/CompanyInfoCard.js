@@ -24,10 +24,8 @@ const CompanyInfoCard = (props) => {
       }`}
     >
       <div
-        className={`${
-          culturePath && "h-full"
-        }  ${
-          purposePath && id === 0 && "culture-padding"
+        className={`${culturePath && "h-full"}  ${
+          purposePath && id === 0 && "culture-padding111"
         } bg-blue-50 rounded-[20px] p-5 xl:p-6`}
       >
         <div
@@ -40,9 +38,7 @@ const CompanyInfoCard = (props) => {
         <p className="text-lg 2xl:text-xl my-3 2xl:my-5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700">
           {title}
         </p>
-        <p
-          className={`text-gray-600 leading-5 text-sm 2xl:text-base`}
-        >
+        <p className={`text-gray-600 leading-5 text-sm 2xl:text-base`}>
           {description}
         </p>
       </div>

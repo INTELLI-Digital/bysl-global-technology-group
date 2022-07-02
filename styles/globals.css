@@ -134,33 +134,39 @@ a {
 }
 @media (min-width: 640px) {
   .box {
-    margin: 0 64px;
+    margin: 0 40px;
   }
 }
 @media (min-width: 768px) {
-  .box {
-    margin: 0 128px;
-  }
   .mobileTech .swiper-slide-active .mobileTechImg {
    width: 150px;
   }
 }
 @media (min-width: 1024px) {
   .box {
-    margin: 0 140px;
+    margin: 0 60px;
   }
 }
 @media (min-width: 1280px) {
   .box {
-    margin: 0 215px;
+    margin: 0 100px;
   }
   .mobileTech .swiper-slide-active .mobileTechImg {
     height: 410px;
     width: 190px;
   }
 }
-@media (min-width: 1536px) {
+@media (min-width: 1760px) {
   .box {
     margin: 0 300px;
+  }
+}
+
+/* .custom-gap */
+
+
+@media (min-width: 913px) and (max-width:959px) {
+  .custom-gap{
+    margin-top: -140px !important;
   }
 }
