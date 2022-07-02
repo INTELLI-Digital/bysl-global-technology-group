@@ -9,8 +9,8 @@ const SolutionsBanner = () => {
             ​​Solutions
           </p>
           <p className="text-white/75 leading-4 text-sm lg:text-base 2xl:text-lg 3xl:text-xl">
-            Whether it's subtle interactions that improve the UX, or complex
-            "WOW" animations. I can build them all.
+            Whether it&apos;s subtle interactions that improve the UX, or
+            complex &quot;WOW&quot; animations. I can build them all.
           </p>
         </div>
         <div className="sm:w-1/2 xs:px-12 sm:px-0 2xl:pl-10 flex justify-center sm:justify-end">

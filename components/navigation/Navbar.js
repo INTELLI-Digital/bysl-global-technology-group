@@ -20,15 +20,19 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", changeNavbarColor);
-  }, [navbars, colorChange, arvrPath]);
+  }, [colorChange, arvrPath]);
 
   return (
     <div
-      className={`z-50 h-[100px] flex items-center fixed w-full 
-      ${arvrPath && !colorChange && "backdrop-blur-sm bg-white/[10%] h-20"} 
+      className={`z-50 flex items-center fixed w-full 
       ${
-        colorChange ? "bg-white h-20 shadow shadow-gray-200" : "bg-transparent"
-      }`}
+        colorChange
+          ? "bg-white h-20 shadow shadow-gray-200"
+          : arvrPath
+          ? "backdrop-blur-sm bg-white/10 h-20"
+          : "bg-transparent h-[100px]"
+      }
+      `}
     >
       <div className="box flex justify-between items-center w-full">
         <Link passHref href="/">
@@ -98,12 +102,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <div
-className={`z-50 h-[100px] flex items-center fixed w-full 
-${colorChange ? "bg-white h-20 drop-shadow" : "bg-transparent"} 
-${arvrPath && !colorChange ? "bg-transparent" : "bg-white"}
-`}
-> */
-}
