@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 
+import { serviceBlogsData } from "../../public/data/servicesData";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
@@ -9,16 +10,11 @@ import {
 import SliderLayout from "../shared/SliderLayout";
 
 const ServiceBlogs = () => {
-  const BlogCard = ({ i }) => {
+  const BlogCard = ({ data }) => {
     return (
       <div className="bg-white rounded-md shadow-sm shadow-gray-200/50 max-w-sm lg:max-w-lg mx-auto">
         <div className="relative rounded-t-md w-full h-52 overflow-hidden">
-          <Image
-            src={`/images/services/home/resources/services_resource_${i}.svg`}
-            layout="fill"
-            objectFit="cover"
-            alt=""
-          />
+          <Image src={data.img} layout="fill" objectFit="cover" alt="" />
         </div>
         <div className="px-5 pt-10 pb-6">
           <p className="text-xs font-medium">
@@ -52,18 +48,18 @@ const ServiceBlogs = () => {
       <div
         className={`hidden sm:grid grid-cols-1 xs:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4 mt-10 xl:mt-16 gap-6`}
       >
-        {[...Array(4)].map((item, i) => (
-          <div key={i}>
-            <BlogCard i={i} />
+        {serviceBlogsData.map((item) => (
+          <div key={item.id}>
+            <BlogCard data={item} />
           </div>
         ))}
       </div>
       <div className="sm:hidden mt-10 xl:mt-20 card-slider pb-10">
         <SliderLayout size={1}>
-          {[...Array(4)].map((item, i) => {
+          {serviceBlogsData.map((item) => {
             return (
-              <SwiperSlide key={i}>
-                <BlogCard i={i} />
+              <SwiperSlide key={item.id}>
+                <BlogCard data={item} />
               </SwiperSlide>
             );
           })}

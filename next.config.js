@@ -4,6 +4,9 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  images: {
+    domains: ["localhost", "yourDomainName.com"],
+  },
 };
 
 module.exports = nextConfig;

@@ -134,4 +134,55 @@ const servicesServiceData = [
   },
 ];
 
-export { servicesFeaturesData, servicesServiceData };
+const serviceResourcesData = [
+  {
+    id: 0,
+    img: "/images/services/home/resources/services_resource_0.svg",
+  },
+  {
+    id: 1,
+    img: "/images/services/home/resources/services_resource_1.svg",
+  },
+  {
+    id: 2,
+    img: "/images/services/home/resources/services_resource_2.svg",
+  },
+  {
+    id: 3,
+    img: "/images/services/home/resources/services_resource_3.svg",
+  },
+  {
+    id: 4,
+    img: "/images/services/home/resources/services_resource_4.svg",
+  },
+  {
+    id: 5,
+    img: "/images/services/home/resources/services_resource_5.svg",
+  },
+];
+
+const serviceBlogsData = [
+  {
+    id: 0,
+    img: "/images/services/home/resources/services_resource_0.svg",
+  },
+  {
+    id: 1,
+    img: "/images/services/home/resources/services_resource_1.svg",
+  },
+  {
+    id: 2,
+    img: "/images/services/home/resources/services_resource_2.svg",
+  },
+  {
+    id: 3,
+    img: "/images/services/home/resources/services_resource_3.svg",
+  },
+];
+
+export {
+  servicesFeaturesData,
+  servicesServiceData,
+  serviceResourcesData,
+  serviceBlogsData,
+};

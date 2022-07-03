@@ -11,7 +11,7 @@ const LandingPageBanner = () => {
         />
       </div> */}
       <div className="h-56 sm:h-72 md:h-80 lg:h-96 2xl:h-[480px] 3xl:h-[676px] w-full relative">
-        <Image src="/images/banners/landing_banner.svg" layout="fill" alt="" />
+        <Image src="/images/banners/landing_banner.svg" layout="fill" priority alt="" />
       </div>
     </>
   );

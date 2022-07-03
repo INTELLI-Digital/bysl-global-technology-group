@@ -21,6 +21,7 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
           <Image
             src={`/images/banners/${img}_banner.svg`}
             layout="fill"
+            priority
             alt=""
           />
         </div>
