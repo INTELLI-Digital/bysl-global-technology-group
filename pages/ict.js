@@ -17,7 +17,7 @@ const ICT = () => {
     <BasicLayout title="ICT">
       {/* banner section  */}
       <PrimaryBanner
-        title="Information & Communication Technologies - Division"
+        title="ICT - Division"
         img="ict_division"
         sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
       >

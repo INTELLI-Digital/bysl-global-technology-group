@@ -2,11 +2,12 @@ import ServiceBlogs from "../components/services/ServiceBlogs";
 import ServiceFeatures from "../components/services/ServiceFeatures";
 import ServiceITServices from "../components/services/ServiceITServices";
 import ServiceResources from "../components/services/ServiceResources";
+import ServiceTimeline from "../components/services/ServiceTimeline";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
 
-const services = () => {
+const Services = () => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="IT Services">
@@ -26,6 +27,9 @@ const services = () => {
       {/* services section  */}
       <ServiceITServices />
 
+      {/* timeline section  */}
+      <ServiceTimeline />
+
       {/* resources section  */}
       <ServiceResources />
 
@@ -35,4 +39,4 @@ const services = () => {
   );
 };
 
-export default services;
+export default Services;

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { servicesServiceData } from "../../public/data/servicesData";
+import { setItem } from "../../utils/sessionStorage";
 import HoverImage from "../shared/HoverImage";
 import {
   SectionTitleType,
@@ -10,7 +11,7 @@ import {
 
 const ServiceITServices = () => {
   return (
-    <div className="py-10 xl:py-16">
+    <div className="py-10 sm:pb-16 xl:py-16 xl:pb-24">
       <SectionTitleType title="What We Do" />
       <TechnologiesSectionTitle>
         We Provide Various IT services
@@ -20,8 +21,9 @@ const ServiceITServices = () => {
       >
         {servicesServiceData.map(({ id, img, title, subTitle }) => {
           return (
-            <Link key={id} href="/" passHref>
+            <Link key={id} href="/service" passHref>
               <div
+                onClick={() => setItem(id)}
                 className={`group bg-white rounded-[20px] shadow-lg shadow-gray-200 p-5 sm:p-6 sm:pb-10 relative hover:cursor-pointer`}
               >
                 <div className="relative h-9 sm:h-16 w-full">

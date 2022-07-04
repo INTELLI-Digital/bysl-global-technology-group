@@ -35,13 +35,13 @@ const SectionTitle = ({ title }) => {
 };
 
 const TechnologiesSectionTitle = (props) => {
-  const { children, start } = props;
+  const { children, start, white } = props;
 
   return (
     <p
-      className={`break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold text-gray-800 ${
-        start && "lg:text-start"
-      } text-center`}
+      className={`break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold ${
+        white ? "text-white" : "text-gray-800"
+      } ${start && "lg:text-start"} text-center`}
     >
       {children}
     </p>

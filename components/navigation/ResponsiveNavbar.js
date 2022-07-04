@@ -11,7 +11,9 @@ const ResponsiveNavbar = () => {
 
   // return <div>{isLarge ? <Navbar /> : <NavbarSmall />}</div>;
   return (
-    <div className={`${!getPath("/ar-vr-technologies") && "pb-14 lg:pb-20"}`}>
+    <div
+      className={`${!getPath("/ar-vr-technologies") && "pb-14 lg:pb-20"}`}
+    >
       <div className="hidden lg:block">
         <Navbar />
       </div>

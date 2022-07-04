@@ -164,19 +164,78 @@ const serviceResourcesData = [
 const serviceBlogsData = [
   {
     id: 0,
-    img: "/images/services/home/resources/services_resource_0.svg",
+    img: "/images/services/home/blogs/services_blogs_0.svg",
   },
   {
     id: 1,
-    img: "/images/services/home/resources/services_resource_1.svg",
+    img: "/images/services/home/blogs/services_blogs_0.svg",
   },
   {
     id: 2,
-    img: "/images/services/home/resources/services_resource_2.svg",
+    img: "/images/services/home/blogs/services_blogs_0.svg",
   },
   {
     id: 3,
-    img: "/images/services/home/resources/services_resource_3.svg",
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+  },
+];
+
+const serviceTimelineData = [
+  {
+    id: 0,
+    img: "/images/services/home/timeline/icon_0.svg",
+    title: "Idea Generation",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 1,
+    img: "/images/services/home/timeline/icon_1.svg",
+    title: "Market Research & Analysis",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 2,
+    img: "/images/services/home/timeline/icon_2.svg",
+    title: "Mock Up & Wire-Frame",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 3,
+    img: "/images/services/home/timeline/icon_3.svg",
+    title: "Testing & Launching",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 4,
+    img: "/images/services/home/timeline/icon_4.svg",
+    title: "Planning",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 5,
+    img: "/images/services/home/timeline/icon_5.svg",
+    title: "Initiation",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 6,
+    img: "/images/services/home/timeline/icon_6.svg",
+    title: "Development- Agile Methodology",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
+  },
+  {
+    id: 7,
+    img: "/images/services/home/timeline/icon_7.svg",
+    title: "Marketing & Feedback",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim. ",
   },
 ];
 
@@ -185,4 +244,5 @@ export {
   servicesServiceData,
   serviceResourcesData,
   serviceBlogsData,
+  serviceTimelineData,
 };

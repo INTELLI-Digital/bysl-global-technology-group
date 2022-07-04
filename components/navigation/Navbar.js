@@ -24,13 +24,13 @@ const Navbar = () => {
 
   return (
     <div
-      className={`z-50 flex items-center fixed w-full 
+      className={`z-50 h-20 flex items-center fixed w-full 
       ${
         colorChange
-          ? "bg-white h-20 shadow shadow-gray-200"
+          ? "bg-white pt-0 shadow shadow-gray-200"
           : arvrPath
-          ? "backdrop-blur-sm bg-white/10 h-20"
-          : "bg-transparent h-[100px]"
+          ? "backdrop-blur-sm bg-white/10"
+          : "bg-transparent pt-5"
       }
       `}
     >
