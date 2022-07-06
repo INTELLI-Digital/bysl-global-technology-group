@@ -43,20 +43,20 @@ const serviceWhyChooseUsData = [
   },
 ];
 
-const ITServices = [
-  "BPO",
-  "UI/UX Design",
-  "Web Development",
-  "Mobile App Development",
-  "E-commerce  Solution",
-  "ERP",
-  "Fintech",
-  "AI & ML",
-  "Fulfillment Service",
-  "Logistic Service",
-  "Cloud & Cyber Security",
-  "Customer Care Service",
-];
+// const ITServices = [
+//   "BPO",
+//   "UI/UX Design",
+//   "Web Development",
+//   "Mobile App Development",
+//   "E-commerce  Solution",
+//   "ERP",
+//   "Fintech",
+//   "AI & ML",
+//   "Fulfillment Service",
+//   "Logistic Service",
+//   "Cloud & Cyber Security",
+//   "Customer Care Service",
+// ];
 
 const individualServiceITServicesData = [
   {

@@ -7,7 +7,7 @@ const ServiceTimeline = () => {
       {serviceTimelineData.map(({ id, img, title, subTitle }) => {
         return (
           <div key={id} className="flex flex-col justify-center text-center">
-            <Image src={img} height={85} width={80} />
+            <Image src={img} height={85} width={80} alt="" />
             <p className="py-2.5 text-xs sm:text-sm 2xl:text-base 3xl:text-xl font-bold  text-gray-800">
               {title}{" "}
             </p>

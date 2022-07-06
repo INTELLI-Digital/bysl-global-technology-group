@@ -1,13 +1,12 @@
 import LandingPageBanner from "../components/landing_page/LandingPageBanner";
 import AboutUs from "../components/landing_page/AboutUs";
 import ProjectsShowcase from "../components/landing_page/ProjectsShowcase";
-import Footer from "../components/navigation/Footer";
 import PageTitle from "../components/shared/PageTitle";
 import ResponsiveNavbar from "../components/navigation/ResponsiveNavbar";
 import SolutionsBanner from "../components/landing_page/SolutionsBanner";
 import Investments from "../components/landing_page/Investments";
 import Technologies from "../components/landing_page/Technologies";
-import FooterDark from "../components/navigation/FooterDark";
+import Footer from "../components/navigation/Footer";
 
 export default function Home() {
   return (
@@ -22,8 +21,7 @@ export default function Home() {
         <Technologies />
         <Investments />
       </div>
-      <FooterDark />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

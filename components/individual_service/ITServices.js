@@ -70,7 +70,7 @@ const ITServices = () => {
                         service === id && !isOpen ? "mx-auto pl-0" : "pl-5"
                       }`}
                     >
-                      <Image src={img} height={20} width={20} />
+                      <Image src={img} height={20} width={20} alt="" />
                       <p
                         className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
                           service === id && !isOpen
@@ -85,7 +85,7 @@ const ITServices = () => {
                   {service === id && !isOpen && (
                     <div className=" bg-white p-5 rounded-[10px] shadow-lg shadow-gray-200 mt-4">
                       {/* <div className="hidden bg-white p-5 rounded-[10px] shadow-lg shadow-gray-200 mt-4"> */}
-                      {serviceDetails.find((item, i) => i === service)}
+                      {serviceDetails.filter((item, i) => i === service)}
                     </div>
                   )}
                 </div>
@@ -106,7 +106,7 @@ const ITServices = () => {
                     "bg-gradient-to-r from-blue-900 to-blue-700"
                   }  `}
                 >
-                  <Image src={img} height={20} width={20} />
+                  <Image src={img} height={20} width={20} alt="" />
                   <p
                     className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
                       service === id ? "text-white" : "text-gray-800"
@@ -119,7 +119,7 @@ const ITServices = () => {
             })}
           </div>
           <div className="col-span-8 lg:col-span-9 bg-white p-10 rounded-[30px] shadow-lg shadow-gray-200">
-            {serviceDetails.find((item, i) => i === service)}
+            {serviceDetails.filter((item, i) => i === service)}
           </div>
         </div>
       </div>

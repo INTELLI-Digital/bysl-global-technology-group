@@ -1,20 +1,20 @@
 const navbars = [
-  {
-    id: 0,
-    title: "Solutions",
-    dropdowns: [
-      {
-        id: 0,
-        title: "1",
-        link: "/",
-      },
-      {
-        id: 1,
-        title: "2",
-        link: "/",
-      },
-    ],
-  },
+  // {
+  //   id: 0,
+  //   title: "Solutions",
+  //   dropdowns: [
+  //     {
+  //       id: 0,
+  //       title: "1",
+  //       link: "/",
+  //     },
+  //     {
+  //       id: 1,
+  //       title: "2",
+  //       link: "/",
+  //     },
+  //   ],
+  // },
   {
     id: 1,
     title: "Technologies",

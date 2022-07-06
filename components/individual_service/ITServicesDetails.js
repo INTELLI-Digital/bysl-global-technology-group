@@ -39,6 +39,7 @@ const ProjectsCard = (props) => {
             src="/images/services/individual_service/arrow_blue.svg"
             height={9}
             width={9}
+            alt=""
           />
           <div className="ml-2.5 text-gray-800 text-sm xl:text-base font-bold md:font-extrabold">
             {item}

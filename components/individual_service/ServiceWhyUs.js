@@ -20,7 +20,7 @@ const ServiceWhyUs = () => {
         {serviceWhyChooseUsData.map(({ id, title, subTitle, img }) => {
           return (
             <div key={id} className="p-2 2xl:px-10 2xl:pb-9 text-center">
-              <Image src={img} height={180} width={260} />
+              <Image src={img} height={180} width={260} alt="" />
               <p className="font-bold lg:font-extrabold text-xl mt-10 mb-2.5">
                 <TextGradient text={title} />
               </p>
