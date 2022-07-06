@@ -22,7 +22,7 @@ const Footer = () => {
           className={`text-white mb-6 ${title === "Company" && "mt-10"} ${
             title !== "Technologies" &&
             title !== "Divisions" &&
-            "text-end sm:text-start"
+            "xxxs:text-end sm:text-start"
           } font-semibold`}
         >
           {title}
@@ -35,7 +35,7 @@ const Footer = () => {
                 className={`block hover:cursor-pointer text-xs md:text-sm leading-5 mb-2 lg:mb-4 text-white/60 hover:text-white ${
                   title !== "Technologies" &&
                   title !== "Divisions" &&
-                  "text-end sm:text-start"
+                  "xxxs:text-end sm:text-start"
                 }`}
               >
                 {name}
@@ -76,7 +76,7 @@ const Footer = () => {
           {footerData?.map(({ id, title, items, title2, items2 }) => (
             <div
               key={id}
-              className="col-span-12 xxs:col-span-6 sm:col-span-3 lg:col-span-2"
+              className="col-span-12 xxxs:col-span-6 sm:col-span-3 lg:col-span-2"
             >
               <Items title={title} data={items} />
               {title2 && <Items title={title2} data={items2} />}

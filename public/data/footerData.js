@@ -304,17 +304,17 @@ const footerData = [
     items2: [
       {
         id: 0,
-        path: "/",
+        path: "/faq",
         name: "FAQ",
       },
       {
         id: 1,
-        path: "/",
+        path: "/resources",
         name: "Resources",
       },
       {
         id: 2,
-        path: "/",
+        path: "/contact-us",
         name: "Contact Us",
       },
     ],

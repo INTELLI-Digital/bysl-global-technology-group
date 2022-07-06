@@ -1,21 +1,35 @@
 import HoverImage from "./HoverImage";
 
-const IconCard = ({ data }) => {
+const IconCard = (props) => {
+  const { data, padding } = props;
+
   return (
     <>
-      {data.map(({ id, img, title, subTitle }) => {
+      {data.map(({ id, img, title, hoverImg, subTitle }) => {
         return (
           <div
             key={id}
             className={`group gradient-bg p-5 ${!subTitle && "sm:py-10"}`}
           >
-            <div className="h-10 lg:h-16 w-10 lg:w-16 mx-auto relative ">
+            <div
+              className={`h-10 w-10 ${
+                !padding && "lg:h-16 lg:w-16"
+              } mx-auto relative`}
+            >
               <HoverImage
                 img1={img}
-                img2="/images/technologies/cloud/features/cloud_features_1.svg"
+                img2={
+                  hoverImg
+                    ? hoverImg
+                    : "/images/technologies/cloud/features/cloud_features_1.svg"
+                }
               />
             </div>
-            <p className="text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center my-3 2xl:my-5">
+            <p
+              className={`text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center ${
+                padding ? "mt-6 xl:mt-10" : "my-3 2xl:my-5"
+              }`}
+            >
               {title}
             </p>
             {subTitle && (
