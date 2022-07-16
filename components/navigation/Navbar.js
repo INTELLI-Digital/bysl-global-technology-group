@@ -7,7 +7,11 @@ import { getPath } from "../../utils/paths";
 import Button from "../shared/buttons/Button";
 
 const Navbar = () => {
-  const [colorChange, setColorchange] = useState(false);
+  const [colorChange, setColorchange] = useState(
+    getPath("/") && typeof window !== "undefined" && window.scrollY >= 80
+      ? true
+      : false
+  );
   const arvrPath = getPath("/ar-vr-technologies");
 
   const changeNavbarColor = () => {

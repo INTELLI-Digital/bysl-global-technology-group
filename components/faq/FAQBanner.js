@@ -1,6 +1,6 @@
 const FAQBanner = () => {
   return (
-    <div className="h-[360px] w-full bg-[url('/images/FAQ/faq_banner_small.svg')] sm:bg-[url('/images/FAQ/faq_banner.svg')] bg-cover bg-center bg-no-repeat">
+    <div className="h-[360px] w-full bg-[url('/images/FAQ/FAQ_banner_small.svg')] sm:bg-[url('/images/FAQ/FAQ_banner.svg')] bg-cover bg-center bg-no-repeat">
       <div className="box flex items-center h-full">
         <div className="mt w-full">
           <p

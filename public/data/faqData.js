@@ -2,26 +2,26 @@ const faqCategoriesData = [
   {
     id: 0,
     title: "Technologies",
-    img: "/images/faq/categories/icon_0.svg",
-    hoverImg: "/images/faq/categories/icon_0.svg",
+    img: "/images/FAQ/categories/icon_0.svg",
+    hoverImg: "/images/FAQ/categories/icon_0.svg",
   },
   {
     id: 1,
     title: "Services",
-    img: "/images/faq/categories/icon_1.svg",
-    hoverImg: "/images/faq/categories/icon_0.svg",
+    img: "/images/FAQ/categories/icon_1.svg",
+    hoverImg: "/images/FAQ/categories/icon_0.svg",
   },
   {
     id: 2,
     title: "Divisions",
-    img: "/images/faq/categories/icon_2.svg",
-    hoverImg: "/images/faq/categories/icon_0.svg",
+    img: "/images/FAQ/categories/icon_2.svg",
+    hoverImg: "/images/FAQ/categories/icon_0.svg",
   },
   {
     id: 3,
     title: "About Us",
-    img: "/images/faq/categories/icon_3.svg",
-    hoverImg: "/images/faq/categories/icon_0.svg",
+    img: "/images/FAQ/categories/icon_3.svg",
+    hoverImg: "/images/FAQ/categories/icon_0.svg",
   },
 ];
 
