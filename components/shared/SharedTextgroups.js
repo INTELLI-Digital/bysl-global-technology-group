@@ -75,9 +75,15 @@ const SectionTitleType = (props) => {
   );
 };
 
-const TextGradient = ({ text }) => {
+const TextGradient = (props) => {
+  const { text, bold } = props;
+
   return (
-    <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700">
+    <span
+      className={`text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 ${
+        bold && "font-bold"
+      }`}
+    >
       {text}
     </span>
   );

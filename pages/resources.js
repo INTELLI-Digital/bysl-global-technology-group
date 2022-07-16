@@ -1,7 +1,8 @@
 import ServiceWhyUs from "../components/individual_service/ServiceWhyUs";
 import BasicLayout from "../layouts/BasicLayout";
 import BusinessBanner from "../components/shared/banners/BusinessBanner";
-import ResourcesDemo from "../components/resources/ResourcesDemo";
+// import ResourcesDemo from "../components/resources/ResourcesDemo";
+import AllResources from "../components/resources/AllResources";
 
 const Resources = () => {
   return (
@@ -15,7 +16,8 @@ const Resources = () => {
         <ServiceWhyUs />
 
         {/* resources demo section  */}
-        <ResourcesDemo />
+        {/* <ResourcesDemo /> */}
+        <AllResources />
       </div>
     </BasicLayout>
   );

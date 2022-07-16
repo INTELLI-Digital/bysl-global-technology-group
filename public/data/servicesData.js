@@ -165,18 +165,38 @@ const serviceBlogsData = [
   {
     id: 0,
     img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
   },
   {
     id: 1,
     img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
   },
   {
     id: 2,
     img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
   },
   {
     id: 3,
     img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
   },
 ];
 
