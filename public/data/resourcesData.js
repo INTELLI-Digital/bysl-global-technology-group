@@ -83,5 +83,30 @@ const resourceAppData = {
   subTitle2:
     "Praesent in eu, id sed cursus molestie pellentesque et tellus. Non risus, in eu elit quisque scelerisque sapien. Integer id nec gravida ut justo, neque nullam dignissim. Tempus nulla in volutpat elementum, amet a, eget volutpat. Urna velit, et orci pretium lacus, egestas arcu varius. Eget viverra sed arcu ac gravida convallis aliquet. Tortor turpis proin vestibulum massa orci, interdum et pharetra, pellentesque. Convallis habitasse in dui rutrum nibh amet lectus laoreet.",
 };
+const resourceServiceData = {
+  icon: "/images/resources/single/resource_banner_icon.svg",
+  img: "/images/resources/single/single_resource_solution.svg",
+  type: "What we do",
+  title: "Solution we provide",
+  subTitle1:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor pulvinar quis eu vel feugiat erat duis. Molestie volutpat tristique sit cras phasellus purus. Proin volutpat eget fames sem facilisis nec lobortis. Sed aliquam non odio eu malesuada elementum et nullam.",
+  subTitle2:
+    "Praesent in eu, id sed cursus molestie pellentesque et tellus. Non risus, in eu elit quisque scelerisque sapien. Integer id nec gravida ut justo, neque nullam dignissim. Tempus nulla in volutpat elementum, amet a, eget volutpat. Urna velit, et orci pretium lacus, egestas arcu varius. Eget viverra sed arcu ac gravida convallis aliquet. Tortor turpis proin vestibulum massa orci, interdum et pharetra, pellentesque. Convallis habitasse in dui rutrum nibh amet lectus laoreet.",
+};
+const resourceSolutionData = {
+  icon: "/images/resources/single/resource_banner_icon.svg",
+  img: "/images/resources/single/single_resource_app.svg",
+  type: "Solution",
+  title: "Single Application To Rule Them All.",
+  subTitle1:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor pulvinar quis eu vel feugiat erat duis. Molestie volutpat tristique sit cras phasellus purus. Proin volutpat eget fames sem facilisis nec lobortis. Sed aliquam non odio eu malesuada elementum et nullam.",
+  subTitle2:
+    "Praesent in eu, id sed cursus molestie pellentesque et tellus. Non risus, in eu elit quisque scelerisque sapien. Integer id nec gravida ut justo, neque nullam dignissim. Tempus nulla in volutpat elementum, amet a, eget volutpat. Urna velit, et orci pretium lacus, egestas arcu varius. Eget viverra sed arcu ac gravida convallis aliquet. Tortor turpis proin vestibulum massa orci, interdum et pharetra, pellentesque. Convallis habitasse in dui rutrum nibh amet lectus laoreet.",
+};
 
-export { resourcesData, resourceAppData };
+export {
+  resourcesData,
+  resourceAppData,
+  resourceServiceData,
+  resourceSolutionData,
+};

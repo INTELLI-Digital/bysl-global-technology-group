@@ -1,7 +1,11 @@
 import BasicLayout from "../layouts/BasicLayout";
 import SingleResourceBanner from "../components/resources/singleResources/SingleResourceBanner";
 import ResourceCommonBanner from "../components/shared/banners/ResourceCommonBanner";
-import { resourceAppData } from "../public/data/resourcesData";
+import {
+  resourceAppData,
+  resourceServiceData,
+  resourceSolutionData,
+} from "../public/data/resourcesData";
 
 const Resource = () => {
   return (
@@ -12,6 +16,8 @@ const Resource = () => {
 
       {/* single app section  */}
       <ResourceCommonBanner data={resourceAppData} reversed={true} />
+      <ResourceCommonBanner data={resourceServiceData} />
+      <ResourceCommonBanner data={resourceSolutionData} reversed={true} />
       <div className="box">{/* resources demo section  */}</div>
     </BasicLayout>
   );
