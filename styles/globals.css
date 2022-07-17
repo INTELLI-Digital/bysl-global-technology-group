@@ -143,12 +143,12 @@ a {
   }
 }
 @media (min-width: 1024px) {
-  .box {
+  .box, .resource-box {
     margin: 0 60px;
   }
 }
 @media (min-width: 1280px) {
-  .box {
+  .box, .resource-box {
     margin: 0 100px;
   }
   .mobileTech .swiper-slide-active .mobileTechImg {
@@ -156,15 +156,15 @@ a {
     width: 190px;
   }
 }
-@media (min-width: 1760px) {
-  .box {
-    margin: 0 300px;
+@media (min-width: 1440px) {
+  .box, .resource-box {
+    max-width: 1320px;
+    margin: auto !important;
   }
 }
 
+
 /* .custom-gap */
-
-
 @media (min-width: 913px) and (max-width:959px) {
   .custom-gap{
     margin-top: -140px !important;

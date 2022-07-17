@@ -5,7 +5,12 @@ import {
   resourceAppData,
   resourceServiceData,
   resourceSolutionData,
+  resourceWorkData,
 } from "../public/data/resourcesData";
+import BlogLayout from "../components/shared/BlogLayout";
+import SingleResourceGoal from "../components/resources/singleResources/SingleResourceGoal";
+import SingleResourceProblemFraming from "../components/resources/singleResources/SingleResourceProblemFraming";
+import SingleResourceOverview from "../components/resources/singleResources/SingleResourceOverview";
 
 const Resource = () => {
   return (
@@ -14,11 +19,28 @@ const Resource = () => {
       {/* banner section  */}
       <SingleResourceBanner />
 
+      {/* problem framing section  */}
+      <SingleResourceOverview />
+
+      {/* problem framing section  */}
+      <SingleResourceProblemFraming />
+
       {/* single app section  */}
       <ResourceCommonBanner data={resourceAppData} reversed={true} />
-      <ResourceCommonBanner data={resourceServiceData} />
+
+      {/* goal section  */}
+      <SingleResourceGoal />
+
+      {/* what we do section  */}
+      <ResourceCommonBanner data={resourceServiceData} full={true} />
+
+      {/* solution section  */}
       <ResourceCommonBanner data={resourceSolutionData} reversed={true} />
-      <div className="box">{/* resources demo section  */}</div>
+
+      {/* more work section  */}
+      <div className="box">
+        <BlogLayout data={resourceWorkData}>More Work</BlogLayout>
+      </div>
     </BasicLayout>
   );
 };

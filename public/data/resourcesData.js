@@ -1,3 +1,8 @@
+const singleResourceBannerData = [
+  { id: 0, title: "Duration", subTitle: "Science 2022" },
+  { id: 0, title: "Area", subTitle: "Product Design" },
+];
+
 const resourcesData = [
   {
     id: 0,
@@ -104,9 +109,90 @@ const resourceSolutionData = {
     "Praesent in eu, id sed cursus molestie pellentesque et tellus. Non risus, in eu elit quisque scelerisque sapien. Integer id nec gravida ut justo, neque nullam dignissim. Tempus nulla in volutpat elementum, amet a, eget volutpat. Urna velit, et orci pretium lacus, egestas arcu varius. Eget viverra sed arcu ac gravida convallis aliquet. Tortor turpis proin vestibulum massa orci, interdum et pharetra, pellentesque. Convallis habitasse in dui rutrum nibh amet lectus laoreet.",
 };
 
+const resourceWorkData = [
+  {
+    id: 0,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 1,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 2,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 3,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "#E-commerce Solution",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+];
+
+const singleResourceProblemData = [
+  {
+    id: 0,
+    title: "Who",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor amet, habitasse praesent pharetra urna posuere sit pulvinar volutpat. Vel pharetra cursus non non, purus scelerisque etiam.",
+    img: "/images/resources/single/icon_0.svg",
+    type1: "Persona",
+    type2: "Empathy Map",
+  },
+  {
+    id: 1,
+    title: "When",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor amet, habitasse praesent pharetra urna posuere sit pulvinar volutpat. Vel pharetra cursus non non, purus scelerisque etiam.",
+    img: "/images/resources/single/icon_1.svg",
+    type1: "Persona",
+    type2: "Empathy Map",
+  },
+  {
+    id: 2,
+    title: "Where",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor amet, habitasse praesent pharetra urna posuere sit pulvinar volutpat. Vel pharetra cursus non non, purus scelerisque etiam.",
+    img: "/images/resources/single/icon_2.svg",
+    type1: "Persona",
+    type2: "Empathy Map",
+  },
+  {
+    id: 3,
+    title: "Why",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Porttitor amet, habitasse praesent pharetra urna posuere sit pulvinar volutpat. Vel pharetra cursus non non, purus scelerisque etiam.",
+    img: "/images/resources/single/icon_3.svg",
+    type1: "Persona",
+    type2: "Empathy Map",
+  },
+];
+
 export {
+  singleResourceBannerData,
   resourcesData,
   resourceAppData,
   resourceServiceData,
   resourceSolutionData,
+  resourceWorkData,
+  singleResourceProblemData,
 };

@@ -1,11 +1,12 @@
-import ServiceBlogs from "../components/services/ServiceBlogs";
 import ServiceFeatures from "../components/services/ServiceFeatures";
 import ServiceITServices from "../components/services/ServiceITServices";
 import ServiceResources from "../components/services/ServiceResources";
 import ServiceTimeline from "../components/services/ServiceTimeline";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
+import BlogLayout from "../components/shared/BlogLayout";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
+import { serviceBlogsData } from "../public/data/servicesData";
 
 const Services = () => {
   return (
@@ -31,10 +32,14 @@ const Services = () => {
       <ServiceTimeline />
 
       {/* resources section  */}
-      <ServiceResources />
+      {/* <ServiceResources /> */}
 
       {/* blogs section  */}
-      <ServiceBlogs />
+      <BlogLayout data={serviceBlogsData} type="Resources">
+        Read Our
+        <TextGradient text=" Latest " />
+        Tips & Tricks
+      </BlogLayout>
     </BasicLayout>
   );
 };

@@ -1,11 +1,7 @@
 import Image from "next/image";
 
+import { singleResourceBannerData } from "../../../public/data/resourcesData";
 import { TextGradient } from "../../shared/SharedTextgroups";
-
-const bannerData = [
-  { id: 0, title: "Duration", subTitle: "Science 2022" },
-  { id: 0, title: "Area", subTitle: "Product Design" },
-];
 
 const SingleResourceBanner = () => {
   return (
@@ -42,7 +38,7 @@ const SingleResourceBanner = () => {
             pharetra, massa.
           </p>
           <div className="flex gap-16">
-            {bannerData.map(({ id, title, subTitle }) => {
+            {singleResourceBannerData.map(({ id, title, subTitle }) => {
               return (
                 <div key={id}>
                   <p className="text-gray-800 font-bold mb-1 text-sm 2xl:text-base">
