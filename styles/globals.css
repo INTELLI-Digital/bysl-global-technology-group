@@ -162,6 +162,12 @@ a {
     margin: auto !important;
   }
 }
+@media (min-width: 2000px) {
+  .resource-banner-box {
+    max-width: 1320px;
+    margin: auto !important;
+  }
+}
 
 
 /* .custom-gap */

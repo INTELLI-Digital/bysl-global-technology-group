@@ -8,8 +8,8 @@ const SingleResourceOverview = () => {
 
   return (
     <div className="box py-10 xl:py-16">
-      <div className="h-max w-full lg:bg-[url('/images/resources/single/single_resource_overview_bg.svg')] bg-cover bg-center bg-no-repeat">
-        <div className="backdrop-blur-sm bg-gradient-to-b from-[#F2E9F1] to-[#F2F4F9] lg:bg-gray-300/5 rounded-[25px] xl:rounded-[55px] p-4 sm:p-8 md:p-12 lg:p-16 xl:px-28 xl:py-20">
+      <div className="h-max w-full bg-[url('/images/resources/single/single_resource_overview_bg.svg')] bg-cover bg-center bg-no-repeat">
+        <div className="backdrop-blur-sm bg-gray-300/5 rounded-[25px] xl:rounded-[55px] p-4 sm:p-8 md:p-12 lg:p-16 xl:px-28 xl:py-20">
           <p className="break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[48px] font-black text-gray-800 md:text-start text-center">
             Overview
           </p>
@@ -46,14 +46,19 @@ const SingleResourceOverview = () => {
               Mattis euismod imperdiet dictum pellentesque facilisi ultricies.
               Tincidunt eget duis tellus iaculis. Arcu metus velit nisl aliquam
               mauris in donec. Rhoncus in dolor dignissim faucibus. Molestie id
-              urna, mi placerat praesent gravida nunc. Enim sit at quis massa
-              sodales bibendum lobortis. Porta est ullamcorper amet varius leo
-              pellentesque laoreet. Adipiscing nulla consequat quis arcu turpis
-              eleifend. Nunc vel enim scelerisque tortor, maecenas amet,
-              hendrerit turpis. Sed tristique facilisi eu lacus velit dis
-              aliquam imperdiet. Iaculis orci quam scelerisque porttitor neque,
-              nec congue sit. Integer consequat massa est platea suscipit.
-              Lectus massa in tellus nibh vitae. Dui euismod sed tortor auctor.
+              urna, mi placerat praesent gravida nunc.
+              <br />
+              <br />
+              Enim sit at quis massa sodales bibendum lobortis. Porta est
+              ullamcorper amet varius leo pellentesque laoreet. Adipiscing nulla
+              consequat quis arcu turpis eleifend. Nunc vel enim scelerisque
+              tortor, maecenas amet, hendrerit turpis. Sed tristique facilisi eu
+              lacus velit dis aliquam imperdiet. Iaculis orci quam scelerisque
+              porttitor neque, nec congue sit. Integer consequat massa est
+              platea suscipit. Lectus massa in tellus nibh vitae. Dui euismod
+              sed tortor auctor.
+              <br />
+              <br />
               Eros, sapien diam nulla mattis hac fusce tristique. Sagittis,
               rutrum pellentesque vulputate elementum tristique curabitur nulla.
               Ornare laoreet cursus neque, in. Turpis et morbi orci, cursus non.
@@ -66,3 +71,4 @@ const SingleResourceOverview = () => {
 };
 
 export default SingleResourceOverview;
+// bg-gradient-to-b from-[#F2E9F1] to-[#F2F4F9]

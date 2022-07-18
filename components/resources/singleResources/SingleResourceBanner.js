@@ -5,7 +5,7 @@ import { TextGradient } from "../../shared/SharedTextgroups";
 
 const SingleResourceBanner = () => {
   return (
-    <div className="h-max 3xl:h-[90vh] w-full bg-[url('/images/resources/single/single_resource_banner_small.svg')] md:bg-[url('/images/resources/single/single_resource_banner.svg')] bg-cover bg-center bg-no-repeat">
+    <div className="h-max max-h-[760px] w-full bg-[url('/images/resources/single/single_resource_banner_small.svg')] md:bg-[url('/images/resources/single/single_resource_banner.svg')] bg-cover bg-center bg-no-repeat">
       <div className="box md:flex gap-6 py-10 xl:py-16">
         <div className="md:w-1/2 md:order-2 w-full mx-auto">
           <Image
