@@ -1,11 +1,13 @@
+import { getPath } from "../../utils/paths";
 import OverviewCard from "./OverviewCard";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview4Items = (props) => {
   const { data, children, large, type } = props;
+  const webPath = getPath("/web-technologies");
 
   return (
-    <div className="py-10 xl:py-16">
+    <div className={`${webPath ? "pt-10 xl:pt-16" : "py-10 xl:py-16"}`}>
       {type && <SectionTitleType title={type} />}
       {children && (
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>

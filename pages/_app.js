@@ -1,5 +1,5 @@
 import "../styles/globals.css";
-import "../styles/culture.css";
+import "../styles/purpose.css";
 
 // important imports for swiper slider
 import "swiper/css";

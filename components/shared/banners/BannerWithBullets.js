@@ -8,12 +8,10 @@ const BannerWithBullets = (props) => {
 
   return (
     <div
-      className={`lg:flex gap-6
+      className={`lg:flex gap-6 ${reversed && "lg:flex-row-reverse"}
       ${group ? "pb-20 xl:pb-16" : "py-10 xl:py-16"}`}
     >
-      <div
-        className={`lg:w-[55%] lg:pt-10 order-1 ${reversed && "lg:order-2"}`}
-      >
+      <div className="lg:w-[55%] lg:pt-10">
         <TechnologiesSectionTitle start={true}>
           {children ? children : title}
         </TechnologiesSectionTitle>
@@ -34,11 +32,7 @@ const BannerWithBullets = (props) => {
           ))}
         </div>
       </div>
-      <div
-        className={`relative lg:w-[45%] mx-auto h-48 xs:h-64 sm:h-80 lg:h-[400px] mt-5 lg:mt-0 order-2 ${
-          reversed && "lg:order-1"
-        }`}
-      >
+      <div className="relative lg:w-[45%] mx-auto h-48 xs:h-64 sm:h-80 lg:h-[400px] mt-5 lg:mt-0">
         <Image src={img} layout="fill" alt="" />
       </div>
     </div>

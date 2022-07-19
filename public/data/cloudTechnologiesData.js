@@ -4,7 +4,7 @@ const cloudServicesData = [
     title: "PaaS",
     title2: "Platform as a Service",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Scale applications at a low-code, flexible & hyperscale environment with built-in configurations ",
     img: "/images/technologies/cloud/services/services_paas.svg",
   },
   {
@@ -12,7 +12,7 @@ const cloudServicesData = [
     title: "IaaS",
     title2: "Infrastructure as a Service",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Merging system architecture with improved operational environment & security through cloud-based infrastructure",
     img: "/images/technologies/cloud/services/services_iaas.svg",
   },
   {
@@ -20,7 +20,7 @@ const cloudServicesData = [
     title: "SaaS",
     title2: "Software as a Service",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Well-designed subscription model, dynamic integration, intuitive UI, high scalability, timely updates, & secure environment",
     img: "/images/technologies/cloud/services/services_saas.svg",
   },
 ];
@@ -30,58 +30,56 @@ const cloudFeaturesData = [
     id: 0,
     title: "Onclick Deploy",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Remove deploy dependencies, simplify DevOps operations utilizing virtualized infrastructure for faster deployment of APIs with greater control over hosting",
     img: "/images/technologies/cloud/features/cloud_features_0.svg",
   },
   {
     id: 1,
     title: "Powerful API",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Propel digital transformation of enterprises by connecting with extended ecosystem of business applications through advanced API integration",
     img: "/images/technologies/cloud/features/cloud_features_1.svg",
   },
   {
     id: 2,
     title: "Access Control",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Network-based access control allowing users to manage control over access to applications and database networks",
     img: "/images/technologies/cloud/features/cloud_features_2.svg",
   },
   {
     id: 3,
     title: "cPanel Control",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "From creating sub domains, database, file manager to data backup & recovery, have full control over web hosting through powerful yet  simplified tools  ",
     img: "/images/technologies/cloud/features/cloud_features_3.svg",
   },
   {
     id: 4,
     title: "Low Down Time",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Advanced web-based console allowing zero loss of connectivity to your live services during any kind of troubleshoot or upgrade",
     img: "/images/technologies/cloud/features/cloud_features_4.svg",
   },
   {
     id: 5,
     title: "Domain Privacy",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+      "Advanced encryption, identification & management of sensitive data &  access, ML-integrated malware protection, strict protocols for cloud environment ",
     img: "/images/technologies/cloud/features/cloud_features_5.svg",
   },
 ];
 
 const cloudSupportData = {
-  title: "We lead & support our customer’s ",
-  colored: "cloud",
   subTitle:
-    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.",
+    "From system backups to security audits, timely support and 3rd party services, we take care of the needs of our customers real-time.   ",
   features: [
-    "Boost SEO ranking",
-    "Social Sharing",
-    "Marketing",
-    "Retention",
-    "Visual Reviews",
-    "Reviews Generation",
+    "Full system backups",
+    "Security audits",
+    "Suspicious activity report",
+    "Documentaion of virtual console",
+    "Support during working hours",
+    "Deploy 3rd party services",
   ],
   img: "/images/technologies/cloud/cloud_support.svg",
 };

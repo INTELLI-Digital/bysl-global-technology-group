@@ -13,12 +13,17 @@ const ITServices = () => {
   const [service, setService] = useState(0);
   const [done, setDone] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  // const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState(0);
 
+  // function for accordion handle
+  const handleOpen = (value) => {
+    setOpen(open === value ? 0 : value);
+  };
+
+  // function for tab handle
   const handleClick = (id) => {
     setService(id);
     setItem(id);
-    // setOpen(service);
     setIsOpen(!isOpen);
   };
 
@@ -58,33 +63,30 @@ const ITServices = () => {
               return (
                 <div key={id}>
                   <div
-                    onClick={() => handleClick(id)}
+                    onClick={() => handleOpen(id)}
                     className={`py-3 rounded-[10px] hover:cursor-pointer w-full ${
-                      service === id && !isOpen
+                      open === id
                         ? "bg-gradient-to-r from-blue-900 to-blue-700"
                         : "bg-blue-300"
-                    }  `}
+                    }`}
                   >
                     <div
                       className={`flex items-center w-max ${
-                        service === id && !isOpen ? "mx-auto pl-0" : "pl-5"
+                        open === id ? "mx-auto pl-0" : "pl-5"
                       }`}
                     >
                       <Image src={img} height={20} width={20} alt="" />
                       <p
                         className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
-                          service === id && !isOpen
-                            ? "text-white"
-                            : "text-gray-800"
+                          open === id ? "text-white" : "text-gray-800"
                         } `}
                       >
                         {title}
                       </p>
                     </div>
                   </div>
-                  {service === id && !isOpen && (
+                  {open === id && (
                     <div className=" bg-white p-5 rounded-[10px] shadow-lg shadow-gray-200 mt-4">
-                      {/* <div className="hidden bg-white p-5 rounded-[10px] shadow-lg shadow-gray-200 mt-4"> */}
                       {serviceDetails.filter((item, i) => i === service)}
                     </div>
                   )}

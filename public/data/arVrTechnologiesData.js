@@ -4,23 +4,23 @@ const arVrFeaturesData = {
   features: [
     {
       id: 0,
-      title: "Interaction",
+      title: "Experience",
       subTitle:
-        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+        "Adding dimensions to the ways of human interaction stretching imagination to the limit.",
       img: "/images/technologies/ar_vr/features/ar_vr_features_icon_0.svg",
     },
     {
       id: 1,
-      title: "Interaction",
+      title: "Innovation",
       subTitle:
-        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+        "Seeing the world in the new light, reimagine and recreate it using cutting edge technologies",
       img: "/images/technologies/ar_vr/features/ar_vr_features_icon_1.svg",
     },
     {
       id: 2,
-      title: "Interaction",
+      title: "Creativity",
       subTitle:
-        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+        "Lifting the curtain between the possible and the impossible with the power of infinite human potential.",
       img: "/images/technologies/ar_vr/features/ar_vr_features_icon_2.svg",
     },
   ],

@@ -27,7 +27,7 @@ const CompanyLocations = () => {
               location === i
                 ? "text-white bg-gradient-to-r from-blue-900 to-blue-700 rounded-[5px]"
                 : "contact-us-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
-            } w-28 xxs:w-36 h-max text-center text-xs xxs:text-sm lg:text-base font-semibold py-2 2xl:py-[12.5px]  hover:cursor-pointer`}
+            } w-28 xxs:w-36 h-max text-center text-xs xs:text-sm font-semibold py-2 2xl:py-[12.5px]  hover:cursor-pointer`}
           >
             {item}
           </div>

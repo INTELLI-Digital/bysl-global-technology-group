@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { getPath } from "../../utils/paths";
 
 const CompanyInfoCard = (props) => {
@@ -25,7 +26,7 @@ const CompanyInfoCard = (props) => {
     >
       <div
         className={`${culturePath && "h-full"}  ${
-          purposePath && id === 0 && "culture-padding111"
+          purposePath && id === 0 && "purpose-padding"
         } bg-blue-50 rounded-[20px] p-5 xl:p-6`}
       >
         <div

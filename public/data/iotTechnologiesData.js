@@ -2,19 +2,19 @@ const iotServicesData = [
   {
     id: 0,
     title: "Smart Product",
-    subTitle: "Research your  idea and gather requisition ",
+    subTitle: "Versatile sensor-based & network-based operations of interconnected devices",
     img: "/images/technologies/iot/services/iot_services_icon_0.svg",
   },
   {
     id: 1,
     title: "Software",
-    subTitle: "Research your  idea and gather requisition ",
+    subTitle: "Ushering a paradigm shift in IoT, with interconnected systems through advanced apps",
     img: "/images/technologies/iot/services/iot_services_icon_1.svg",
   },
   {
     id: 2,
     title: "Connection",
-    subTitle: "Research your  idea and gather requisition ",
+    subTitle: " Connecting homes, offices and cities through seamlessly connected applications ",
     img: "/images/technologies/iot/services/iot_services_icon_2.svg",
   },
 ];

@@ -14,16 +14,16 @@ const SingleResourceOverview = () => {
             Overview
           </p>
           <div className="flex flex-col lg:flex-row-reverse gap-7 lg:gap-32">
-            <div className="flex lg:flex-col flex-wrap justify-items-center gap-y-4 gap-x-16 lg:gap-y-16  mt-12 lg:mt-0">
-              <div>
+            <div className="flex lg:flex-col flex-wrap justify-between lg:justify-start gap-6 xl:gap-y-16 mt-12 lg:mt-0">
+              <div className="w-max">
                 <OverviewInfoTitle title="Role" />
                 <OverviewInfoDetails details="Product designer, product strategist" />
               </div>
-              <div>
+              <div className="w-max">
                 <OverviewInfoTitle title="Duration" />
                 <OverviewInfoDetails details="12 Weeks" />
               </div>
-              <div>
+              <div className="w-max xxs:mx-auto lg:mx-0">
                 <OverviewInfoTitle title="Outcomes" />
                 <div className="flex gap-4">
                   {["Mobile App", "Branding"].map((item, i) => (

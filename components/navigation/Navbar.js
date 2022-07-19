@@ -4,27 +4,30 @@ import { useEffect, useState } from "react";
 
 import { navbars } from "../../public/data/navbarData";
 import { getPath } from "../../utils/paths";
+import { getState, setState } from "../../utils/sessionStorage";
 import Button from "../shared/buttons/Button";
 
 const Navbar = () => {
-  const [colorChange, setColorchange] = useState(
-    getPath("/") && typeof window !== "undefined" && window.scrollY >= 80
-      ? true
-      : false
-  );
+  const [colorChange, setColorchange] = useState(false);
+  const navState = getState();
   const arvrPath = getPath("/ar-vr-technologies");
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
+      setState(true);
       setColorchange(true);
     } else {
+      setState(false);
       setColorchange(false);
     }
   };
 
   useEffect(() => {
+    setColorchange(
+      typeof window !== "undefined" && window.scrollY >= 80 ? true : false
+    );
     window.addEventListener("scroll", changeNavbarColor);
-  }, [colorChange, arvrPath]);
+  }, [colorChange, arvrPath, navState]);
 
   return (
     <div

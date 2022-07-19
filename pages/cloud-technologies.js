@@ -18,22 +18,21 @@ const CloudTechnologies = () => {
       <PrimaryBanner
         title="Cloud Technologies"
         img="cloud_technologies"
-        sub="BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization."
+        sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
       >
         Start Your&nbsp;
         <TextGradient text="Cloud Journey" />
-        &nbsp;Here
       </PrimaryBanner>
 
       {/* services section  */}
       <TriangleCardBanner
-        type="Services"
+        type="Platforms"
         data={cloudServicesData}
         img="/images/technologies/cloud/services/services.svg"
       >
-        Best soluation with required
-        <br />
-        <TextGradient text="Services" />
+        Create new opportunities <br className="hidden xs:block" /> to make
+        <TextGradient text=" innovation " />
+        more <TextGradient text=" accessible" />
       </TriangleCardBanner>
 
       {/* features section  */}
@@ -44,7 +43,11 @@ const CloudTechnologies = () => {
       </IconCardGroup3>
 
       {/* support section  */}
-      <BannerWithBullets data={cloudSupportData} reversed={true} />
+      <BannerWithBullets data={cloudSupportData} reversed={true}>
+        We Lead & Support our
+        <br className="hidden xs:block" /> Customer&apos;s
+        <TextGradient text=" Cloud" />
+      </BannerWithBullets>
     </BasicLayout>
   );
 };

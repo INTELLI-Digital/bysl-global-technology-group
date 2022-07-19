@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const FeaturesCard = ({ data }) => {
   return (
-    <div className="flex lg:block mb-12 lg:mb-0 gap-4 mt-12 3xl:mt-16 w-full">
+    <div className="flex lg:block mb-12 lg:mb-0 gap-4 mt-10 lg:mt-8 w-full">
       {data.map(({ id, title, subTitle, img }) => {
         return (
           <div
@@ -23,7 +23,7 @@ const FeaturesCard = ({ data }) => {
                 {title}
               </p>
               {subTitle && (
-                <p className="text-gray-300 hidden lg:block text-sm 2xl:text-base mt-2 2xl:mt-5">
+                <p className="text-gray-300 hidden lg:block text-sm 2xl:text-base mt-2">
                   {subTitle}
                 </p>
               )}

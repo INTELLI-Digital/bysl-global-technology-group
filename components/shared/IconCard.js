@@ -9,7 +9,8 @@ const IconCard = (props) => {
         return (
           <div
             key={id}
-            className={`group gradient-bg p-5 ${!subTitle && "sm:py-10"}`}
+            // className={`group gradient-bg p-5 ${!subTitle && "sm:py-10"}`}
+            className="group gradient-bg p-5"
           >
             <div
               className={`h-10 w-10 ${

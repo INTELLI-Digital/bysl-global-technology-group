@@ -21,19 +21,17 @@ const IotTechnologies = () => {
         <PrimaryBanner
           title="IOT Technologies"
           img="iot_technologies"
-          sub="A smart house or office with advance features that you can control a mobile application.
-        And save the power consumption at your place"
+          sub="Next-generation IOT technologies using data, sensors and connectivity  "
         >
-          Control your <br />
-          <TextGradient text="Home" />
-          &nbsp;or <TextGradient text="Office" />
+          <TextGradient text="Interconnectivity " /> <br />
+          of smart devices
         </PrimaryBanner>
 
         {/* services section  */}
-        <Overview3Items data={iotServicesData} type="Services">
-          Incredible <TextGradient text="Service" />,
+        <Overview3Items data={iotServicesData} type="Platforms">
+          Joining the IoT revolution
           <br />
-          Incredible <TextGradient text="right" />
+          with smart <TextGradient text=" connectivity" />
         </Overview3Items>
       </div>
 
@@ -41,8 +39,9 @@ const IotTechnologies = () => {
       <div className="bg-blue-300">
         <div className="box">
           <TextBanner data={iotAppDevelopmentBannerData}>
-            App <TextGradient text="Development" /> for Connected
-            <TextGradient text=" Devices" />
+            Catering to the most demanding
+            <br className="hidden xxs:block lg:hidden xl:block" />
+            <TextGradient text=" IoT software" /> needs
           </TextBanner>
         </div>
       </div>
@@ -50,21 +49,21 @@ const IotTechnologies = () => {
       <div className="box">
         {/* solutions section  */}
         <TriangleCardBanner
-          type="Solutions"
+          type="Applications"
           data={iotSolutionsData}
           img="/images/technologies/iot/solutions/iot_solutions_banner.svg"
           reversed={true}
           padding={true}
         >
-          Smart Solutions in Full
+          Full system <TextGradient text=" design " /> and
           <br />
-          <TextGradient text="System Design." />
+          <TextGradient text="development" />
         </TriangleCardBanner>
 
         {/* innovative solution section  */}
-        <BannerWithBullets data={iotSupportData}>
+        <BannerWithBullets data={iotSupportData} reversed={true}>
           We Create innovative solution that works
-          <TextGradient text=" Pragmatically" />
+          <TextGradient text=" Pragmatically" />.
         </BannerWithBullets>
       </div>
     </BasicLayout>

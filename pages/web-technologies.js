@@ -20,38 +20,38 @@ const WebTechnologies = () => {
       <PrimaryBanner
         title="Web Technologies"
         img="web_technologies"
-        sub="BYSL Global Technology Group stands on four core values regarded as
-            the fundamental ideological constants to govern the organization."
+        sub="Unlock the true potential of your business using cutting-edge web technologies. "
       >
-        Powerful solutions for Your&nbsp;
-        <TextGradient text="Business" />
+        <TextGradient text="Powerful " />
+        web solutions to scale exponentially
       </PrimaryBanner>
 
       {/* business values section  */}
       <RowSpanGrid data={businessValuesData}>
-        Best Web Technologies Grow <br />
-        <TextGradient text="Business Values" />
+        Flexible, secure & dynamic
+        <br />
+        <TextGradient text=" web soloutions " />
       </RowSpanGrid>
 
       {/* services section  */}
       <TextBanner data={webServicesBannerData}>
-        Best soluation with required
-        <TextGradient text=" Services" />
+        Create impact <TextGradient text=" unlocking " /> the
+        <TextGradient text=" power " /> of web technologies
       </TextBanner>
 
       {/* process section  */}
-      <Overview4Items type="Process" data={webProcessData} large={true}>
-        Good <TextGradient text="Process " />
-        Drives
-        <br />
-        Good <TextGradient text=" Results" />
+      <Overview4Items
+        type="Continuous Development"
+        data={webProcessData}
+        large={true}
+      >
+        A never-ending <TextGradient text=" persuit" />
       </Overview4Items>
 
       {/* features section  */}
       <FeaturedBanner data={webFeaturesData}>
-        Powerful Solutions for Your
-        <TextGradient text=" Business " />
-        Needs
+        Advanced features serving
+        <TextGradient text=" specific busniess needs " />
       </FeaturedBanner>
     </BasicLayout>
   );

@@ -43,7 +43,7 @@ const TextBanner = (props) => {
   const { type, subTitle, img } = data;
 
   return (
-    <div className="py-10 xl:py-16 lg:flex justify-between gap-6">
+    <div className={`py-10 xl:py-16 lg:flex justify-between gap-6 w-full`}>
       <div
         className={`lg:w-1/2 3xl:pt-10 pb-10 lg:pb-0 ${
           reversed && "lg:order-2"
@@ -59,7 +59,7 @@ const TextBanner = (props) => {
           {subTitle}
         </p>
       </div>
-      <div className={`lg:w-1/2 mx-auto  ${reversed && "lg:order-1"}`}>
+      <div className={`flex justify-center lg:w-1/2 mx-auto  ${reversed && "lg:order-1"}`}>
         <Image src={img} height={409} width={648} alt="" />
       </div>
     </div>

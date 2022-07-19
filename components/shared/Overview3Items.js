@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview3Items = (props) => {
@@ -11,7 +12,7 @@ const Overview3Items = (props) => {
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       )}
       <div
-        className={`w-full flex flex-wrap md:flex-nowrap justify-evenly gap-6 ${
+        className={`w-full lg:w-4/5 mx-auto flex flex-wrap md:flex-nowrap justify-evenly gap-6 ${
           children && "mt-10 md:mt-16 xl:mt-20 "
         }`}
       >
@@ -19,7 +20,7 @@ const Overview3Items = (props) => {
           return (
             <div
               key={id}
-              className="p-3 xl:p-5 3xl:p-10 text-center max-w-[100px] xxs:max-w-none"
+              className="p-3 xl:p-5 text-center max-w-[100px] xxs:max-w-none lg:w-max"
             >
               <div className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16 relative">
                 <Image src={img} layout="fill" alt="" />

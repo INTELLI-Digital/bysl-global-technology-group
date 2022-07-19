@@ -20,14 +20,13 @@ const ARVRTechnologies = () => {
 
       <div className="box">
         {/* services section  */}
-        <IconCardGroup4 data={arVrServicesData} type="Services">
-          Discover The <TextGradient text="Reality" />
-          <br />
-          As You Like
+        <IconCardGroup4 data={arVrServicesData} type="Applications">
+          Recreate <TextGradient text=" reality " /> the way you like it
         </IconCardGroup4>
 
         {/* Own World section  */}
         <TriangleCardBanner
+          type="Research & Development"
           data={arVrWorldData}
           img="/images/technologies/ar_vr/ar_vr_services.gif"
           black={true}
@@ -40,9 +39,7 @@ const ARVRTechnologies = () => {
 
         {/* features section  */}
         <FeaturedBanner data={arVrFeaturesData}>
-          VR studio is into your
-          <br />
-          <TextGradient text="Service" />
+          <TextGradient text="Interactive " /> VR Studio
         </FeaturedBanner>
 
         {/* How does it works */}

@@ -4,17 +4,17 @@ const businessValuesData = [
     title: "Advanced analytics",
     img: "/images/technologies/web/business_values/icon_0.svg",
     subTitle:
-      "Synergistically pursue accurate initiatives without economically sound imperatives.",
-    subTitle2:
-      "Professionally architect unique process improvements via optimal.",
+      "Integrated advanced anlytics engine to create insight-driven results.",
+    // subTitle2:
+    //   "Professionally architect unique process improvements via optimal.",
     title2: "Included with",
     benefits: [
-      "High-converting",
-      "Personal branding",
-      "Modernized prospecting",
-      "Clean and modern",
-      "Fastes loading rate",
-      "Quick online support",
+      "AI based insights",
+      "Event driven data model",
+      "Custom filter",
+      "Multiple reporting tools",
+      "Prediction capabilities ",
+      "Third party integration",
       "Real time analytics",
     ],
   },
@@ -23,28 +23,26 @@ const businessValuesData = [
     title: "Automated Reports",
     img: "/images/technologies/web/business_values/icon_1.svg",
     subTitle:
-      "Synergistically pursue accurate initiatives without economically imperatives.",
+      "Flexible & custom reporting opportunity for fast & accurate decision making",
   },
   {
     id: 2,
-    title: "User Journey Flow",
+    title: "User Journey",
     img: "/images/technologies/web/business_values/icon_2.svg",
     subTitle:
-      "Quickly productize prospective value before collaborative benefits.",
+      "User friendly & highly intuitive user flow for maximum productivity",
   },
   {
     id: 3,
-    title: "Compare A/B Testing",
+    title: "Support Center",
     img: "/images/technologies/web/business_values/icon_3.svg",
-    subTitle:
-      "Credibly disintermediate functional processes for team driven action.",
+    subTitle: "24/7 end user help-desk",
   },
   {
     id: 4,
-    title: "Easy Customization",
+    title: "Dynamic Configuration",
     img: "/images/technologies/web/business_values/icon_4.svg",
-    subTitle:
-      "Dynamically develop ubiquitous opportunities whereas relationships.",
+    subTitle: "Dynamic customization option creating  greater opportunities",
   },
 ];
 
@@ -52,28 +50,28 @@ const webProcessData = [
   {
     id: 0,
     title: "Research",
-    subTitle: "Research your  idea and gather requisition",
+    subTitle: "Continuous application of top-tier R&D practices ",
     img: "/images/technologies/web/process/process_icon_0.svg",
     img2: "/images/technologies/web/process/process_icon_0.svg",
   },
   {
     id: 1,
     title: "Designing",
-    subTitle: "Research your  idea and gather requisition",
+    subTitle: "Innovative, dynamic, functioal &  user-friendly",
     img: "/images/technologies/web/process/process_icon_1.svg",
     img2: "/images/technologies/web/process/process_icon_0.svg",
   },
   {
     id: 2,
     title: "Building",
-    subTitle: "Research your  idea and gather requisition",
+    subTitle: "Combining advanced technologies with the right skill set ",
     img: "/images/technologies/web/process/process_icon_2.svg",
     img2: "/images/technologies/web/process/process_icon_0.svg",
   },
   {
     id: 3,
     title: "Deliver",
-    subTitle: "Research your  idea and gather requisition",
+    subTitle: "Convenient, timely & consistent",
     img: "/images/technologies/web/process/process_icon_3.svg",
     img2: "/images/technologies/web/process/process_icon_0.svg",
   },
@@ -82,31 +80,31 @@ const webProcessData = [
 const webFeaturesData = {
   type: "Features",
   subTitle:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+    "Get the right features designed and developed to serve precise needs. ",
   img: "/images/technologies/web/features/web_features.svg",
   features: [
     {
       id: 0,
-      title: "Pixel Perfect Design",
+      title: "Productivity",
       subTitle:
-        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-      img: "/images/technologies/web/process/process_icon_0.svg",
+        "Maximize productivity with well-researched, user-centric, smart features engineered to maximize productivity",
+      img: "/images/technologies/web/features/web_features_icon_0.svg",
     },
     {
       id: 1,
-      title: "Unique & Minimal Design",
+      title: "Security",
       subTitle:
-        "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-      img: "/images/technologies/web/process/process_icon_1.svg",
+        "From threat modeling, implementing secure coding cryptography & design architecture to meticulous app vulnerability testings, strict security is ensured throughout ",
+      img: "/images/technologies/web/features/web_features_icon_1.svg",
     },
   ],
 };
 
 const webServicesBannerData = {
-  type: "Services",
+  type: "Applications",
   img: "/images/technologies/web/web_services.svg",
   subTitle:
-    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has. ",
+    "Flexible, cost-saving & dynamic web applications utilizing integrated system architecture.  ",
 };
 
 export {

@@ -1,6 +1,6 @@
 const ARVRBanner = () => {
   return (
-    <div className="pt-14 lg:pt-0 relative h-[480px] lg:h-screen">
+    <div className="pt-14 lg:pt-0 mb-10 lg:mb-0 relative h-[480px] lg:h-screen">
       <video
         autoPlay
         muted
@@ -23,8 +23,8 @@ const ARVRBanner = () => {
             We Craft Virtual & Augmented Reality Experience
           </p>
           <p className="text-sm xl:text-base w-5/6 sm:w-4/6 md:w-1/2 xl:w-1/3 2xl:w-[30%] mx-auto mt-5 xl:mt-6">
-            A smart house or office with advance features that you can control a
-            mobile application. And save the power consumption at your place
+            Committing to things bigger than life, aspiring to recreate
+            connections choosing paths less travelled by.
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 const PrimaryBanner = ({ title, sub, img, children }) => {
   return (
     <div className="py-10 xl:py-16 md:flex justify-between gap-6 max-h-max">
-      <div className="md:w-[55%] my-10 md:my-0 md:pt-10">
+      <div className="md:w-[55%] mb-10 md:my-0 md:pt-10">
         <div className="text-center md:text-start">
           <p className="text-sm md:text-base xl:text-lg font-bold">
             <TextGradient text={title} />

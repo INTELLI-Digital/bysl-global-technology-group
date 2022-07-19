@@ -60,62 +60,62 @@ const serviceWhyChooseUsData = [
 
 const individualServiceITServicesData = [
   {
-    id: 0,
+    id: 1,
     title: "BPO",
     img: "/images/services/individual_service/it_services/icon_0.svg",
   },
   {
-    id: 1,
+    id: 2,
     title: "UI/UX Design",
     img: "/images/services/individual_service/it_services/icon_1.svg",
   },
   {
-    id: 2,
+    id: 3,
     title: "Web Development",
     img: "/images/services/individual_service/it_services/icon_2.svg",
   },
   {
-    id: 3,
+    id: 4,
     title: "App Development",
     img: "/images/services/individual_service/it_services/icon_3.svg",
   },
   {
-    id: 4,
+    id: 5,
     title: "E-Commerce",
     img: "/images/services/individual_service/it_services/icon_4.svg",
   },
   {
-    id: 5,
+    id: 6,
     title: "ERP",
     img: "/images/services/individual_service/it_services/icon_5.svg",
   },
   {
-    id: 6,
+    id: 7,
     title: "Fintech",
     img: "/images/services/individual_service/it_services/icon_6.svg",
   },
   {
-    id: 7,
+    id: 8,
     title: "AI & ML",
     img: "/images/services/individual_service/it_services/icon_7.svg",
   },
   {
-    id: 8,
+    id: 9,
     title: "Fulfilment Solutions",
     img: "/images/services/individual_service/it_services/icon_8.svg",
   },
   {
-    id: 9,
+    id: 10,
     title: "Logistics Solutions",
     img: "/images/services/individual_service/it_services/icon_9.svg",
   },
   {
-    id: 10,
+    id: 11,
     title: "Cloud & Cyber Security",
     img: "/images/services/individual_service/it_services/icon_10.svg",
   },
   {
-    id: 11,
+    id: 12,
     title: "Customer Care Solutions",
     img: "/images/services/individual_service/it_services/icon_11.svg",
   },
