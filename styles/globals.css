@@ -28,15 +28,21 @@ a {
   margin: 0 24px;
 }
 
-.border-gradient {
+.border-gradient, .contact-us-border-gradient {
   position: relative;
 }
-.border-gradient::before {
+.border-gradient::before{
+  border-radius: 10px;
+  padding: 2px;
+}
+.contact-us-border-gradient::before{
+  border-radius: 5px;
+  padding: 1px;
+}
+.border-gradient::before, .contact-us-border-gradient::before {
   content: "";
   position: absolute;
   inset: 0;
-  border-radius: 10px;
-  padding: 2px;
   background: linear-gradient(45deg, #00469f, #1e79d6);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;

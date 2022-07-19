@@ -10,7 +10,7 @@ const LandingPageBanner = () => {
           className="h-full w-full"
         />
       </div> */}
-      <div className="h-56 sm:h-72 md:h-80 lg:h-96 2xl:h-[480px] 3xl:h-[676px] w-full relative">
+      <div className="h-56 sm:h-72 md:h-80 lg:h-[85vh] w-full relative">
         <Image src="/images/banners/landing_banner.svg" layout="fill" priority alt="" />
       </div>
     </>

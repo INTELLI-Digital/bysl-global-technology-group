@@ -71,11 +71,11 @@ const navbars = [
       },
     ],
   },
-  {
-    id: 2,
-    title: "Services",
-    link: "/services",
-  },
+  // {
+  //   id: 2,
+  //   title: "Services",
+  //   link: "/services",
+  // },
   {
     id: 3,
     title: "Divisions",
@@ -159,11 +159,11 @@ const navbars = [
       },
     ],
   },
-  {
-    id: 6,
-    title: "Resources",
-    link: "/resources",
-  },
+  // {
+  //   id: 6,
+  //   title: "Resources",
+  //   link: "/resources",
+  // },
 ];
 
 export { navbars };

@@ -62,13 +62,13 @@ const SectionTitleGradient = (props) => {
 };
 
 const SectionTitleType = (props) => {
-  const { title, start } = props;
+  const { title, start, bold } = props;
 
   return (
     <p
       className={`lg:text-xl 3xl:text-2xl text-center text-gray-300 ${
         start && "lg:text-start"
-      }`}
+      } ${bold && "font-semibold"}`}
     >
       {title}
     </p>
