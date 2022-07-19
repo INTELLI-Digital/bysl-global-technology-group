@@ -7,7 +7,7 @@ const BasicLayout = (props) => {
   const { title, children, noMargin } = props;
 
   return (
-    <div className="bg-gray-50">
+    <>
       <PageTitle title={title} />
       <ResponsiveNavbar />
       <div className={`${!noMargin && "box"}`}>{children}</div>
@@ -15,7 +15,7 @@ const BasicLayout = (props) => {
         <CompanySummary />
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
