@@ -25,10 +25,10 @@ const ContactUsFAQ = () => {
       <div className="md:w-3/5 mt-10 md:mt-0">
         {contactUsFAQData.map(({ id, question, answer }) => {
           return (
-            <div className="mt-6 md:mt-7 first:mt-0">
+            <div key={id} className="mt-6 md:mt-7 first:mt-0">
               <Accordion open={open === id} onClick={() => handleOpen(id)}>
-                <div className="flex justify-between">
-                  <p className="text-[#282938] xl:text-xl font-medium cursor-pointer">
+                <div className="flex justify-between cursor-pointer">
+                  <p className="text-[#282938] xl:text-xl font-medium">
                     {question}
                   </p>
                   <AiOutlinePlus

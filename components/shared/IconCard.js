@@ -1,3 +1,4 @@
+import { getPath } from "../../utils/paths";
 import HoverImage from "./HoverImage";
 
 const IconCard = (props) => {
@@ -9,8 +10,7 @@ const IconCard = (props) => {
         return (
           <div
             key={id}
-            // className={`group gradient-bg p-5 ${!subTitle && "sm:py-10"}`}
-            className="group gradient-bg p-5"
+            className={`group gradient-bg p-5 ${getPath("/faq") && "sm:py-10"}`}
           >
             <div
               className={`h-10 w-10 ${

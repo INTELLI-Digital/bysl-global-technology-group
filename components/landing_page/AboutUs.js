@@ -15,8 +15,8 @@ const AboutUs = () => {
       <div className="mx-4 lg:mx-12 2xl:mx-20 mb-6 lg:mb-12 2xl:mb-20">
         <SectionTitleGradient>
           Serve the world with exceptional
-          <br />
-          <TextGradient text="products and services" />
+          <br className="hidden xs:block" />
+          <TextGradient text=" products and services" />
         </SectionTitleGradient>
       </div>
       <div className="grid grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-2 3xl:gap-6">
