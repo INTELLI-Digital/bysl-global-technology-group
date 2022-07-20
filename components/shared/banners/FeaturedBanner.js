@@ -16,7 +16,7 @@ const FeaturedBanner = (props) => {
     <div
       className={`${
         webPath ? "py-10 xl:pb-16" : "py-10 xl:py-16"
-      } lg:flex items-center gap-6`}
+      } lg:flex gap-6`}
     >
       <div className="lg:w-1/2">
         {type && <SectionTitleType title={type} start={true} />}
@@ -30,7 +30,7 @@ const FeaturedBanner = (props) => {
         )}
         <FeaturesCard data={features} />
       </div>
-      <div className="lg:w-1/2 mx-auto">
+      <div className="flex justify-center lg:w-1/2 mx-auto">
         <Image src={img} height={419} width={687} alt="" />
       </div>
     </div>

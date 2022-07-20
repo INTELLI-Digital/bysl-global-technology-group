@@ -43,7 +43,7 @@ const Navbar = () => {
     >
       <div className="box flex justify-between items-center w-full">
         <Link passHref href="/">
-          <div className="relative h-10 w-16 2xl:w-20 hover:cursor-pointer">
+          <div className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
             <Image
               src={
                 arvrPath && !colorChange

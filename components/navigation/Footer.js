@@ -55,7 +55,7 @@ const Footer = () => {
           <br /> We Offer An Opportunity To Grow.
         </p>
         <div className="w-max mx-auto lg:mx-0">
-          <ButtonWhite title="Career" px={76} />
+          <ButtonWhite title="Careers" px={76} />
         </div>
       </>
     );

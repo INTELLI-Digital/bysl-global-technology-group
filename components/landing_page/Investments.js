@@ -8,7 +8,7 @@ import {
 
 const Investments = () => {
   return (
-    <div className="text-center py-16">
+    <div className="text-center py-10 xl:py-16">
       <SectionTitleType title="Investments " />
       <div className="mx-4 lg:mx-12 2xl:mx-20 mb-6 lg:mb-12 2xl:mb-20">
         <SectionTitleGradient>
@@ -17,8 +17,8 @@ const Investments = () => {
           <TextGradient text=" products and services" />
         </SectionTitleGradient>
       </div>
-      <div className="grid grid-cols-2 gap-4 3xl:gap-10">
-        <div className="3xl:h-[610px] rounded-[20px] bg-white pb-8 xl:pb-16 flex flex-col justify-between">
+      <div className="grid grid-cols-2 gap-4 xl:gap-6 3xl:gap-10">
+        <div className="3xl:h-[610px] rounded-[10px] xl:rounded-[20px] bg-white pb-8 xl:pb-16 flex flex-col justify-between">
           <Image
             src="/images/IT_platform.svg"
             alt=""
@@ -29,7 +29,7 @@ const Investments = () => {
             IT platforms
           </p>
         </div>
-        <p className="p-5 3xl:h-[610px] rounded-[20px] bg-gradient-to-tr from-[#D4ACFB] to-[#327EC4] text-white leading-6 md:leading-10 lg:leading-[50px] 2xl:leading-[76px] text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 3xl:text-[64px] font-semibold flex justify-center items-center">
+        <p className="p-5 3xl:h-[610px] rounded-[10px] xl:rounded-[20px] bg-gradient-to-tr from-[#D4ACFB] to-[#327EC4] text-white text-lg sm:text-xl md:text-2xl lg:text-4xl xl:text-5xl 2xl:text-[64px] font-semibold flex justify-center items-center">
           Marketplace platforms
         </p>
       </div>

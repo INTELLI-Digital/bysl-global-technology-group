@@ -8,14 +8,14 @@ const RowSpanGrid = (props) => {
   return (
     <div className="py-10 xl:py-16">
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
-      <div className="mt-6 xl:mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 2xl:gap-6">
+      <div className="mt-6 xl:mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 grid-rows-2 gap-4 2xl:gap-6">
         {data.map(
           ({ id, title, title2, subTitle, subTitle2, img, benefits }) => {
             return (
               <div
                 key={id}
                 className={`xl:text-center ${
-                  id === 0 ? "xl:row-span-2 2xl:pt-10" :"2xl:pt-16"
+                  id === 0 ? "xl:row-span-2 2xl:pt-10" : "2xl:pt-16"
                 } bg-white rounded-[10px] md:rounded-2xl xl:rounded-[20px] p-5 2xl:p-10  border-[1px] border-[#393E50]/10`}
               >
                 <div className="bg-blue-200 h-10 xl:h-12 2xl:h-16 w-10 xl:w-12 2xl:w-16 rounded-full flex items-center justify-center xl:mx-auto">

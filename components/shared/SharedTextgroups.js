@@ -39,7 +39,7 @@ const TechnologiesSectionTitle = (props) => {
 
   return (
     <p
-      className={`break-words text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[40px] font-semibold ${
+      className={`break-words text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-semibold ${
         white ? "text-white" : "text-gray-800"
       } ${start && "lg:text-start"} text-center`}
     >
@@ -52,7 +52,7 @@ const SectionTitleGradient = (props) => {
   const { children, centered } = props;
   return (
     <p
-      className={`break-words text-2xl lg:text-4xl xl:text-5xl 3xl:text-6xl font-semibold text-gray-800 ${
+      className={`break-words text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-800 ${
         centered && "text-center"
       }`}
     >
@@ -66,7 +66,7 @@ const SectionTitleType = (props) => {
 
   return (
     <p
-      className={`lg:text-xl 3xl:text-2xl text-center text-gray-300 ${
+      className={`lg:text-xl xl:text-2xl text-center text-gray-300 ${
         start && "lg:text-start"
       } ${bold && "font-semibold"}`}
     >

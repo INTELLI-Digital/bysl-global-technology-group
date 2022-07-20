@@ -33,11 +33,6 @@ const Slider = ({ size }) => {
                 alt=""
               />
             </div>
-            {/* <img
-              src={`/images/technologies/mobile/slider/mobileTechnologies_slider_${i}.svg`}
-              alt=""
-              className="h-[260px] xl:h-80 w-[220px] mx-auto drop-shadow-3xl"
-            /> */}
           </SwiperSlide>
         );
       })}

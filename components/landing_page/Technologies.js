@@ -6,11 +6,11 @@ import { SectionTitle } from "../shared/SharedTextgroups";
 
 const Technologies = () => {
   return (
-    <>
+    <div className=" py-10 xl:py-16">
       <div className="mb-6 lg:mb-12 2xl:mb-20">
         <SectionTitle title="Our Technologies" />
       </div>
-      <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-10 text-center gap-2 lg:gap-3 xl:gap-4 2xl:gap-5 3xl:gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-10 text-center gap-2 lg:gap-3 xl:gap-4 2xl:gap-5 3xl:gap-6">
         {techData.map(({ id, img, title, link }) => {
           return (
             <Link key={id} passHref href={link}>
@@ -31,18 +31,18 @@ const Technologies = () => {
               } relative`}
               >
                 <div
-                  className={`w-full h-32 lg:h-44 xl:h-52  ${
+                  className={`w-full h-32 lg:h-44 ${
                     id === 2 || id === 3 || id === 4
-                      ? "2xl:h-64"
-                      : "2xl:h-72 3xl:h-96"
+                      ? "xl:h-48 2xl:h-64"
+                      : "xl:h-64 2xl:h-72 3xl:h-96"
                   } object-cover relative`}
                 >
                   <Image src={img} layout="fill" objectFit="cover" alt="" />
                 </div>
                 <p
-                  className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-[40px] font-semibold text-center leading-4 md:leading-5 lg:leading-8 2xl:leading-[48px] absolute py-6 md:py-8 xl:py-14 px-5 xl:px-8 ${
+                  className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-[40px] font-semibold text-center leading-4 md:leading-5 lg:leading-8 2xl:leading-[48px] absolute py-6 md:py-8 xl:py-14 px-2 sm:px-5 xl:px-8 ${
                     id !== 0 && id !== 9 && "text-position-middle"
-                  } ${(id === 0 && "top-0") || (id === 9 && "top-0")} ${
+                  } ${(id === 0 && "top-0") || (id === 9 && "cyber-text-middle sm:top-0")} ${
                     id === 0 &&
                     "whitespace-pre text-start text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 "
                   }`}
@@ -54,7 +54,7 @@ const Technologies = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

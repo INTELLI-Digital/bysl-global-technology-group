@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const SolutionsBanner = () => {
   return (
-    <div className="relative my-8 2xl:my-16 bg-gradient-to-r from-blue-900 to-blue-700 min-h-max 2xl:h-96 3xl:h-[531px] p-5 md:p-7 xl:p-10 3xl:p-16 lg:pl-16 xl:pl-32 text-center text-white rounded-xl lg:rounded-3xl 2xl:rounded-[40px]">
+    <div className="relative my-10 xl:my-16 bg-gradient-to-r from-blue-900 to-blue-700 min-h-max 2xl:h-96 3xl:h-[531px] p-5 md:p-7 xl:p-10 3xl:p-16 lg:pl-16 xl:pl-32 text-center text-white rounded-xl lg:rounded-3xl 2xl:rounded-[40px]">
       <div className="flex flex-col sm:flex-row justify-between sm:gap-4 sm:items-center xl:items-start">
         <div className="sm:w-1/2 text-center sm:text-start xl:mt-8 3xl:mt-16 mb-11 sm:mb-0">
           <p className="text-2xl md:text-3xl xl:text-4xl 2xl:text-5xl 3xl:text-[64px] font-bold mb-5 3xl:mb-6">

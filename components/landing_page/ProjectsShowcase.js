@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ProjectsShowcase = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 3xl:gap-6 py-3 lg:py-8 3xl:py-16">
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 3xl:gap-6 py-10 xl:py-16">
       {[...Array(4)].map((item, i) => (
         <div
           key={i}

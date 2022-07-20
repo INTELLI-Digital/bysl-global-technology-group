@@ -5,8 +5,6 @@ const nextConfig = {
     scrollRestoration: true,
   },
   images: {
-    loader:"akamai",
-    path:"",
     domains: ["localhost", "yourDomainName.com"],
   },
   eslint: {

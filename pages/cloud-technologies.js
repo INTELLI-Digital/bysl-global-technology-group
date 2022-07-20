@@ -21,7 +21,9 @@ const CloudTechnologies = () => {
         sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
       >
         Start Your&nbsp;
-        <TextGradient text="Cloud Journey" />
+        <TextGradient text="Cloud" />
+        <br className="hidden md:block" />
+        <TextGradient text=" Journey" />
       </PrimaryBanner>
 
       {/* services section  */}
