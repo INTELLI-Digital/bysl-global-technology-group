@@ -62,7 +62,7 @@ const Navbar = () => {
                 <button
                   className={`${
                     arvrPath && !colorChange ? "text-white" : "text-gray-500"
-                  } text-sm 3xl:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
+                  } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
                 >
                   <span className="mr-1">
                     {dropdowns ? (

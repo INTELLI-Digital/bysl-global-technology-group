@@ -17,7 +17,7 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
         </div>
       </div>
       <div className="md:w-[45%]">
-        <div className="h-[30vh] md:h-full 2xl:h-[45vh] w-full relative">
+        <div className="h-[40vh] lg:h-[50vh] w-full relative">
           <Image
             src={`/images/banners/${img}_banner.svg`}
             layout="fill"

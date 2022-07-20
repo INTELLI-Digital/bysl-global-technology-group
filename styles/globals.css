@@ -28,6 +28,10 @@ a {
 .box {
   margin: 0 24px;
 }
+/* .box, .resource-box, .resource-banner-box {
+  max-width: 1320px;
+  margin: auto !important;
+} */
 
 .border-gradient, .contact-us-border-gradient {
   position: relative;
@@ -156,26 +160,20 @@ a {
 }
 @media (min-width: 1280px) {
   .box, .resource-box {
-    margin: 0 100px;
+    margin: 0 100px !important;
   }
+  
   .mobileTech .swiper-slide-active .mobileTechImg {
     height: 410px;
     width: 190px;
   }
 }
 @media (min-width: 1440px) {
-  .box, .resource-box {
+  .box, .resource-box, .resource-banner-box {
     max-width: 1320px;
     margin: auto !important;
   }
 }
-@media (min-width: 2000px) {
-  .resource-banner-box {
-    max-width: 1320px;
-    margin: auto !important;
-  }
-}
-
 
 /* .custom-gap */
 @media (min-width: 913px) and (max-width:959px) {
