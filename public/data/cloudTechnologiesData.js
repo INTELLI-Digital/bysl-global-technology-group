@@ -31,42 +31,48 @@ const cloudFeaturesData = [
     title: "Onclick Deploy",
     subTitle:
       "Remove deploy dependencies, simplify DevOps operations utilizing virtualized infrastructure for faster deployment of APIs with greater control over hosting",
-    img: "/images/technologies/cloud/features/cloud_features_0.svg",
+    img: "/images/technologies/cloud/features/icon_0.svg",
+    hoverImg: "/images/technologies/cloud/features/icon_hover_0.svg",
   },
   {
     id: 1,
     title: "Powerful API",
     subTitle:
       "Propel digital transformation of enterprises by connecting with extended ecosystem of business applications through advanced API integration",
-    img: "/images/technologies/cloud/features/cloud_features_1.svg",
+    img: "/images/technologies/cloud/features/icon_1.svg",
+    hoverImg: "/images/technologies/cloud/features/icon_hover_1.svg",
   },
   {
     id: 2,
     title: "Access Control",
     subTitle:
       "Network-based access control allowing users to manage control over access to applications and database networks",
-    img: "/images/technologies/cloud/features/cloud_features_2.svg",
+    img: "/images/technologies/cloud/features/icon_2.svg",
+    hoverImg: "/images/technologies/cloud/features/icon_hover_2.svg",
   },
   {
     id: 3,
     title: "cPanel Control",
     subTitle:
       "From creating sub domains, database, file manager to data backup & recovery, have full control over web hosting through powerful yet  simplified tools  ",
-    img: "/images/technologies/cloud/features/cloud_features_3.svg",
+    img: "/images/technologies/cloud/features/icon_3.svg",
+    hoverImg: "/images/technologies/cloud/features/icon_hover_3.svg",
   },
   {
     id: 4,
     title: "Low Down Time",
     subTitle:
       "Advanced web-based console allowing zero loss of connectivity to your live services during any kind of troubleshoot or upgrade",
-    img: "/images/technologies/cloud/features/cloud_features_4.svg",
+    img: "/images/technologies/cloud/features/icon_4.svg",
+    hoverImg: "/images/technologies/cloud/features/icon_hover_4.svg",
   },
   {
     id: 5,
     title: "Domain Privacy",
     subTitle:
       "Advanced encryption, identification & management of sensitive data &  access, ML-integrated malware protection, strict protocols for cloud environment ",
-    img: "/images/technologies/cloud/features/cloud_features_5.svg",
+    img: "/images/technologies/cloud/features/icon_5.svg",
+    hoverImg: "/images/technologies/cloud/features/icon_hover_5.svg",
   },
 ];
 

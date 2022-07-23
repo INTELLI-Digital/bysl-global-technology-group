@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ReactPlayer from "react-player";
 
 import { getPath } from "../../utils/paths";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
@@ -16,7 +17,9 @@ const ImageShowcase = (props) => {
         </p>
       )}
       <div
-        className={`relative mx-auto mt-10 xl:mt-16 h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] w-full ${
+        className={`relative mx-auto mt-10 xl:mt-16 h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] ${
+          !getPath("/ar-vr-technologies") && "3xl:h-[600px]"
+        } w-full ${
           getPath("/ites") ||
           (getPath("/data-science") && "shadow-2xl shadow-blue-500/25")
         } rounded-[20px] overflow-hidden`}
@@ -28,6 +31,16 @@ const ImageShowcase = (props) => {
           alt=""
         />
       </div>
+      <video
+        className="mx-auto mt-10 xl:mt-16 h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px]"
+        src=""
+        autoPlay
+        muted
+        loop
+        // poster="/default.gif"
+        // width={3000}
+        // height={2000}
+      ></video>
     </div>
   );
 };

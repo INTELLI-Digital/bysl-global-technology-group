@@ -62,8 +62,9 @@ const IotTechnologies = () => {
 
         {/* innovative solution section  */}
         <BannerWithBullets data={iotSupportData} reversed={true}>
-          We Create innovative solution that works
-          <TextGradient text=" Pragmatically" />.
+          Introducing <TextGradient text=" innovative " /> &
+          <TextGradient text=" pragmatic " />
+          solutions to old problems
         </BannerWithBullets>
       </div>
     </BasicLayout>

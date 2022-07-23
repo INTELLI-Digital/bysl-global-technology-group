@@ -1,5 +1,7 @@
 import "../styles/globals.css";
 import "../styles/purpose.css";
+import "../styles/web-technologies.css";
+import "../styles/gradient-bg.css";
 
 // important imports for swiper slider
 import "swiper/css";

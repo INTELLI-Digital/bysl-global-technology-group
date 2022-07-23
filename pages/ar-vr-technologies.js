@@ -1,6 +1,6 @@
 import FeaturedBanner from "../components/shared/banners/FeaturedBanner";
 import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
-import IconCardGroup4 from "../components/shared/IconCardGroup4";
+import IconCardGroup3 from "../components/shared/IconCardGroup3";
 import ImageShowcase from "../components/shared/ImageShowcase";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import ARVRBanner from "../components/technologies_pages/ar_vr_technologies/ARVRBanner";
@@ -20,9 +20,9 @@ const ARVRTechnologies = () => {
 
       <div className="box">
         {/* services section  */}
-        <IconCardGroup4 data={arVrServicesData} type="Applications">
+        <IconCardGroup3 data={arVrServicesData} type="Applications">
           Recreate <TextGradient text=" reality " /> the way you like it
-        </IconCardGroup4>
+        </IconCardGroup3>
 
         {/* Own World section  */}
         <TriangleCardBanner

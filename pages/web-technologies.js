@@ -19,7 +19,6 @@ const WebTechnologies = () => {
       {/* banner section  */}
       <PrimaryBanner
         title="Web Technologies"
-        img="web_technologies"
         sub="Unlock the true potential of your business using cutting-edge web technologies. "
       >
         <TextGradient text="Powerful " />

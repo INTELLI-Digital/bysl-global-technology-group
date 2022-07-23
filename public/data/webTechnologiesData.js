@@ -52,28 +52,28 @@ const webProcessData = [
     title: "Research",
     subTitle: "Continuous application of top-tier R&D practices ",
     img: "/images/technologies/web/process/icon_0.svg",
-    img2: "/images/technologies/web/process/icon_hover_0.svg",
+    hoverImg: "/images/technologies/web/process/icon_hover_0.svg",
   },
   {
     id: 1,
     title: "Designing",
     subTitle: "Innovative, dynamic, functioal &  user-friendly",
     img: "/images/technologies/web/process/icon_1.svg",
-    img2: "/images/technologies/web/process/icon_hover_1.svg",
+    hoverImg: "/images/technologies/web/process/icon_hover_1.svg",
   },
   {
     id: 2,
     title: "Building",
     subTitle: "Combining advanced technologies with the right skill set ",
     img: "/images/technologies/web/process/icon_2.svg",
-    img2: "/images/technologies/web/process/icon_hover_2.svg",
+    hoverImg: "/images/technologies/web/process/icon_hover_2.svg",
   },
   {
     id: 3,
     title: "Deliver",
     subTitle: "Convenient, timely & consistent",
     img: "/images/technologies/web/process/icon_3.svg",
-    img2: "/images/technologies/web/process/icon_hover_3.svg",
+    hoverImg: "/images/technologies/web/process/icon_hover_3.svg",
   },
 ];
 

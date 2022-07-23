@@ -1,0 +1,56 @@
+/* gradient bg  */
+.gradient-bg,
+.bg-gradient-from-white {
+  position: relative;
+  z-index: 1;
+}
+.gradient-bg {
+  background-color: #eceff5;
+  border-radius: 20px;
+}
+.gradient-bg-sm{
+  position: relative;
+  z-index: 3;
+  background-image: linear-gradient(to right, #00469f, #1e79d6);
+  border-radius: 8px;
+}
+.bg-gradient-from-white {
+  background-color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.gradient-bg::before,
+.bg-gradient-from-white::before,.gradient-bg-sm::before  {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0;
+}
+.gradient-bg::before,
+.bg-gradient-from-white::before {
+  background-image: linear-gradient(to right, #00469f, #1e79d6);
+  transition: opacity 0.5s ease-in;
+  z-index: -1;
+}
+.gradient-bg-sm::before {
+  background-image: linear-gradient(to right, #fff, #fff);
+  border-radius: 8px;
+  transition: opacity 0.6s ease-in;
+  z-index: 2;
+}
+.gradient-bg::before {
+  border-radius: 20px;
+}
+.bg-gradient-from-white::before {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.gradient-bg:hover::before, .gradient-bg:hover .gradient-bg-sm::before,
+.bg-gradient-from-white:hover::before {
+  opacity: 1;
+}
+/* gradient bg  */

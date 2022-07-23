@@ -10,21 +10,21 @@ const IconCard = (props) => {
         return (
           <div
             key={id}
-            className={`group gradient-bg p-5 ${getPath("/faq") && "sm:py-10"}`}
+            className={`group gradient-bg p-5  ${
+              !getPath("/ar-vr-technologies") && "sm:py-10"
+            }`}
           >
-            <div
-              className={`h-10 w-10 ${
-                !padding && "lg:h-16 lg:w-16"
-              } mx-auto relative`}
-            >
-              <HoverImage
-                img1={img}
-                img2={
-                  hoverImg
-                    ? hoverImg
-                    : "/images/technologies/cloud/features/cloud_features_1.svg"
-                }
-              />
+            <div className="h-10 w-10 lg:h-16 lg:w-16 gradient-bg-sm flex justify-center items-center rounded-lg mx-auto">
+              <div
+                className={`h-5 w-5 z-50 ${
+                  !padding && "lg:h-9 lg:w-9"
+                } mx-auto relative`}
+              >
+                <HoverImage
+                  img1={img}
+                  img2={hoverImg ? hoverImg : "/images/icon_hover.svg"}
+                />
+              </div>
             </div>
             <p
               className={`text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center ${
@@ -46,3 +46,4 @@ const IconCard = (props) => {
 };
 
 export default IconCard;
+// bg-gradient-to-r from-blue-900 to-blue-700 group-hover:from-white group-hover:to-white transition-all duration-500

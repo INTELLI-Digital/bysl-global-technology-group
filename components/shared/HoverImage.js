@@ -3,10 +3,10 @@ import Image from "next/image";
 const HoverImage = ({ img1, img2 }) => {
   return (
     <>
-      <div className="relative w-full h-full group-hover:opacity-0 transition-all duration-500">
+      <div className="relative w-full h-full group-hover:opacity-0 transition-all duration-1000">
         <Image src={img1} layout="fill" alt="" />
       </div>
-      <div className="absolute top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-500">
+      <div className="absolute top-0 w-full h-full opacity-0 group-hover:opacity-100 transition-all duration-1000">
         <Image src={img2} layout="fill" alt="" />
       </div>
     </>
@@ -14,18 +14,3 @@ const HoverImage = ({ img1, img2 }) => {
 };
 
 export default HoverImage;
-
-{
-  /* <div className="relative">
-  <img
-    src={img1}
-    alt=""
-    className="w-full h-full group-hover:opacity-0 transition-all duration-500"
-  />
-  <img
-    src={img2}
-    alt=""
-    className="w-full h-full absolute top-0 opacity-0 group-hover:opacity-100 transition-all duration-500"
-  />
-</div>; */
-}

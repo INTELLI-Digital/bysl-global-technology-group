@@ -29,7 +29,7 @@ const Overview3Items = (props) => {
                 {title}
               </p>
               {subTitle && (
-                <p className="hidden md:block text-gray-300 2xl:text-lg font-medium mt-5 3xl:w-5/6 mx-auto">
+                <p className="hidden md:block text-gray-300 2xl:text-lg mt-5 3xl:w-5/6 mx-auto">
                   {subTitle}
                 </p>
               )}

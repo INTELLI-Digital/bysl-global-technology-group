@@ -45,7 +45,7 @@ const ServiceFeatures = () => {
       <div className="md:hidden mt-10 xl:mt-20 card-slider pb-10">
         <SliderLayout size={1}>
           {servicesFeaturesData.map(
-            ({ id, img, hoverImg, title, subTitle }) => {
+            ({ id, img, title, subTitle }) => {
               return (
                 <SwiperSlide
                   key={id}

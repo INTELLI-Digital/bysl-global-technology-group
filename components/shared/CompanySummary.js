@@ -6,14 +6,14 @@ const CompanySummary = () => {
       <p className="break-words text-2xl md:text-3xl  xl:text-4xl 2xl:text-5xl 3xl:text-[64px] font-bold">
         EXPLORE. INNOVATE. INVEST.
       </p>
-      <div className="grid gap-6 grid-cols-2 md:grid-cols-4 mt-6 2xl:mt-16 py-5">
+      <div className="grid gap-6 grid-cols-2 md:grid-cols-4 mt-2.5 xl:mt-16 py-5">
         {summaryData.map(({ id, number, title }) => {
           return (
             <div key={id} className="text-center">
               <p className="text-xl sm:text-2xl lg:text-3xl 2xl:text-[40px] font-bold">
                 {number}
               </p>
-              <p className="text-base sm:text-lg lg:text-xl 2xltext-2xl">
+              <p className="text-base sm:text-lg lg:text-xl 2xltext-2xl mt-2.5">
                 {title}
               </p>
             </div>

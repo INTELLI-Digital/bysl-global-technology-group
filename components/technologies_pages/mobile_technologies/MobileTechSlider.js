@@ -13,7 +13,7 @@ const MobileTechSlider = () => {
       <div className="hidden 2xl:block">
         <Slider size={5} />
       </div>
-      <div className="centered z-50">
+      <div className="centered z-40">
         <div className="h-[277px] xxxs:h-[270px] xxs:h-[340px] xl:h-[430px] w-[230px] relative">
           <Image
             src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.svg"

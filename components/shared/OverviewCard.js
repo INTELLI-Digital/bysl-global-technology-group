@@ -7,9 +7,12 @@ const OverviewCard = (props) => {
 
   return (
     <>
-      {data.map(({ id, title, subTitle, img, img2 }) => {
+      {data.map(({ id, title, subTitle, img, hoverImg }) => {
         return (
-          <div key={id} className="p-3 xl:p-4 text-center my-2 group">
+          <div
+            key={id}
+            className="p-3 xl:p-4 text-center my-2 group hover:cursor-pointer"
+          >
             <div
               className={`mx-auto relative ${
                 large
@@ -17,8 +20,8 @@ const OverviewCard = (props) => {
                   : "h-10 2xl:h-16 w-10 2xl:w-16"
               }`}
             >
-              {img2 ? (
-                <HoverImage img1={img} img2={img2} />
+              {hoverImg ? (
+                <HoverImage img1={img} img2={hoverImg} />
               ) : (
                 <Image src={img} layout="fill" alt="" />
               )}

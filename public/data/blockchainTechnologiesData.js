@@ -56,6 +56,8 @@ const blockchainServicesData = [
     subTitle:
       "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
     img: "/images/technologies/blockchain/services/blockchain_services_icon_0.svg",
+    hoverImg:
+      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
   },
   {
     id: 1,
@@ -63,6 +65,8 @@ const blockchainServicesData = [
     subTitle:
       "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
     img: "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+    hoverImg:
+      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
   },
   {
     id: 2,
@@ -70,6 +74,8 @@ const blockchainServicesData = [
     subTitle:
       "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
     img: "/images/technologies/blockchain/services/blockchain_services_icon_2.svg",
+    hoverImg:
+      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
   },
   {
     id: 3,
@@ -77,6 +83,8 @@ const blockchainServicesData = [
     subTitle:
       "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
     img: "/images/technologies/blockchain/services/blockchain_services_icon_3.svg",
+    hoverImg:
+      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
   },
   {
     id: 4,
@@ -84,6 +92,8 @@ const blockchainServicesData = [
     subTitle:
       "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
     img: "/images/technologies/blockchain/services/blockchain_services_icon_4.svg",
+    hoverImg:
+      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
   },
   {
     id: 5,
@@ -91,6 +101,8 @@ const blockchainServicesData = [
     subTitle:
       "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
     img: "/images/technologies/blockchain/services/blockchain_services_icon_5.svg",
+    hoverImg:
+      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
   },
 ];
 

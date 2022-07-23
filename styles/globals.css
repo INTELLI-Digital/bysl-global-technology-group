@@ -49,7 +49,15 @@ a {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
 }
-
+.nav-arrow-icon{
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+.nav-dropdown:hover .nav-arrow-icon{
+  visibility: visible;
+  opacity: 100;
+}
 .centered {
   position: absolute;
   top: 50%;
@@ -68,49 +76,6 @@ a {
   transform: translate(-50%, -50%);
 }
 
-/* gradient bg  */
-.gradient-bg,
-.bg-gradient-from-white {
-  position: relative;
-  z-index: 1;
-}
-.gradient-bg {
-  background-color: #eceff5;
-  border-radius: 20px;
-}
-.bg-gradient-from-white {
-  background-color: white;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.gradient-bg::before,
-.bg-gradient-from-white::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to right, #00469f, #1e79d6);
-  z-index: -1;
-  transition: opacity 0.5s ease-in;
-  opacity: 0;
-}
-
-.gradient-bg::before {
-  border-radius: 20px;
-}
-.bg-gradient-from-white::before {
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
-.gradient-bg:hover::before,
-.bg-gradient-from-white:hover::before {
-  opacity: 1;
-}
-/* gradient bg  */
 
 /* swiper slider */
 .swiper-button-next,
@@ -132,7 +97,9 @@ a {
 .card-slider .swiper-pagination {
   position: unset;
 }
+
 /* swiper slider */
+
 
 @media (min-width: 360px) {
   .mobileTech .swiper-slide-active .mobileTechImg {
