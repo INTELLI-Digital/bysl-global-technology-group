@@ -76,6 +76,9 @@ a {
   transform: translate(-50%, -50%);
 }
 
+/* .isStatic{
+  overflow: hidden;
+} */
 
 /* swiper slider */
 .swiper-button-next,

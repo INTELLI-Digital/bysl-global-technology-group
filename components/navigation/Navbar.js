@@ -91,18 +91,17 @@ const Navbar = () => {
                         <div className="box grid grid-cols-4 gap-6">
                           {dropdowns.map(({ id, title, link }) => {
                             return (
-                              <Link href={link}>
+                              <Link key={id} href={link}>
                                 <div
-                                  key={id}
-                                  class={`border border-gray-200/75 p-4 ${
+                                  className={`border border-gray-200/75 p-4 ${
                                     router.pathname === link && "bg-[#E7F0F9]"
                                   } hover:bg-[#E7F0F9] rounded-lg cursor-pointer transition-all duration-300`}
                                 >
-                                  <div class="flex items-center justify-between mb-2">
-                                    <h2 class="text-gray-800">{title}</h2>
+                                  <div className="flex items-center justify-between mb-2">
+                                    <h2 className="text-gray-800">{title}</h2>
                                     <ImArrowRight2 />
                                   </div>
-                                  <p class="font-normal text-xs leading-[14px] text-[#393e50]/40">
+                                  <p className="font-normal text-xs leading-[14px] text-[#393e50]/40">
                                     Powerful web solutions to scale
                                     exponentially
                                   </p>
