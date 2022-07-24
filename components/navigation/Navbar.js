@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
+import { ImArrowRight2 } from "react-icons/im";
 
 import { navbars } from "../../public/data/navbarData";
 import { getPath } from "../../utils/paths";
 import { getState, setState } from "../../utils/sessionStorage";
 import Button from "../shared/buttons/Button";
-import { ImArrowRight2 } from "react-icons/im";
 
 const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);

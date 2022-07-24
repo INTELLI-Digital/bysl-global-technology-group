@@ -14,7 +14,7 @@ const BannerWithBullets = (props) => {
       }
       ${group ? "pb-20 xl:pb-16" : "py-10 xl:py-16"}`}
     >
-      <div className="lg:w-[55%]">
+      <div className="lg:w-1/2">
         <TechnologiesSectionTitle start={true}>
           {children ? children : title}
         </TechnologiesSectionTitle>
@@ -36,7 +36,7 @@ const BannerWithBullets = (props) => {
         </div>
       </div>
       <div
-        className={`relative lg:w-[45%] mx-auto h-48 xs:h-64 sm:h-80 lg:h-[350px] ${
+        className={`relative lg:w-1/2 mx-auto h-48 xs:h-64 sm:h-80 lg:h-[350px] ${
           !getPath("/cloud-technologies") && "xl:h-[500px]"
         } mt-5 lg:mt-0`}
       >

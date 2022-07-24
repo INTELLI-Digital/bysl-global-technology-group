@@ -1,11 +1,15 @@
 import Image from "next/image";
-import ReactPlayer from "react-player";
 
 import { getPath } from "../../utils/paths";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const ImageShowcase = (props) => {
   const { children, sub, img, type } = props;
+
+  const webPath = getPath("/ar-vr-technologies");
+  const itesPath = getPath("/ites");
+  const adminPath = getPath("/administration");
+  const dataSciencePath = getPath("/data-science");
 
   return (
     <div className="py-10 xl:py-16">
@@ -16,31 +20,27 @@ const ImageShowcase = (props) => {
           {sub}
         </p>
       )}
-      <div
-        className={`relative mx-auto mt-10 xl:mt-16 h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] ${
-          !getPath("/ar-vr-technologies") && "3xl:h-[600px]"
-        } w-full ${
-          getPath("/ites") ||
-          (getPath("/data-science") && "shadow-2xl shadow-blue-500/25")
-        } rounded-[20px] overflow-hidden`}
-      >
-        <Image
-          src={img}
-          layout="fill"
-          objectFit={getPath("/data-science") && "cover"}
-          alt=""
-        />
+      <div className="mt-10 xl:mt-16 bg-red-100 w-full rounded-[20px] overflow-hidden shadow-2xl shadow-blue-500/25 max-w-[1080px] mx-auto">
+        {webPath ? (
+          <video
+            className="h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] w-full rounded-[20px] object-cover"
+            src="/images/technologies/ar_vr/demo.mp4"
+            autoPlay
+            muted
+            loop
+          />
+        ) : (
+          <div
+            className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden ${
+              (itesPath && "3xl:h-[735px]") ||
+              // (adminPath && "3xl:h-[735px] bg-blue-900") ||
+              (dataSciencePath && "3xl:h-[528px]")
+            }`}
+          >
+            <Image src={img} layout="fill" objectFit="cover" alt="" />
+          </div>
+        )}
       </div>
-      <video
-        className="mx-auto mt-10 xl:mt-16 h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px]"
-        src=""
-        autoPlay
-        muted
-        loop
-        // poster="/default.gif"
-        // width={3000}
-        // height={2000}
-      ></video>
     </div>
   );
 };

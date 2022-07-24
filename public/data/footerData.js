@@ -106,7 +106,7 @@ const oldFooterData = [
   },
 ];
 
-const footerData = [
+const footerDatav4 = [
   {
     id: 0,
     title: "Technologies",
@@ -321,6 +321,242 @@ const footerData = [
   },
 ];
 
+const footerData = [
+  {
+    id: 0,
+    title: "Technologies",
+    items: [
+      {
+        id: 0,
+        name: "Web Technologies",
+        path: "/web-technologies",
+      },
+      {
+        id: 1,
+        name: "Mobile Technologies",
+        path: "/mobile-technologies",
+      },
+      {
+        id: 2,
+        name: "Cloud Technologies",
+        path: "/cloud-technologies",
+      },
+      {
+        id: 3,
+        name: "Database Technologies",
+        path: "/database-technologies",
+      },
+      {
+        id: 4,
+        name: "AI/ML Technologies",
+        path: "/ai-ml-technologies",
+      },
+      {
+        id: 5,
+        name: "AR/VR Technologies",
+        path: "/ar-vr-technologies",
+      },
+      {
+        id: 6,
+        name: "IOT Technologies",
+        path: "/iot-technologies",
+      },
+      {
+        id: 7,
+        name: "Blockchain Technologies",
+        path: "/blockchain-technologies",
+      },
+      {
+        id: 8,
+        name: "Cyber Security",
+        path: "/cyber-security-technologies",
+      },
+      {
+        id: 9,
+        name: "Big Data",
+        path: "/bigdata-technologies",
+      },
+    ],
+  },
+  // {
+  //   id: 1,
+  //   title: "Services",
+  //   items: [
+  //     {
+  //       id: 0,
+  //       path: "/service",
+  //       name: "BPO",
+  //     },
+  //     {
+  //       id: 1,
+  //       path: "/service",
+  //       name: "UI/UX Design",
+  //     },
+  //     {
+  //       id: 2,
+  //       path: "/service",
+  //       name: "Web Development",
+  //     },
+  //     {
+  //       id: 3,
+  //       path: "/service",
+  //       name: "Mobile App Development",
+  //     },
+  //     {
+  //       id: 4,
+  //       path: "/service",
+  //       name: "E-Commerce Solution",
+  //     },
+  //     {
+  //       id: 5,
+  //       path: "/service",
+  //       name: "ERP",
+  //     },
+  //     {
+  //       id: 6,
+  //       path: "/service",
+  //       name: "Fintech",
+  //     },
+  //     {
+  //       id: 7,
+  //       path: "/service",
+  //       name: "AI & ML",
+  //     },
+  //     {
+  //       id: 8,
+  //       path: "/service",
+  //       name: "Fulfillment Service",
+  //     },
+  //     {
+  //       id: 9,
+  //       path: "/service",
+  //       name: "Logistic Service",
+  //     },
+  //     {
+  //       id: 10,
+  //       path: "/service",
+  //       name: "Cloud & Cyber Security",
+  //     },
+  //     {
+  //       id: 11,
+  //       path: "/service",
+  //       name: "Customer Care Service",
+  //     },
+  //   ],
+  // },
+  {
+    id: 2,
+    title: "Divisions",
+    items: [
+      {
+        id: 0,
+        name: "ICT",
+        path: "/ict",
+      },
+      {
+        id: 1,
+        name: "ITeS",
+        path: "/ites",
+      },
+      {
+        id: 2,
+        name: "Data Science",
+        path: "/data-science",
+      },
+      {
+        id: 3,
+        name: "Information Security",
+        path: "/information-security",
+      },
+      {
+        id: 4,
+        name: "Food Tech",
+        path: "/food-tech",
+      },
+      {
+        id: 5,
+        name: "Digital Commerce",
+        path: "/digital-commerce",
+      },
+      {
+        id: 6,
+        name: "Supply Chain",
+        path: "/supply-chain",
+      },
+      {
+        id: 7,
+        name: "Administration",
+        path: "/administration",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "About Us",
+    items: [
+      {
+        id: 0,
+        name: "Mission",
+        path: "/mission",
+      },
+      {
+        id: 1,
+        name: "Purpose",
+        path: "/purpose",
+      },
+      {
+        id: 2,
+        name: "Values",
+        path: "/values",
+      },
+      {
+        id: 3,
+        name: "Culture",
+        path: "/culture",
+      },
+    ],
+    title2: "Company",
+    items2: [
+      {
+        id: 0,
+        path: "/faq",
+        name: "FAQ",
+      },
+      {
+        id: 1,
+        path: "/resources",
+        name: "Resources",
+      },
+      {
+        id: 2,
+        path: "/contact-us",
+        name: "Contact Us",
+      },
+    ],
+  },
+];
+
+const companyItems = {
+  title: "Company",
+  items: [
+    {
+      id: 0,
+      path: "/faq",
+      name: "FAQ",
+    },
+    {
+      id: 1,
+      path: "/resources",
+      name: "Resources",
+    },
+    {
+      id: 2,
+      path: "/contact-us",
+      name: "Contact Us",
+    },
+  ],
+};
+
 const footerBottomData = [
   {
     id: 0,
@@ -339,4 +575,4 @@ const footerBottomData = [
   },
 ];
 
-export { oldFooterData, footerData, footerBottomData };
+export { oldFooterData, footerData, footerBottomData, companyItems };

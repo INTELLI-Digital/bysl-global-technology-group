@@ -118,10 +118,14 @@ a {
   .mobileTech .swiper-slide-active .mobileTechImg {
    width: 150px;
   }
+
 }
 @media (min-width: 1024px) {
   .box, .resource-box {
     margin: 0 60px;
+  }
+  body{
+    overflow: auto !important;
   }
 }
 @media (min-width: 1280px) {
@@ -160,4 +164,5 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  
 }

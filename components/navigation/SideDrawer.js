@@ -1,30 +1,21 @@
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { Accordion, AccordionBody } from "@material-tailwind/react";
 
-import { navbars } from "../../public/data/navbarData";
 import Button from "../shared/buttons/Button";
-import Link from "next/link";
+import { navbars } from "../../public/data/navbarData";
+import { timeOfDay } from "../../utils/greetings";
 
 const SideDrawer = ({ showDrawer }) => {
   const router = useRouter();
   const [open, setOpen] = useState(0);
+  const screenSize = useRef();
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
   };
-
-  // show greetings
-  let timeOfDay;
-  const date = new Date();
-  const hours = date.getHours();
-  if (hours < 12) {
-    timeOfDay = "Morning";
-  } else if (hours >= 12 && hours < 17) {
-    timeOfDay = "Afternoon";
-  } else {
-    timeOfDay = "Night";
-  }
+  // console.log();
 
   useEffect(() => {
     showDrawer
@@ -101,7 +92,12 @@ const SideDrawer = ({ showDrawer }) => {
             );
           })}
           <div className="flex justify-center pt-3 pb-6">
-            <Button rounded={true} title="Contact Us" px={48} />
+            <Button
+              link="contact-us"
+              rounded={true}
+              title="Contact Us"
+              px={48}
+            />
           </div>
         </div>
       </div>
