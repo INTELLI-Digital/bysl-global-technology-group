@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import { Accordion, AccordionBody } from "@material-tailwind/react";
 
@@ -11,11 +11,9 @@ import { timeOfDay } from "../../utils/greetings";
 const SideDrawer = ({ showDrawer }) => {
   const router = useRouter();
   const [open, setOpen] = useState(0);
-  const screenSize = useRef();
   const handleOpen = (value) => {
     setOpen(open === value ? 0 : value);
   };
-  // console.log();
 
   useEffect(() => {
     showDrawer
@@ -25,8 +23,8 @@ const SideDrawer = ({ showDrawer }) => {
 
   return (
     <div
-      className={`${
-        showDrawer && "bg-[#c7c7c7]/40"
+      className={`invisible ${
+        showDrawer && "bg-[#c7c7c7]/40 !visible"
       } transition-all duration-1000 w-screen h-screen overflow-hidden fixed top-14 left-0 z-50`}
     >
       <div
@@ -92,12 +90,7 @@ const SideDrawer = ({ showDrawer }) => {
             );
           })}
           <div className="flex justify-center pt-3 pb-6">
-            <Button
-              link="contact-us"
-              rounded={true}
-              title="Contact Us"
-              px={48}
-            />
+            <Button link="contact-us" title="Contact Us" px={48} />
           </div>
         </div>
       </div>

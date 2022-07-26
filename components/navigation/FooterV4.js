@@ -66,9 +66,11 @@ const FooterV4 = () => {
       <div className="box pt-16 pb-8">
         <div className="grid grid-cols-12 lg:grid-cols-10 gap-4">
           <div className="col-span-12 lg:col-span-2">
-            <div className="h-7 md:h-10 w-16 md:w-20 mx-auto lg:mx-0 mb-10 lg:mb-0 relative">
-              <Image src="/images/logo_light.svg" layout="fill" alt="" />
-            </div>
+          <Link passHref href="/">
+              <div className="h-7 md:h-10 w-16 md:w-20 mx-auto lg:mx-0 mb-10 lg:mb-0 relative hover:cursor-pointer">
+                <Image src="/images/logo_light.svg" layout="fill" alt="" />
+              </div>
+            </Link>
             <div className="hidden lg:block">
               <Career />
             </div>

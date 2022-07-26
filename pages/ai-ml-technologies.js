@@ -31,9 +31,6 @@ const AIMLTechnologies = () => {
       {/* services section  */}
       <AIMLServices />
 
-      {/* Big Data Analysis section  */}
-      <BannerWithBulletSingle data={aimlUserExperienceData} />
-
       {/* Solutions section  */}
       <ImageShowcase
         type="Solutions"
@@ -42,6 +39,9 @@ const AIMLTechnologies = () => {
         Smart Solutions for <br />
         <TextGradient text="Health data visualization" />
       </ImageShowcase>
+
+      {/* Big Data Analysis section  */}
+      <BannerWithBulletSingle data={aimlUserExperienceData} />
     </BasicLayout>
   );
 };

@@ -7,7 +7,7 @@ const WebBanner = () => {
           src="/images/technologies/web/banner/angular.png"
           alt=""
         />
-        <p>angular</p>
+        <p>Angular</p>
       </div>
       <div className="tailwind absolute top-[50%] translate-y-[-50%] left-[-6%] lg:left-[-10%] w-[35px] lg:w-12 2xl:w-[70px] h-[35px] lg:h-12 2xl:h-[70px] shadow-[0px_0px_40px_rgba(0,0,0,0.1)] rounded-full">
         <img

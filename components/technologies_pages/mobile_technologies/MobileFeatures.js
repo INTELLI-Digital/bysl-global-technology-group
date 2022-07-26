@@ -13,18 +13,21 @@ import {
 const MobileFeatures = () => {
   const Features = ({ data }) => {
     return (
-      <div className="flex flex-row lg:flex-col gap-x-10 gap-y-20 place-self-center">
+      <div className="flex flex-row lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 place-self-center">
         {data.map(({ id, title, subTitle, img }) => {
           return (
-            <div key={id} className="flex flex-col xl:flex-row gap-5">
-              <div className="xl:w-1/4 3xl:w-2/12 flex justify-center order-1 xl:order-2">
+            <div
+              key={id}
+              className="flex flex-col gap-2 lg:gap-5 xl:flex-row-reverse"
+            >
+              <div className="xl:w-1/4 3xl:w-2/12 flex justify-center">
                 <div className="h-10 lg:h-16 w-10 lg:w-16 rounded-full bg-blue-300 flex justify-center items-center">
                   <div className="h-4 w-4 lg:h-7 lg:w-7 relative">
                     <Image src={img} alt="" layout="fill" />
                   </div>
                 </div>
               </div>
-              <div className="text-center xl:text-end xl:w-3/4 3xl:w-10/12 order-2 xl:order-1">
+              <div className="text-center xl:text-end xl:w-3/4 3xl:w-10/12">
                 <p className="text-sm md:text-base lg:text-lg 2xl:text-xl font-medium text-gray-800">
                   {title}
                 </p>

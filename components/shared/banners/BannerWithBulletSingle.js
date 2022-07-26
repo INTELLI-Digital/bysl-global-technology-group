@@ -8,10 +8,12 @@ const BannerWithBulletSingle = (props) => {
   const { title, colored, subTitle, img, features, newLine } = data;
 
   return (
-    <div className="py-10 xl:py-16 lg:flex gap-6">
-      <div
-        className={`lg:w-[55%] lg:pt-10 order-1 ${reversed && "lg:order-2"}`}
-      >
+    <div
+      className={`py-10 xl:py-16 lg:flex ${
+        reversed && "lg:flex-row-reverse"
+      } gap-6`}
+    >
+      <div className={`lg:w-[55%] lg:pt-10`}>
         <TechnologiesSectionTitle start={true}>
           {children ? (
             children
@@ -24,7 +26,7 @@ const BannerWithBulletSingle = (props) => {
             </>
           )}
         </TechnologiesSectionTitle>
-        <p className="my-4 2xl:mb-8 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start hidden sm:block">
+        <p className="my-4 2xl:mb-8 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start">
           {subTitle}
         </p>
         <div className="w-fit mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-5 mt-5 sm:mt-0">
@@ -44,9 +46,9 @@ const BannerWithBulletSingle = (props) => {
         </div>
       </div>
       <div
-        className={`w-full xxs:w-4/5 xs:w-3/5 lg:w-[45%] mx-auto flex justify-center items-start mt-10 lg:mt-0 order-2 ${
-          reversed && "lg:order-1"
-        } ${getPath("/ites") && "lg:px-8 2xl:px-16"}`}
+        className={`w-full xs:w-4/5 lg:w-[45%] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
+          getPath("/ites") && "lg:px-8 2xl:px-16"
+        }`}
       >
         <Image src={img} height={450} width={588} alt="" />
       </div>

@@ -1,3 +1,5 @@
+import CountUp from "react-countup";
+
 import { summaryData } from "../../public/data/summaryData";
 
 const CompanySummary = () => {
@@ -11,7 +13,8 @@ const CompanySummary = () => {
           return (
             <div key={id} className="text-center">
               <p className="text-xl sm:text-2xl lg:text-3xl 2xl:text-[40px] font-bold">
-                {number}
+                <CountUp enableScrollSpy end={number} />
+                {(id === 1 && "k") || (id === 3 && "k")}+
               </p>
               <p className="text-base sm:text-lg lg:text-xl 2xltext-2xl mt-2.5">
                 {title}

@@ -3,6 +3,8 @@ import HoverImage from "./HoverImage";
 
 const IconCard = (props) => {
   const { data, padding } = props;
+  const faqPath = getPath("/faq");
+  const arVrPath = getPath("/ar-vr-technologies");
 
   return (
     <>
@@ -10,14 +12,18 @@ const IconCard = (props) => {
         return (
           <div
             key={id}
-            className={`group gradient-bg p-5  ${
-              !getPath("/ar-vr-technologies") && "sm:py-10"
+            className={`group gradient-bg px-2 py-5 sm:p-5 hover:cursor-pointer ${
+              !arVrPath && "sm:py-10"
             }`}
           >
-            <div className="h-10 w-10 lg:h-16 lg:w-16 gradient-bg-sm flex justify-center items-center rounded-lg mx-auto">
+            <div
+              className={`h-10 w-10 lg:h-16 lg:w-16 ${
+                !faqPath && "gradient-bg-sm"
+              } flex justify-center items-center rounded-lg mx-auto`}
+            >
               <div
-                className={`h-5 w-5 z-50 ${
-                  !padding && "lg:h-9 lg:w-9"
+                className={`h-5 w-5 z-50 ${!padding && "lg:h-9 lg:w-9"} ${
+                  faqPath && "h-5 w-6 lg:h-10 lg:w-10"
                 } mx-auto relative`}
               >
                 <HoverImage
@@ -46,4 +52,3 @@ const IconCard = (props) => {
 };
 
 export default IconCard;
-// bg-gradient-to-r from-blue-900 to-blue-700 group-hover:from-white group-hover:to-white transition-all duration-500

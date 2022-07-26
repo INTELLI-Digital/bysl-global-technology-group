@@ -52,7 +52,7 @@ const SectionTitleGradient = (props) => {
   const { children, centered } = props;
   return (
     <p
-      className={`break-words text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-800 ${
+      className={`break-words text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-semibold text-gray-800 ${
         centered && "text-center"
       }`}
     >

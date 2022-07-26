@@ -5,8 +5,11 @@ import SolutionsBanner from "../components/landing_page/SolutionsBanner";
 import Investments from "../components/landing_page/Investments";
 import Technologies from "../components/landing_page/Technologies";
 import CommonLayout from "../layouts/CommonLayout";
+import { techData } from "../public/data/technologiesData";
+import { summaryData } from "../public/data/summaryData";
+import { aboutUsData } from "../public/data/aboutUsData";
 
-export default function Home() {
+const Home = ({ techData, summaryData, aboutUsData }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <CommonLayout noMargin={true}>
@@ -14,7 +17,7 @@ export default function Home() {
       <LandingPageBanner />
       <div className="box">
         {/* about us section  */}
-        <AboutUs />
+        <AboutUs summaryData={summaryData} aboutUsData={aboutUsData} />
 
         {/* projects section  */}
         <ProjectsShowcase />
@@ -23,11 +26,17 @@ export default function Home() {
         <SolutionsBanner />
 
         {/* technologies section  */}
-        <Technologies />
+        <Technologies data={techData} />
 
         {/* investments section  */}
         <Investments />
       </div>
     </CommonLayout>
   );
+};
+
+export async function getServerSideProps() {
+  // Pass data to the page via props
+  return { props: { techData, summaryData, aboutUsData } };
 }
+export default Home;

@@ -28,7 +28,6 @@ const ARVRTechnologies = () => {
         <TriangleCardBanner
           type="Research & Development"
           data={arVrWorldData}
-          img="/images/technologies/ar_vr/ar_vr_services.gif"
           black={true}
           padding={true}
         >
@@ -43,7 +42,7 @@ const ARVRTechnologies = () => {
         </FeaturedBanner>
 
         {/* How does it works */}
-        <ImageShowcase img="/images/technologies/ar_vr/ar_vr_slider.gif">
+        <ImageShowcase>
           How does it <TextGradient text="works" />?
         </ImageShowcase>
       </div>

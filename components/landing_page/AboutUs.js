@@ -1,14 +1,15 @@
 import Link from "next/link";
+import CountUp from "react-countup";
 
 import { aboutUsData } from "../../public/data/aboutUsData";
-import { summaryData } from "../../public/data/summaryData";
+// import { summaryData } from "../../public/data/summaryData";
 import {
   SectionTitleGradient,
   SectionTitleType,
   TextGradient,
 } from "../shared/SharedTextgroups";
 
-const AboutUs = () => {
+const AboutUs = ({ summaryData, aboutUsData }) => {
   return (
     <div className="text-center py-10 xl:py-16">
       <SectionTitleType title="About Us" />
@@ -29,7 +30,8 @@ const AboutUs = () => {
               return (
                 <div key={id} className="w-1/2 my-3 lg:my-5">
                   <p className="text-xl lg:text-2xl xl:text-3xl 2xl:text-[40px] font-bold">
-                    {number}
+                    <CountUp enableScrollSpy end={number} />
+                    {(id === 1 && "k") || (id === 3 && "k")}+
                   </p>
                   <p className="text-base md:text-lg lg:text-xl xl:text-2xl mt-1 xl:mt-2 2xl:mt-4">
                     {title}

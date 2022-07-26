@@ -5,10 +5,9 @@ import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const ImageShowcase = (props) => {
   const { children, sub, img, type } = props;
-
-  const webPath = getPath("/ar-vr-technologies");
+  const arVrPath = getPath("/ar-vr-technologies");
   const itesPath = getPath("/ites");
-  const adminPath = getPath("/administration");
+  // const adminPath = getPath("/administration");
   const dataSciencePath = getPath("/data-science");
 
   return (
@@ -20,8 +19,8 @@ const ImageShowcase = (props) => {
           {sub}
         </p>
       )}
-      <div className="mt-10 xl:mt-16 bg-red-100 w-full rounded-[20px] overflow-hidden shadow-2xl shadow-blue-500/25 max-w-[1080px] mx-auto">
-        {webPath ? (
+      <div className="mt-10 xl:mt-16 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto">
+        {arVrPath ? (
           <video
             className="h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] w-full rounded-[20px] object-cover"
             src="/images/technologies/ar_vr/demo.mp4"
@@ -32,12 +31,12 @@ const ImageShowcase = (props) => {
         ) : (
           <div
             className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden ${
-              (itesPath && "3xl:h-[735px]") ||
+              (itesPath && "3xl:h-[735px] shadow-2xl shadow-blue-500/25") ||
               // (adminPath && "3xl:h-[735px] bg-blue-900") ||
-              (dataSciencePath && "3xl:h-[528px]")
+              (dataSciencePath && "3xl:h-[528px] shadow-2xl shadow-blue-500/25")
             }`}
           >
-            <Image src={img} layout="fill" objectFit="cover" alt="" />
+            <Image src={img} layout="fill" alt="" />
           </div>
         )}
       </div>
@@ -46,3 +45,4 @@ const ImageShowcase = (props) => {
 };
 
 export default ImageShowcase;
+// shadow-2xl shadow-blue-500/25
