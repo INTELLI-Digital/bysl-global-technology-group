@@ -451,16 +451,16 @@ const footerDataDesktop = [
     ],
     title2: "Company",
     items2: [
-      {
-        id: 0,
-        path: "/faq",
-        name: "FAQ",
-      },
-      {
-        id: 1,
-        path: "/resources",
-        name: "Resources",
-      },
+      // {
+      //   id: 0,
+      //   path: "/faq",
+      //   name: "FAQ",
+      // },
+      // {
+      //   id: 1,
+      //   path: "/resources",
+      //   name: "Resources",
+      // },
       {
         id: 2,
         path: "/contact-us",
@@ -480,7 +480,12 @@ const footerDataDesktop = [
       {
         id: 1,
         path: "/",
-        name: "Brands & Subsidiaries",
+        name: "IT Platforms",
+      },
+      {
+        id: 2,
+        path: "/",
+        name: "Marketplace Platforms",
       },
     ],
     title2: "Social",
@@ -646,16 +651,16 @@ const footerDataMobile = [
     id: 3,
     title: "Company",
     items: [
-      {
-        id: 0,
-        path: "/faq",
-        name: "FAQ",
-      },
-      {
-        id: 1,
-        path: "/resources",
-        name: "Resources",
-      },
+      // {
+      //   id: 0,
+      //   path: "/faq",
+      //   name: "FAQ",
+      // },
+      // {
+      //   id: 1,
+      //   path: "/resources",
+      //   name: "Resources",
+      // },
       {
         id: 2,
         path: "/contact-us",
@@ -675,7 +680,12 @@ const footerDataMobile = [
       {
         id: 1,
         path: "/",
-        name: "Brands & Subsidiaries",
+        name: "IT Platforms",
+      },
+      {
+        id: 2,
+        path: "/",
+        name: "Marketplace Platforms",
       },
     ],
   },
@@ -715,16 +725,16 @@ const footerDataMobile = [
 const companyItems = {
   title: "Company",
   items: [
-    {
-      id: 0,
-      path: "/faq",
-      name: "FAQ",
-    },
-    {
-      id: 1,
-      path: "/resources",
-      name: "Resources",
-    },
+    // {
+    //   id: 0,
+    //   path: "/faq",
+    //   name: "FAQ",
+    // },
+    // {
+    //   id: 1,
+    //   path: "/resources",
+    //   name: "Resources",
+    // },
     {
       id: 2,
       path: "/contact-us",

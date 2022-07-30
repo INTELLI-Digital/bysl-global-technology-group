@@ -21,9 +21,9 @@ const CloudTechnologies = () => {
         sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
       >
         Start Your&nbsp;
-        <TextGradient text="Cloud" />
+        <TextGradient text="cloud" />
         <br className="hidden md:block" />
-        <TextGradient text=" Journey" />
+        <TextGradient text=" journey" />
       </PrimaryBanner>
 
       {/* services section  */}
@@ -33,22 +33,19 @@ const CloudTechnologies = () => {
         img="/images/technologies/cloud/services/services.svg"
       >
         Create new opportunities <br className="hidden xs:block" /> to make
-        <TextGradient text=" innovation " />
-        more <TextGradient text=" accessible" />
+        innovation more accessible
       </TriangleCardBanner>
 
       {/* features section  */}
       <IconCardGroup3 data={cloudFeaturesData} type="Features">
-        Powerful Control <TextGradient text="Panel" />
-        <br />
-        and <TextGradient text="APIs" />
+        Powerful control panel & APIs
       </IconCardGroup3>
 
       {/* support section  */}
       <BannerWithBullets data={cloudSupportData} reversed={true}>
-        We Lead & Support our
-        <br className="hidden xs:block" /> Customer&apos;s
-        <TextGradient text=" Cloud" />
+        We <TextGradient text=" lead " /> & <TextGradient text=" support " />
+        our
+        <br className="hidden xs:block" /> customer&apos;s
       </BannerWithBullets>
     </BasicLayout>
   );

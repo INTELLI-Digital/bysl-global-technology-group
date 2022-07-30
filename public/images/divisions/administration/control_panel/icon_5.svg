@@ -1,13 +1,6 @@
-<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="65" height="65" rx="8" fill="url(#paint0_linear_10_537)"/>
-<path d="M38.4705 46.1256H23.158C22.8679 46.1256 22.5897 46.0104 22.3846 45.8053C22.1794 45.6001 22.0642 45.3219 22.0642 45.0319V25.3444C22.0642 25.0543 22.1794 24.7761 22.3846 24.571C22.5897 24.3658 22.8679 24.2506 23.158 24.2506H34.0955L39.5642 29.7194V45.0319C39.5642 45.3219 39.449 45.6001 39.2439 45.8053C39.0387 46.0104 38.7605 46.1256 38.4705 46.1256Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M26.4392 24.2506V20.9694C26.4392 20.6793 26.5544 20.4011 26.7596 20.196C26.9647 19.9908 27.2429 19.8756 27.533 19.8756H38.4705L43.9392 25.3444V40.6569C43.9392 40.9469 43.824 41.2251 43.6189 41.4303C43.4137 41.6354 43.1355 41.7506 42.8455 41.7506H39.5642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M27.533 36.2819H34.0955" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M27.533 40.6569H34.0955" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<linearGradient id="paint0_linear_10_537" x1="0.5" y1="33.8784" x2="65.5" y2="33.8784" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00469F"/>
-<stop offset="1" stop-color="#1E79D6"/>
-</linearGradient>
-</defs>
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.4705 31.1255H8.15796C7.86788 31.1255 7.58968 31.0103 7.38456 30.8051C7.17944 30.6 7.06421 30.3218 7.06421 30.0317V10.3442C7.06421 10.0542 7.17944 9.77596 7.38456 9.57084C7.58968 9.36572 7.86788 9.25049 8.15796 9.25049H19.0955L24.5642 14.7192V30.0317C24.5642 30.3218 24.449 30.6 24.2439 30.8051C24.0387 31.0103 23.7605 31.1255 23.4705 31.1255Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.4392 9.25049V5.96924C11.4392 5.67916 11.5544 5.40096 11.7596 5.19584C11.9647 4.99072 12.2429 4.87549 12.533 4.87549H23.4705L28.9392 10.3442V25.6567C28.9392 25.9468 28.824 26.225 28.6189 26.4301C28.4137 26.6353 28.1355 26.7505 27.8455 26.7505H24.5642" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.533 21.2817H19.0955" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.533 25.6567H19.0955" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

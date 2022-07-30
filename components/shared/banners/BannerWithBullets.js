@@ -8,43 +8,45 @@ const BannerWithBullets = (props) => {
   const { subTitle, img, features, title } = data;
 
   const cloudPath = getPath("/cloud-technologies");
+  const cyberPath = getPath("/cyber-security-technologies");
+  const databasePath = getPath("/database-technologies");
 
   return (
     <div
-      className={`lg:flex items-center gap-6 ${
-        reversed && "lg:flex-row-reverse"
-      }
+      className={`lg:flex gap-6 ${reversed && "lg:flex-row-reverse"}
       ${group ? "pb-20 xl:pb-16" : "py-10 xl:py-16"}`}
     >
-      <div className="lg:w-1/2">
+      <div className={`lg:w-[52%] mt-10`}>
         <TechnologiesSectionTitle start={true}>
           {children ? children : title}
         </TechnologiesSectionTitle>
-        {subTitle && <p className="mt-5 text-gray-300">{subTitle}</p>}
-        <div className="grid grid-cols-1 xxs:grid-cols-2 my-5 xl:my-10 lg:mb-0">
+        {subTitle && <p className="mt-4 text-gray-300">{subTitle}</p>}
+        <div
+          className={`grid grid-cols-1 xxs:grid-cols-2 my-5 xl:mt-6 lg:mb-0 gap-y-2.5 lg:gap-x-2 xl:gap-x-0`}
+        >
           {features.map((item, i) => (
-            <div key={i} className="flex items-center mt-1 3xl:mt-3">
+            <div key={i} className="flex items-start">
               <Image
                 src="/images/items_icon.svg"
                 alt=""
                 height={24}
                 width={24}
               />
-              <p className="text-gray-300 text-sm xl:text-base 3xl:text-xl ml-3">
+              <p className={`text-gray-300 text-sm xl:text-base ml-3 w-full`}>
                 {item}
               </p>
             </div>
           ))}
         </div>
       </div>
-      <div className="lg:w-1/2 mx-auto">
+      <div className="lg:w-[48%] mx-auto clip-video">
         {cloudPath ? (
           <video className="w-full h-full" src={img} autoPlay muted loop />
         ) : (
           <div
             className={`relative h-48 xs:h-64 sm:h-80 lg:h-[350px] ${
               !cloudPath && "xl:h-[500px]"
-            } mt-5 lg:mt-0`}
+            } ${databasePath && "xl:h-[350px]"} mt-5 lg:mt-0`}
           >
             <Image src={img} layout="fill" alt="" />
           </div>

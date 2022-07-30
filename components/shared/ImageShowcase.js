@@ -15,11 +15,11 @@ const ImageShowcase = (props) => {
       {type && <SectionTitleType title={type} />}
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       {sub && (
-        <p className="xs:px-4 sm:w-4/5 lg:w-3/5 3xl:w-1/2 mx-auto text-center mt-4 xl:mt-5 text-gray-300 text-sm md:text-base">
+        <p className="xs:px-4 sm:w-4/5 lg:w-3/5 3xl:w-1/2 mx-auto text-center mt-4 text-gray-300 text-sm md:text-base">
           {sub}
         </p>
       )}
-      <div className="mt-10 xl:mt-16 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto">
+      <div className="mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto">
         {arVrPath ? (
           <video
             className="h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] w-full rounded-[20px] object-cover"
@@ -31,10 +31,9 @@ const ImageShowcase = (props) => {
         ) : (
           <div
             className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden ${
-              (itesPath && "3xl:h-[735px] shadow-2xl shadow-blue-500/25") ||
               // (adminPath && "3xl:h-[735px] bg-blue-900") ||
-              (dataSciencePath && "3xl:h-[528px] shadow-2xl shadow-blue-500/25")
-            }`}
+              dataSciencePath && "3xl:h-[528px] shadow-2xl shadow-blue-500/25"
+            } ${itesPath && "3xl:h-[735px] shadow-2xl shadow-blue-500/25"} `}
           >
             <Image src={img} layout="fill" alt="" />
           </div>
@@ -45,4 +44,3 @@ const ImageShowcase = (props) => {
 };
 
 export default ImageShowcase;
-// shadow-2xl shadow-blue-500/25

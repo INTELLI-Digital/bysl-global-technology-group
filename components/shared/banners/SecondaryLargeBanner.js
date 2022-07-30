@@ -9,23 +9,24 @@ const SecondaryLargeBanner = ({ data, children }) => {
 
   return (
     <div className="py-10 xl:py-16">
-      <p className="text-sm md:text-base xl:text-lg font-bold text-center">
+      <p className="text-sm md:text-base xl:text-lg font-bold text-center mb-2">
         <TextGradient text={heading} />
       </p>
       <SectionTitleGradient centered={true}>{children}</SectionTitleGradient>
-      <p className="xs:px-4 sm:w-4/5 lg:w-3/5 3xl:w-1/2 mx-auto mt-5 text-gray-300 leading-5 text-sm md:text-base text-center">
+      <p className="xs:px-4 sm:w-4/5 lg:w-[62%] mx-auto mt-6 text-gray-300 leading-5 text-sm md:text-base text-center">
         {subTitle}
       </p>
       <div
-        className={`mt-5 lg:mt-10 2xl:mt-20 flex justify-center max-w-[1080px] mx-auto ${
-          adminPath &&
-          "shadow-2xl shadow-blue-500/25 rounded-[20px] overflow-hidden"
-        }`}
+        className={`mt-5 lg:mt-10 flex justify-center max-w-[1080px] mx-auto`}
       >
-        <Image src={img} alt="" height={735} width={1080} />
+        <Image src={img} alt="" height={700} width={1080} />
       </div>
     </div>
   );
 };
 
 export default SecondaryLargeBanner;
+// ${
+//   adminPath &&
+//   "shadow-2xl shadow-blue-500/25 rounded-[20px] overflow-hidden"
+// }

@@ -19,43 +19,42 @@ const BlockchainTechnologies = () => {
       <PrimaryBanner
         title="Blockchain Technologies"
         img="blockchain_technologies"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Exploring the unique potential of blockchain technology for wider accessibility and control of data and greater security.   "
       >
-        Blockchain for <TextGradient text="Flexibility" /> &&nbsp;
-        <TextGradient text="Security" />
+        Blockchain for greater accessibility &
+        <br className="hidden sm:block" />
+        <TextGradient text=" security" /> of data
       </PrimaryBanner>
 
       {/* features section  */}
       <RowSpanGrid data={blockchainFeaturesData}>
-        Scaleable & Protected
+        One version of truth
         <br />
-        <TextGradient text="Features" />
+        always in-sync
       </RowSpanGrid>
 
       {/* health records section  */}
       <TextBanner data={blockchainHealthBannerData}>
-        Paitent centric health
+        Towards building the
         <br />
-        <TextGradient text=" Records" />
+        next-gen fintech
       </TextBanner>
 
       {/* services section  */}
       <IconCardGroup3 data={blockchainServicesData} type="Servics">
         Scaleable & Protected
         <br />
-        <TextGradient text="Features" />
+        Features
       </IconCardGroup3>
 
       {/* Supply Chain section  */}
       <ImageShowcase
-        sub="Medical care systems in each nation are battling with the issue of
-        information siloes, implying that patients and their medical services
-        suppliers have a fragmented perspective on clinical chronicles."
+        sub="Our blockchain solutions focus on reducing the cost involved with point-to-point communication and transportation by eliminating the maximum number of middlemen from shipping events, transactions and record keeping by building a comprehensive, decentralized and shared ledger. "
         img="/images/technologies/blockchain/blockchain_supply.svg"
       >
-        <TextGradient text="Ensuring" />
+        Ensuring transparency in
         <br />
-        Transparent Supply Chain
+        supply chain & logistics
       </ImageShowcase>
     </BasicLayout>
   );

@@ -14,11 +14,12 @@ const MobileTechnologies = () => {
       <PrimaryBanner
         title="Mobile Technologies"
         img="mobile_technologies"
-        sub="BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization."
+        sub="In a world of oversaturated mobile apps, we pioneer disruptive ideas to break trends and introduce the next big thing.  "
       >
-        Innovative Solution.
+        <TextGradient text="Empowering" />,
         <br />
-        <TextGradient text="Simple" /> & <TextGradient text="Affordable" />
+        <TextGradient text="accessible " /> &
+        <TextGradient text=" futuristic" />
       </PrimaryBanner>
 
       {/* features section  */}

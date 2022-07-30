@@ -1,115 +1,95 @@
 const blockchainFeaturesData = [
   {
     id: 0,
-    title: "Advanced analytics",
-    img: "/images/technologies/blockchain/features/blockchain_features_icon_0.svg",
-    subTitle:
-      "Synergistically pursue accurate initiatives without economically sound imperatives.",
-    subTitle2:
-      "Professionally architect unique process improvements via optimal.",
-    title2: "Included with",
+    title: "Security",
+    img: "/images/technologies/blockchain/features/icon_0.svg",
     benefits: [
-      "Verifying Software for Download/update",
-      "Mitigating DDoS",
-      "Biometric Private Keys",
-      "Secure DNS",
-      "Decentralizing Data Storage",
-      "Data Veracity",
-      "Securing Edge Device",
-      "Multi-Signature Logins",
+      "Distributed ledger",
+      "Data logs",
+      "Secure transaction",
+      "Smart contracts",
+      "Privacy and confidentiality",
+      "Access management",
+      "Data integrity",
     ],
   },
   {
     id: 1,
-    title: "Cost Reducing",
-    img: "/images/technologies/blockchain/features/blockchain_features_icon_1.svg",
-    subTitle:
-      "Synergistically pursue accurate initiatives without economically imperatives.",
+    title: "Immutability",
+    img: "/images/technologies/blockchain/features/icon_1.svg",
   },
   {
     id: 2,
-    title: "Copyright Protection",
-    img: "/images/technologies/blockchain/features/blockchain_features_icon_2.svg",
-    subTitle:
-      "Quickly productize prospective value before collaborative benefits.",
+    title: "Asset Protection",
+    img: "/images/technologies/blockchain/features/icon_2.svg",
   },
   {
     id: 3,
-    title: "Tracking Medicines",
-    img: "/images/technologies/blockchain/features/blockchain_features_icon_3.svg",
-    subTitle:
-      "Credibly disintermediate functional processes for team driven action.",
+    title: "Transparency",
+    img: "/images/technologies/blockchain/features/icon_3.svg",
   },
   {
     id: 4,
-    title: "Data Identification",
-    img: "/images/technologies/blockchain/features/blockchain_features_icon_4.svg",
-    subTitle:
-      "Dynamically develop ubiquitous opportunities whereas relationships.",
+    title: "Auditability",
+    img: "/images/technologies/blockchain/features/icon_4.svg",
   },
 ];
 
 const blockchainServicesData = [
   {
     id: 0,
-    title: "Automotive",
+    title: "Governmnet Services",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/blockchain/services/blockchain_services_icon_0.svg",
-    hoverImg:
-      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+      "We apply blockchain technologies to decentralize, protect, authenticate and democratize government databases to be easily accessed, validated and used by the public reducing frictions, costs and risks in administrative and financial processes across various ministries and offices. ",
+    img: "/images/technologies/blockchain/services/icon_0.svg",
+    hoverImg: "/images/technologies/blockchain/services/icon_hover_0.svg",
   },
   {
     id: 1,
-    title: "Healthcare",
+    title: "Healthcare & Education",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
-    hoverImg:
-      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+      "Facilitating healthcare and education sectors with secure blockchain databases to maintain important records of transactions and information allowing people to have better control and understanding of their data, records and status in real time. ",
+    img: "/images/technologies/blockchain/services/icon_1.svg",
+    hoverImg: "/images/technologies/blockchain/services/icon_hover_1.svg",
   },
   {
     id: 2,
     title: "Fintech",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/blockchain/services/blockchain_services_icon_2.svg",
-    hoverImg:
-      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+      "Enhancing reliability and transparency of complicated trade transactions and commercial documents among multiple stakeholders using our next-generation blockchain technologies to simplify and ensure accessibility of financial information.",
+    img: "/images/technologies/blockchain/services/icon_2.svg",
+    hoverImg: "/images/technologies/blockchain/services/icon_hover_2.svg",
   },
   {
     id: 3,
-    title: "Arts",
+    title: "Intellectual Property",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/blockchain/services/blockchain_services_icon_3.svg",
-    hoverImg:
-      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+      "Credits for intellectual properties are given back to the original creators using blockchain technologies through sophisticated, decentralized yet shared ledger that is alwyas in-sync.",
+    img: "/images/technologies/blockchain/services/icon_3.svg",
+    hoverImg: "/images/technologies/blockchain/services/icon_hover_3.svg",
   },
   {
     id: 4,
     title: "Supply chain Managment ",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/blockchain/services/blockchain_services_icon_4.svg",
-    hoverImg:
-      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+      "Grow the potentials of a transparent, fast, resilient, and trusted supply chain by utilizing the enormosity of shared data, advanced validation, secure transactions, high security smart contracts and realtime visibility of the data.",
+    img: "/images/technologies/blockchain/services/icon_4.svg",
+    hoverImg: "/images/technologies/blockchain/services/icon_hover_4.svg",
   },
   {
     id: 5,
-    title: "Transportation",
+    title: "Logistics",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/blockchain/services/blockchain_services_icon_5.svg",
-    hoverImg:
-      "/images/technologies/blockchain/services/blockchain_services_icon_1.svg",
+      "Designed to reduce the complexity and volume of point-to-point communication in transportation systems through distributed permission platforms accessible by supply chain ecosystem, digitized workflow and trackings. ",
+    img: "/images/technologies/blockchain/services/icon_5.svg",
+    hoverImg: "/images/technologies/blockchain/services/icon_hover_5.svg",
   },
 ];
 
 const blockchainHealthBannerData = {
   img: "/images/technologies/blockchain/blockchain_health_banner.svg",
   subTitle:
-    "Medical care systems in each nation are battling with the issue of information siloes, implying that patients and their medical services suppliers have a fragmented perspective on clinical chronicles.",
+    "Using blockchain technology to reshape the future of financial landscapes using distributed ledger-based bookkeeping, optimal identification protection through cryptographic ML modeling, increased data security and a next-generation payment system solidifying trust in financial services across the globe. ",
 };
 
 export {

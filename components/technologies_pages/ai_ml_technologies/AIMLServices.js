@@ -13,17 +13,17 @@ const AIMLServices = () => {
 
   return (
     <div className="py-10 xl:py-16">
-      <SectionTitleType title="Services" />
+      <SectionTitleType title="Platforms" />
       <TechnologiesSectionTitle>
         Building your Own <TextGradient text="World" />
         <br />
         With us
       </TechnologiesSectionTitle>
-      <div className="md:flex items-center mt-10 xl:mt-20 gap-5 3xl:gap-8">
-        <div className="w-full md:w-1/2">
+      <div className="md:flex items-center mt-6 gap-4 xl:gap-6">
+        <div className="w-full md:w-1/2 clip-video">
           {aimlPath ? (
             <video
-              className="w-full h-full bg-white object-cover"
+              className="w-full h-full object-cover"
               src="/images/technologies/ai_ml/services/aiml_services_banner.mp4"
               autoPlay
               muted
@@ -47,11 +47,11 @@ const AIMLServices = () => {
                   key={id}
                   className={`bg-white ${
                     (id === 0 && "md:mt-40") ||
-                    (id === 3 && "md:-mt-40 custom-gap")
-                  } rounded-[10px] xl:rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-4 lg:py-8 lg:px-3 2xl:px-8 3xl:px-10 w-full h-full md:h-auto self-center`}
+                    (id === 3 && "md:-mt-[140px] xl:-mt-40 custom-gap")
+                  } rounded-[10px] xl:rounded-[20px] flex flex-col justify-center items-center text-center px-2 lg:px-3 2xl:px-8 3xl:px-10 py-4 lg:py-10 w-full h-full md:h-auto self-center`}
                 >
-                  <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-2xl shadow-blue-500/25">
-                    <div className="h-6 w-6 xl:h-12 xl:w-12 relative">
+                  <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
+                    <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
                       <Image src={img} layout="fill" alt="" />
                     </div>
                   </div>

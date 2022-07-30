@@ -1,19 +1,21 @@
 import Image from "next/image";
 
+import { getPath } from "../../utils/paths";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview3Items = (props) => {
   const { data, children, type } = props;
+  const iotPath = getPath("/iot-technologies");
 
   return (
-    <div className="py-10 xl:py-16">
+    <div className={`py-10 xl:py-16 ${iotPath && "!pt-0"}`}>
       {type && <SectionTitleType title={type} />}
       {children && (
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       )}
       <div
-        className={`w-full lg:w-4/5 mx-auto flex flex-wrap md:flex-nowrap justify-evenly gap-6 ${
-          children && "mt-10 md:mt-16 xl:mt-20 "
+        className={`w-full max-w-[1128px] mx-auto flex flex-wrap md:flex-nowrap justify-evenly gap-6 ${
+          children && "mt-10 "
         }`}
       >
         {data.map(({ id, title, img, subTitle }) => {
@@ -29,7 +31,7 @@ const Overview3Items = (props) => {
                 {title}
               </p>
               {subTitle && (
-                <p className="hidden md:block text-gray-300 2xl:text-lg mt-5 3xl:w-5/6 mx-auto">
+                <p className="hidden md:block text-gray-300 2xl:text-lg mt-5 3xl:w-5/6 mx-auto !leading-6">
                   {subTitle}
                 </p>
               )}

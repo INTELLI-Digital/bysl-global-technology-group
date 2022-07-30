@@ -1,82 +1,73 @@
 const databaseBannerData = {
   heading: "Database Technologies",
   subTitle:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+    "Smart & secure databage technologies with industry-leading systemic architecture for dynamic, scalable and efficient data management",
   img: "/images/banners/database_technologies_banner.svg",
 };
 
 const databaseSolutionsData = [
   {
     id: 0,
-    title: "Financial Solutions",
-    img: "/images/technologies/database/solutions/database_solutions_icon_0.svg",
+    title: "Enterprise Resource Planning  ",
+    img: "/images/technologies/database/solutions/icon_0.svg",
+    hoverImg: "/images/technologies/database/solutions/icon_hover_0.svg",
   },
   {
     id: 1,
-    title: "Financial Solutions",
-    img: "/images/technologies/database/solutions/database_solutions_icon_1.svg",
+    title: "Software as a Service",
+    img: "/images/technologies/database/solutions/icon_1.svg",
+    hoverImg: "/images/technologies/database/solutions/icon_hover_1.svg",
   },
   {
     id: 2,
-    title: "Payments Solutions",
-    img: "/images/technologies/database/solutions/database_solutions_icon_2.svg",
-  },
-  {
-    id: 3,
-    title: "Healthcare",
-    img: "/images/technologies/database/solutions/database_solutions_icon_3.svg",
-  },
-  {
-    id: 4,
-    title: "Telecommunications Solutions",
-    img: "/images/technologies/database/solutions/database_solutions_icon_4.svg",
-  },
-  {
-    id: 5,
-    title: "Manufacturing Solutions",
-    img: "/images/technologies/database/solutions/database_solutions_icon_5.svg",
+    title: "Scalabale Web Applications",
+    img: "/images/technologies/database/solutions/icon_2.svg",
+    hoverImg: "/images/technologies/database/solutions/icon_hover_2.svg",
   },
 ];
 
 const managingDatabaseData = {
   subTitle:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+    "Our comprehensive solutions for managing secure databases help businesses scale operations through cost-effective data management.  ",
   img: "/images/technologies/database/database_solution_banner.svg",
   features: [
-    "Autonomous Data Warehouse",
-    "Autonomous JSON Database",
-    "Autonomous Transaction Processing",
+    "Autonomous data warehouse",
+    "Access control",
+    "Autonomous JSON database",
+    "High data quality",
+    "Autonomous transaction processing",
+    "Comprehensive databse monitoring",
   ],
 };
 
 const databaseFeaturesData = [
   {
     id: 0,
-    title: "Multi-cloud Cluster",
+    title: "Multitenant Database",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/database/features/database_features_icon_0.svg",
+      "A container architecture in the data tier offering consolidation, isolation and agility for database with enterprise-grade performance",
+    img: "/images/technologies/database/features/icon_0.svg",
   },
   {
     id: 1,
-    title: "Secure Data",
+    title: "Hybrid Model",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/database/features/database_features_icon_1.svg",
+      "Offering native support for mutiple data models with multiple access methods serving both single and multi-purpse needs",
+    img: "/images/technologies/database/features/icon_1.svg",
   },
   {
     id: 2,
     title: "Client-side Encryption",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/database/features/database_features_icon_2.svg",
+      "Using an authenticated, secure and symmetric key encryption algorithm for clients  to access data through mandatory encryption key ",
+    img: "/images/technologies/database/features/icon_2.svg",
   },
   {
     id: 3,
-    title: "Continues Backups",
+    title: "Flexible Deployment",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/database/features/database_features_icon_3.svg",
+      "Offering hyper flexible deployment options including public cloud, data center and private cloud for higher capabilities and scalability",
+    img: "/images/technologies/database/features/icon_3.svg",
   },
 ];
 

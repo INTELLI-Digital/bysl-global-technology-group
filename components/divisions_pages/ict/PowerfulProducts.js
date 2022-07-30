@@ -1,13 +1,15 @@
 import Image from "next/image";
 
-import Button from "../../shared/buttons/Button";
-import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
+// import Button from "../../shared/buttons/Button";
+import { TechnologiesSectionTitle, TextGradient } from "../../shared/SharedTextgroups";
 
 const PowerfulProducts = () => {
   return (
     <div className="py-10 xl:py-16">
       <TechnologiesSectionTitle>
-        Powerful product We Proud For
+        <TextGradient text="Out-of-the-box " />
+        Motion
+        <br /> Graphics
       </TechnologiesSectionTitle>
       <div className="my-10 grid grid-cols-12 auto-rows-max gap-6 lg:gap-10 2xl:gap-16">
         {[
@@ -36,12 +38,24 @@ const PowerfulProducts = () => {
                       : "h-32 xxs:h-52 xs:h-32 lg:h-40 xl:h-44 2xl:h-52"
                   }`}
                 >
-                  <Image
-                    src={`/images/divisions/ict/products/${i}.gif`}
-                    layout="fill"
-                    objectFit="cover"
-                    alt=""
-                  />
+                  {i === 0 || i === 1 ? (
+                    <video
+                      className="object-cover h-full w-full"
+                      src={`/images/divisions/ict/products/${
+                        (i === 0 && "0") || (i === 1 && "1")
+                      }.mp4`}
+                      autoPlay
+                      muted
+                      loop
+                    />
+                  ) : (
+                    <Image
+                      src={`/images/divisions/ict/products/${i}.gif`}
+                      layout="fill"
+                      objectFit="cover"
+                      alt=""
+                    />
+                  )}
                 </div>
               </div>
               <p className="mt-2.5 text-gray-800 text-sm lg:text-base 2xl:text-lg">
@@ -51,9 +65,9 @@ const PowerfulProducts = () => {
           );
         })}
       </div>
-      <div className="flex justify-center">
+      {/* <div className="flex justify-center">
         <Button title="Explore all" px={64} />
-      </div>
+      </div> */}
     </div>
   );
 };

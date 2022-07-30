@@ -2,18 +2,18 @@ import Image from "next/image";
 
 const FeaturesCard = ({ data }) => {
   return (
-    <div className="flex lg:block mb-12 lg:mb-0 gap-4 mt-10 lg:mt-8 w-full">
+    <div className="flex lg:flex-col mb-12 lg:mb-0 gap-4 xl:gap-6 mt-10 lg:mt-8 w-full">
       {data.map(({ id, title, subTitle, img }) => {
         return (
           <div
             key={id}
             className={`lg:flex justify-start ${
               !subTitle && "items-center"
-            } my-3 xl:my-5 gap-5 w-10/12`}
+            } gap-5 w-10/12`}
           >
             <div
               className={`h-12 w-12 ${
-                subTitle && "2xl:h-16 2xl:w-16"
+                subTitle && "xl:h-[75px] xl:w-[75px]"
               } mx-auto relative`}
             >
               <Image src={img} layout="fill" alt="" />

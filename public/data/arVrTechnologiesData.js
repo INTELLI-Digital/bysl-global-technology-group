@@ -39,7 +39,7 @@ const arVrWorldData = [
   },
   {
     id: 2,
-    title: "Surround Ar",
+    title: "Augmented Reality",
     img: "/images/technologies/ar_vr/world/icon_2.svg",
   },
 ];
@@ -47,37 +47,37 @@ const arVrWorldData = [
 const arVrServicesData = [
   {
     id: 0,
-    title: "Commercial",
+    title: "Commercial VR",
     img: "/images/technologies/ar_vr/services/icon_0.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_0.svg",
   },
   {
     id: 1,
-    title: "Academical",
+    title: "Academical VR",
     img: "/images/technologies/ar_vr/services/icon_1.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_1.svg",
   },
   {
     id: 2,
-    title: "Community",
+    title: "Community VR",
     img: "/images/technologies/ar_vr/services/icon_2.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_2.svg",
   },
   {
     id: 3,
-    title: "Medical",
+    title: "Medical VR",
     img: "/images/technologies/ar_vr/services/icon_3.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_3.svg",
   },
   {
     id: 4,
-    title: "Artistic",
+    title: "Artistic VR",
     img: "/images/technologies/ar_vr/services/icon_4.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_4.svg",
   },
   {
     id: 5,
-    title: "Industrial",
+    title: "Industrial VR",
     img: "/images/technologies/ar_vr/services/icon_5.svg",
     hoverImg: "/images/technologies/ar_vr/services/icon_hover_5.svg",
   },

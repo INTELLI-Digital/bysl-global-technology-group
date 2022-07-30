@@ -21,7 +21,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
         </SectionTitleGradient>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-4 grid-rows-2 gap-2 md:gap-4 xl:gap-6">
-        <div className="col-span-2 row-span-2 px-2 py-4 sm:pt-6 md:pt-10 xl:pt-8 bg-gradient-to-r from-blue-900 to-blue-700 max-h-max text-center text-white rounded-[10px] xl:rounded-[20px]">
+        <div className="col-span-2 row-span-2 px-2 py-4 sm:pt-6 md:pt-12 xl:pt-8 bg-gradient-to-r from-blue-900 to-blue-700 max-h-max text-center text-white rounded-[10px] xl:rounded-[20px]">
           <p className="break-words leading-10 text-lg lg:text-2xl xl:text-3xl 2xl:text-4xl font-bold">
             EXPLORE. INNOVATE. INVEST.
           </p>
@@ -58,7 +58,7 @@ const AboutUs = ({ summaryData, aboutUsData }) => {
                 >
                   {title}
                 </p>
-                <p className="pb-3 xl:pb-5 px-3 xl:px-4 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-300">
+                <p className="pb-3 xl:pb-5 px-3 xl:px-4 text-xs md:text-sm xl:text-base 2xl:text-lg text-gray-300 xl:!leading-5 ">
                   {description}
                 </p>
               </div>

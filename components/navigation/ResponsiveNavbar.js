@@ -1,19 +1,12 @@
-import { useEffect } from "react";
-import { useMediaQuery } from "react-responsive";
-
 import Navbar from "./Navbar";
 import NavbarSmall from "./NavbarSmall";
 import { getPath } from "../../utils/paths";
 
 const ResponsiveNavbar = () => {
-  const isLarge = useMediaQuery({ minWidth: 1024 });
-  useEffect(() => {}, [isLarge]);
+  const arVrPath = getPath("/ar-vr-technologies");
 
-  // return <div>{isLarge ? <Navbar /> : <NavbarSmall />}</div>;
   return (
-    <div
-      className={`${!getPath("/ar-vr-technologies") && "pb-14 lg:pb-[100px]"}`}
-    >
+    <div className={`${!arVrPath && "pb-14 lg:pb-[100px]"}`}>
       <div className="hidden lg:block">
         <Navbar />
       </div>

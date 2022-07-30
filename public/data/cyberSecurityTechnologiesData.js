@@ -2,35 +2,40 @@ const cyberBenefitsData = [
   {
     id: 0,
     title: "Detecting Incident",
-    img: "/images/technologies/cyber_security/benefits/cyber_security_benefits_icon_0.svg",
+    img: "/images/technologies/cyber_security/benefits/icon_0.svg",
   },
   {
     id: 1,
     title: "Preventing Incident",
-    img: "/images/technologies/cyber_security/benefits/cyber_security_benefits_icon_1.svg",
+    img: "/images/technologies/cyber_security/benefits/icon_1.svg",
   },
   {
     id: 2,
-    title: "Responsing Incident",
-    img: "/images/technologies/cyber_security/benefits/cyber_security_benefits_icon_2.svg",
+    title: "Instant Responses To Incidents",
+    img: "/images/technologies/cyber_security/benefits/icon_2.svg",
+  },
+  {
+    id: 3,
+    title: "Threat Prediction",
+    img: "/images/technologies/cyber_security/benefits/icon_2.svg",
   },
 ];
 
 const cyberFeaturesData = [
   {
     id: 0,
-    title: "Fast & Reliable",
-    img: "/images/technologies/cyber_security/features/cyber_security_features_icon_0.svg",
+    title: "Security Firewalls",
+    img: "/images/technologies/cyber_security/features/icon_0.svg",
   },
   {
     id: 1,
-    title: "Secure Environment",
-    img: "/images/technologies/cyber_security/features/cyber_security_features_icon_1.svg",
+    title: "Risk Identification",
+    img: "/images/technologies/cyber_security/features/icon_1.svg",
   },
   {
     id: 2,
-    title: "Ease of Managment",
-    img: "/images/technologies/cyber_security/features/cyber_security_features_icon_2.svg",
+    title: "Vulnerability Assessment",
+    img: "/images/technologies/cyber_security/features/icon_2.svg",
   },
 ];
 
@@ -39,56 +44,60 @@ const cyberSolutionsData = [
     id: 0,
     title: "Website Security",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/cyber_security/solutions/cyber_security_solutions_icon_0.svg",
+      "March forward with your digital disruption matching the cyber resilience we bring through state-of-the-art web security services.",
+    img: "/images/technologies/cyber_security/solutions/icon_0.svg",
+    hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_0.svg",
   },
   {
     id: 1,
     title: "Software Shield",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/cyber_security/solutions/cyber_security_solutions_icon_1.svg",
+      "Scalable, dynamic & cloud-based security options meant to shield software from viruses, spyware, bots, rootkits, trojans and other types of internet security threats.",
+    img: "/images/technologies/cyber_security/solutions/icon_1.svg",
+    hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_1.svg",
   },
   {
     id: 2,
     title: "Cloud Backup",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/cyber_security/solutions/cyber_security_solutions_icon_2.svg",
+      "Cloud data storage with multi-layered security doors dedictated for seamless cloud backups from anywhere in the world with maximum protection",
+    img: "/images/technologies/cyber_security/solutions/icon_2.svg",
+    hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_2.svg",
   },
   {
     id: 3,
     title: "Payment Security",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/cyber_security/solutions/cyber_security_solutions_icon_3.svg",
+      "Advanced fraud-protection systems to conduct risk analysis using behaviorial analytics, fingerprint technology, and ML to identify high-risk transactions.",
+    img: "/images/technologies/cyber_security/solutions/icon_3.svg",
+    hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_3.svg",
   },
   {
     id: 4,
     title: "Disaster Recovery",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/cyber_security/solutions/cyber_security_solutions_icon_4.svg",
+      "Implementing well-planned and comprehensive data backup solutions to mitigate any breach of security and reinstate normalcy instanteneously.",
+    img: "/images/technologies/cyber_security/solutions/icon_4.svg",
+    hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_4.svg",
   },
   {
     id: 5,
     title: "Network Scanning",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/cyber_security/solutions/cyber_security_solutions_icon_5.svg",
+      "Whether it’s a public or private network, our advance network scanning technology combs through access port & HTTP vulnerabilities to keep your data safe and secure",
+    img: "/images/technologies/cyber_security/solutions/icon_5.svg",
+    hoverImg: "/images/technologies/cyber_security/solutions/icon_hover_5.svg",
   },
 ];
 
 const cyberProtectionData = {
-  title: "Perfect Solution for all ",
-  colored: "Protection Question",
   subTitle:
-    "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.",
+    "From identifying threats through stress testing to implementing advanced ML-powered fraud protection systems, we empower our clients through leading-edge security solutions .",
   features: [
     "Identifying Threats",
-    "Testing Cyber Security",
+    "Stress testing cyber networks",
     "Managing Cloud Security",
-    "Cyber Risk Assessment",
+    "Assessing risks & delivering prompt responses  ",
   ],
   img: "/images/technologies/cyber_security/cyber_secuirity_protection_banner.svg",
 };

@@ -10,7 +10,7 @@ Technologies`,
   {
     id: 1,
     title: "Mobile Technologies",
-    img: "/images/technologies/mobile_technologies.svg",
+    img: "/images/technologies/mobile_technologies.webp",
     link: "/mobile-technologies",
   },
   {

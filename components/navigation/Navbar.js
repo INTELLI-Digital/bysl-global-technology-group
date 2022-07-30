@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { ImArrowRight2 } from "react-icons/im";
+// import { ImArrowRight2 } from "react-icons/im";
 
 import { navbars } from "../../public/data/navbarData";
 import { getPath } from "../../utils/paths";
@@ -63,14 +63,14 @@ const Navbar = () => {
           <div className="flex items-center">
             {navbars.map(({ id, title, link, dropdowns }) => {
               return (
-                <div key={id} className="group inline-block">
+                <div key={id} id="nav" className="inline-block">
                   <button
-                    className={`${
+                    className={` ${
                       arvrPath && !colorChange ? "text-white" : "text-gray-500"
                     } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
                   >
                     <span
-                      className={`mr-1 ${
+                      className={`mr-1  ${
                         router.pathname === link &&
                         "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                       } ${!dropdowns && "pb-5"}`}
@@ -87,7 +87,7 @@ const Navbar = () => {
                   {dropdowns && (
                     <div className="pt-5 bg-transparent">
                       <div
-                        className={`mx-1 border-t-2 border-gray-200/75 shadow-lg shadow-[#7080B0]/10 py-12 xl:py-[72px] absolute left-0 top-20 lg:w-[99vw] xl:w-[99.3vw] 3xl:w-[99.4vw] 4xl:w-[98.7vw] bg-white rounded-lg hidden group-hover:block text-gray-700 `}
+                        className={`shadow-lg shadow-[#7080B0]/10 py-12 xl:pb-[72px] absolute left-0 top-20 w-full bg-white rounded-b-lg navbar text-gray-700 `}
                       >
                         <p className="box font-bold text-2xl pb-8">
                           <TextGradient text={title} />
@@ -97,15 +97,45 @@ const Navbar = () => {
                             return (
                               <Link key={id} href={link}>
                                 <div
-                                  className={`border border-gray-200/75 p-4 ${
-                                    router.pathname === link && "bg-[#E7F0F9]"
-                                  } hover:bg-[#E7F0F9] rounded-lg cursor-pointer transition-all duration-300`}
+                                  className={`hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] p-4  ${
+                                    router.pathname === link &&
+                                    "text-white bg-gradient-to-r from-blue-900 to-blue-700"
+                                  } rounded-lg cursor-pointer transition-all duration-500`}
                                 >
                                   <div className="flex items-center justify-between mb-2">
-                                    <p className="text-gray-800">{title}</p>
-                                    <ImArrowRight2 />
+                                    <p
+                                      className={` transition-all duration-500 ${
+                                        router.pathname !== link &&
+                                        "text-gray-800"
+                                      }`}
+                                    >
+                                      {title}
+                                    </p>
+                                    {/* <ImArrowRight2
+                                      className={`${
+                                        router.pathname === link
+                                          ? "text-white"
+                                          : "text-blue-900/80"
+                                      }  group-hover:text-white transition-all duration-500`}
+                                    /> */}
+                                    <Image
+                                      src={
+                                        router.pathname === link
+                                          ? "/images/navIconRightWhite.svg"
+                                          : "/images/navIconRight.svg"
+                                      }
+                                      alt=""
+                                      height={18}
+                                      width={18}
+                                    />
                                   </div>
-                                  <p className="lg:w-[90%] 2xl:w-4/5 font-normal text-xs text-[#393e50]/40">
+                                  <p
+                                    className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs transition-all duration-500 ${
+                                      router.pathname === link
+                                        ? "text-white/40"
+                                        : "text-[#393e50]/40"
+                                    }`}
+                                  >
                                     {subTitle}
                                   </p>
                                 </div>

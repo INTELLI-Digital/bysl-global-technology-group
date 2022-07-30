@@ -21,7 +21,7 @@ const ARVRTechnologies = () => {
       <div className="box">
         {/* services section  */}
         <IconCardGroup3 data={arVrServicesData} type="Applications">
-          Recreate <TextGradient text=" reality " /> the way you like it
+          Create immersive worlds
         </IconCardGroup3>
 
         {/* Own World section  */}
@@ -31,14 +31,12 @@ const ARVRTechnologies = () => {
           black={true}
           padding={true}
         >
-          Building your Own <TextGradient text="World" />
-          <br />
-          With us
+          Building your own world with us
         </TriangleCardBanner>
 
         {/* features section  */}
         <FeaturedBanner data={arVrFeaturesData}>
-          <TextGradient text="Interactive " /> VR Studio
+          Interactive VR Studio
         </FeaturedBanner>
 
         {/* How does it works */}

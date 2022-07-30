@@ -25,17 +25,20 @@ const iotServicesData = [
 const iotSolutionsData = [
   {
     id: 0,
-    title: "Industrial IoT Solutions",
+    title: "Industrial",
+    titleNewLine: "IoT Solutions",
     img: "/images/technologies/iot/solutions/iot_solutions_icon_0.svg",
   },
   {
     id: 1,
-    title: "Smart City IoT Solutions",
+    title: "Smart City",
+    titleNewLine: "IoT Solutions",
     img: "/images/technologies/iot/solutions/iot_solutions_icon_1.svg",
   },
   {
     id: 2,
-    title: "Smart Home, Office IoT Solutions",
+    title: "Smart Home, Office",
+    titleNewLine: "IoT Solutions",
     img: "/images/technologies/iot/solutions/iot_solutions_icon_2.svg",
   },
 ];

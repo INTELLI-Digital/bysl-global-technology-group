@@ -1,6 +1,5 @@
 import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 import SecondaryLargeBanner from "../components/shared/banners/SecondaryLargeBanner";
-import { TextBanner } from "../components/shared/banners/SharedBanner";
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
@@ -17,16 +16,17 @@ const Administration = () => {
     <BasicLayout title="Administration">
       {/* banner section  */}
       <SecondaryLargeBanner data={administrationBannerData}>
-        Integrated, Smart, Customizable
+        Centralized and integrated ERP for
         <br />
-        <TextGradient text="Administration Software" />
+        <TextGradient text="finance " /> and <TextGradient text=" business" />
+        administration
       </SecondaryLargeBanner>
 
       {/* Control Panel section  */}
       <IconCardGroup3 data={administrationControlPanelData}>
-        Powerful Control <TextGradient text="Panel" />
+        Playing the <TextGradient text=" heart " /> of the
         <br />
-        and <TextGradient text="APIs" />
+        organization
       </IconCardGroup3>
 
       {/* Financial Management section  */}
@@ -35,10 +35,7 @@ const Administration = () => {
       </BannerWithBullets>
 
       {/* Workpalce section  */}
-      <TextBanner data={workplaceBannerData} reversed={true}>
-        Manage your Workpalce
-        <TextGradient text=" Anywhere" />
-      </TextBanner>
+      <BannerWithBullets data={workplaceBannerData} reversed={true} />
     </BasicLayout>
   );
 };

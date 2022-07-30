@@ -13,12 +13,19 @@ const SolutionsBanner = () => {
             complex &quot;WOW&quot; animations. I can build them all.
           </p>
         </div>
-        <div className="sm:w-1/2 xs:px-12 sm:px-0 2xl:pl-10 flex justify-center sm:justify-end">
-          <Image
+        <div className="sm:w-1/2 xs:px-12 sm:px-0 2xl:pl-10 flex justify-center sm:justify-end clip-video">
+          {/* <Image
             src="/images/banners/landing_solution_banner.svg"
             alt=""
             height={403}
             width={536}
+          /> */}
+          <video
+            className="w-full h-full"
+            src="/images/banners/landing_solution_banner.webm"
+            autoPlay
+            muted
+            loop
           />
         </div>
       </div>

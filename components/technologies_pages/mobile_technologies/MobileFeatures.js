@@ -7,31 +7,36 @@ import {
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
-  TextGradient,
 } from "../../shared/SharedTextgroups";
 
 const MobileFeatures = () => {
-  const Features = ({ data }) => {
+  const Features = ({ data, reversed }) => {
     return (
-      <div className="flex flex-row lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 place-self-center">
+      <div className="flex lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 w-full">
         {data.map(({ id, title, subTitle, img }) => {
           return (
             <div
               key={id}
-              className="flex flex-col gap-2 lg:gap-5 xl:flex-row-reverse"
+              className={`flex flex-col gap-2 lg:gap-5 w-1/3 lg:w-full ${
+                reversed ? "xl:flex-row" : "xl:flex-row-reverse"
+              }`}
             >
               <div className="xl:w-1/4 3xl:w-2/12 flex justify-center">
-                <div className="h-10 lg:h-16 w-10 lg:w-16 rounded-full bg-blue-300 flex justify-center items-center">
-                  <div className="h-4 w-4 lg:h-7 lg:w-7 relative">
+                <div className="h-10 lg:h-16 w-10 lg:w-16 rounded-full bg-[#F2F2F3] flex justify-center items-center">
+                  <div className="h-4 w-4 lg:h-8 lg:w-8 relative">
                     <Image src={img} alt="" layout="fill" />
                   </div>
                 </div>
               </div>
-              <div className="text-center xl:text-end xl:w-3/4 3xl:w-10/12">
+              <div
+                className={`text-center ${
+                  reversed ? "xl:text-start" : "xl:text-end"
+                } xl:w-3/4 3xl:w-10/12`}
+              >
                 <p className="text-sm md:text-base lg:text-lg 2xl:text-xl font-medium text-gray-800">
                   {title}
                 </p>
-                <p className="text-sm lg:text-base xl:text-lg mt-1 text-gray-300 hidden lg:block">
+                <p className="text-sm lg:text-base xl:text-lg mt-1 text-gray-300 hidden lg:block !leading-6">
                   {subTitle}
                 </p>
               </div>
@@ -46,7 +51,7 @@ const MobileFeatures = () => {
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Features" />
       <TechnologiesSectionTitle>
-        Explore Premium <TextGradient text="Features" />
+        Explore premium quality
       </TechnologiesSectionTitle>
       <div className="mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center gap-4">
         <Features data={mobileFeaturesData1} />
@@ -59,7 +64,7 @@ const MobileFeatures = () => {
             />
           </div>
         </div>
-        <Features data={mobileFeaturesData2} />
+        <Features data={mobileFeaturesData2} reversed={true} />
       </div>
     </div>
   );

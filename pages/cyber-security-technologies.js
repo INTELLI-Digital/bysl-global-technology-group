@@ -2,7 +2,7 @@ import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import Overview3Items from "../components/shared/Overview3Items";
+import Overview4Items from "../components/shared/Overview4Items";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
 import {
@@ -20,15 +20,14 @@ const CyberSecurityTechnologies = () => {
       <PrimaryBanner
         title="Cyber Security Technologies"
         img="cyber-security_technologies"
-        sub="BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization."
+        sub="Designing next-generation security landscapes with end-to-end encryption, integraged AI-based threat analysis, persistent vulnerablity check, rigorus stress-testings, real time responses and timely security updates"
       >
-        Solution for all
-        <br />
-        <TextGradient text="Cyber Protection" />
+        <TextGradient text="Full-scale" /> cyber protection through
+        <TextGradient text=" holistic security architecture" />
       </PrimaryBanner>
 
       {/* overview section  */}
-      <Overview3Items data={cyberBenefitsData} />
+      <Overview4Items data={cyberBenefitsData} />
 
       {/* features section  */}
       <TriangleCardBanner
@@ -38,16 +37,19 @@ const CyberSecurityTechnologies = () => {
         black={true}
         padding={true}
       >
-        World Class <TextGradient text="Protection" />
+        World Class Protection
       </TriangleCardBanner>
 
       {/* Solutions section  */}
       <IconCardGroup3 data={cyberSolutionsData} type="Solutions">
-        <TextGradient text="Cyber Security" /> Services
+        Cyber Security Services
       </IconCardGroup3>
 
       {/* protection data  */}
-      <BannerWithBullets data={cyberProtectionData} />
+      <BannerWithBullets data={cyberProtectionData}>
+        360° <TextGradient text=" Protection " /> from APTs, DDoS & SQL
+        injections
+      </BannerWithBullets>
     </BasicLayout>
   );
 };

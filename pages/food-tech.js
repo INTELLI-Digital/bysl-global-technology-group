@@ -17,17 +17,16 @@ const FoodTech = () => {
       <PrimaryBanner
         title="Food Tech - Division"
         img="food_tech_division"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Multi-platform tech integration to digitize operations and supply chain of food service industry"
       >
-        Simplify one-stop
-        <br />
-        <TextGradient text="Restaurant " /> System
+        Revolutionizing the <TextGradient text=" food service industry " /> with
+        advanced
+        <TextGradient text=" tech" />
       </PrimaryBanner>
 
       {/* overview section  */}
       <Overview4Items data={foodTechOverviewData}>
-        <TextGradient text="Proficiency " />
-        is only the start
+        Tech-based catering to maximize efficiency
       </Overview4Items>
 
       {/* app section  */}

@@ -1,5 +1,4 @@
 import SecondaryLargeBanner from "../components/shared/banners/SecondaryLargeBanner";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
 import DatabaseFeatures from "../components/technologies_pages/database_technologies/DatabaseFeatures";
 import BasicLayout from "../layouts/BasicLayout";
 import {
@@ -9,6 +8,7 @@ import {
 } from "../public/data/databaseTechnologiesData";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
+import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 
 const BigdataTechnologies = () => {
   return (
@@ -16,7 +16,7 @@ const BigdataTechnologies = () => {
     <BasicLayout title="Database Technologies">
       {/* banner section  */}
       <SecondaryLargeBanner data={databaseBannerData}>
-        <TextGradient text="Database" /> Build, Connect, Deploy
+        <TextGradient text="Database" />: Build, Connect, Deploy
       </SecondaryLargeBanner>
 
       {/* features section  */}
@@ -24,17 +24,16 @@ const BigdataTechnologies = () => {
 
       {/* Solutions section  */}
       <IconCardGroup3 data={databaseSolutionsData} type="Solutions">
-        Scalable Solutions for
+        Increased productivity for
         <br />
-        <TextGradient text="Industries" />
+        developers & data
       </IconCardGroup3>
 
       {/* Managing databases section  */}
-      <BannerWithBulletSingle data={managingDatabaseData}>
-        Managing databases is easy with
-        <br />
-        our <TextGradient text="Solution" />
-      </BannerWithBulletSingle>
+      <BannerWithBullets data={managingDatabaseData}>
+        Managing databases with
+        <br /> top-tier solutions
+      </BannerWithBullets>
     </BasicLayout>
   );
 };

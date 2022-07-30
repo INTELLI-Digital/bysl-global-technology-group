@@ -29,9 +29,9 @@ const IotTechnologies = () => {
 
         {/* services section  */}
         <Overview3Items data={iotServicesData} type="Platforms">
-          Joining the IoT revolution
+          Joining the IoT revolution with
           <br />
-          with smart <TextGradient text=" connectivity" />
+          <TextGradient text=" smart connectivity" />
         </Overview3Items>
       </div>
 
@@ -39,9 +39,7 @@ const IotTechnologies = () => {
       <div className="bg-blue-300">
         <div className="box">
           <TextBanner data={iotAppDevelopmentBannerData}>
-            Catering to the most demanding
-            <br className="hidden xxs:block lg:hidden xl:block" />
-            <TextGradient text=" IoT software" /> needs
+            Catering to the most demanding IoT software needs
           </TextBanner>
         </div>
       </div>
@@ -51,20 +49,17 @@ const IotTechnologies = () => {
         <TriangleCardBanner
           type="Applications"
           data={iotSolutionsData}
-          img="/images/technologies/iot/solutions/iot_solutions_banner.svg"
           reversed={true}
+          black={true}
           padding={true}
         >
-          Full system <TextGradient text=" design " /> and
-          <br />
-          <TextGradient text="development" />
+          Full system design and development
         </TriangleCardBanner>
 
         {/* innovative solution section  */}
         <BannerWithBullets data={iotSupportData} reversed={true}>
           Introducing <TextGradient text=" innovative " /> &
-          <TextGradient text=" pragmatic " />
-          solutions to old problems
+          <TextGradient text=" pragmatic " /> solutions to old problems
         </BannerWithBullets>
       </div>
     </BasicLayout>

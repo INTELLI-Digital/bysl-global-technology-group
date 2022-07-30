@@ -4,6 +4,9 @@ import HoverImage from "./HoverImage";
 const IconCard = (props) => {
   const { data, padding } = props;
   const faqPath = getPath("/faq");
+  const dataSciencePath = getPath("/data-science");
+  const adminPath = getPath("/administration");
+  const dataPath = getPath("/database-technologies");
   const arVrPath = getPath("/ar-vr-technologies");
 
   return (
@@ -13,7 +16,9 @@ const IconCard = (props) => {
           <div
             key={id}
             className={`group gradient-bg px-2 py-5 sm:p-5 hover:cursor-pointer ${
-              !arVrPath && "sm:py-10"
+              adminPath && "lg:py-14"
+            } ${dataPath && "lg:py-14"} ${dataSciencePath && "lg:py-14"} ${
+              !arVrPath && "sm:py-6"
             }`}
           >
             <div
@@ -33,14 +38,18 @@ const IconCard = (props) => {
               </div>
             </div>
             <p
-              className={`text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center ${
-                padding ? "mt-6 xl:mt-10" : "my-3 2xl:my-5"
+              className={`text-sm lg:text-base 2xl:text-xl 3xl:text-2xl !leading-5 text-gray-800 group-hover:text-white transition-all duration-500 font-bold text-center ${
+                padding
+                  ? "mt-6 xl:mt-10"
+                  : subTitle
+                  ? "my-3 xl:mt-5 xl:mb-4"
+                  : "mt-3 xl:mt-5"
               }`}
             >
               {title}
             </p>
             {subTitle && (
-              <div className="text-sm 2xl:text-base text-gray-500 group-hover:text-white/75 hidden sm:block transition-all duration-500">
+              <div className="text-sm 2xl:text-base text-center text-gray-800/40 group-hover:text-white/80 hidden sm:block transition-all duration-500">
                 {subTitle}
               </div>
             )}

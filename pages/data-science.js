@@ -18,28 +18,26 @@ const DataScience = () => {
         <PrimaryBanner
           title="Data Science - Division"
           img="data_science_division"
-          sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+          sub="We understand, analyze and harness the power of data using the best of data science and drive growth for enterprizes."
         >
-          <TextGradient text="Data Science" />&
-          <br />
-          Analytics System
+          Translating data into key growth factors
         </PrimaryBanner>
 
         {/* control panel section  */}
         <IconCardGroup3 data={dataScienceControlPanelData}>
-          Powerful Control <TextGradient text="Panel" />
+          AI/ML-based
           <br />
-          and <TextGradient text="APIs" />
+          application development
         </IconCardGroup3>
       </div>
 
       {/* data analysis section  */}
-      <div className="bg-blue-300">
+      <div className="bg-[#ECF1F8]">
         <div className="box">
           <ImageShowcase img="/images/divisions/data_science/data_analysis_banner.svg">
-            Sales Automation with Big
+            Sales forecasting with
             <br />
-            <TextGradient text="Data Analytics" />
+            big data analytics
           </ImageShowcase>
         </div>
       </div>
@@ -47,9 +45,7 @@ const DataScience = () => {
       {/* real time data analysis section  */}
       <div className="box">
         <FeaturedBanner data={dataScienceAnalysisData}>
-          We Provide Real Time
-          <br />
-          <TextGradient text="Data Analytics" />
+          Real-time data analytics
         </FeaturedBanner>
       </div>
     </BasicLayout>

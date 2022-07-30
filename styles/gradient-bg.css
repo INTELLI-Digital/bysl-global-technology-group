@@ -1,11 +1,12 @@
 /* gradient bg  */
 .gradient-bg,
+.navbar-bg,
 .bg-gradient-from-white {
   position: relative;
   z-index: 1;
 }
 .gradient-bg {
-  background-color: #eceff5;
+  background-color: #ECF1F7;
   border-radius: 20px;
 }
 .gradient-bg-sm{
@@ -19,7 +20,14 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.gradient-bg::before,
+.navbar-bg {
+  background-color: white;
+  border-radius: 8px;
+}
+.navbar-bg::before {
+  border-radius: 8px;
+}
+.gradient-bg::before,.navbar-bg::before,
 .bg-gradient-from-white::before,.gradient-bg-sm::before  {
   position: absolute;
   content: "";
@@ -30,7 +38,7 @@
   z-index: -1;
   opacity: 0;
 }
-.gradient-bg::before,
+.gradient-bg::before,.navbar-bg::before,
 .bg-gradient-from-white::before {
   background-image: linear-gradient(to right, #00469f, #1e79d6);
   transition: opacity 0.5s ease-in;
@@ -49,7 +57,7 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.gradient-bg:hover::before, .gradient-bg:hover .gradient-bg-sm::before,
+.gradient-bg:hover::before, .gradient-bg:hover .gradient-bg-sm::before, .navbar-bg:hover::before,
 .bg-gradient-from-white:hover::before {
   opacity: 1;
 }

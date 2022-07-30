@@ -17,26 +17,27 @@ const ICT = () => {
     <BasicLayout title="ICT">
       {/* banner section  */}
       <PrimaryBanner
-        title="ICT - Division"
+        title="ICT Division"
         img="ict_division"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Looking to build a future that makes a difference in the world of buisiness and create opportunities with next-gen ICT products and services.  "
       >
-        Employ tech to drive a
-        <br />
-        <TextGradient text="Superior" /> Experiences
+        Lead breakthroughs with a complete
+        <TextGradient text=" ICT ecosystem" />
       </PrimaryBanner>
 
       {/* sectors section  */}
       <Overview4Items data={ictSectorsData}>
-        We are Experts in all
+        Development that
         <br />
-        Those <TextGradient text="Sectors" />
+        <TextGradient text="Creates " /> an
+        <TextGradient text=" Impact" />
       </Overview4Items>
 
       {/* erp section  */}
       <TextBanner data={erpBannerData} reversed={true}>
-        Wide range of <TextGradient text="ERP " />
-        Application
+        Rising as a Global Leader in
+        <br />
+        <TextGradient text="ERP Infrastructure" />
       </TextBanner>
 
       {/* Powerful product section  */}

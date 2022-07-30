@@ -1,16 +1,9 @@
-<svg width="66" height="66" viewBox="0 0 66 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="65" height="65" rx="8" fill="url(#paint0_linear_10_517)"/>
-<path d="M29.75 21H22.25C21.5596 21 21 21.5596 21 22.25V29.75C21 30.4404 21.5596 31 22.25 31H29.75C30.4404 31 31 30.4404 31 29.75V22.25C31 21.5596 30.4404 21 29.75 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M29.75 35H22.25C21.5596 35 21 35.5596 21 36.25V43.75C21 44.4404 21.5596 45 22.25 45H29.75C30.4404 45 31 44.4404 31 43.75V36.25C31 35.5596 30.4404 35 29.75 35Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M43.75 21H36.25C35.5596 21 35 21.5596 35 22.25V29.75C35 30.4404 35.5596 31 36.25 31H43.75C44.4404 31 45 30.4404 45 29.75V22.25C45 21.5596 44.4404 21 43.75 21Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35 35V40" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35 45H40V35" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M40 38H45" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M45 43V45" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-<defs>
-<linearGradient id="paint0_linear_10_517" x1="0.5" y1="33.8784" x2="65.5" y2="33.8784" gradientUnits="userSpaceOnUse">
-<stop stop-color="#00469F"/>
-<stop offset="1" stop-color="#1E79D6"/>
-</linearGradient>
-</defs>
+<svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.75 8H9.25C8.55964 8 8 8.55964 8 9.25V16.75C8 17.4404 8.55964 18 9.25 18H16.75C17.4404 18 18 17.4404 18 16.75V9.25C18 8.55964 17.4404 8 16.75 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.75 23H9.25C8.55964 23 8 23.5596 8 24.25V31.75C8 32.4404 8.55964 33 9.25 33H16.75C17.4404 33 18 32.4404 18 31.75V24.25C18 23.5596 17.4404 23 16.75 23Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.75 8H24.25C23.5596 8 23 8.55964 23 9.25V16.75C23 17.4404 23.5596 18 24.25 18H31.75C32.4404 18 33 17.4404 33 16.75V9.25C33 8.55964 32.4404 8 31.75 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 23V28" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M23 33H28V23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M28 25.5H33" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33 30.5V33" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

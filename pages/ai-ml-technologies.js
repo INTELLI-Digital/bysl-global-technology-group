@@ -18,11 +18,13 @@ const AIMLTechnologies = () => {
       <PrimaryBanner
         title="AI/ML Technologies"
         img="ai-ml_technologies"
-        sub="BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization."
+        sub="Innovating in next-generation AI systems development adapting data-driven supervised, unsupervised, reinforced learnings using self-replicating artificial neural networks & ML artifacts to handle & simplify the massive complexity of data patterns & open new horizons for businesses. "
       >
-        AI-based <TextGradient text="Traffic" /> and
+        Intelligent <TextGradient text=" Systems " />
         <br />
-        <TextGradient text="City Mobility" /> solutions
+        to make <TextGradient text=" Life " /> Better
+        {/* AI-based <TextGradient text="Traffic" /> and
+        <TextGradient text="City Mobility" /> solutions */}
       </PrimaryBanner>
 
       {/* overview items section  */}
@@ -33,15 +35,17 @@ const AIMLTechnologies = () => {
 
       {/* Solutions section  */}
       <ImageShowcase
-        type="Solutions"
+        type="Applications"
         img="/images/technologies/ai_ml/aiml_solutions.svg"
       >
-        Smart Solutions for <br />
-        <TextGradient text="Health data visualization" />
+        <TextGradient text="AI-driven " /> technology to unlock
+        <br />
+        the potential of
+        <TextGradient text=" health data" />
       </ImageShowcase>
 
       {/* Big Data Analysis section  */}
-      <BannerWithBulletSingle data={aimlUserExperienceData} />
+      <BannerWithBulletSingle data={aimlUserExperienceData} type="Features" />
     </BasicLayout>
   );
 };

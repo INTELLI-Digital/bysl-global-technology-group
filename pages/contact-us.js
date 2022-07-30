@@ -1,6 +1,6 @@
 import CompanyLocations from "../components/contact_us/CompanyLocations";
 import ContactForm from "../components/contact_us/ContactForm";
-import ContactUsFAQ from "../components/contact_us/ContactUsFAQ";
+// import ContactUsFAQ from "../components/contact_us/ContactUsFAQ";
 import CommonLayout from "../layouts/CommonLayout";
 
 const ContactUs = () => {
@@ -14,7 +14,7 @@ const ContactUs = () => {
       <CompanyLocations />
 
       {/* company address section  */}
-      <ContactUsFAQ />
+      {/* <ContactUsFAQ /> */}
     </CommonLayout>
   );
 };

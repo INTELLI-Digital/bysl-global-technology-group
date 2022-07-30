@@ -4,7 +4,7 @@ const cloudServicesData = [
     title: "PaaS",
     title2: "Platform as a Service",
     subTitle:
-      "Scale applications at a low-code, flexible & hyperscale environment with built-in configurations ",
+      "Scale applications at a low-code, flexible and hyperscale environment with built-in configurations ",
     img: "/images/technologies/cloud/services/services_paas.svg",
   },
   {
@@ -12,7 +12,7 @@ const cloudServicesData = [
     title: "IaaS",
     title2: "Infrastructure as a Service",
     subTitle:
-      "Merging system architecture with improved operational environment & security through cloud-based infrastructure",
+      "Merging system architecture with improved operational environment and security through cloud-based infrastructure",
     img: "/images/technologies/cloud/services/services_iaas.svg",
   },
   {
@@ -20,7 +20,7 @@ const cloudServicesData = [
     title: "SaaS",
     title2: "Software as a Service",
     subTitle:
-      "Well-designed subscription model, dynamic integration, intuitive UI, high scalability, timely updates, & secure environment",
+      "Well-designed subscription model, dynamic integration, intuitive UI, high scalability, timely updates, and secure environment",
     img: "/images/technologies/cloud/services/services_saas.svg",
   },
 ];

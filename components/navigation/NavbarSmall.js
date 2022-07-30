@@ -12,7 +12,7 @@ const NavbarSmall = () => {
 
   return (
     <div>
-      <div className="h-14 bg-white shadow px-4 sm:px-8 flex items-center fixed w-full z-40">
+      <div className="h-14 bg-white shadow px-4 sm:px-8 flex items-center fixed w-full z-[100]">
         <div
           className="h-4 w-5 sm:h-5 sm:w-7 absolute"
           onClick={() => setShowDrawer(!showDrawer)}

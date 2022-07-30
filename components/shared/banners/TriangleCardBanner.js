@@ -19,16 +19,24 @@ const TriangleCardBanner = (props) => {
       <div
         className={`md:flex ${
           !reversed && "md:flex-row-reverse"
-        } items-center mt-10 xl:mt-20 gap-5 3xl:gap-8`}
+        } items-center mt-10 gap-4 xl:gap-6`}
       >
-        <div className={`w-full md:w-1/2 mb-10 md:mb-0`}>
+        <div className={`w-full md:w-[53%] mb-10 md:mb-0`}>
           <ServicesCard data={data} black={black} padding={padding} />
         </div>
-        <div className="rounded-xl 2xl:rounded-[20px] overflow-hidden w-full md:w-1/2 mx-auto">
-          {arVrPath ? (
+        <div className="rounded-xl xl:rounded-[20px] overflow-hidden w-full md:w-[47%] mx-auto">
+          {arVrPath || iotPath ? (
             <video
-              className="object-cover rounded-lg aspect-[3/2] h-40 xs:h-56 sm:h-80 md:h-52 lg:h-64 xl:h-80 3xl:h-[440px] w-full"
-              src="/images/technologies/ar_vr/research.mp4"
+              className={`rounded-lg aspect-[3/2] h-40 xs:h-56 sm:h-80 md:h-52 lg:h-64 xl:h-80 w-full ${
+                iotPath
+                  ? "h-60 sm:h-80 2xl:h-[600px]"
+                  : "2xl:h-[440px] object-cover"
+              }`}
+              src={
+                (arVrPath && "/images/technologies/ar_vr/research.mp4") ||
+                (iotPath &&
+                  "/images/technologies/iot/solutions/iot_solutions_banner.mp4")
+              }
               autoPlay
               muted
               loop

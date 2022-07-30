@@ -32,10 +32,10 @@ const SideDrawer = ({ showDrawer }) => {
           showDrawer && "translate-x-[0%]"
         } transition-all duration-1000`}
       >
-        <div className="flex flex-col justify-end bg-[url('/images/drawer-bg.svg')] bg-no-repeat bg-center bg-cover h-[120px] px-4 py-5">
-          <h2 className="text-white">Hello, Good {timeOfDay}</h2>
+        <div className="flex items-end justify-center bg-[url('/images/drawer-bg.svg')] bg-no-repeat bg-center bg-cover h-[100px]">
+          <p className="text-white text-center font-bold mx-6 xxs:mx-8 mb-6">BYSL Global Technology Group</p>
         </div>
-        <div className="bg-white h-[calc(100vh-176px)] overflow-y-auto px-4 py-3 flex flex-col">
+        <div className="bg-white h-[calc(100vh-156px)] overflow-y-auto px-4 py-3 flex flex-col">
           {navbars.map(({ id, title, link, dropdowns }) => {
             return (
               <Accordion

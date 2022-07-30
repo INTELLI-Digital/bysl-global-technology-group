@@ -1,11 +1,19 @@
 import Image from "next/image";
 
 import { getPath } from "../../../utils/paths";
-import { TechnologiesSectionTitle, TextGradient } from "../SharedTextgroups";
+import {
+  SectionTitleType,
+  TechnologiesSectionTitle,
+  TextGradient,
+} from "../SharedTextgroups";
 
 const BannerWithBulletSingle = (props) => {
-  const { data, reversed, children } = props;
+  const { data, reversed, children, type } = props;
   const { title, colored, subTitle, img, features, newLine } = data;
+
+  const itesPath = getPath("/ites");
+  const informationPath = getPath("/information-security");
+  const mobilePath = getPath("/mobile-technologies");
 
   return (
     <div
@@ -13,7 +21,10 @@ const BannerWithBulletSingle = (props) => {
         reversed && "lg:flex-row-reverse"
       } gap-6`}
     >
-      <div className={`lg:w-[55%] lg:pt-10`}>
+      <div
+        className={`${informationPath ? "lg:w-[50%]" : "lg:w-[55%]"}  lg:pt-10`}
+      >
+        {type && <SectionTitleType title={type} start={true} />}
         <TechnologiesSectionTitle start={true}>
           {children ? (
             children
@@ -26,19 +37,19 @@ const BannerWithBulletSingle = (props) => {
             </>
           )}
         </TechnologiesSectionTitle>
-        <p className="my-4 2xl:mb-8 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start">
+        <p className="mt-4 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start">
           {subTitle}
         </p>
-        <div className="w-fit mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-x-5 mt-5 sm:mt-0">
+        <div className="mx-auto lg:mx-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-y-2.5 gap-x-5 mt-6">
           {features.map((item, i) => (
-            <div key={i} className="flex items-center mt-1 3xl:mt-4">
+            <div key={i} className="flex items-start gap-3">
               <Image
                 src="/images/items_icon.svg"
                 alt=""
                 height={24}
                 width={24}
               />
-              <p className="text-gray-300 text-sm xl:text-base ml-3 break-words">
+              <p className="text-gray-300 text-sm xl:text-base break-words w-full">
                 {item}
               </p>
             </div>
@@ -46,11 +57,11 @@ const BannerWithBulletSingle = (props) => {
         </div>
       </div>
       <div
-        className={`w-full xs:w-4/5 lg:w-[45%] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
-          getPath("/ites") && "lg:px-8 2xl:px-16"
+        className={`w-full xs:w-4/5  lg:w-[45%] h-48 xs:h-64 sm:h-80 lg:h-[350px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
+          itesPath && "lg:px-8 2xl:px-16"
         }`}
       >
-        <Image src={img} height={450} width={588} alt="" />
+        <Image src={img} height={mobilePath ? 580 : 450} width={588} alt="" />
       </div>
     </div>
   );

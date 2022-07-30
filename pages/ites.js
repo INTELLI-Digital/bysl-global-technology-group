@@ -5,6 +5,7 @@ import { TextGradient } from "../components/shared/SharedTextgroups";
 import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
 import BasicLayout from "../layouts/BasicLayout";
 import { itesOverviewData, itesUpdateData } from "../public/data/itesData";
+import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 
 const ITeS = () => {
   return (
@@ -12,26 +13,33 @@ const ITeS = () => {
     <BasicLayout title="ITeS">
       {/* banner section  */}
       <PrimaryBanner
-        title="IT Enabled Service - Division"
+        title="ITeS Division"
         img="ites_division"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Navigate your journey of digital transformation through unparalleled ITeS products and services"
       >
-        Building future with
+        Digitize business with
         <br />
-        <TextGradient text="Gear " />&<TextGradient text=" Software" />
+        <TextGradient text="Integrated technology" />
       </PrimaryBanner>
 
       {/* overview section  */}
       <Overview4Items data={itesOverviewData} />
 
       {/* updates section  */}
-      <BannerWithBulletSingle data={itesUpdateData} reversed={true} />
+      {/* <BannerWithBulletSingle data={itesUpdateData} reversed={true} /> */}
+      <BannerWithBullets data={itesUpdateData} reversed={true}>
+        Creating comprehensive solutions combining
+        <TextGradient text=" data, insights & technology" />
+      </BannerWithBullets>
 
       {/* Team Management section */}
-      <ImageShowcase img="/images/divisions/ites/ites_team_management.svg">
-        Team Management is <TextGradient text="Easy" />
-        <br /> and
-        <TextGradient text=" Trustworthy" />
+      <ImageShowcase
+        img="/images/divisions/ites/ites_team_management.svg"
+        sub="Applying the right strategy, structure, and necessary to build lasting relationships with clients. "
+      >
+        <TextGradient text="Next-gen " />
+        CRM applications
+        <br />
       </ImageShowcase>
     </BasicLayout>
   );

@@ -1,27 +1,36 @@
 const informationSecurityOverviewData = [
   {
     id: 0,
-    title: "Security Advisory",
+    title: "Comprehensive Access Control",
     img: "/images/divisions/information_security/overview/icon_0.svg",
   },
   {
     id: 1,
-    title: "Technical Assurance",
+    title: "Social Engineering",
     img: "/images/divisions/information_security/overview/icon_1.svg",
   },
   {
     id: 2,
-    title: "Managed Services",
+    title: "Secured Endpoints",
     img: "/images/divisions/information_security/overview/icon_2.svg",
+  },
+  {
+    id: 3,
+    title: "Resource Management",
+    img: "/images/divisions/information_security/overview/icon_3.svg",
   },
 ];
 
 const informationSecurityServicesData = {
   features: [
-    "Identifying Threats",
-    "Testing Cyber Security",
-    "Managing Cloud Security",
-    "Cyber Risk Assessment",
+    "User Rights Management",
+    "Confidentiality Preservation",
+    "Data Masking",
+    "Application Security",
+    "Database Firewall",
+    "Data Classification",
+    "User Behavior Analytics",
+    "Info Security Policy",
   ],
   img: "/images/divisions/information_security/information_security_service_banner.svg",
 };
@@ -29,11 +38,10 @@ const informationSecurityServicesData = {
 const informationSecurityShortcomingsData = {
   img: "/images/divisions/information_security/shortcoming_banner.svg",
   features: [
-    "Unequaled Flexibility & Adaptability",
-    "Solutions for Fit Every Level of Complexity",
-    "Seamless ERP Interations",
-    "One Integrated Supply Chain Platform",
-    "Solutions & Special Expertise",
+    "A compliant framework",
+    "Meeting all legal requirements",
+    "Revolutionizing the fintech industry",
+    "Integrated systems for comprehensive operations",
   ],
 };
 

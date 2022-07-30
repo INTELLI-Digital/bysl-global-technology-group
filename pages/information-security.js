@@ -9,6 +9,7 @@ import {
   informationSecurityShortcomingsData,
 } from "../public/data/informationSecurityData";
 import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
+import Overview4Items from "../components/shared/Overview4Items";
 
 const InformationSecurity = () => {
   return (
@@ -21,13 +22,13 @@ const InformationSecurity = () => {
           img="information_security_division"
           sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
         >
-          Your Data Security is
-          <br />
-          our <TextGradient text="Priority" />
+          Managing information with
+          <TextGradient text=" confidentiality, integrity " /> &
+          <TextGradient text=" availability" />
         </PrimaryBanner>
 
         {/* overview section  */}
-        <Overview3Items data={informationSecurityOverviewData} />
+        <Overview4Items data={informationSecurityOverviewData} />
       </div>
 
       {/* services section  */}
@@ -37,10 +38,8 @@ const InformationSecurity = () => {
             data={informationSecurityServicesData}
             reversed={true}
           >
-            Overseen <TextGradient text="Security Services " />
-            with a
-            <br />
-            Difference
+            <TextGradient text="Masterful engineering " /> for higher control,
+            improved security and against devaluation of information
           </BannerWithBullets>
         </div>
       </div>
@@ -48,9 +47,8 @@ const InformationSecurity = () => {
       {/* shortcomings section  */}
       <div className="box">
         <BannerWithBulletSingle data={informationSecurityShortcomingsData}>
-          Track Down your <TextGradient text="Shortcomings" />
-          <br />
-          before Hackers do
+          Offering improved <TextGradient text=" systemic efficacy " /> through
+          a holistic infosec framework
         </BannerWithBulletSingle>
       </div>
     </BasicLayout>

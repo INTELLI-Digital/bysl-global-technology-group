@@ -8,7 +8,7 @@ const CompanySummary = () => {
       <p className="break-words text-2xl md:text-3xl  xl:text-4xl 2xl:text-5xl 3xl:text-[64px] font-bold">
         EXPLORE. INNOVATE. INVEST.
       </p>
-      <div className="grid gap-6 grid-cols-2 md:grid-cols-4 mt-2.5 xl:mt-16 py-5">
+      <div className="grid gap-6 grid-cols-2 md:grid-cols-4 mt-2.5 md:mt-8 lg:mt-12 2xl:mt-16 py-5">
         {summaryData.map(({ id, number, title }) => {
           return (
             <div key={id} className="text-center">

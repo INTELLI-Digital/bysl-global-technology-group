@@ -1,14 +1,13 @@
 const aimlUserExperienceData = {
-  title: "Big Data Analysis Challenges",
-  colored: "We Solve",
+  title: "Challanges we solve with AI/ML technologies ",
   subTitle:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+    "To explore the limitless potential of data, we use AI analytics and ML technologies to identify, relate, analyze, and prepare various data metrics, and solve fundamental challenges of business while introducing disruptive innovation in retail, e-commerce, logistics, supply chain, manufacturing, healthcare and life sciences.  ",
   img: "/images/technologies/ai_ml/aimlTechnologies_ui_banner.svg",
   features: [
-    "High-converting",
-    "Personal branding",
-    "Modernized prospecting",
-    "Clean and modern",
+    "Managing and handling the massive volume, and velocity of big data ",
+    "Fraud prevention and security",
+    "Understanding, decision making and predicting ",
+    "Designing, processing and running data-driven automation",
   ],
 };
 
@@ -16,45 +15,45 @@ const aimlFeaturesData = [
   {
     id: 0,
     title: "Design & Strategy",
-    img: "/images/technologies/ai_ml/categories/aiml_categories_icon_0.svg",
+    img: "/images/technologies/ai_ml/categories/icon_0.svg",
   },
   {
     id: 1,
     title: "Research & Solution",
-    img: "/images/technologies/ai_ml/categories/aiml_categories_icon_1.svg",
+    img: "/images/technologies/ai_ml/categories/icon_1.svg",
   },
   {
     id: 2,
     title: "Data Science",
-    img: "/images/technologies/ai_ml/categories/aiml_categories_icon_2.svg",
+    img: "/images/technologies/ai_ml/categories/icon_2.svg",
   },
   {
     id: 3,
     title: "Cloud Deployment",
-    img: "/images/technologies/ai_ml/categories/aiml_categories_icon_3.svg",
+    img: "/images/technologies/ai_ml/categories/icon_3.svg",
   },
 ];
 
 const aimlServicesData = [
   {
     id: 0,
-    title: "Industries & Manufacturing",
-    img: "/images/technologies/ai_ml/services/aiml_services_icon_0.svg",
+    title: "Retail & E-commerce",
+    img: "/images/technologies/ai_ml/services/icon_0.svg",
   },
   {
     id: 1,
-    title: "Automobile & Transportation",
-    img: "/images/technologies/ai_ml/services/aiml_services_icon_1.svg",
+    title: "Transportation & Mobility",
+    img: "/images/technologies/ai_ml/services/icon_1.svg",
   },
   {
     id: 2,
-    title: "Media & Entertainment",
-    img: "/images/technologies/ai_ml/services/aiml_services_icon_0.svg",
+    title: "Manufacturing & Supply Chain",
+    img: "/images/technologies/ai_ml/services/icon_2.svg",
   },
   {
     id: 3,
-    title: "Health & Humanbody",
-    img: "/images/technologies/ai_ml/services/aiml_services_icon_3.svg",
+    title: "Healthcare & Life Sciences",
+    img: "/images/technologies/ai_ml/services/icon_3.svg",
   },
 ];
 

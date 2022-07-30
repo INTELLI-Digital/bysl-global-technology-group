@@ -1,59 +1,76 @@
 const administrationBannerData = {
   heading: "Administration - Division",
   subTitle:
-    "Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs.",
+    "Using IT-enabled business operations, integrated APIs, and smart technologies engineered to automate workflows and drive fast and flawless operations ",
   img: "/images/banners/administration_division_banner.svg",
 };
 
 const administrationControlPanelData = [
   {
     id: 0,
-    title: "Logistics Control",
+    title: "Internal Audit & Compliance",
     img: "/images/divisions/administration/control_panel/icon_0.svg",
+    hoverImg: "/images/divisions/administration/control_panel/icon_hover_0.svg",
   },
   {
     id: 1,
-    title: "Time & Attendance",
+    title: "Human Resources Management",
     img: "/images/divisions/administration/control_panel/icon_1.svg",
+    hoverImg: "/images/divisions/administration/control_panel/icon_hover_1.svg",
   },
   {
     id: 2,
-    title: "Financial Management",
+    title: "Accounts & Finance ",
     img: "/images/divisions/administration/control_panel/icon_2.svg",
+    hoverImg: "/images/divisions/administration/control_panel/icon_hover_2.svg",
   },
   {
     id: 3,
-    title: "Hiring",
+    title: "System Administration",
     img: "/images/divisions/administration/control_panel/icon_3.svg",
+    hoverImg: "/images/divisions/administration/control_panel/icon_hover_3.svg",
   },
   {
     id: 4,
-    title: "Preformance Managment",
+    title: "Operations",
     img: "/images/divisions/administration/control_panel/icon_4.svg",
+    hoverImg: "/images/divisions/administration/control_panel/icon_hover_4.svg",
   },
   {
     id: 5,
-    title: "Leave Managment",
+    title: "Technical Support",
     img: "/images/divisions/administration/control_panel/icon_5.svg",
+    hoverImg: "/images/divisions/administration/control_panel/icon_hover_5.svg",
   },
 ];
 
 const workplaceBannerData = {
+  title: "Manage your workpalce from anywhere",
+  subTitle:
+    "Our flexible & multi-platform application API integration offer immense freedom for performing remote operations using a wide range of options for completing tasks.  ",
+  features: [
+    "Integrated APIs",
+    "Automated workflow",
+    "Support-ticketing system",
+    "Secure digital environment ",
+    "Real-time synchronization",
+    "IT-enabled operations   ",
+  ],
   img: "/images/divisions/administration/workplace_banner.svg",
-  subTitle: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has. ",
 };
 
 const administrationMangementData = {
-  subTitle:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has. ",
+  subTitle:
+    "Our automated data analytics, advanced book keeping software, data validation, segregation and classification allow for a many time faster and efficient financial management.  ",
   features: [
-    "Payroll",
-    "Company Sales & Revenue",
-    "Employee Salary",
-    "Company Margin Profit",
-    "Emaployee Bonus",
-    "Company Expenses",
-    "Employee Salary Policy",
-    "Company Policy",
+    "Payroll management",
+    "Sales and revenue analysis",
+    "Tax and VAT management",
+    "Financial reporting",
+    "Asset management ",
+    "Expense management",
+    "Data collection and validation",
+    "Compliance",
   ],
   img: "/images/divisions/administration/management_banner.svg",
 };

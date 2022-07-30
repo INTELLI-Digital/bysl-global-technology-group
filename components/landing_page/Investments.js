@@ -28,8 +28,8 @@ const Investments = () => {
             />
             <div className="animate_logo absolute top-[30%] lg:top-[28%] left-1/2 translate-x-[-50%] max-w-[94px] max-h-[94px]">
               <div className="w-[40px] md:w-[50px] lg:w-[60px] xl:w-[70px] h-[40px] md:h-[50px] lg:h-[60px] xl:h-[70px] bg-white rounded-xl shadow-[0px_4px_8px_rgba(8,76,148,0.08)] flex items-center justify-center">
-                <div className="relative w-4 lg:w-5 xl:w-7 h-4 lg:h-5 xl:h-7 rounded-full bg-green-300">
-                  <div className="absolute top-0 left-0 w-4 lg:w-5 xl:w-7 h-4 lg:h-5 xl:h-7 rounded-full bg-green-300 animate-ping"></div>
+                <div className="relative h-8 lg:h-12 w-8 lg:w-12">
+                  <Image src="/images/bysl-live.gif" alt="" layout="fill" />
                 </div>
               </div>
             </div>
