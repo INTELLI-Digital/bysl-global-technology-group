@@ -61,7 +61,7 @@ const BannerWithBulletSingle = (props) => {
           itesPath && "lg:px-8 2xl:px-16"
         }`}
       >
-        <Image src={img} height={mobilePath ? 580 : 450} width={588} alt="" />
+        <Image src={img} height={450} width={588} alt="" />
       </div>
     </div>
   );
