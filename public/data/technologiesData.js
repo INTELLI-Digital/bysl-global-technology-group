@@ -4,7 +4,7 @@ const techData = [
     // don't change this 2 line layout, it will break the style for the text.
     title: `Web
 Technologies`,
-    img: "/images/technologies/web_technologies.svg",
+    img: "/images/technologies/web_technologies.webp",
     link: "/web-technologies",
   },
   {
@@ -16,25 +16,25 @@ Technologies`,
   {
     id: 2,
     title: "AI/ML Technologies",
-    img: "/images/technologies/ai_ml_technologies.svg",
+    img: "/images/technologies/ai_ml_technologies.webp",
     link: "/ai-ml-technologies",
   },
   {
     id: 3,
     title: "Cloud Technologies",
-    img: "/images/technologies/cloud_technologies.svg",
+    img: "/images/technologies/cloud_technologies.webp",
     link: "/cloud-technologies",
   },
   {
     id: 4,
     title: "Blockchain Technologies",
-    img: "/images/technologies/blockchain_technologies.svg",
+    img: "/images/technologies/blockchain_technologies.webp",
     link: "/blockchain-technologies",
   },
   {
     id: 5,
     title: "Database Technologies",
-    img: "/images/technologies/database_technologies.svg",
+    img: "/images/technologies/database_technologies.webp",
     link: "/database-technologies",
   },
   {
@@ -46,19 +46,19 @@ Technologies`,
   {
     id: 7,
     title: "IOT Technologies",
-    img: "/images/technologies/iot_technologies.svg",
+    img: "/images/technologies/iot_technologies.webp",
     link: "/iot-technologies",
   },
   {
     id: 8,
     title: "Big Data",
-    img: "/images/technologies/bigdata_technologies.svg",
+    img: "/images/technologies/bigdata_technologies.webp",
     link: "/bigdata-technologies",
   },
   {
     id: 9,
     title: "Cyber Security",
-    img: "/images/technologies/cyber_security_technologies.svg",
+    img: "/images/technologies/cyber_security_technologies.webp",
     link: "/cyber-security-technologies",
   },
 ];
