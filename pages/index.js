@@ -36,7 +36,6 @@ const Home = ({ techData, summaryData, aboutUsData }) => {
 };
 
 export async function getServerSideProps() {
-  // Pass data to the page via props
   return { props: { techData, summaryData, aboutUsData } };
 }
 export default Home;
