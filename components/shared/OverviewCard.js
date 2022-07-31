@@ -9,6 +9,7 @@ const OverviewCard = (props) => {
   const ictPath = getPath("/ict");
   const itesPath = getPath("/ites");
   const digitalCommercePath = getPath("/digital-commerce");
+  const bigDataPath = getPath("/bigdata-technologies");
 
   return (
     <>
@@ -27,7 +28,9 @@ const OverviewCard = (props) => {
                   : ictPath
                   ? `h-10 xl:h-14 w-10 xl:w-14`
                   : "h-10 xl:h-[50px] w-10 xl:w-[50px]"
-              } ${itesPath && "h-10 xl:h-12 w-10 xl:w-12"}`}
+              } ${itesPath && "h-10 xl:!h-12 w-10 xl:!w-12"} ${
+                bigDataPath && "h-10 xl:!h-16 w-10 xl:!w-16"
+              }`}
             >
               {hoverImg ? (
                 <HoverImage img1={img} img2={hoverImg} />
@@ -41,9 +44,11 @@ const OverviewCard = (props) => {
                 />
               )}
             </div>
-            <p className={`2xl:text-xl font-medium text-gray-800 mt-4 ${
-              digitalCommercePath && "mt-10"
-            }`}>
+            <p
+              className={`2xl:text-xl font-medium ${
+                bigDataPath && "!font-semibold mt-5"
+              } text-gray-800 mt-4 ${digitalCommercePath && "mt-10"}`}
+            >
               {title}
             </p>
             {subTitle && (

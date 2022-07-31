@@ -9,6 +9,7 @@ const Overview4Items = (props) => {
   const aiMlPath = getPath("/ai-ml-technologies");
   const cyberPath = getPath("/cyber-security-technologies");
   const digitalCommercePath = getPath("/digital-commerce");
+  const bigDataPath = getPath("/bigdata-technologies");
 
   return (
     <div
@@ -16,7 +17,8 @@ const Overview4Items = (props) => {
         (aiMlPath && "!pt-0") ||
         (cyberPath && "!pt-0") ||
         (itesPath && "!pt-0") ||
-        (digitalCommercePath && "!py-0")
+        (digitalCommercePath && "!py-0") ||
+        (bigDataPath && "!py-10")
       }`}
     >
       {type && <SectionTitleType title={type} />}

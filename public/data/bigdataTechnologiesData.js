@@ -8,86 +8,89 @@ const bigdataBannerData = {
 const bigdataOverviewData = [
   {
     id: 0,
-    title: "Integrate",
-    img: "/images/technologies/bigdata/overview/bigdata_overview_icon_0.svg",
+    title: "Visualize",
+    img: "/images/technologies/bigdata/overview/icon_0.svg",
   },
   {
     id: 1,
     title: "Manage",
-    img: "/images/technologies/bigdata/overview/bigdata_overview_icon_1.svg",
+    img: "/images/technologies/bigdata/overview/icon_1.svg",
   },
   {
     id: 2,
-    title: "Analyze",
-    img: "/images/technologies/bigdata/overview/bigdata_overview_icon_2.svg",
+    title: "Process",
+    img: "/images/technologies/bigdata/overview/icon_2.svg",
+  },
+  {
+    id: 3,
+    title: "Harness",
+    img: "/images/technologies/bigdata/overview/icon_2.svg",
   },
 ];
 
 const whyBigdataData = [
   {
     id: 0,
-    reversed: false,
-    title: "Sales Increase",
+    title: "Boosting sales & profits",
     subTitle:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.",
+      "Our big data applications help analyze both structured and unstructured data collected across a wide range of sources including web logs, sensors, financial systems, cloud, databases, etc. to create timely and actionable insights, quick responses, optimizing costs and boost market share, sales and profits.",
     features: [
-      "Sales Prediction",
-      "Product line Optimization",
-      "Lead Generation",
-      "Recomended System",
+      "Analyzing data metrics",
+      "Timely &  actionable insights",
+      "Sales prediction",
+      "Lead generation",
     ],
-    img: "/images/technologies/bigdata/why_bigdata/why_bigdata_banner_0.svg",
+    img: "/images/technologies/bigdata/why_bigdata/banner_0.svg",
   },
   {
     id: 1,
     reversed: true,
     title: "Risk Management",
     subTitle:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.",
+      "Our specialized AI and ML-based applications  analyze data characteristics at greater speed to predict, manage and minimize risks through intelligent modeling using the best of data science.",
     features: [
-      "Fraud Detection",
-      "Social media monitoring",
-      "Pshychological Scoring",
-      "HR Analytics",
+      "Fraud & threat detection",
+      "Gaining better insights ",
+      "Pshychological scoring",
+      "Building validation framework",
     ],
-    img: "/images/technologies/bigdata/why_bigdata/why_bigdata_banner_1.svg",
+    img: "/images/technologies/bigdata/why_bigdata/banner_1.svg",
   },
   {
     id: 2,
-    reversed: false,
     title: "Operations Managment",
     subTitle:
-      "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has.",
+      "We model and engineer apps that can effectively filter good data from bad ones,  then integrate, profile and cleanse data before list matching to eliminate errors & protect operational efficiency.",
     features: [
-      "Image recognition",
-      "Work Shifts Optimization",
-      "Warehouse optimization",
-      "logistics Optimization",
+      "Better customer insight",
+      "Increased market intelligence",
+      "Agile supply chain management",
+      "Data-driven decision making ",
     ],
-    img: "/images/technologies/bigdata/why_bigdata/why_bigdata_banner_2.svg",
+    img: "/images/technologies/bigdata/why_bigdata/banner_2.svg",
   },
 ];
 
 const bigdataServicesData = [
   {
     id: 0,
-    title: "Big Data Analytics",
-    img: "/images/technologies/bigdata/services/bigdata_services_icon_0.svg",
+    title: "Data Analytics",
+    img: "/images/technologies/bigdata/services/icon_0.svg",
   },
   {
     id: 1,
-    title: "Content Managment",
-    img: "/images/technologies/bigdata/services/bigdata_services_icon_1.svg",
+    title: "Data Processing",
+    img: "/images/technologies/bigdata/services/icon_1.svg",
   },
   {
     id: 2,
-    title: "Big Data Managment",
-    img: "/images/technologies/bigdata/services/bigdata_services_icon_2.svg",
+    title: "Data Validation",
+    img: "/images/technologies/bigdata/services/icon_2.svg",
   },
   {
     id: 3,
-    title: "Big Data Integration",
-    img: "/images/technologies/bigdata/services/bigdata_services_icon_2.svg",
+    title: "Data Integration",
+    img: "/images/technologies/bigdata/services/icon_3.svg",
   },
 ];
 
@@ -96,43 +99,49 @@ const bigdataFeaturesData = [
     id: 0,
     title: "Machine Learning",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/bigdata/features/bigdata_features_icon_0.svg",
+      "Combining Big Data, ML and regression modeling helps discover new data patterns to make better prediction and identify solutions meeting unique business needs.",
+    img: "/images/technologies/bigdata/features/icon_0.svg",
+    hoverImg: "/images/technologies/bigdata/features/icon_hover_0.svg",
   },
   {
     id: 1,
     title: "Image Processing",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/bigdata/features/bigdata_features_icon_1.svg",
+      "Our intelligent image and video recognition technologies harness the power of ML and AI to process images and videos faster with greater accuracy. ",
+    img: "/images/technologies/bigdata/features/icon_1.svg",
+    hoverImg: "/images/technologies/bigdata/features/icon_hover_1.svg",
   },
   {
     id: 2,
     title: "Deep Learning",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/bigdata/features/bigdata_features_icon_2.svg",
+      "We develop apps that serve the artificial neural networks  to learn from various patterns and types of Big Data through reinforced learning processes.",
+    img: "/images/technologies/bigdata/features/icon_2.svg",
+    hoverImg: "/images/technologies/bigdata/features/icon_hover_2.svg",
   },
   {
     id: 3,
     title: "Healthcare",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/bigdata/features/bigdata_features_icon_3.svg",
+      "The unprecedented amplitude of healthcare data can be read, filtered, cleansed, processed, modelled and rendered through various metrics using our applications built for next-generation healthcare solutions. ",
+    img: "/images/technologies/bigdata/features/icon_3.svg",
+    hoverImg: "/images/technologies/bigdata/features/icon_hover_3.svg",
   },
   {
     id: 4,
-    title: "Robotics and Drones",
+    title: "Digital Commerce",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/bigdata/features/bigdata_features_icon_4.svg",
+      "Engineering apps to enable retailers to understand and engage with consumers successfully through effective data analytics, sales prediction, supply chain management, store optimization and risk management. ",
+    img: "/images/technologies/bigdata/features/icon_4.svg",
+    hoverImg: "/images/technologies/bigdata/features/icon_hover_4.svg",
   },
   {
     id: 5,
     title: "Manufacturing",
     subTitle:
-      "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-    img: "/images/technologies/bigdata/features/bigdata_features_icon_5.svg",
+      "Using AI and ML-driven Big Data analytics to enhance production and process optimization, automation of material management, predictive maintenance for machines, and tracking and visualizing data in real time.",
+    img: "/images/technologies/bigdata/features/icon_5.svg",
+    hoverImg: "/images/technologies/bigdata/features/icon_hover_5.svg",
   },
 ];
 

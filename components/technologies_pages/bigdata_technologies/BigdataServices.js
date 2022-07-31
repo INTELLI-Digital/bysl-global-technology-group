@@ -9,20 +9,20 @@ import {
 const BigdataServices = () => {
   return (
     <div className="py-10 xl:py-16">
-      <SectionTitleType title="Services" />
+      <SectionTitleType title="Features" />
       <TechnologiesSectionTitle>
-        Discover The <TextGradient text="Reality" />
+        Discover the true potential
         <br />
-        As You Like
+        of Big Data
       </TechnologiesSectionTitle>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6 w-full mt-10 xl:mt-20">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6 w-full mt-10">
         {bigdataServicesData.map(({ id, img, title }) => {
           return (
             <div
               key={id}
-              className="bg-white rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-3 lg:px-5 xs:py-5 sm:py-8 3xl:py-14 w-full self-center"
+              className="bg-white rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-3 lg:px-5 xs:py-5 sm:py-8 xl:py-12 3xl:py-[60px] w-full self-center"
             >
-              <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-2xl shadow-blue-500/25">
+              <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
                 <div className="relative h-6 w-6 xl:h-12 xl:w-12">
                   <Image src={img} layout="fill" alt="" />
                 </div>

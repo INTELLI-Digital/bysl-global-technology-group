@@ -41,6 +41,7 @@ Technologies`,
     id: 6,
     title: "AR/VR Technologies",
     img: "/images/technologies/ar_vr_technologies.gif",
+    video: "/images/technologies/ar_vr_technologies.webm",
     link: "/ar-vr-technologies",
   },
   {

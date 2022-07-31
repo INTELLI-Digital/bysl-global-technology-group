@@ -11,7 +11,7 @@ const Technologies = ({ data }) => {
         <SectionTitle title="Our Technologies" />
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-10 text-center gap-2 lg:gap-3 xl:gap-4 2xl:gap-5 3xl:gap-6">
-        {data.map(({ id, img, title, link }) => {
+        {data.map(({ id, img, video, title, link }) => {
           return (
             <Link key={id} passHref href={link}>
               <div
@@ -37,14 +37,24 @@ const Technologies = ({ data }) => {
                       : "xl:h-64 2xl:h-72 3xl:h-96"
                   } object-cover relative`}
                 >
-                  <Image
-                    src={img}
-                    placeholder="blur"
-                    blurDataURL={img}
-                    layout="fill"
-                    objectFit="cover"
-                    alt=""
-                  />
+                  {id === 6 ? (
+                    <video
+                      className="w-full h-full object-cover"
+                      src={video}
+                      autoPlay
+                      muted
+                      loop
+                    />
+                  ) : (
+                    <Image
+                      src={img}
+                      placeholder="blur"
+                      blurDataURL={img}
+                      layout="fill"
+                      objectFit="cover"
+                      alt=""
+                    />
+                  )}
                 </div>
                 <p
                   className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-[40px] font-semibold text-center leading-4 md:leading-5 lg:leading-8 2xl:leading-[48px] absolute py-6 md:py-8 xl:py-14 px-2 sm:px-5 xl:px-8 ${

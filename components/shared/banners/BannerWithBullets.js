@@ -8,7 +8,7 @@ const BannerWithBullets = (props) => {
   const { subTitle, img, features, title } = data;
 
   const cloudPath = getPath("/cloud-technologies");
-  const cyberPath = getPath("/cyber-security-technologies");
+  const bigDataPath = getPath("/bigdata-technologies");
   const databasePath = getPath("/database-technologies");
 
   return (
@@ -46,7 +46,9 @@ const BannerWithBullets = (props) => {
           <div
             className={`relative h-48 xs:h-64 sm:h-80 lg:h-[350px] ${
               !cloudPath && "xl:h-[500px]"
-            } ${databasePath && "xl:h-[350px]"} mt-5 lg:mt-0`}
+            } ${bigDataPath && "xl:h-[400px]"} ${
+              databasePath && "xl:h-[350px]"
+            } mt-5 lg:mt-0`}
           >
             <Image src={img} layout="fill" alt="" />
           </div>

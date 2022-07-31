@@ -1,6 +1,7 @@
 import SecondaryLargeBanner from "../components/shared/banners/SecondaryLargeBanner";
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
 import Overview3Items from "../components/shared/Overview3Items";
+import Overview4Items from "../components/shared/Overview4Items";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import BigdataServices from "../components/technologies_pages/bigdata_technologies/BigdataServices";
 import WhyBigdata from "../components/technologies_pages/bigdata_technologies/WhyBigdata";
@@ -20,22 +21,24 @@ const BigdataTechnologies = () => {
         <SecondaryLargeBanner data={bigdataBannerData}>
           <TextGradient text="Big Data " /> & <TextGradient text=" Analytics" />
         </SecondaryLargeBanner>
+      </div>
 
-        {/* overview section  */}
-        <Overview3Items data={bigdataOverviewData} />
+      {/* overview section  */}
+      <div className="bg-[#ECF1F8] mb-10 xl:mb-16">
+        <div className="box">
+          <Overview4Items data={bigdataOverviewData} />
+        </div>
       </div>
 
       {/* WhyBigdata section  */}
-      <WhyBigdata />
       <div className="box">
+        <WhyBigdata />
         {/* services section  */}
         <BigdataServices />
 
         {/* features section  */}
         <IconCardGroup3 data={bigdataFeaturesData} type="Features">
-          Powerful Control <TextGradient text="Panel" />
-          <br />
-          and <TextGradient text="APIs" />
+          Multi-faceted use of Big Data
         </IconCardGroup3>
       </div>
     </BasicLayout>
@@ -43,3 +46,4 @@ const BigdataTechnologies = () => {
 };
 
 export default BigdataTechnologies;
+//

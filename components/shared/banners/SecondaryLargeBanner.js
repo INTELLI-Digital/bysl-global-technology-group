@@ -6,9 +6,10 @@ import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 const SecondaryLargeBanner = ({ data, children }) => {
   const { heading, subTitle, img } = data;
   const adminPath = getPath("/administration");
+  const bigDataPath = getPath("/bigdata-technologies");
 
   return (
-    <div className="py-10 xl:py-16">
+    <div className={`py-10 xl:py-16 ${bigDataPath && "!pb-10"}`}>
       <p className="text-sm md:text-base xl:text-lg font-bold text-center mb-2">
         <TextGradient text={heading} />
       </p>
@@ -17,9 +18,14 @@ const SecondaryLargeBanner = ({ data, children }) => {
         {subTitle}
       </p>
       <div
-        className={`mt-5 lg:mt-10 flex justify-center max-w-[1080px] mx-auto`}
+        className={`mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto`}
       >
-        <Image src={img} alt="" height={700} width={1080} />
+        <Image
+          src={img}
+          alt=""
+          height={bigDataPath ? 633 : 700}
+          width={bigDataPath ? 1240 : 1080}
+        />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ const projectsShowcaseData = [
   },
   {
     id: 1,
-    img: "/images/projects/1.gif",
+    video: "/images/projects/1.webm",
   },
   {
     id: 2,
