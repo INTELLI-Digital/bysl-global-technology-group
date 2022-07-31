@@ -25,7 +25,7 @@ const Slider = ({ size }) => {
       {[...Array(5)].map((item, i) => {
         return (
           <SwiperSlide key={i}>
-            <div className="scale-[1.03] h-[260px] xl:h-80 w-[120px] xxs:w-[150px] md:w-[120px] xl:w-[150px] rounded-[20px] overflow-hidden mx-auto drop-shadow-3xl relative mobileTechImg">
+            <div className=" h-[260px] xl:h-80 w-[120px] xxs:w-[150px] md:w-[120px] xl:w-[150px] rounded-[20px] overflow-hidden mx-auto drop-shadow-3xl relative mobileTechImg">
               <Image
                 src={`/images/technologies/mobile/slider/mobileTechnologies_slider_${i}.svg`}
                 layout="fill"

@@ -18,7 +18,7 @@ const BigdataTechnologies = () => {
       <div className="box">
         {/* banner section  */}
         <SecondaryLargeBanner data={bigdataBannerData}>
-          <TextGradient text="Big Data" /> & Analytics
+          <TextGradient text="Big Data " /> & <TextGradient text=" Analytics" />
         </SecondaryLargeBanner>
 
         {/* overview section  */}

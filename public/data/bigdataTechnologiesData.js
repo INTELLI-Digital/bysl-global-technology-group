@@ -1,7 +1,7 @@
 const bigdataBannerData = {
   heading: "Big Data Technologies",
   subTitle:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
+    "Harness the potential of mega data pools across various platforms to introduce revolutionary transformations to individual, scientific and business journeys.",
   img: "/images/banners/bigdata_technologies_banner.svg",
 };
 

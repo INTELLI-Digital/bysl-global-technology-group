@@ -24,9 +24,9 @@ const MobileTechSlider = () => {
           <Slider size={5} />
         </div>
         <div className="centered z-40">
-          <div className="h-[277px] xxxs:h-[270px] xxs:h-[340px] xl:h-[430px] w-[230px] relative drop-shadow-3xl">
+          <div className="h-[277px] xxxs:h-[270px] xxs:h-[340px] xl:h-[430px] w-[140px] xxs:w-[165px] xl:w-[210px] relative drop-shadow-3xl">
             <Image
-              src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.svg"
+              src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.webp"
               layout="fill"
               alt=""
             />
