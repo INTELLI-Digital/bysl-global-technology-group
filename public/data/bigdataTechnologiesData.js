@@ -24,7 +24,7 @@ const bigdataOverviewData = [
   {
     id: 3,
     title: "Harness",
-    img: "/images/technologies/bigdata/overview/icon_2.svg",
+    img: "/images/technologies/bigdata/overview/icon_3.svg",
   },
 ];
 

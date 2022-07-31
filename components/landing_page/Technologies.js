@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-// import { techData } from "../../public/data/technologiesData";
 import { SectionTitle } from "../shared/SharedTextgroups";
 
 const Technologies = ({ data }) => {
