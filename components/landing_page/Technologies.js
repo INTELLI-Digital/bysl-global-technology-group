@@ -37,7 +37,14 @@ const Technologies = ({ data }) => {
                       : "xl:h-64 2xl:h-72 3xl:h-96"
                   } object-cover relative`}
                 >
-                  <Image src={img} layout="fill" objectFit="cover" alt="" />
+                  <Image
+                    src={img}
+                    placeholder="blur"
+                    blurDataURL={img}
+                    layout="fill"
+                    objectFit="cover"
+                    alt=""
+                  />
                 </div>
                 <p
                   className={`text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 3xl:text-[40px] font-semibold text-center leading-4 md:leading-5 lg:leading-8 2xl:leading-[48px] absolute py-6 md:py-8 xl:py-14 px-2 sm:px-5 xl:px-8 ${

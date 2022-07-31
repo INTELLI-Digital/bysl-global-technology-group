@@ -36,7 +36,7 @@ const AIMLTechnologies = () => {
       {/* Solutions section  */}
       <ImageShowcase
         type="Applications"
-        img="/images/technologies/ai_ml/aiml_solutions.svg"
+        video="/images/technologies/ai_ml/aiml_solutions.mp4"
       >
         <TextGradient text="AI-driven " /> technology to unlock
         <br />

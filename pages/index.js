@@ -8,6 +8,7 @@ import CommonLayout from "../layouts/CommonLayout";
 import { techData } from "../public/data/technologiesData";
 import { summaryData } from "../public/data/summaryData";
 import { aboutUsData } from "../public/data/aboutUsData";
+import { projectsShowcaseData } from "../public/data/landingPageData";
 
 const Home = ({ techData, summaryData, aboutUsData }) => {
   return (
@@ -20,7 +21,7 @@ const Home = ({ techData, summaryData, aboutUsData }) => {
         <AboutUs summaryData={summaryData} aboutUsData={aboutUsData} />
 
         {/* projects section  */}
-        <ProjectsShowcase />
+        <ProjectsShowcase data={projectsShowcaseData} />
 
         {/* solutions section  */}
         <SolutionsBanner />
@@ -36,6 +37,9 @@ const Home = ({ techData, summaryData, aboutUsData }) => {
 };
 
 export async function getServerSideProps() {
-  return { props: { techData, summaryData, aboutUsData } };
+  return {
+    props: { techData, summaryData, aboutUsData, projectsShowcaseData },
+  };
 }
+
 export default Home;

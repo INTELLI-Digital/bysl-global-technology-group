@@ -40,7 +40,7 @@ const ARVRTechnologies = () => {
         </FeaturedBanner>
 
         {/* How does it works */}
-        <ImageShowcase>
+        <ImageShowcase video="/images/technologies/ar_vr/demo.mp4">
           How does it <TextGradient text="works" />?
         </ImageShowcase>
       </div>

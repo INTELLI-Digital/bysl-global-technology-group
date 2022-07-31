@@ -4,9 +4,10 @@ import { getPath } from "../../utils/paths";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const ImageShowcase = (props) => {
-  const { children, sub, img, type } = props;
+  const { children, sub, img, type, video } = props;
   const arVrPath = getPath("/ar-vr-technologies");
   const itesPath = getPath("/ites");
+  const aiMlPath = getPath("/ai-ml-technologies");
   // const adminPath = getPath("/administration");
   const dataSciencePath = getPath("/data-science");
 
@@ -19,11 +20,14 @@ const ImageShowcase = (props) => {
           {sub}
         </p>
       )}
-      <div className="mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto">
-        {arVrPath ? (
+      <div className="mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto clip-video">
+        {arVrPath || aiMlPath ? (
           <video
-            className="h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] w-full rounded-[20px] object-cover"
-            src="/images/technologies/ar_vr/demo.mp4"
+            className={`w-full ${
+              arVrPath &&
+              "h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] rounded-[20px] object-cover"
+            } ${aiMlPath && "sm:h-[400px] lg:h-[540px]"} `}
+            src={video}
             autoPlay
             muted
             loop
@@ -35,7 +39,13 @@ const ImageShowcase = (props) => {
               dataSciencePath && "3xl:h-[528px] shadow-2xl shadow-blue-500/25"
             } ${itesPath && "3xl:h-[735px] shadow-2xl shadow-blue-500/25"} `}
           >
-            <Image src={img} layout="fill" alt="" />
+            <Image
+              src={img}
+              placeholder="blur"
+              blurDataURL={img}
+              layout="fill"
+              alt=""
+            />
           </div>
         )}
       </div>

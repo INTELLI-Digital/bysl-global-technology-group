@@ -7,6 +7,8 @@ const LandingPageBanner = () => {
         <Image
           src="/images/banners/landing_banner.svg"
           layout="fill"
+          placeholder="blur"
+          blurDataURL="/images/banners/landing_banner.svg"
           priority
           alt=""
         />
