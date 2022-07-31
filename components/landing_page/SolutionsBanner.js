@@ -1,6 +1,6 @@
 // import Image from "next/image";
 
-const SolutionsBanner = () => {
+const SolutionsBanner = ({ data }) => {
   return (
     <div className="relative my-10 xl:my-16 bg-gradient-to-r from-blue-900 to-blue-700 min-h-max 2xl:h-96 3xl:h-[531px] p-5 md:p-7 xl:p-10 3xl:p-16 lg:pl-16 xl:pl-32 text-center text-white rounded-xl lg:rounded-3xl 2xl:rounded-[40px]">
       <div className="flex flex-col sm:flex-row justify-between sm:gap-4 sm:items-center xl:items-start">
@@ -20,13 +20,7 @@ const SolutionsBanner = () => {
             height={403}
             width={536}
           /> */}
-          <video
-            className="w-full h-full"
-            src="/images/banners/landing_solution_banner.webm"
-            autoPlay
-            muted
-            loop
-          />
+          <video className="w-full h-full" src={data} autoPlay muted loop />
         </div>
       </div>
     </div>

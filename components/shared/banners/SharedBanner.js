@@ -17,6 +17,8 @@ const SectionBanner = ({ data }) => {
         }`}
       >
         <Image
+          placeholder="blur"
+          blurDataURL={`/images/banners/${title}_banner.svg`}
           src={`/images/banners/${title}_banner.svg`}
           height={283}
           width={452}
@@ -60,7 +62,14 @@ const TextBanner = (props) => {
         </p>
       </div>
       <div className={`flex justify-center lg:w-1/2 mx-auto`}>
-        <Image src={img} height={380} width={648} alt="" />
+        <Image
+          src={img}
+          placeholder="blur"
+          blurDataURL={img}
+          height={380}
+          width={648}
+          alt=""
+        />
       </div>
     </div>
   );

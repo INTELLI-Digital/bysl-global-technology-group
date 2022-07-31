@@ -100,7 +100,7 @@ const navbars = [
       {
         id: 1,
         title: "ITeS",
-        subTitle: "Building future with Gear & Softwaree",
+        subTitle: "Building future with Gear & Software",
         link: "/ites",
       },
       {
@@ -158,7 +158,7 @@ const navbars = [
         link: "/it-platform",
       },
       {
-        id: 1,
+        id: 2,
         title: "Marketplace Platforms",
         subTitle: "Powerful solutions for Your Business",
         link: "/marketplace-platform",

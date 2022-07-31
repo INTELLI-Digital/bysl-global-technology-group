@@ -34,6 +34,8 @@ const AIMLServices = () => {
               <Image
                 src="/images/technologies/ai_ml/services/aiml_services_banner.svg"
                 layout="fill"
+                placeholder="blur"
+                blurDataURL="/images/technologies/ai_ml/services/aiml_services_banner.svg"
                 alt=""
               />
             </div>
@@ -52,7 +54,13 @@ const AIMLServices = () => {
                 >
                   <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
                     <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
-                      <Image src={img} layout="fill" alt="" />
+                      <Image
+                        src={img}
+                        placeholder="blur"
+                        blurDataURL={img}
+                        layout="fill"
+                        alt=""
+                      />
                     </div>
                   </div>
                   <div className="text-sm lg:text-base 3xl:text-2xl font-bold text-gray-800">

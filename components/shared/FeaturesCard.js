@@ -16,7 +16,13 @@ const FeaturesCard = ({ data }) => {
                 subTitle && "xl:h-[75px] xl:w-[75px]"
               } mx-auto relative`}
             >
-              <Image src={img} layout="fill" alt="" />
+              <Image
+                src={img}
+                placeholder="blur"
+                blurDataURL={img}
+                layout="fill"
+                alt=""
+              />
             </div>
             <div className="w-full">
               <p className="mt-2 md:mt-0 text-sm lg:text-base 2xl:text-xl 3xl:text-2xl text-gray-800 font-bold text-center lg:text-start">

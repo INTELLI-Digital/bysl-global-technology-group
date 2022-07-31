@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getPath } from "../../../utils/paths";
 
+import { getPath } from "../../../utils/paths";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
 const SecondaryLargeBanner = ({ data, children }) => {
@@ -23,6 +23,8 @@ const SecondaryLargeBanner = ({ data, children }) => {
         <Image
           src={img}
           alt=""
+          placeholder="blur"
+          blurDataURL={img}
           height={bigDataPath ? 633 : 700}
           width={bigDataPath ? 1240 : 1080}
         />

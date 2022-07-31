@@ -19,7 +19,13 @@ const ResourceCommonBanner = (props) => {
           }`}
         >
           <div className="relative h-10 w-10 2xl:h-16 2xl:w-16 mx-auto md:mx-0">
-            <Image src={icon} layout="fill" alt="" />
+            <Image
+              src={icon}
+              placeholder="blur"
+              blurDataURL={icon}
+              layout="fill"
+              alt=""
+            />
           </div>
           <p className="mt-1 mb-5 md:my-6 text-xs lg:text-sm uppercase font-medium text-center md:text-start">
             <TextGradient text={type} />
@@ -46,7 +52,14 @@ const ResourceCommonBanner = (props) => {
             : "md:-mr-16 xl:-mr-24 3xl:-mr-32 5xl:mr-0"
         }`}
       >
-        <Image src={img} height={736} width={996} alt="" />
+        <Image
+          src={img}
+          placeholder="blur"
+          blurDataURL={img}
+          height={736}
+          width={996}
+          alt=""
+        />
       </div>
     </div>
   );

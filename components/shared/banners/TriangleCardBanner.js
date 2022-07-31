@@ -49,7 +49,13 @@ const TriangleCardBanner = (props) => {
                   : "h-40 xs:h-56 sm:h-80 md:h-52 lg:h-64 xl:h-80 3xl:h-[440px]"
               } relative`}
             >
-              <Image src={img} layout="fill" alt="" />
+              <Image
+                src={img}
+                placeholder="blur"
+                blurDataURL={img}
+                layout="fill"
+                alt=""
+              />
             </div>
           )}
         </div>

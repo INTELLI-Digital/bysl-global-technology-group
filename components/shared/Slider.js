@@ -29,6 +29,8 @@ const Slider = ({ size }) => {
               <Image
                 src={`/images/technologies/mobile/slider/mobileTechnologies_slider_${i}.svg`}
                 layout="fill"
+                placeholder="blur"
+                blurDataURL={`/images/technologies/mobile/slider/mobileTechnologies_slider_${i}.svg`}
                 objectFit="cover"
                 alt=""
               />

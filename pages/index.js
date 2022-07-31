@@ -10,12 +10,19 @@ import { summaryData } from "../public/data/summaryData";
 import { aboutUsData } from "../public/data/aboutUsData";
 import { projectsShowcaseData } from "../public/data/landingPageData";
 
-const Home = ({ techData, summaryData, aboutUsData }) => {
+const Home = ({
+  techData,
+  summaryData,
+  aboutUsData,
+  investmentData,
+  solutionsBanner,
+  landingBanner,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <CommonLayout noMargin={true}>
       {/* banner section  */}
-      <LandingPageBanner />
+      <LandingPageBanner data={landingBanner} />
       <div className="box">
         {/* about us section  */}
         <AboutUs summaryData={summaryData} aboutUsData={aboutUsData} />
@@ -24,21 +31,34 @@ const Home = ({ techData, summaryData, aboutUsData }) => {
         <ProjectsShowcase data={projectsShowcaseData} />
 
         {/* solutions section  */}
-        <SolutionsBanner />
+        <SolutionsBanner data={solutionsBanner} />
 
         {/* technologies section  */}
         <Technologies data={techData} />
 
         {/* investments section  */}
-        <Investments />
+        <Investments data={investmentData} />
       </div>
     </CommonLayout>
   );
 };
 
 export async function getServerSideProps() {
+  const investmentData = {
+    ITPlatform: "/images/IT_platform.svg",
+    live: "/images/bysl-live.gif",
+  };
+
   return {
-    props: { techData, summaryData, aboutUsData, projectsShowcaseData },
+    props: {
+      techData,
+      summaryData,
+      aboutUsData,
+      projectsShowcaseData,
+      investmentData,
+      solutionsBanner: "/images/banners/landing_solution_banner.webm",
+      landingBanner: "/images/banners/landing_banner.svg",
+    },
   };
 }
 

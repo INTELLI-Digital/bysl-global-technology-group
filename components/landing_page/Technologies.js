@@ -15,7 +15,7 @@ const Technologies = ({ data }) => {
             <Link key={id} passHref href={link}>
               <div
                 key={id}
-                className={`rounded-xl xl:rounded-3xl 3xl:rounded-[20px] overflow-hidden text-white text-start hover:cursor-pointer
+                className={`group rounded-xl xl:rounded-3xl 3xl:rounded-[20px] overflow-hidden text-white text-start hover:cursor-pointer
               ${
                 (id === 0 && "sm:col-span-6") ||
                 (id === 1 && "sm:col-span-4") ||
@@ -34,7 +34,7 @@ const Technologies = ({ data }) => {
                     id === 2 || id === 3 || id === 4
                       ? "xl:h-48 2xl:h-64"
                       : "xl:h-64 2xl:h-72 3xl:h-96"
-                  } object-cover relative`}
+                  } object-cover relative group-hover:scale-110 transition-all duration-500`}
                 >
                   {id === 6 ? (
                     <video

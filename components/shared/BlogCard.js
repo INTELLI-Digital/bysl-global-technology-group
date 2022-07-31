@@ -9,7 +9,14 @@ const BlogCard = ({ data }) => {
   return (
     <div className="bg-white rounded-md shadow-sm shadow-gray-200/50 max-w-sm lg:max-w-lg mx-auto">
       <div className="relative rounded-t-md w-full h-52 overflow-hidden">
-        <Image src={img} layout="fill" objectFit="cover" alt="" />
+        <Image
+          src={img}
+          placeholder="blur"
+          blurDataURL={img}
+          layout="fill"
+          objectFit="cover"
+          alt=""
+        />
       </div>
       <div className="px-5 pt-10 pb-6">
         <p className="text-xs font-medium">

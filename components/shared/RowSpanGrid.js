@@ -28,7 +28,13 @@ const RowSpanGrid = (props) => {
                   } h-12 xl:h-16 w-12 xl:w-16 rounded-full flex items-center justify-center mx-auto`}
                 >
                   <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
-                    <Image src={img} layout="fill" alt="" />
+                    <Image
+                      src={img}
+                      placeholder="blur"
+                      blurDataURL={img}
+                      layout="fill"
+                      alt=""
+                    />
                   </div>
                 </div>
                 <p
@@ -62,6 +68,8 @@ const RowSpanGrid = (props) => {
                         <Image
                           src="/images/items_icon.svg"
                           alt=""
+                          placeholder="blur"
+                          blurDataURL="/images/items_icon.svg"
                           height={24}
                           width={24}
                         />

@@ -34,7 +34,13 @@ const CompanyInfoCard = (props) => {
             valuesPath ? "w-16 2xl:w-20" : "w-10 2xl:w-14"
           }`}
         >
-          <Image src={`/images/info_card/${img}.svg`} layout="fill" alt="" />
+          <Image
+            src={`/images/info_card/${img}.svg`}
+            placeholder="blur"
+            blurDataURL={`/images/info_card/${img}.svg`}
+            layout="fill"
+            alt=""
+          />
         </div>
         <p className="text-lg 2xl:text-xl my-3 2xl:my-5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700">
           {title}

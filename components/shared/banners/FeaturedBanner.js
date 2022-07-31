@@ -25,7 +25,14 @@ const FeaturedBanner = (props) => {
         <FeaturesCard data={features} />
       </div>
       <div className="flex justify-center lg:w-1/2 mx-auto">
-        <Image src={img} height={419} width={687} alt="" />
+        <Image
+          src={img}
+          placeholder="blur"
+          blurDataURL={img}
+          height={419}
+          width={687}
+          alt=""
+        />
       </div>
     </div>
   );

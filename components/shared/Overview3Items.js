@@ -25,7 +25,13 @@ const Overview3Items = (props) => {
               className="p-3 xl:p-5 text-center max-w-[100px] xxs:max-w-none lg:w-max"
             >
               <div className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16 relative">
-                <Image src={img} layout="fill" alt="" />
+                <Image
+                  src={img}
+                  placeholder="blur"
+                  blurDataURL={img}
+                  layout="fill"
+                  alt=""
+                />
               </div>
               <p className="2xl:text-xl font-medium text-gray-800 mt-5">
                 {title}

@@ -4,18 +4,28 @@ import { missionButtonData } from "../public/data/buttonGroupData";
 import { missionBannerData } from "../public/data/companyInfoBannerData";
 import { missionCardData } from "../public/data/companyInfoCardData";
 
-const CompanyMission = () => {
+const CompanyMission = ({ missionBanner, missionCard, missionButton }) => {
   return (
     <CompanyInfoLayout
       title="Mission"
-      bannerData={missionBannerData}
-      cardData={missionCardData}
-      buttonData={missionButtonData}
+      bannerData={missionBanner}
+      cardData={missionCard}
+      buttonData={missionButton}
     >
       Our mission is to serve the world with exceptional
       <TextGradient text=" Products & Services" />
     </CompanyInfoLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      missionBanner: missionBannerData,
+      missionCard: missionCardData,
+      missionButton: missionButtonData,
+    },
+  };
+}
 
 export default CompanyMission;
