@@ -17,11 +17,11 @@ const FoodTech = () => {
       <PrimaryBanner
         title="Digital Commerce - Division"
         img="digital_commerce_division"
-        sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        sub="Transforming the way businesses engage, interact, transact and serve in the multi-channel landscape with integrated applications on top of existing complex frameworks that adjust and scale to the dynamic business needs. "
       >
-        Manage Your <TextGradient text="Sales " /> &
+        Manage your <TextGradient text=" sales " /> &
         <br />
-        <TextGradient text="Marketing " /> Together
+        <TextGradient text="marketing " /> together
       </PrimaryBanner>
 
       {/* overview section  */}
@@ -29,13 +29,12 @@ const FoodTech = () => {
 
       {/* e-commerce app section  */}
       <ImageShowcase
-        sub="Get a kick off on building your pages and bulletins! Pick a plan that accommodates your business needs and make it your own. Our drag and drop editors make it very simple for anybody to tweak formats like an ace."
+        sub="Ever-evolving smart applications to securely engage, interact, converse, transact & operate across platforms to deliver value."
         img="/images/divisions/digital_commerce/digital_commerce_app.svg"
       >
-        Full Operational <TextGradient text=" E-Commerce" />
+        Cutting edge e-commerece applications
         <br />
-        <TextGradient text="Application " />
-        is Ready to Serve
+        ready to serve
       </ImageShowcase>
 
       {/* solutions section  */}
@@ -43,8 +42,9 @@ const FoodTech = () => {
         data={digitalCommerceSolutionsData}
         reversed={true}
       >
-        <TextGradient text="Automated Business " /> Solutions <br />
-        when you need it.
+        Conferring a <TextGradient text=" continuum " /> of
+        <TextGradient text=" possibilities " /> for businesses with
+        <TextGradient text=" AI-driven automation" />
       </BannerWithBulletSingle>
     </BasicLayout>
   );

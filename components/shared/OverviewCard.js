@@ -8,6 +8,7 @@ const OverviewCard = (props) => {
 
   const ictPath = getPath("/ict");
   const itesPath = getPath("/ites");
+  const digitalCommercePath = getPath("/digital-commerce");
 
   return (
     <>
@@ -15,7 +16,9 @@ const OverviewCard = (props) => {
         return (
           <div
             key={id}
-            className="p-3 xl:p-4 text-center group hover:cursor-pointer"
+            className={`p-3 xl:p-4 text-center group hover:cursor-pointer ${
+              digitalCommercePath && "xl:py-10"
+            }`}
           >
             <div
               className={`mx-auto relative ${
@@ -23,16 +26,24 @@ const OverviewCard = (props) => {
                   ? "h-16 2xl:h-[88px] w-16 2xl:w-[88px]"
                   : ictPath
                   ? `h-10 xl:h-14 w-10 xl:w-14`
-                  : "h-10 xl:h-16 w-10 xl:w-16"
+                  : "h-10 xl:h-[50px] w-10 xl:w-[50px]"
               } ${itesPath && "h-10 xl:h-12 w-10 xl:w-12"}`}
             >
               {hoverImg ? (
                 <HoverImage img1={img} img2={hoverImg} />
               ) : (
-                <Image src={img} layout="fill" alt="" />
+                <Image
+                  src={img}
+                  placeholder="blur"
+                  blurDataURL={img}
+                  layout="fill"
+                  alt=""
+                />
               )}
             </div>
-            <p className="2xl:text-xl font-medium text-gray-800 mt-4">
+            <p className={`2xl:text-xl font-medium text-gray-800 mt-4 ${
+              digitalCommercePath && "mt-10"
+            }`}>
               {title}
             </p>
             {subTitle && (

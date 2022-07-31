@@ -16,10 +16,8 @@ const IconCard = (props) => {
           <div
             key={id}
             className={`group gradient-bg px-2 py-5 sm:p-5 hover:cursor-pointer ${
-              adminPath && "lg:py-14"
-            } ${dataPath && "lg:py-14"} ${dataSciencePath && "lg:py-14"} ${
-              !arVrPath && "sm:py-6"
-            }`}
+              !subTitle && "lg:py-14"
+            } ${!arVrPath && "sm:py-6"}`}
           >
             <div
               className={`h-10 w-10 lg:h-16 lg:w-16 ${
@@ -61,3 +59,5 @@ const IconCard = (props) => {
 };
 
 export default IconCard;
+
+// ${dataPath && "lg:py-14"} ${dataSciencePath && "lg:py-14"}

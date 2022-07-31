@@ -26,24 +26,26 @@ const FoodTech = () => {
 
       {/* overview section  */}
       <Overview4Items data={foodTechOverviewData}>
-        Tech-based catering to maximize efficiency
+        Tech-based catering
+        <br />
+        to maximize efficiency
       </Overview4Items>
 
       {/* app section  */}
       <ImageShowcase
-        sub="Medical care systems in each nation  are battling with the issue of information siloes, implying that patients and their medical services"
+        sub="Intuitively designed applications aimed to simplify your food journey."
         img="/images/divisions/food_tech/food_tech_delivery_app.svg"
       >
-        Full Operational
-        <TextGradient text=" Delivery App" />
-        <br /> is Burning
+        Outstanding experience
+        <br />
+        of food surfing
       </ImageShowcase>
 
       {/* areas section  */}
       <IconCardGroup4 data={foodTechAreasData}>
-        We Targeted those
+        We provide advanced
         <br />
-        <TextGradient text="Areas" />
+        systems
       </IconCardGroup4>
     </BasicLayout>
   );

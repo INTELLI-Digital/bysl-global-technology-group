@@ -10,6 +10,8 @@ const ImageShowcase = (props) => {
   const aiMlPath = getPath("/ai-ml-technologies");
   // const adminPath = getPath("/administration");
   const dataSciencePath = getPath("/data-science");
+  const foodTechPath = getPath("/food-tech");
+  const digitalCommercePath = getPath("/digital-commerce");
 
   return (
     <div className="py-10 xl:py-16">
@@ -20,7 +22,12 @@ const ImageShowcase = (props) => {
           {sub}
         </p>
       )}
-      <div className="mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto clip-video">
+      <div
+        className={`mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto clip-video ${
+          (digitalCommercePath && "shadow-[0px_0px_25px_0px_#D0E2F4]") ||
+          (itesPath && "shadow-[0px_0px_25px_0px_#D0E2F4]")
+        }`}
+      >
         {arVrPath || aiMlPath ? (
           <video
             className={`w-full ${
@@ -36,8 +43,10 @@ const ImageShowcase = (props) => {
           <div
             className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden ${
               // (adminPath && "3xl:h-[735px] bg-blue-900") ||
-              dataSciencePath && "3xl:h-[528px] shadow-2xl shadow-blue-500/25"
-            } ${itesPath && "3xl:h-[735px] shadow-2xl shadow-blue-500/25"} `}
+              dataSciencePath && "3xl:h-[528px]"
+            } ${itesPath && "3xl:h-[735px]"} ${
+              foodTechPath && "2xl:!h-[430px]"
+            } ${digitalCommercePath && "3xl:h-[712px]"} `}
           >
             <Image
               src={img}

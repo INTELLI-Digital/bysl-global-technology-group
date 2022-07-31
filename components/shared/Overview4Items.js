@@ -8,11 +8,15 @@ const Overview4Items = (props) => {
   const itesPath = getPath("/ites");
   const aiMlPath = getPath("/ai-ml-technologies");
   const cyberPath = getPath("/cyber-security-technologies");
+  const digitalCommercePath = getPath("/digital-commerce");
 
   return (
     <div
       className={`${webPath ? "pt-10 xl:pt-16" : "py-10 xl:py-16"} ${
-        (aiMlPath && "!pt-0") || (cyberPath && "!pt-0") || (itesPath && "!pt-0")
+        (aiMlPath && "!pt-0") ||
+        (cyberPath && "!pt-0") ||
+        (itesPath && "!pt-0") ||
+        (digitalCommercePath && "!py-0")
       }`}
     >
       {type && <SectionTitleType title={type} />}

@@ -11,6 +11,7 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
   const iotPath = getPath("/iot-technologies");
   const ictPath = getPath("/ict");
   const itesPath = getPath("/ites");
+  const foodTechPath = getPath("/food-tech");
   const dataSciencePath = getPath("/data-science");
   const informationPath = getPath("/information-security");
   const blockchainPath = getPath("/blockchain-technologies");
@@ -47,7 +48,9 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
           </p>
         </div>
       </div>
-      <div className={`${ictPath ? "md:w-[55%]" : "md:w-[45%]"}`}>
+      <div
+        className={`${ictPath || foodTechPath ? "md:w-[55%]" : "md:w-[45%]"}`}
+      >
         {webPath ? (
           <WebBanner />
         ) : (
@@ -61,6 +64,8 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
             <Image
               src={`/images/banners/${img}_banner.svg`}
               layout="fill"
+              placeholder="blur"
+              blurDataURL={`/images/banners/${img}_banner.svg`}
               priority
               alt=""
             />

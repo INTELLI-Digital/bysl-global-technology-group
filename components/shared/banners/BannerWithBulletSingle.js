@@ -57,11 +57,17 @@ const BannerWithBulletSingle = (props) => {
         </div>
       </div>
       <div
-        className={`w-full xs:w-4/5  lg:w-[45%] h-48 xs:h-64 sm:h-80 lg:h-[350px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
+        className={`w-full relative xs:w-4/5 lg:w-[45%] h-48 xs:h-64 sm:h-80 lg:h-[350px] xl:h-[450px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
           itesPath && "lg:px-8 2xl:px-16"
         }`}
       >
-        <Image src={img} height={450} width={588} alt="" />
+        <Image
+          src={img}
+          placeholder="blur"
+          blurDataURL={img}
+          layout="fill"
+          alt=""
+        />
       </div>
     </div>
   );
