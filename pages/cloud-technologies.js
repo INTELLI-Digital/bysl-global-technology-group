@@ -10,14 +10,14 @@ import {
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
 import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
 
-const CloudTechnologies = () => {
+const CloudTechnologies = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Cloud Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Cloud Technologies"
-        img="cloud_technologies"
+        img={banner}
         sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
       >
         Start Your&nbsp;
@@ -50,5 +50,13 @@ const CloudTechnologies = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/cloud_technologies_banner.svg",
+    },
+  };
+}
 
 export default CloudTechnologies;

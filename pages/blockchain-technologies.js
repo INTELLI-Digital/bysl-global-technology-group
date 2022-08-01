@@ -11,14 +11,14 @@ import {
   blockchainServicesData,
 } from "../public/data/blockchainTechnologiesData";
 
-const BlockchainTechnologies = () => {
+const BlockchainTechnologies = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Blockchain Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Blockchain Technologies"
-        img="blockchain_technologies"
+        img={banner}
         sub="Exploring the unique potential of blockchain technology for wider accessibility and control of data and greater security.   "
       >
         Blockchain for greater accessibility &
@@ -59,5 +59,13 @@ const BlockchainTechnologies = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/blockchain_technologies_banner.svg",
+    },
+  };
+}
 
 export default BlockchainTechnologies;

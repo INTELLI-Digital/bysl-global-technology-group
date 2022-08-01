@@ -23,10 +23,7 @@ const ImageShowcase = (props) => {
         </p>
       )}
       <div
-        className={`mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto clip-video ${
-          (digitalCommercePath && "shadow-[0px_0px_25px_0px_#D0E2F4]") ||
-          (itesPath && "shadow-[0px_0px_25px_0px_#D0E2F4]")
-        }`}
+        className={`mt-10 w-full rounded-[20px] overflow-hidden max-w-[1080px] mx-auto clip-video `}
       >
         {arVrPath || aiMlPath ? (
           <video
@@ -41,20 +38,27 @@ const ImageShowcase = (props) => {
           />
         ) : (
           <div
-            className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden ${
-              // (adminPath && "3xl:h-[735px] bg-blue-900") ||
-              dataSciencePath && "3xl:h-[528px]"
-            } ${itesPath && "3xl:h-[735px]"} ${
-              foodTechPath && "2xl:!h-[430px]"
-            } ${digitalCommercePath && "3xl:h-[712px]"} `}
+            className={` ${
+              (digitalCommercePath && "shadow-[0px_0px_25px_0px_#D0E2F4]") ||
+              (itesPath && "shadow-[0px_0px_25px_0px_#D0E2F4]")
+            }`}
           >
-            <Image
-              src={img}
-              placeholder="blur"
-              blurDataURL={img}
-              layout="fill"
-              alt=""
-            />
+            <div
+              className={`relative mx-auto h-48 sm:h-64 md:h-80 lg:h-[400px] 2xl:h-[500px] 3xl:h-[600px] rounded-[20px] overflow-hidden ${
+                // (adminPath && "3xl:h-[735px] bg-blue-900") ||
+                dataSciencePath && "3xl:h-[528px]"
+              } ${itesPath && "3xl:h-[735px]"} ${
+                foodTechPath && "2xl:!h-[430px]"
+              } ${digitalCommercePath && "3xl:h-[712px]"} `}
+            >
+              <Image
+                src={img}
+                placeholder="blur"
+                blurDataURL={img}
+                layout="fill"
+                alt=""
+              />
+            </div>
           </div>
         )}
       </div>

@@ -9,14 +9,14 @@ import {
   foodTechOverviewData,
 } from "../public/data/foodTechData";
 
-const FoodTech = () => {
+const FoodTech = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Food Tech">
       {/* banner section  */}
       <PrimaryBanner
         title="Food Tech - Division"
-        img="food_tech_division"
+        img={banner}
         sub="Multi-platform tech integration to digitize operations and supply chain of food service industry"
       >
         Revolutionizing the <TextGradient text=" food service industry " /> with
@@ -50,5 +50,13 @@ const FoodTech = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/food_tech_division_banner.svg",
+    },
+  };
+}
 
 export default FoodTech;

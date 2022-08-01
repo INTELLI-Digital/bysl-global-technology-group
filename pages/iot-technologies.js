@@ -12,7 +12,7 @@ import {
   iotSupportData,
 } from "../public/data/iotTechnologiesData";
 
-const IotTechnologies = () => {
+const IotTechnologies = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="IOT Technologies" noMargin={true}>
@@ -20,7 +20,7 @@ const IotTechnologies = () => {
         {/* banner section  */}
         <PrimaryBanner
           title="IOT Technologies"
-          img="iot_technologies"
+          img={banner}
           sub="Next-generation IOT technologies using data, sensors and connectivity  "
         >
           <TextGradient text="Interconnectivity " /> <br />
@@ -65,5 +65,13 @@ const IotTechnologies = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/iot_technologies_banner.svg",
+    },
+  };
+}
 
 export default IotTechnologies;

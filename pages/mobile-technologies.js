@@ -11,14 +11,14 @@ import {
   userExperienceData,
 } from "../public/data/mobileTechnologiesData";
 
-const MobileTechnologies = ({ mobileFeaturesData, mobileTechData }) => {
+const MobileTechnologies = ({ mobileFeaturesData, mobileTechData, banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Mobile Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Mobile Technologies"
-        img="mobile_technologies"
+        img={banner}
         sub="In a world of oversaturated mobile apps, we pioneer disruptive ideas to break trends and introduce the next big thing.  "
       >
         <TextGradient text="Empowering" />,
@@ -53,7 +53,11 @@ export async function getServerSideProps() {
   };
 
   return {
-    props: { mobileFeaturesData, mobileTechData },
+    props: {
+      mobileFeaturesData,
+      mobileTechData,
+      banner: "/images/banners/mobile_technologies_banner.svg",
+    },
   };
 }
 

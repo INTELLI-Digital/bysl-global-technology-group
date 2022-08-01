@@ -11,7 +11,7 @@ import {
 import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 import Overview4Items from "../components/shared/Overview4Items";
 
-const InformationSecurity = () => {
+const InformationSecurity = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Information Security" noMargin={true}>
@@ -19,7 +19,7 @@ const InformationSecurity = () => {
         {/* banner section  */}
         <PrimaryBanner
           title="Information Security - Division"
-          img="information_security_division"
+          img={banner}
           sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
         >
           Managing information with
@@ -54,5 +54,13 @@ const InformationSecurity = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/information_security_division_banner.svg",
+    },
+  };
+}
 
 export default InformationSecurity;

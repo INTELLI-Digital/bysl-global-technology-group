@@ -11,14 +11,14 @@ import {
 } from "../public/data/ictData";
 import { TextBanner } from "../components/shared/banners/SharedBanner";
 
-const ICT = () => {
+const ICT = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="ICT">
       {/* banner section  */}
       <PrimaryBanner
         title="ICT Division"
-        img="ict_division"
+        img={banner}
         sub="Looking to build a future that makes a difference in the world of buisiness and create opportunities with next-gen ICT products and services.  "
       >
         Lead breakthroughs with a complete
@@ -51,5 +51,13 @@ const ICT = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/ict_division_banner.svg",
+    },
+  };
+}
 
 export default ICT;

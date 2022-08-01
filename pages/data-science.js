@@ -9,7 +9,7 @@ import {
 import ImageShowcase from "../components/shared/ImageShowcase";
 import FeaturedBanner from "../components/shared/banners/FeaturedBanner";
 
-const DataScience = () => {
+const DataScience = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Data Science" noMargin={true}>
@@ -17,7 +17,7 @@ const DataScience = () => {
         {/* banner section  */}
         <PrimaryBanner
           title="Data Science - Division"
-          img="data_science_division"
+          img={banner}
           sub="We understand, analyze and harness the power of data using the best of data science and drive growth for enterprizes."
         >
           Translating data into key growth factors
@@ -51,5 +51,13 @@ const DataScience = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/data_science_division_banner.svg",
+    },
+  };
+}
 
 export default DataScience;

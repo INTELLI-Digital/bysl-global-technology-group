@@ -2,19 +2,18 @@ import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import ImageShowcase from "../components/shared/ImageShowcase";
 import Overview4Items from "../components/shared/Overview4Items";
 import { TextGradient } from "../components/shared/SharedTextgroups";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
 import BasicLayout from "../layouts/BasicLayout";
 import { itesOverviewData, itesUpdateData } from "../public/data/itesData";
 import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 
-const ITeS = () => {
+const ITeS = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="ITeS">
       {/* banner section  */}
       <PrimaryBanner
         title="ITeS Division"
-        img="ites_division"
+        img={banner}
         sub="Navigate your journey of digital transformation through unparalleled ITeS products and services"
       >
         Digitize business with
@@ -26,7 +25,6 @@ const ITeS = () => {
       <Overview4Items data={itesOverviewData} />
 
       {/* updates section  */}
-      {/* <BannerWithBulletSingle data={itesUpdateData} reversed={true} /> */}
       <BannerWithBullets data={itesUpdateData} reversed={true}>
         Creating comprehensive solutions combining
         <TextGradient text=" data, insights & technology" />
@@ -44,5 +42,13 @@ const ITeS = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/ites_division_banner.svg",
+    },
+  };
+}
 
 export default ITeS;

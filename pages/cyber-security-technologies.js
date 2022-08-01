@@ -12,14 +12,14 @@ import {
   cyberSolutionsData,
 } from "../public/data/cyberSecurityTechnologiesData";
 
-const CyberSecurityTechnologies = () => {
+const CyberSecurityTechnologies = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Cyber Security Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Cyber Security Technologies"
-        img="cyber-security_technologies"
+        img={banner}
         sub="Designing next-generation security landscapes with end-to-end encryption, integraged AI-based threat analysis, persistent vulnerablity check, rigorus stress-testings, real time responses and timely security updates"
       >
         <TextGradient text="Full-scale" /> cyber protection through
@@ -53,5 +53,13 @@ const CyberSecurityTechnologies = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/cyber-security_technologies_banner.svg",
+    },
+  };
+}
 
 export default CyberSecurityTechnologies;

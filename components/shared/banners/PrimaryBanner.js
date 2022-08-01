@@ -52,7 +52,7 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
         className={`${ictPath || foodTechPath ? "md:w-[55%]" : "md:w-[45%]"}`}
       >
         {webPath ? (
-          <WebBanner />
+          <WebBanner img={img} />
         ) : (
           <div
             className={`h-56 xs:h-[40vh] max-h-[600px] w-full relative ${
@@ -62,10 +62,10 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
             }`}
           >
             <Image
-              src={`/images/banners/${img}_banner.svg`}
+              src={img}
               layout="fill"
               placeholder="blur"
-              blurDataURL={`/images/banners/${img}_banner.svg`}
+              blurDataURL={img}
               priority
               alt=""
             />

@@ -9,14 +9,14 @@ import {
   digitalCommerceSolutionsData,
 } from "../public/data/digitalCommerceData";
 
-const FoodTech = () => {
+const FoodTech = ({ banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Digital Commerce">
       {/* banner section  */}
       <PrimaryBanner
         title="Digital Commerce - Division"
-        img="digital_commerce_division"
+        img={banner}
         sub="Transforming the way businesses engage, interact, transact and serve in the multi-channel landscape with integrated applications on top of existing complex frameworks that adjust and scale to the dynamic business needs. "
       >
         Manage your <TextGradient text=" sales " /> &
@@ -49,5 +49,13 @@ const FoodTech = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/digital_commerce_division_banner.svg",
+    },
+  };
+}
 
 export default FoodTech;
