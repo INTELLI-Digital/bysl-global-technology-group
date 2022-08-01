@@ -57,11 +57,10 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           <video className="w-full h-full" src={video} autoPlay muted loop />
         ) : (
           <div
-            className={`h-56 xs:h-[40vh] max-h-[600px] w-full relative ${
-              webPath ? "lg:h-[50vh] 2xl:h-[60vh]" : "xl:h-[50vh]"
-            } ${ictPath && "xl:h-[40vh]"} ${dataSciencePath && "xl:h-[40vh]"} ${
+            className={`h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative 
+            ${ictPath && "xl:h-[40vh]"} ${dataSciencePath && "xl:h-[40vh]"} ${
               informationPath && "xl:h-[280px]"
-            } ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"} `}
+            } ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"}`}
           >
             <Image
               src={img}
