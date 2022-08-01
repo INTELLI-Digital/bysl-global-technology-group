@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-import { databaseFeaturesData } from "../../../public/data/databaseTechnologiesData";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
   TextGradient,
 } from "../../shared/SharedTextgroups";
 
-const DatabaseFeatures = () => {
+const DatabaseFeatures = ({data}) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Features" />
@@ -23,7 +22,7 @@ const DatabaseFeatures = () => {
           />
         </div>
         <div className="grid grid-cols-2 grid-rows-2 place-content-center gap-3 lg:gap-5 w-full mt-10 md:mt-0 md:w-[45%] lg:w-1/2 xl:w-3/5 3xl:w-1/2">
-          {databaseFeaturesData.map(({ id, img, title, subTitle }) => {
+          {data.map(({ id, img, title, subTitle }) => {
             return (
               <div
                 key={id}
