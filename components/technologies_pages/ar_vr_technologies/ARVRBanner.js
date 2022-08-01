@@ -1,4 +1,4 @@
-const ARVRBanner = () => {
+const ARVRBanner = ({banner}) => {
   return (
     <div className="pt-14 lg:pt-0 mb-12 lg:mb-0 relative h-[480px] lg:h-screen">
       <video
@@ -9,7 +9,7 @@ const ARVRBanner = () => {
         className="absolute object-cover h-[480px] lg:h-screen min-w-full"
       >
         <source
-          src="/images/technologies/ar_vr/ar_vr_banner.mp4"
+          src={banner}
           type="video/mp4"
         />
         Your browser does not support HTML5 video.
