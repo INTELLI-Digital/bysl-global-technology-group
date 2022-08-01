@@ -59,13 +59,14 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
               webPath ? "lg:h-[50vh] 2xl:h-[60vh]" : "xl:h-[50vh]"
             } ${ictPath && "xl:h-[40vh]"} ${dataSciencePath && "xl:h-[40vh]"} ${
               informationPath && "xl:h-[280px]"
-            }`}
+            } ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"} `}
           >
             <Image
               src={img}
               layout="fill"
               placeholder="blur"
               blurDataURL={img}
+              objectFit="contain"
               priority
               alt=""
             />

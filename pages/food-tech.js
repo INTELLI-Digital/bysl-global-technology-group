@@ -54,8 +54,8 @@ const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
 export async function getServerSideProps() {
   return {
     props: {
-      banner: "/images/banners/food_tech_division_banner.svg",
-      foodBanner: "/images/divisions/food_tech/food_tech_delivery_app.svg",
+      banner: "/images/banners/food_tech_division_banner.png",
+      foodBanner: "/images/divisions/food_tech/food_tech_delivery_app.png",
       foodTechOverview: foodTechOverviewData,
       foodTechAreas: foodTechAreasData,
     },

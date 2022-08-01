@@ -48,13 +48,14 @@ const ImageShowcase = (props) => {
                 // (adminPath && "3xl:h-[735px] bg-blue-900") ||
                 dataSciencePath && "3xl:h-[528px]"
               } ${itesPath && "3xl:h-[735px]"} ${
-                foodTechPath && "2xl:!h-[430px]"
+                foodTechPath && "xl:!h-[430px]"
               } ${digitalCommercePath && "3xl:h-[712px]"} `}
             >
               <Image
                 src={img}
                 placeholder="blur"
                 blurDataURL={img}
+                objectFit="contain"
                 layout="fill"
                 alt=""
               />
