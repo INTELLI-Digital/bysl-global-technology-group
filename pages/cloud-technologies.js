@@ -1,24 +1,30 @@
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
 import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
+import IconCardGroup3 from "../components/shared/IconCardGroup3";
+import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import {
   cloudFeaturesData,
   cloudServicesData,
   cloudSupportData,
 } from "../public/data/cloudTechnologiesData";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
 
-const CloudTechnologies = ({ banner }) => {
+const CloudTechnologies = ({
+  banner,
+  cloudServices,
+  cloudServiceImg,
+  cloudFeatures,
+  cloudSupport,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Cloud Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Cloud Technologies"
-        img={banner}
         sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
+        img={banner}
       >
         Start Your&nbsp;
         <TextGradient text="cloud" />
@@ -29,20 +35,20 @@ const CloudTechnologies = ({ banner }) => {
       {/* services section  */}
       <TriangleCardBanner
         type="Platforms"
-        data={cloudServicesData}
-        img="/images/technologies/cloud/services/services.svg"
+        data={cloudServices}
+        img={cloudServiceImg}
       >
         Create new opportunities <br className="hidden xs:block" /> to make
         innovation more accessible
       </TriangleCardBanner>
 
       {/* features section  */}
-      <IconCardGroup3 data={cloudFeaturesData} type="Features">
+      <IconCardGroup3 data={cloudFeatures} type="Features">
         Powerful control panel & APIs
       </IconCardGroup3>
 
       {/* support section  */}
-      <BannerWithBullets data={cloudSupportData} reversed={true}>
+      <BannerWithBullets data={cloudSupport} reversed={true}>
         We <TextGradient text=" lead " /> & <TextGradient text=" support " />
         our
         <br className="hidden xs:block" /> customer&apos;s
@@ -55,6 +61,10 @@ export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/cloud_technologies_banner.svg",
+      cloudServices: cloudServicesData,
+      cloudServiceImg: "/images/technologies/cloud/services/services.svg",
+      cloudFeatures: cloudFeaturesData,
+      cloudSupport: cloudSupportData,
     },
   };
 }
