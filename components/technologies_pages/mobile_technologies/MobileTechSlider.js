@@ -3,7 +3,7 @@ import Image from "next/image";
 import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 import Slider from "../../shared/Slider";
 
-const MobileTechSlider = () => {
+const MobileTechSlider = ({ mobileTechData }) => {
   return (
     <div className="py-10 xl:py-16 ">
       <div className="mb-10">
@@ -15,13 +15,13 @@ const MobileTechSlider = () => {
       </div>
       <div className="relative">
         <div className="md:hidden">
-          <Slider size={1} />
+          <Slider data={mobileTechData} size={1} />
         </div>
         <div className="hidden md:block 2xl:hidden">
-          <Slider size={3} />
+          <Slider data={mobileTechData} size={3} />
         </div>
         <div className="hidden 2xl:block">
-          <Slider size={5} />
+          <Slider data={mobileTechData} size={5} />
         </div>
         <div className="centered z-40">
           <div className="h-[277px] xxxs:h-[270px] xxs:h-[340px] xl:h-[430px] w-[140px] xxs:w-[165px] xl:w-[210px] relative drop-shadow-3xl">

@@ -1,15 +1,11 @@
 import Image from "next/image";
 
 import {
-  mobileFeaturesData1,
-  mobileFeaturesData2,
-} from "../../../public/data/mobileTechnologiesData";
-import {
   SectionTitleType,
   TechnologiesSectionTitle,
 } from "../../shared/SharedTextgroups";
 
-const MobileFeatures = () => {
+const MobileFeatures = ({ featuresData }) => {
   const Features = ({ data, reversed }) => {
     return (
       <div className="flex lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 w-full">
@@ -24,7 +20,13 @@ const MobileFeatures = () => {
               <div className="xl:w-1/4 3xl:w-2/12 flex justify-center">
                 <div className="h-10 lg:h-16 w-10 lg:w-16 rounded-full bg-[#F2F2F3] flex justify-center items-center">
                   <div className="h-4 w-4 lg:h-8 lg:w-8 relative">
-                    <Image src={img} alt="" layout="fill" />
+                    <Image
+                      src={img}
+                      placeholder="blur"
+                      blurDataURL={img}
+                      alt=""
+                      layout="fill"
+                    />
                   </div>
                 </div>
               </div>
@@ -54,17 +56,19 @@ const MobileFeatures = () => {
         Explore premium quality
       </TechnologiesSectionTitle>
       <div className="mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center gap-4">
-        <Features data={mobileFeaturesData1} />
+        <Features data={featuresData.data1} />
         <div className="flex justify-center">
           <div className="h-80 lg:h-96 2xl:h-[540px] w-44 lg:w-52 2xl:w-60 relative">
             <Image
-              src="/images/technologies/mobile/features/mobile_features.svg"
+              src={featuresData.img}
+              placeholder="blur"
+              blurDataURL={featuresData.img}
               alt=""
               layout="fill"
             />
           </div>
         </div>
-        <Features data={mobileFeaturesData2} reversed={true} />
+        <Features data={featuresData.data2} reversed={true} />
       </div>
     </div>
   );

@@ -4,9 +4,14 @@ import { TextGradient } from "../components/shared/SharedTextgroups";
 import MobileFeatures from "../components/technologies_pages/mobile_technologies/MobileFeatures";
 import MobileTechSlider from "../components/technologies_pages/mobile_technologies/MobileTechSlider";
 import BasicLayout from "../layouts/BasicLayout";
-import { userExperienceData } from "../public/data/mobileTechnologiesData";
+import {
+  mobileFeaturesData1,
+  mobileFeaturesData2,
+  mobileSliderData,
+  userExperienceData,
+} from "../public/data/mobileTechnologiesData";
 
-const MobileTechnologies = () => {
+const MobileTechnologies = ({ mobileFeaturesData, mobileTechData }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Mobile Technologies">
@@ -23,15 +28,33 @@ const MobileTechnologies = () => {
       </PrimaryBanner>
 
       {/* features section  */}
-      <MobileFeatures />
+      <MobileFeatures featuresData={mobileFeaturesData} />
 
       {/* user experience section  */}
       <BannerWithBulletSingle data={userExperienceData} />
 
       {/* slider section  */}
-      <MobileTechSlider />
+      <MobileTechSlider mobileTechData={mobileTechData} />
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  const mobileFeaturesData = {
+    data1: mobileFeaturesData1,
+    data2: mobileFeaturesData2,
+    img: "/images/technologies/mobile/features/mobile_features.svg",
+  };
+
+  const mobileTechData = {
+    frame:
+      "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.webp",
+    mobileSliderData,
+  };
+
+  return {
+    props: { mobileFeaturesData, mobileTechData },
+  };
+}
 
 export default MobileTechnologies;

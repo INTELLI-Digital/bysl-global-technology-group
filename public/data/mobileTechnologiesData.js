@@ -59,4 +59,32 @@ const mobileFeaturesData2 = [
   },
 ];
 
-export { userExperienceData, mobileFeaturesData1, mobileFeaturesData2 };
+const mobileSliderData = [
+  {
+    id: 0,
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_0.svg",
+  },
+  {
+    id: 1,
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_1.svg",
+  },
+  {
+    id: 2,
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_2.svg",
+  },
+  {
+    id: 3,
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_3.svg",
+  },
+  {
+    id: 4,
+    img: "/images/technologies/mobile/slider/mobileTechnologies_slider_4.svg",
+  },
+];
+
+export {
+  userExperienceData,
+  mobileFeaturesData1,
+  mobileFeaturesData2,
+  mobileSliderData,
+};

@@ -17,9 +17,9 @@ const SectionBanner = ({ data }) => {
         }`}
       >
         <Image
+          src={`/images/banners/${title}_banner.svg`}
           placeholder="blur"
           blurDataURL={`/images/banners/${title}_banner.svg`}
-          src={`/images/banners/${title}_banner.svg`}
           height={283}
           width={452}
           alt=""

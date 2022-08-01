@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 import Image from "next/image";
 
-const Slider = ({ size }) => {
+const Slider = ({ size, data }) => {
   return (
     <Swiper
       slidesPerView={size}
@@ -22,15 +22,15 @@ const Slider = ({ size }) => {
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper mobileTech"
     >
-      {[...Array(5)].map((item, i) => {
+      {data.mobileSliderData.map(({ id, img }) => {
         return (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={id}>
             <div className=" h-[260px] xl:h-80 w-[120px] xxs:w-[150px] md:w-[120px] xl:w-[150px] rounded-[20px] overflow-hidden mx-auto drop-shadow-3xl relative mobileTechImg">
               <Image
-                src={`/images/technologies/mobile/slider/mobileTechnologies_slider_${i}.svg`}
+                src={img}
                 layout="fill"
                 placeholder="blur"
-                blurDataURL={`/images/technologies/mobile/slider/mobileTechnologies_slider_${i}.svg`}
+                blurDataURL={img}
                 objectFit="cover"
                 alt=""
               />
