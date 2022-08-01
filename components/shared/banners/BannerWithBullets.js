@@ -52,7 +52,13 @@ const BannerWithBullets = (props) => {
               databasePath && "xl:h-[350px]"
             } mt-5 lg:mt-0`}
           >
-            <Image src={img} layout="fill" alt="" />
+            <Image
+              src={img}
+              placeholder="blur"
+              blurDataURL={img}
+              layout="fill"
+              alt=""
+            />
           </div>
         )}
       </div>

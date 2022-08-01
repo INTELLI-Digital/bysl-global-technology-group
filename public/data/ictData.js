@@ -75,4 +75,32 @@ const erpBannerData = {
     "A holistic cloud-based ERP ecosystem of scalable applications catering to small, medium and large enterprises with a top-tier infrastructure. ",
 };
 
-export { ictSectorsData, ictSolutionsData, erpBannerData };
+const productsData = [
+  {
+    id: 0,
+    title: "Product marketing motion video",
+    video: "/images/divisions/ict/products/0.mp4",
+  },
+  {
+    id: 1,
+    title: "Shoe branding motion video",
+    video: "/images/divisions/ict/products/1.mp4",
+  },
+  {
+    id: 2,
+    title: "Food video animation for resturant",
+    img: "/images/divisions/ict/products/2.gif",
+  },
+  {
+    id: 3,
+    title: "Perfume branding motion video",
+    img: "/images/divisions/ict/products/3.gif",
+  },
+  {
+    id: 4,
+    title: "Website prototype animation",
+    img: "/images/divisions/ict/products/4.gif",
+  },
+];
+
+export { ictSectorsData, ictSolutionsData, erpBannerData, productsData };

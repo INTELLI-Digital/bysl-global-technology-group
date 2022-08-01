@@ -1,23 +1,23 @@
+import BasicLayout from "../layouts/BasicLayout";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
+import Overview4Items from "../components/shared/Overview4Items";
 import IconCardGroup4 from "../components/shared/IconCardGroup4";
 import ImageShowcase from "../components/shared/ImageShowcase";
-import Overview4Items from "../components/shared/Overview4Items";
 import { TextGradient } from "../components/shared/SharedTextgroups";
-import BasicLayout from "../layouts/BasicLayout";
 import {
   foodTechAreasData,
   foodTechOverviewData,
 } from "../public/data/foodTechData";
 
-const FoodTech = ({ banner }) => {
+const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Food Tech">
       {/* banner section  */}
       <PrimaryBanner
         title="Food Tech - Division"
-        img={banner}
         sub="Multi-platform tech integration to digitize operations and supply chain of food service industry"
+        img={banner}
       >
         Revolutionizing the <TextGradient text=" food service industry " /> with
         advanced
@@ -25,7 +25,7 @@ const FoodTech = ({ banner }) => {
       </PrimaryBanner>
 
       {/* overview section  */}
-      <Overview4Items data={foodTechOverviewData}>
+      <Overview4Items data={foodTechOverview}>
         Tech-based catering
         <br />
         to maximize efficiency
@@ -34,7 +34,7 @@ const FoodTech = ({ banner }) => {
       {/* app section  */}
       <ImageShowcase
         sub="Intuitively designed applications aimed to simplify your food journey."
-        img="/images/divisions/food_tech/food_tech_delivery_app.svg"
+        img={foodBanner}
       >
         Outstanding experience
         <br />
@@ -42,7 +42,7 @@ const FoodTech = ({ banner }) => {
       </ImageShowcase>
 
       {/* areas section  */}
-      <IconCardGroup4 data={foodTechAreasData}>
+      <IconCardGroup4 data={foodTechAreas}>
         We provide advanced
         <br />
         systems
@@ -55,6 +55,9 @@ export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/food_tech_division_banner.svg",
+      foodBanner: "/images/divisions/food_tech/food_tech_delivery_app.svg",
+      foodTechOverview: foodTechOverviewData,
+      foodTechAreas: foodTechAreasData,
     },
   };
 }

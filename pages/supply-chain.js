@@ -1,24 +1,30 @@
+import BasicLayout from "../layouts/BasicLayout";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import Overview4Items from "../components/shared/Overview4Items";
-import { TextGradient } from "../components/shared/SharedTextgroups";
 import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import BasicLayout from "../layouts/BasicLayout";
+import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import {
   supplyChainConnectivityData,
   supplyChainOverviewData,
   supplyChainPerceivabilityData,
 } from "../public/data/supplyChainData";
-import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
 
-const SupplyChain = () => {
+const SupplyChain = ({
+  banner,
+  supplyChainConnectivity,
+  connectivityImg,
+  supplyChainOverview,
+  supplyChainPerceivability,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Supply Chain">
       {/* banner section  */}
       <PrimaryBanner
         title="Supply Chain - Division"
-        img="supply_chain_division"
         sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        img={banner}
       >
         Operations through
         <br />
@@ -27,8 +33,8 @@ const SupplyChain = () => {
 
       {/* connectivity section  */}
       <TriangleCardBanner
-        data={supplyChainConnectivityData}
-        img="/images/divisions/supply_chain/connectivity/connectivity_banner.svg"
+        data={supplyChainConnectivity}
+        img={connectivityImg}
         black={true}
         padding={true}
       >
@@ -38,10 +44,10 @@ const SupplyChain = () => {
       </TriangleCardBanner>
 
       {/* overview section  */}
-      <Overview4Items data={supplyChainOverviewData} />
+      <Overview4Items data={supplyChainOverview} />
 
       {/* PERCEIVABILITY section  */}
-      <BannerWithBulletSingle data={supplyChainPerceivabilityData}>
+      <BannerWithBulletSingle data={supplyChainPerceivability}>
         PERCEIVABILITY. <TextGradient text="INSIGHT." />
         <br />
         FORESIGHT
@@ -49,5 +55,18 @@ const SupplyChain = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/supply_chain_division_banner.svg",
+      supplyChainConnectivity: supplyChainConnectivityData,
+      connectivityImg:
+        "/images/divisions/supply_chain/connectivity/connectivity_banner.svg",
+      supplyChainOverview: supplyChainOverviewData,
+      supplyChainPerceivability: supplyChainPerceivabilityData,
+    },
+  };
+}
 
 export default SupplyChain;

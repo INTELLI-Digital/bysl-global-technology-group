@@ -1,10 +1,10 @@
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
+import BasicLayout from "../layouts/BasicLayout";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
+import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
 import Overview4Items from "../components/shared/Overview4Items";
 import { TextGradient } from "../components/shared/SharedTextgroups";
-import BasicLayout from "../layouts/BasicLayout";
 import {
   cyberBenefitsData,
   cyberFeaturesData,
