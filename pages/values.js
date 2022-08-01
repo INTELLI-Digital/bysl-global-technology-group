@@ -1,16 +1,16 @@
-import { TextGradient } from "../components/shared/SharedTextgroups";
 import CompanyInfoLayout from "../layouts/CompanyInfoLayout";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import { valuesButtonData } from "../public/data/buttonGroupData";
 import { valuesBannerData } from "../public/data/companyInfoBannerData";
 import { valuesCardData } from "../public/data/companyInfoCardData";
 
-const CompanyValues = () => {
+const CompanyValues = ({ valuesBanner, valuesCard, valuesButton }) => {
   return (
     <CompanyInfoLayout
       title="Values"
-      bannerData={valuesBannerData}
-      cardData={valuesCardData}
-      buttonData={valuesButtonData}
+      bannerData={valuesBanner}
+      cardData={valuesCard}
+      buttonData={valuesButton}
     >
       Our core values are our
       <TextGradient text=" Constants " />
@@ -23,7 +23,11 @@ const CompanyValues = () => {
 
 export async function getServerSideProps() {
   return {
-    props: {},
+    props: {
+      valuesBanner: valuesBannerData,
+      valuesCard: valuesCardData,
+      valuesButton: valuesButtonData,
+    },
   };
 }
 

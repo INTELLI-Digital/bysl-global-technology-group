@@ -1,9 +1,8 @@
 import Image from "next/image";
 
-import { singleResourceBannerData } from "../../../public/data/resourcesData";
 import { TextGradient } from "../../shared/SharedTextgroups";
 
-const SingleResourceBanner = () => {
+const SingleResourceBanner = ({ data }) => {
   return (
     <div className="h-max xl:max-h-[760px] w-full bg-[url('/images/resources/single/single_resource_banner_small.svg')] md:bg-[url('/images/resources/single/single_resource_banner.svg')] bg-cover bg-center bg-no-repeat">
       <div className="box md:flex gap-6 py-10 xl:py-16">
@@ -38,7 +37,7 @@ const SingleResourceBanner = () => {
             pharetra, massa.
           </p>
           <div className="flex gap-16">
-            {singleResourceBannerData.map(({ id, title, subTitle }) => {
+            {data.map(({ id, title, subTitle }) => {
               return (
                 <div key={id}>
                   <p className="text-gray-800 font-bold mb-1 text-sm 2xl:text-base">

@@ -1,5 +1,5 @@
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import BasicLayout from "../layouts/BasicLayout";
+import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
 import IconCardGroup3 from "../components/shared/IconCardGroup3";
 import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
@@ -24,7 +24,8 @@ const CloudTechnologies = ({
       <PrimaryBanner
         title="Cloud Technologies"
         sub="Write a success story by harnessing the infinite potential of the next-generation cloud technology utilizing the power of the internet.             "
-        img={banner}
+        // img={banner}
+        video={banner}
       >
         Start Your&nbsp;
         <TextGradient text="cloud" />
@@ -60,7 +61,7 @@ const CloudTechnologies = ({
 export async function getServerSideProps() {
   return {
     props: {
-      banner: "/images/banners/cloud_technologies_banner.svg",
+      banner: "/images/banners/cloud_technologies_banner.webm",
       cloudServices: cloudServicesData,
       cloudServiceImg: "/images/technologies/cloud/services/services.svg",
       cloudFeatures: cloudFeaturesData,

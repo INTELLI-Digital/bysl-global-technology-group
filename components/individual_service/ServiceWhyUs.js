@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-import { serviceWhyChooseUsData } from "../../public/data/individualServiceData";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
   TextGradient,
 } from "../shared/SharedTextgroups";
 
-const ServiceWhyUs = () => {
+const ServiceWhyUs = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Why Choose us?" />
@@ -17,7 +16,7 @@ const ServiceWhyUs = () => {
         toolkit save your time by using BYSL Technologies
       </TechnologiesSectionTitle>
       <div className="mt-10 lg:mt-16 grid gris-cols-1 xs:grid-cols-2 lg:grid-cols-3 gap-6">
-        {serviceWhyChooseUsData.map(({ id, title, subTitle, img }) => {
+        {data.map(({ id, title, subTitle, img }) => {
           return (
             <div key={id} className="p-2 2xl:px-10 2xl:pb-9 text-center">
               <Image src={img} height={180} width={260} alt="" />

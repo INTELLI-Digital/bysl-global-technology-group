@@ -1,9 +1,8 @@
 import Image from "next/image";
 
-import { singleResourceProblemData } from "../../../public/data/resourcesData";
 import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 
-const SingleResourceProblemFraming = () => {
+const SingleResourceProblemFraming = ({data}) => {
   return (
     <div className="resource-box py-10 xl:py-16">
       <TechnologiesSectionTitle>Problem Framing</TechnologiesSectionTitle>
@@ -15,7 +14,7 @@ const SingleResourceProblemFraming = () => {
       </p>
       <div className="h-max w-full bg-[url('/images/resources/single/problem_bg.svg')] bg-cover bg-center bg-no-repeat">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-y-10 mx-6 sm:mx-10 lg:mx-28">
-          {singleResourceProblemData.map(
+          {data.map(
             ({ id, title, subTitle, img, type1, type2 }) => {
               return (
                 <div

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const SingleResourceGoal = () => {
+const SingleResourceGoal = ({ img }) => {
   return (
     <div className="box py-10 xl:py-16 md:flex items-center gap-12 xl:gap-20 3xl:gap-28">
       <div className="md:w-1/2">
@@ -26,7 +26,9 @@ const SingleResourceGoal = () => {
       </div>
       <div className="md:w-1/2 mt-10 md:mt-0 mx-auto">
         <Image
-          src="/images/resources/single/single_resource_goal.svg"
+          src={img}
+          placeholder="blur"
+          blurDataURL={img}
           height={636}
           width={636}
           alt=""

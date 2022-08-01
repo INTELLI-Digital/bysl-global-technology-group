@@ -1,16 +1,16 @@
-import { TextGradient } from "../components/shared/SharedTextgroups";
 import CompanyInfoLayout from "../layouts/CompanyInfoLayout";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import { cultureButtonData } from "../public/data/buttonGroupData";
 import { cultureBannerData } from "../public/data/companyInfoBannerData";
 import { cultureCardData } from "../public/data/companyInfoCardData";
 
-const CompanyCulture = () => {
+const CompanyCulture = ({ cultureBanner, cultureCard, cultureButton }) => {
   return (
     <CompanyInfoLayout
       title="Culture"
-      bannerData={cultureBannerData}
-      cardData={cultureCardData}
-      buttonData={cultureButtonData}
+      bannerData={cultureBanner}
+      cardData={cultureCard}
+      buttonData={cultureButton}
     >
       Our mission is to serve the world with exceptional
       <TextGradient text=" Products & Services" />
@@ -20,7 +20,11 @@ const CompanyCulture = () => {
 
 export async function getServerSideProps() {
   return {
-    props: {},
+    props: {
+      cultureBanner: cultureBannerData,
+      cultureCard: cultureCardData,
+      cultureButton: cultureButtonData,
+    },
   };
 }
 

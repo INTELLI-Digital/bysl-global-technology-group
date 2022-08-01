@@ -1,16 +1,16 @@
-import { TextGradient } from "../components/shared/SharedTextgroups";
 import CompanyInfoLayout from "../layouts/CompanyInfoLayout";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import { purposeButtonData } from "../public/data/buttonGroupData";
 import { purposeBannerData } from "../public/data/companyInfoBannerData";
 import { purposeCardData } from "../public/data/companyInfoCardData";
 
-const CompanyPurpose = () => {
+const CompanyPurpose = ({ purposeBanner, purposeCard, purposeButton }) => {
   return (
     <CompanyInfoLayout
       title="Purpose"
-      bannerData={purposeBannerData}
-      cardData={purposeCardData}
-      buttonData={purposeButtonData}
+      bannerData={purposeBanner}
+      cardData={purposeCard}
+      buttonData={purposeButton}
     >
       Our purpose is to
       <TextGradient text=" Explore, Innovate and Invest " />
@@ -21,7 +21,11 @@ const CompanyPurpose = () => {
 
 export async function getServerSideProps() {
   return {
-    props: {},
+    props: {
+      purposeBanner: purposeBannerData,
+      purposeCard: purposeCardData,
+      purposeButton: purposeButtonData,
+    },
   };
 }
 

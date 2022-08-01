@@ -4,7 +4,7 @@ import { getPath } from "../../../utils/paths";
 import WebBanner from "../../technologies_pages/web_technologies/WebBanner";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
-const PrimaryBanner = ({ title, sub, img, children }) => {
+const PrimaryBanner = ({ title, sub, img, video, children }) => {
   const webPath = getPath("/web-technologies");
   const aiMlPath = getPath("/ai-ml-technologies");
   const cloudPath = getPath("/cloud-technologies");
@@ -53,6 +53,8 @@ const PrimaryBanner = ({ title, sub, img, children }) => {
       >
         {webPath ? (
           <WebBanner img={img} />
+        ) : cloudPath ? (
+          <video className="w-full h-full" src={video} autoPlay muted loop />
         ) : (
           <div
             className={`h-56 xs:h-[40vh] max-h-[600px] w-full relative ${
