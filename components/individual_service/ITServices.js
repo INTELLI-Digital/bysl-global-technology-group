@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import { individualServiceITServicesData } from "../../public/data/individualServiceData";
+import { BPOCard, UIUXCard } from "./ITServicesDetails";
 import { getItem, setItem } from "../../utils/sessionStorage";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
 } from "../shared/SharedTextgroups";
-import { BPOCard, UIUXCard } from "./ITServicesDetails";
 
-const ITServices = () => {
+const ITServices = ({data}) => {
   const [service, setService] = useState(0);
   const [done, setDone] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -59,7 +58,7 @@ const ITServices = () => {
       <div className="mt-10 xl:mt-20">
         <div className="md:hidden">
           <div className="flex flex-col space-y-4">
-            {individualServiceITServicesData.map(({ id, title, img }) => {
+            {data.map(({ id, title, img }) => {
               return (
                 <div key={id}>
                   <div
@@ -98,7 +97,7 @@ const ITServices = () => {
 
         <div className="hidden md:grid grid-cols-12 gap-6">
           <div className="col-span-4 lg:col-span-3 flex flex-col space-y-4">
-            {individualServiceITServicesData.map(({ id, title, img }) => {
+            {data.map(({ id, title, img }) => {
               return (
                 <div
                   key={id}

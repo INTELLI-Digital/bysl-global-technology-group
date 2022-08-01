@@ -1,15 +1,13 @@
 import Image from "next/image";
 
-import { serviceTimelineData } from "../../public/data/servicesData";
-
-const ServiceTimeline = () => {
+const ServiceTimeline = ({ data }) => {
   const TimelineItems = (props) => {
-    const { data, right } = props;
+    const { timelineData, right } = props;
 
     return (
       <div className={`lg:w-11/12 ${right && "lg:ml-auto"}`}>
         <div className="grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-4 2xl:gap-6">
-          {data.map(({ id, img, title, subTitle }) => {
+          {timelineData.map(({ id, img, title, subTitle }) => {
             return (
               <div
                 key={id}
@@ -29,10 +27,11 @@ const ServiceTimeline = () => {
       </div>
     );
   };
+
   return (
     <div className="py-10 xl:py-16 flex flex-col gap-6 lg:gap-24">
-      <TimelineItems data={serviceTimelineData.slice(0, 4)} />
-      <TimelineItems data={serviceTimelineData.slice(4, 8)} right={true} />
+      <TimelineItems timelineData={data.slice(0, 4)} />
+      <TimelineItems timelineData={data.slice(4, 8)} right={true} />
     </div>
   );
 };

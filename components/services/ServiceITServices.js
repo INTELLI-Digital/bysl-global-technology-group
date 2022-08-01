@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { servicesServiceData } from "../../public/data/servicesData";
+// import { servicesServiceData } from "../../public/data/servicesData";
 import { setItem } from "../../utils/sessionStorage";
 import HoverImage from "../shared/HoverImage";
 import {
@@ -9,7 +9,7 @@ import {
   TechnologiesSectionTitle,
 } from "../shared/SharedTextgroups";
 
-const ServiceITServices = () => {
+const ServiceITServices = ({data}) => {
   return (
     <div className="py-10 sm:pb-16 xl:py-16 xl:pb-24">
       <SectionTitleType title="What We Do" />
@@ -19,7 +19,7 @@ const ServiceITServices = () => {
       <div
         className={`grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-10 xl:mt-20 gap-6 sm:gap-y-14`}
       >
-        {servicesServiceData.map(({ id, img, title, subTitle }) => {
+        {data.map(({ id, img, title, subTitle }) => {
           return (
             <Link key={id} href="/service" passHref>
               <div

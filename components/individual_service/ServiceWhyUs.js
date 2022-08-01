@@ -1,12 +1,13 @@
 import Image from "next/image";
 
+import { serviceWhyChooseUsData } from "../../public/data/individualServiceData";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
   TextGradient,
 } from "../shared/SharedTextgroups";
 
-const ServiceWhyUs = ({ data }) => {
+const ServiceWhyUs = ({data}) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Why Choose us?" />

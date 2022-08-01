@@ -1,41 +1,52 @@
+import BasicLayout from "../layouts/BasicLayout";
 import ServiceFeatures from "../components/services/ServiceFeatures";
 import ServiceITServices from "../components/services/ServiceITServices";
-import ServiceResources from "../components/services/ServiceResources";
+// import ServiceResources from "../components/services/ServiceResources";
 import ServiceTimeline from "../components/services/ServiceTimeline";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import BlogLayout from "../components/shared/BlogLayout";
 import { TextGradient } from "../components/shared/SharedTextgroups";
-import BasicLayout from "../layouts/BasicLayout";
-import { serviceBlogsData } from "../public/data/servicesData";
+import {
+  serviceBlogsData,
+  servicesFeaturesData,
+  servicesServiceData,
+  serviceTimelineData,
+} from "../public/data/servicesData";
 
-const Services = () => {
+const Services = ({
+  banner,
+  servicesFeatures,
+  servicesService,
+  serviceBlogs,
+  serviceTimeline,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="IT Services">
       {/* banner section  */}
       <PrimaryBanner
         title="IT Services"
-        img="services"
         sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
+        img={banner}
       >
         Creating Value Through True
         <TextGradient text=" Convergence" />
       </PrimaryBanner>
 
       {/* features section  */}
-      <ServiceFeatures />
+      <ServiceFeatures data={servicesFeatures} />
 
       {/* services section  */}
-      <ServiceITServices />
+      <ServiceITServices data={servicesService} />
 
       {/* timeline section  */}
-      <ServiceTimeline />
+      <ServiceTimeline data={serviceTimeline} />
 
       {/* resources section  */}
       {/* <ServiceResources /> */}
 
       {/* blogs section  */}
-      <BlogLayout data={serviceBlogsData} type="Resources">
+      <BlogLayout data={serviceBlogs} type="Resources">
         Read Our
         <TextGradient text=" Latest " />
         Tips & Tricks
@@ -43,5 +54,17 @@ const Services = () => {
     </BasicLayout>
   );
 };
+
+export async function getServerSideProps() {
+  return {
+    props: {
+      banner: "/images/banners/services_banner.svg",
+      servicesFeatures: servicesFeaturesData,
+      servicesService: servicesServiceData,
+      serviceBlogs: serviceBlogsData,
+      serviceTimeline: serviceTimelineData,
+    },
+  };
+}
 
 export default Services;
