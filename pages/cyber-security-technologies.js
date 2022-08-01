@@ -12,28 +12,35 @@ import {
   cyberSolutionsData,
 } from "../public/data/cyberSecurityTechnologiesData";
 
-const CyberSecurityTechnologies = ({ banner }) => {
+const CyberSecurityTechnologies = ({
+  banner,
+  cyberBenefits,
+  cyberFeatures,
+  featuresBanner,
+  cyberSolutions,
+  cyberProtection,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Cyber Security Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Cyber Security Technologies"
-        img={banner}
         sub="Designing next-generation security landscapes with end-to-end encryption, integraged AI-based threat analysis, persistent vulnerablity check, rigorus stress-testings, real time responses and timely security updates"
+        img={banner}
       >
         <TextGradient text="Full-scale" /> cyber protection through
         <TextGradient text=" holistic security architecture" />
       </PrimaryBanner>
 
       {/* overview section  */}
-      <Overview4Items data={cyberBenefitsData} />
+      <Overview4Items data={cyberBenefits} />
 
       {/* features section  */}
       <TriangleCardBanner
         type="Features"
-        data={cyberFeaturesData}
-        img="/images/technologies/cyber_security/features/cyber_security_features_banner.svg"
+        data={cyberFeatures}
+        img={featuresBanner}
         black={true}
         padding={true}
       >
@@ -41,12 +48,12 @@ const CyberSecurityTechnologies = ({ banner }) => {
       </TriangleCardBanner>
 
       {/* Solutions section  */}
-      <IconCardGroup3 data={cyberSolutionsData} type="Solutions">
+      <IconCardGroup3 data={cyberSolutions} type="Solutions">
         Cyber Security Services
       </IconCardGroup3>
 
       {/* protection data  */}
-      <BannerWithBullets data={cyberProtectionData}>
+      <BannerWithBullets data={cyberProtection}>
         360° <TextGradient text=" Protection " /> from APTs, DDoS & SQL
         injections
       </BannerWithBullets>
@@ -58,6 +65,12 @@ export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/cyber-security_technologies_banner.svg",
+      cyberBenefits: cyberBenefitsData,
+      cyberFeatures: cyberFeaturesData,
+      featuresBanner:
+        "/images/technologies/cyber_security/features/cyber_security_features_banner.svg",
+      cyberSolutions: cyberSolutionsData,
+      cyberProtection: cyberProtectionData,
     },
   };
 }
