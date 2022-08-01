@@ -1,10 +1,10 @@
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import { TextBanner } from "../components/shared/banners/SharedBanner";
-import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
-import Overview3Items from "../components/shared/Overview3Items";
-import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
+import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
+import Overview3Items from "../components/shared/Overview3Items";
+import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
+import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
+import { TextBanner } from "../components/shared/banners/SharedBanner";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import {
   iotAppDevelopmentBannerData,
   iotServicesData,

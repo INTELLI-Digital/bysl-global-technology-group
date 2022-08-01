@@ -1,12 +1,11 @@
 import Image from "next/image";
-import { bigdataServicesData } from "../../../public/data/bigdataTechnologiesData";
+
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
-  TextGradient,
 } from "../../shared/SharedTextgroups";
 
-const BigdataServices = () => {
+const BigdataServices = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Features" />
@@ -16,7 +15,7 @@ const BigdataServices = () => {
         of Big Data
       </TechnologiesSectionTitle>
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-6 w-full mt-10">
-        {bigdataServicesData.map(({ id, img, title }) => {
+        {data.map(({ id, img, title }) => {
           return (
             <div
               key={id}
