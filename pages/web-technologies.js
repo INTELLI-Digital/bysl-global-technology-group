@@ -7,6 +7,7 @@ import { TextGradient } from "../components/shared/SharedTextgroups";
 import BasicLayout from "../layouts/BasicLayout";
 import {
   businessValuesData,
+  webBannerData,
   webFeaturesData,
   webProcessData,
   webServicesBannerData,
@@ -25,8 +26,8 @@ const WebTechnologies = ({
       {/* banner section  */}
       <PrimaryBanner
         title="Web Technologies"
-        img={banner}
         sub="Unlock the true potential of your business using cutting-edge web technologies. "
+        img={banner}
       >
         <TextGradient text="Powerful " />
         web solutions to scale exponentially
@@ -64,24 +65,9 @@ const WebTechnologies = ({
 };
 
 export async function getServerSideProps() {
-  const banner = {
-    angular: "/images/technologies/web/banner/angular.png",
-    tailwind: "/images/technologies/web/banner/tailwind.png",
-    mui: "/images/technologies/web/banner/mui.png",
-    node: "/images/technologies/web/banner/node.png",
-    vue: "/images/technologies/web/banner/vue.png",
-    next: "/images/technologies/web/banner/next.png",
-    laravel: "/images/technologies/web/banner/laravel.png",
-    firebase: "/images/technologies/web/banner/firebase.png",
-    python: "/images/technologies/web/banner/python.png",
-    firebase: "/images/technologies/web/banner/firebase.png",
-    ts: "/images/technologies/web/banner/ts.png",
-    react: "/images/technologies/web/banner/react.png",
-  };
-
   return {
     props: {
-      banner,
+      banner: webBannerData,
       businessValues: businessValuesData,
       webServicesBanner: webServicesBannerData,
       webProcess: webProcessData,

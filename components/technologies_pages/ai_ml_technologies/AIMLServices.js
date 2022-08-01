@@ -1,16 +1,12 @@
 import Image from "next/image";
 
-import { aimlServicesData } from "../../../public/data/aimlTechnologiesData";
-import { getPath } from "../../../utils/paths";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
   TextGradient,
 } from "../../shared/SharedTextgroups";
 
-const AIMLServices = () => {
-  const aimlPath = getPath("/ai-ml-technologies");
-
+const AIMLServices = ({ data, video }) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Platforms" />
@@ -21,29 +17,17 @@ const AIMLServices = () => {
       </TechnologiesSectionTitle>
       <div className="md:flex items-center mt-6 gap-4 xl:gap-6">
         <div className="w-full md:w-1/2 clip-video">
-          {aimlPath ? (
-            <video
-              className="w-full h-full object-cover"
-              src="/images/technologies/ai_ml/services/aiml_services_banner.mp4"
-              autoPlay
-              muted
-              loop
-            />
-          ) : (
-            <div className="h-80 lg:h-[440px] 2xl:h-[626px] mx-auto rounded-xl 2xl:rounded-[20px] relative">
-              <Image
-                src="/images/technologies/ai_ml/services/aiml_services_banner.svg"
-                layout="fill"
-                placeholder="blur"
-                blurDataURL="/images/technologies/ai_ml/services/aiml_services_banner.svg"
-                alt=""
-              />
-            </div>
-          )}
+          <video
+            className="w-full h-full object-cover"
+            src={video}
+            autoPlay
+            muted
+            loop
+          />
         </div>
         <div className="w-full md:w-1/2 mt-10 md:mt-0">
           <div className="grid grid-cols-2 gap-3 2xl:gap-5 w-full">
-            {aimlServicesData.map(({ id, img, title }) => {
+            {data.map(({ id, img, title }) => {
               return (
                 <div
                   key={id}

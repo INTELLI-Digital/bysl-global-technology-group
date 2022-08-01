@@ -11,15 +11,15 @@ import {
   userExperienceData,
 } from "../public/data/mobileTechnologiesData";
 
-const MobileTechnologies = ({ mobileFeaturesData, mobileTechData, banner }) => {
+const MobileTechnologies = ({ mobileFeatures, mobileTech, banner }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Mobile Technologies">
       {/* banner section  */}
       <PrimaryBanner
         title="Mobile Technologies"
-        img={banner}
         sub="In a world of oversaturated mobile apps, we pioneer disruptive ideas to break trends and introduce the next big thing.  "
+        img={banner}
       >
         <TextGradient text="Empowering" />,
         <br />
@@ -28,25 +28,25 @@ const MobileTechnologies = ({ mobileFeaturesData, mobileTechData, banner }) => {
       </PrimaryBanner>
 
       {/* features section  */}
-      <MobileFeatures featuresData={mobileFeaturesData} />
+      <MobileFeatures featuresData={mobileFeatures} />
 
       {/* user experience section  */}
       <BannerWithBulletSingle data={userExperienceData} />
 
       {/* slider section  */}
-      <MobileTechSlider mobileTechData={mobileTechData} />
+      <MobileTechSlider mobileTechData={mobileTech} />
     </BasicLayout>
   );
 };
 
 export async function getServerSideProps() {
-  const mobileFeaturesData = {
+  const mobileFeatures = {
     data1: mobileFeaturesData1,
     data2: mobileFeaturesData2,
     img: "/images/technologies/mobile/features/mobile_features.svg",
   };
 
-  const mobileTechData = {
+  const mobileTech = {
     frame:
       "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.webp",
     mobileSliderData,
@@ -54,8 +54,8 @@ export async function getServerSideProps() {
 
   return {
     props: {
-      mobileFeaturesData,
-      mobileTechData,
+      mobileFeatures,
+      mobileTech,
       banner: "/images/banners/mobile_technologies_banner.svg",
     },
   };

@@ -1,3 +1,18 @@
+const webBannerData = {
+  angular: "/images/technologies/web/banner/angular.png",
+  tailwind: "/images/technologies/web/banner/tailwind.png",
+  mui: "/images/technologies/web/banner/mui.png",
+  node: "/images/technologies/web/banner/node.png",
+  vue: "/images/technologies/web/banner/vue.png",
+  next: "/images/technologies/web/banner/next.png",
+  laravel: "/images/technologies/web/banner/laravel.png",
+  firebase: "/images/technologies/web/banner/firebase.png",
+  python: "/images/technologies/web/banner/python.png",
+  firebase: "/images/technologies/web/banner/firebase.png",
+  ts: "/images/technologies/web/banner/ts.png",
+  react: "/images/technologies/web/banner/react.png",
+};
+
 const businessValuesData = [
   {
     id: 0,
@@ -112,4 +127,5 @@ export {
   webProcessData,
   webFeaturesData,
   webServicesBannerData,
+  webBannerData,
 };
