@@ -17,6 +17,7 @@ const ARVRTechnologies = ({
   arVrWorld,
   arVrFeatures,
   demoVideo,
+  researchVideo,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
@@ -34,6 +35,7 @@ const ARVRTechnologies = ({
         <TriangleCardBanner
           type="Research & Development"
           data={arVrWorld}
+          video={researchVideo}
           black={true}
           padding={true}
         >
@@ -62,6 +64,7 @@ export async function getServerSideProps() {
       arVrWorld: arVrWorldData,
       arVrFeatures: arVrFeaturesData,
       demoVideo: "/images/technologies/ar_vr/demo.mp4",
+      researchVideo: "/images/technologies/ar_vr/research.mp4",
     },
   };
 }

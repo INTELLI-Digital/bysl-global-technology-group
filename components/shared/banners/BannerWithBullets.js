@@ -5,7 +5,7 @@ import { TechnologiesSectionTitle } from "../SharedTextgroups";
 
 const BannerWithBullets = (props) => {
   const { data, reversed, group, children } = props;
-  const { subTitle, img, features, title } = data;
+  const { subTitle, img, video, features, title } = data;
 
   const cloudPath = getPath("/cloud-technologies");
   const bigDataPath = getPath("/bigdata-technologies");
@@ -43,7 +43,7 @@ const BannerWithBullets = (props) => {
       </div>
       <div className="lg:w-[48%] mx-auto clip-video">
         {cloudPath ? (
-          <video className="w-full h-full" src={img} autoPlay muted loop />
+          <video className="w-full h-full" src={video} autoPlay muted loop />
         ) : (
           <div
             className={`relative h-48 xs:h-64 sm:h-80 lg:h-[350px] ${

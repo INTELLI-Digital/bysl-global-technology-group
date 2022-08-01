@@ -12,7 +12,14 @@ import {
   iotSupportData,
 } from "../public/data/iotTechnologiesData";
 
-const IotTechnologies = ({ banner }) => {
+const IotTechnologies = ({
+  banner,
+  iotServices,
+  iotAppDevelopmentBanner,
+  iotSolutions,
+  iotSupport,
+  iotsolutionsVideo,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="IOT Technologies" noMargin={true}>
@@ -20,15 +27,15 @@ const IotTechnologies = ({ banner }) => {
         {/* banner section  */}
         <PrimaryBanner
           title="IOT Technologies"
-          img={banner}
           sub="Next-generation IOT technologies using data, sensors and connectivity  "
+          img={banner}
         >
           <TextGradient text="Interconnectivity " /> <br />
           of smart devices
         </PrimaryBanner>
 
         {/* services section  */}
-        <Overview3Items data={iotServicesData} type="Platforms">
+        <Overview3Items data={iotServices} type="Platforms">
           Joining the IoT revolution with
           <br />
           <TextGradient text=" smart connectivity" />
@@ -38,7 +45,7 @@ const IotTechnologies = ({ banner }) => {
       {/* App Development section  */}
       <div className="bg-blue-300">
         <div className="box">
-          <TextBanner data={iotAppDevelopmentBannerData}>
+          <TextBanner data={iotAppDevelopmentBanner}>
             Catering to the most demanding IoT software needs
           </TextBanner>
         </div>
@@ -48,7 +55,8 @@ const IotTechnologies = ({ banner }) => {
         {/* solutions section  */}
         <TriangleCardBanner
           type="Applications"
-          data={iotSolutionsData}
+          data={iotSolutions}
+          video={iotsolutionsVideo}
           reversed={true}
           black={true}
           padding={true}
@@ -57,7 +65,7 @@ const IotTechnologies = ({ banner }) => {
         </TriangleCardBanner>
 
         {/* innovative solution section  */}
-        <BannerWithBullets data={iotSupportData} reversed={true}>
+        <BannerWithBullets data={iotSupport} reversed={true}>
           Introducing <TextGradient text=" innovative " /> &
           <TextGradient text=" pragmatic " /> solutions to old problems
         </BannerWithBullets>
@@ -70,6 +78,12 @@ export async function getServerSideProps() {
   return {
     props: {
       banner: "/images/banners/iot_technologies_banner.svg",
+      iotServices: iotServicesData,
+      iotAppDevelopmentBanner: iotAppDevelopmentBannerData,
+      iotSolutions: iotSolutionsData,
+      iotsolutionsVideo:
+        "/images/technologies/iot/solutions/iot_solutions_banner.mp4",
+      iotSupport: iotSupportData,
     },
   };
 }

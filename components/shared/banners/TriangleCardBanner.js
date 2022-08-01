@@ -8,7 +8,7 @@ import {
 } from "../../shared/SharedTextgroups";
 
 const TriangleCardBanner = (props) => {
-  const { children, data, img, black, padding, type, reversed } = props;
+  const { children, data, img, video, black, padding, type, reversed } = props;
   const iotPath = getPath("/iot-technologies");
   const arVrPath = getPath("/ar-vr-technologies");
 
@@ -32,11 +32,7 @@ const TriangleCardBanner = (props) => {
                   ? "h-60 sm:h-80 2xl:h-[600px]"
                   : "2xl:h-[440px] object-cover"
               }`}
-              src={
-                (arVrPath && "/images/technologies/ar_vr/research.mp4") ||
-                (iotPath &&
-                  "/images/technologies/iot/solutions/iot_solutions_banner.mp4")
-              }
+              src={video}
               autoPlay
               muted
               loop
