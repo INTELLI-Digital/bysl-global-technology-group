@@ -17,4 +17,9 @@ const projectsShowcaseData = [
   },
 ];
 
-export { projectsShowcaseData };
+const investmentData = {
+  ITPlatform: "/images/IT_platform.svg",
+  live: "/images/bysl-live.gif",
+};
+
+export { projectsShowcaseData, investmentData };

@@ -1,5 +1,5 @@
-import Button from "../components/shared/buttons/Button";
 import CommonLayout from "../layouts/CommonLayout";
+import Button from "../components/shared/buttons/Button";
 
 const Careers = () => {
   return (

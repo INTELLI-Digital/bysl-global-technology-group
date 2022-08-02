@@ -1,9 +1,9 @@
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
+import BasicLayout from "../layouts/BasicLayout";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
 import MobileFeatures from "../components/technologies_pages/mobile_technologies/MobileFeatures";
 import MobileTechSlider from "../components/technologies_pages/mobile_technologies/MobileTechSlider";
-import BasicLayout from "../layouts/BasicLayout";
+import { TextGradient } from "../components/shared/SharedTextgroups";
 import {
   mobileFeaturesData1,
   mobileFeaturesData2,

@@ -34,7 +34,7 @@ const Technologies = ({ data }) => {
                     id === 2 || id === 3 || id === 4
                       ? "xl:h-48 2xl:h-64"
                       : "xl:h-64 2xl:h-72 3xl:h-96"
-                  } object-cover relative group-hover:scale-110 transition-all duration-500`}
+                  } object-cover relative group-hover:scale-125 transition-all duration-[2000ms]`}
                 >
                   {id === 6 ? (
                     <video

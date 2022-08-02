@@ -1,14 +1,17 @@
+import CommonLayout from "../layouts/CommonLayout";
 import LandingPageBanner from "../components/landing_page/LandingPageBanner";
 import AboutUs from "../components/landing_page/AboutUs";
 import ProjectsShowcase from "../components/landing_page/ProjectsShowcase";
 import SolutionsBanner from "../components/landing_page/SolutionsBanner";
 import Investments from "../components/landing_page/Investments";
 import Technologies from "../components/landing_page/Technologies";
-import CommonLayout from "../layouts/CommonLayout";
 import { techData } from "../public/data/technologiesData";
 import { summaryData } from "../public/data/summaryData";
 import { aboutUsData } from "../public/data/aboutUsData";
-import { projectsShowcaseData } from "../public/data/landingPageData";
+import {
+  projectsShowcaseData,
+  investmentData,
+} from "../public/data/landingPageData";
 
 const Home = ({
   techData,
@@ -44,11 +47,6 @@ const Home = ({
 };
 
 export async function getServerSideProps() {
-  const investmentData = {
-    ITPlatform: "/images/IT_platform.svg",
-    live: "/images/bysl-live.gif",
-  };
-
   return {
     props: {
       techData,

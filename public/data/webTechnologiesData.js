@@ -20,8 +20,6 @@ const businessValuesData = [
     img: "/images/technologies/web/business_values/icon_0.svg",
     subTitle:
       "Integrated advanced anlytics engine to create insight-driven results.",
-    // subTitle2:
-    //   "Professionally architect unique process improvements via optimal.",
     title2: "Included with",
     benefits: [
       "AI based insights",

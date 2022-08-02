@@ -6,6 +6,8 @@ import {
 } from "../../shared/SharedTextgroups";
 
 const MobileFeatures = ({ featuresData }) => {
+  const { data1, data2, img } = featuresData;
+
   const Features = ({ data, reversed }) => {
     return (
       <div className="flex lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 w-full">
@@ -56,19 +58,19 @@ const MobileFeatures = ({ featuresData }) => {
         Explore premium quality
       </TechnologiesSectionTitle>
       <div className="mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center gap-4">
-        <Features data={featuresData.data1} />
+        <Features data={data1} />
         <div className="flex justify-center">
           <div className="h-80 lg:h-96 2xl:h-[540px] w-44 lg:w-52 2xl:w-60 relative">
             <Image
-              src={featuresData.img}
+              src={img}
               placeholder="blur"
-              blurDataURL={featuresData.img}
+              blurDataURL={img}
               alt=""
               layout="fill"
             />
           </div>
         </div>
-        <Features data={featuresData.data2} reversed={true} />
+        <Features data={data2} reversed={true} />
       </div>
     </div>
   );

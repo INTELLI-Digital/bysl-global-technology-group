@@ -4,6 +4,8 @@ import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 import Slider from "../../shared/Slider";
 
 const MobileTechSlider = ({ mobileTechData }) => {
+  const { mobileSliderData, frame } = mobileTechData;
+
   return (
     <div className="py-10 xl:py-16 ">
       <div className="mb-10">
@@ -15,18 +17,20 @@ const MobileTechSlider = ({ mobileTechData }) => {
       </div>
       <div className="relative">
         <div className="md:hidden">
-          <Slider data={mobileTechData} size={1} />
+          <Slider data={mobileSliderData} size={1} />
         </div>
         <div className="hidden md:block 2xl:hidden">
-          <Slider data={mobileTechData} size={3} />
+          <Slider data={mobileSliderData} size={3} />
         </div>
         <div className="hidden 2xl:block">
-          <Slider data={mobileTechData} size={5} />
+          <Slider data={mobileSliderData} size={5} />
         </div>
         <div className="centered z-40">
-          <div className="h-[277px] xxxs:h-[270px] xxs:h-[340px] xl:h-[430px] w-[140px] xxs:w-[165px] xl:w-[210px] relative drop-shadow-3xl">
+          <div className="h-[277px] xxxs:h-[270px] xxs:h-[330px] xl:h-[420px] w-[135px] xxs:w-[165px] xl:w-[210px] relative drop-shadow-3xl">
             <Image
-              src="/images/technologies/mobile/slider/mobileTechnologies_slider_frame.webp"
+              src={frame}
+              placeholder="blur"
+              blurDataURL={frame}
               layout="fill"
               alt=""
             />
