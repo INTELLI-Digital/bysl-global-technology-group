@@ -75,4 +75,25 @@ const TextBanner = (props) => {
   );
 };
 
-export { SectionBanner, TextBanner };
+const GradientBanner = ({ title, details, details2 }) => {
+  return (
+    <div className="py-10 lg:py-24 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+      <div className="box flex flex-col lg:flex-row items-center gap-6 !max-w-[1050px]">
+        <div className="w-full lg:w-1/2">
+          <div className="h-[2px] w-[86px] bg-white rounded-full"></div>
+          <p className="mt-6 text-[40px] lg:text-[64px] font-semibold lg:!leading-[76px] break-words">
+            {title}&nbsp;
+            <br className="hidden lg:block" />
+            Platforms
+          </p>
+        </div>
+        <div className="w-full lg:w-1/2">
+          <p className="text-sm ">{details}</p>
+          {details2 && <p className="text-sm mt-4">{details2}</p>}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export { SectionBanner, TextBanner, GradientBanner };

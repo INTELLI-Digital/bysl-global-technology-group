@@ -35,7 +35,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
     <BasicLayout title="Legal">
       <div className="py-10 lg:py-16 grid grid-cols-12">
         <div className="col-span-12 md:col-span-3 overflow-x-scroll md:overflow-hidden">
-          <div className="flex flex-nowrap md:flex-col gap-6 mb-6 md:mb-0 md:mt-6 w-max mx-auto md:mx-0">
+          <div className="flex flex-nowrap md:flex-col gap-6 mb-10 md:mb-0 md:mt-6 w-max mx-auto md:mx-0">
             {["Terms of Use", "Privacy Policy", "Cookies Policy"].map(
               (item, i) => (
                 <p

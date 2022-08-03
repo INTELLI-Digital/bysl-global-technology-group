@@ -6,6 +6,7 @@ const Overview4Items = (props) => {
   const { data, children, large, type } = props;
   const webPath = getPath("/web-technologies");
   const itesPath = getPath("/ites");
+  const investmentsPath = getPath("/investments");
   const aiMlPath = getPath("/ai-ml-technologies");
   const cyberPath = getPath("/cyber-security-technologies");
   const digitalCommercePath = getPath("/digital-commerce");
@@ -18,7 +19,8 @@ const Overview4Items = (props) => {
         (cyberPath && "!pt-0") ||
         (itesPath && "!pt-0") ||
         (digitalCommercePath && "!py-0") ||
-        (bigDataPath && "!py-10")
+        (bigDataPath && "!py-10") ||
+        (investmentsPath && "!py-10")
       }`}
     >
       {type && <SectionTitleType title={type} />}

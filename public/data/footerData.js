@@ -778,7 +778,7 @@ const footerBottomData = [
   {
     id: 0,
     path: "/terms&condition",
-    name: "Terms & Condition",
+    name: "Terms of Use",
   },
   {
     id: 1,

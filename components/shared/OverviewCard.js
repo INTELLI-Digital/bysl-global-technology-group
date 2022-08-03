@@ -8,6 +8,7 @@ const OverviewCard = (props) => {
 
   const ictPath = getPath("/ict");
   const itesPath = getPath("/ites");
+  const investmentsPath = getPath("/investments");
   const digitalCommercePath = getPath("/digital-commerce");
   const bigDataPath = getPath("/bigdata-technologies");
 
@@ -18,7 +19,8 @@ const OverviewCard = (props) => {
           <div
             key={id}
             className={`p-3 xl:p-4 text-center group hover:cursor-pointer ${
-              digitalCommercePath && "xl:py-10"
+              (digitalCommercePath && "xl:py-10") ||
+              (investmentsPath && "xl:py-10")
             }`}
           >
             <div
@@ -30,7 +32,7 @@ const OverviewCard = (props) => {
                   : "h-10 xl:h-[50px] w-10 xl:w-[50px]"
               } ${itesPath && "h-10 xl:!h-12 w-10 xl:!w-12"} ${
                 bigDataPath && "h-10 xl:!h-16 w-10 xl:!w-16"
-              }`}
+              } ${investmentsPath && "h-10 xl:!h-[70px] w-10 xl:!w-[70px]"}`}
             >
               {hoverImg ? (
                 <HoverImage img1={img} img2={hoverImg} />

@@ -14,6 +14,7 @@ const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
   const navState = getState();
   const arvrPath = getPath("/ar-vr-technologies");
+  const investmentPath = getPath("/investments");
   const router = useRouter();
 
   const changeNavbarColor = () => {
@@ -40,7 +41,7 @@ const Navbar = () => {
       ${
         colorChange
           ? "bg-white shadow shadow-gray-200"
-          : arvrPath
+          : arvrPath || investmentPath
           ? "backdrop-blur-sm bg-white/10"
           : "bg-transparent mt-5"
       }
@@ -51,7 +52,7 @@ const Navbar = () => {
             <div className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
               <Image
                 src={
-                  arvrPath && !colorChange
+                  (arvrPath && !colorChange) || (investmentPath && !colorChange)
                     ? "/images/logo_white.svg"
                     : "/images/logo.svg"
                 }
@@ -66,7 +67,10 @@ const Navbar = () => {
                 <div key={id} id="nav" className="inline-block">
                   <button
                     className={` ${
-                      arvrPath && !colorChange ? "text-white" : "text-gray-500"
+                      (arvrPath && !colorChange) ||
+                      (investmentPath && !colorChange)
+                        ? "text-white"
+                        : "text-gray-500"
                     } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
                   >
                     <span

@@ -4,9 +4,14 @@ import { getPath } from "../../utils/paths";
 
 const ResponsiveNavbar = () => {
   const arVrPath = getPath("/ar-vr-technologies");
+  const investmentPath = getPath("/investments");
 
   return (
-    <div className={`${!arVrPath && "pb-14 lg:pb-[100px]"}`}>
+    <div
+      className={`pb-14 lg:pb-[100px] ${
+        (arVrPath && "!pb-0") || (investmentPath && "!pb-0")
+      }`}
+    >
       <div className="hidden lg:block">
         <Navbar />
       </div>

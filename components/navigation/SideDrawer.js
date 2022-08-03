@@ -6,7 +6,7 @@ import { Accordion, AccordionBody } from "@material-tailwind/react";
 
 import Button from "../shared/buttons/Button";
 import { navbars } from "../../public/data/navbarData";
-import { timeOfDay } from "../../utils/greetings";
+// import { timeOfDay } from "../../utils/greetings";
 
 const SideDrawer = ({ showDrawer }) => {
   const router = useRouter();

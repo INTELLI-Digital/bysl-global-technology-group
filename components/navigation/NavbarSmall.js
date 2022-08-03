@@ -6,9 +6,6 @@ import SideDrawer from "./SideDrawer";
 
 const NavbarSmall = () => {
   const [showDrawer, setShowDrawer] = useState(false);
-  const transition = () => {
-    return showDrawer;
-  };
 
   return (
     <div>
@@ -26,10 +23,7 @@ const NavbarSmall = () => {
           </div>
         </Link>
       </div>
-
-      {setTimeout(() => transition(showDrawer, 1000)) && (
-        <SideDrawer showDrawer={showDrawer} />
-      )}
+      <SideDrawer showDrawer={showDrawer} />
     </div>
   );
 };
