@@ -11,6 +11,7 @@ const LandingPageBanner = ({ data }) => {
           blurDataURL={data}
           priority
           alt=""
+          objectFit="contain"
         />
       </div>
     </div>

@@ -1,7 +1,7 @@
 const projectsShowcaseData = [
   {
     id: 0,
-    img: "/images/projects/0.svg",
+    img: "/images/projects/0.png",
   },
   {
     id: 1,
@@ -9,11 +9,11 @@ const projectsShowcaseData = [
   },
   {
     id: 2,
-    img: "/images/projects/2.svg",
+    img: "/images/projects/2.png",
   },
   {
     id: 3,
-    img: "/images/projects/3.svg",
+    img: "/images/projects/3.png",
   },
 ];
 

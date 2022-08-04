@@ -60,16 +60,20 @@ const MobileFeatures = ({ featuresData }) => {
       <div className="mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-3 place-items-center gap-4">
         <Features data={data1} />
         <div className="flex justify-center">
-          <div className="h-80 lg:h-96 2xl:h-[540px] w-44 lg:w-52 2xl:w-60 relative">
+          {/* <div className="h-80 lg:h-96 2xl:h-[507px] w-44 lg:w-52 2xl:w-[244px] relative"> */}
+          <div className="w-2/3 lg:w-4/5 xl:w-5/6 2xl:w-full">
             <Image
               src={img}
               placeholder="blur"
               blurDataURL={img}
               alt=""
-              layout="fill"
+              height={507}
+              width={244}
+              // layout="fill"
             />
           </div>
         </div>
+        {/* </div> */}
         <Features data={data2} reversed={true} />
       </div>
     </div>

@@ -20,6 +20,7 @@ const Home = ({
   investmentData,
   solutionsBanner,
   landingBanner,
+  projectsShowcase,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
@@ -31,7 +32,7 @@ const Home = ({
         <AboutUs summaryData={summaryData} aboutUsData={aboutUsData} />
 
         {/* projects section  */}
-        <ProjectsShowcase data={projectsShowcaseData} />
+        <ProjectsShowcase data={projectsShowcase} />
 
         {/* solutions section  */}
         <SolutionsBanner data={solutionsBanner} />
@@ -52,7 +53,7 @@ export async function getStaticProps() {
       techData,
       summaryData,
       aboutUsData,
-      projectsShowcaseData,
+      projectsShowcase: projectsShowcaseData,
       investmentData,
       solutionsBanner: "/images/banners/landing_solution_banner.webm",
       landingBanner: "/images/banners/landing_banner.svg",

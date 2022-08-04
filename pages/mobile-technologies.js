@@ -43,12 +43,12 @@ export async function getStaticProps() {
   const mobileFeatures = {
     data1: mobileFeaturesData1,
     data2: mobileFeaturesData2,
-    img: "/images/technologies/mobile/features/mobile_features.svg",
+    img: "/images/technologies/mobile/features/mobile_features.png",
   };
 
   const mobileTech = {
     frame:
-      "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.webp",
+      "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.png",
     mobileSliderData,
   };
 

@@ -19,10 +19,10 @@ const MobileTechSlider = ({ mobileTechData }) => {
         <div className="md:hidden">
           <Slider data={mobileSliderData} size={1} />
         </div>
-        <div className="hidden md:block 2xl:hidden">
+        <div className="hidden md:block xl:hidden">
           <Slider data={mobileSliderData} size={3} />
         </div>
-        <div className="hidden 2xl:block">
+        <div className="hidden xl:block">
           <Slider data={mobileSliderData} size={5} />
         </div>
         <div className="centered z-40">
