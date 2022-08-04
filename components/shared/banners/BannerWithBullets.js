@@ -28,8 +28,6 @@ const BannerWithBullets = (props) => {
             <div key={i} className="flex items-start">
               <Image
                 src="/images/items_icon.svg"
-                placeholder="blur"
-                blurDataURL="/images/items_icon.svg"
                 alt=""
                 height={24}
                 width={24}

@@ -28,14 +28,7 @@ const ContactForm = () => {
           {socialIcons.map(({ id, img, link }) => (
             <Link key={id} passHref href={link}>
               <a className="opacity-70">
-                <Image
-                  src={img}
-                  placeholder="blur"
-                  blurDataURL={img}
-                  height={20}
-                  width={20}
-                  alt=""
-                />
+                <Image src={img} height={20} width={20} alt="" />
               </a>
             </Link>
           ))}

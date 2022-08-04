@@ -33,7 +33,7 @@ const Investments = ({
       {/* IT Platform section  */}
       <div id="it-platform">
         <GradientBanner
-          title="IT"
+          title="IT Platforms"
           details="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there."
         />
       </div>
@@ -45,7 +45,7 @@ const Investments = ({
       {/* Marketplace Platform section  */}
       <div id="marketplace-platform">
         <GradientBanner
-          title="Marketplace"
+          title="Marketplace Platforms"
           details="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there."
           details2="Thing embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary."
         />

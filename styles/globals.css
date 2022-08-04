@@ -106,6 +106,7 @@ a {
 
 /* swiper slider */
 
+
 @media (min-width: 360px) {
   .mobileTech .swiper-slide-active .mobileTechImg {
     height: 325px;

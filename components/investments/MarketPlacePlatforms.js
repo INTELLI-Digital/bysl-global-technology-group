@@ -7,6 +7,7 @@ const MarketPlacePlatforms = ({ data }) => {
         {data.map(({ id, title, img, logo, motto }) => {
           return (
             <div
+              key={id}
               className={`group relative rounded-[16px] overflow-hidden cursor-pointer ${
                 (id === 0 && "lg:row-span-2 h-[377px] lg:h-[635px]") ||
                 (id === 1 && "h-[377px] lg:h-[306px]") ||

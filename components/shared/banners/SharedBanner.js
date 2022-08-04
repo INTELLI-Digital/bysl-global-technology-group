@@ -82,9 +82,7 @@ const GradientBanner = ({ title, details, details2 }) => {
         <div className="w-full lg:w-1/2">
           <div className="h-[2px] w-[86px] bg-white rounded-full"></div>
           <p className="mt-6 text-[40px] lg:text-[64px] font-semibold lg:!leading-[76px] break-words">
-            {title}&nbsp;
-            <br className="hidden lg:block" />
-            Platforms
+            {title}
           </p>
         </div>
         <div className="w-full lg:w-1/2">

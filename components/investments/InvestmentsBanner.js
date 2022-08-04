@@ -3,15 +3,6 @@ import Link from "next/link";
 import { TextGradient } from "../shared/SharedTextgroups";
 
 const InvestmentsBanner = () => {
-  // let test = (p) => {
-  //   let modify = "'" + p + "'";
-  //   // alert(modify);
-  //   let div = document.getElementById(`${p}`);
-  //   let body = document.getElementsByTagName('body');
-  //   // alert(div.offsetTop);
-  //   div.textContent = `scrollTop: ${body.scrollTop}`
-  // };
-
   return (
     <div className="flex items-center justify-center text-center text-white pt-14 lg:pt-0  h-[620px] md:h-screen bg-[url('/images/banners/investments_banner_sm.svg')] lg:bg-[url('/images/banners/investments_banner.svg')] bg-cover bg-center bg-no-repeat">
       <div>
@@ -25,10 +16,7 @@ const InvestmentsBanner = () => {
         </p>
         <div className="w-full flex gap-6 flex-col lg:flex-row justify-center items-center mt-10 lg:mt-28">
           <Link passHref href="#it-platform">
-            <div
-              // onClick={() => test("it-platform")}
-              className="h-max text-center rounded-lg text-sm 3xl:text-base font-semibold py-2 xl:py-3 !w-[235px] hover:cursor-pointer bg-white"
-            >
+            <div className="h-max text-center rounded-lg text-sm 3xl:text-base font-semibold py-2 xl:py-3 !w-[235px] hover:cursor-pointer bg-white">
               <TextGradient text="IT Platforms" />
             </div>
           </Link>

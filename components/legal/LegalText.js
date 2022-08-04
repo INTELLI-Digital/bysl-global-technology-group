@@ -29,7 +29,7 @@ const LegalText = ({ data }) => {
             {listTitle}
           </p>
           {listItems.map((item, i) => (
-            <div className="flex ml-4 items-start mb-1">
+            <div key={i} className="flex ml-4 items-start mb-1">
               <div className="h-1.5 w-1.5 mt-2 mr-2 bg-[#758190] rounded-full"></div>
               <p className="text-[#758190] text-sm md:text-base w-full ">
                 {item}

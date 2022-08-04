@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 import Slider from "../../shared/Slider";
+import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 
 const MobileTechSlider = ({ mobileTechData }) => {
   const { mobileSliderData, frame } = mobileTechData;

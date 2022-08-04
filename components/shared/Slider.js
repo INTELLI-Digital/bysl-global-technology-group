@@ -31,7 +31,6 @@ const Slider = ({ size, data }) => {
                 layout="fill"
                 placeholder="blur"
                 blurDataURL={img}
-                // objectFit="cover"
                 alt=""
               />
             </div>

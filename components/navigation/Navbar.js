@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 // import { ImArrowRight2 } from "react-icons/im";
 
+import Button from "../shared/buttons/Button";
 import { navbars } from "../../public/data/navbarData";
 import { getPath } from "../../utils/paths";
 import { getState, setState } from "../../utils/sessionStorage";
 import { TextGradient } from "../shared/SharedTextgroups";
-import Button from "../shared/buttons/Button";
 
 const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);

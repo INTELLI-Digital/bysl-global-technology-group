@@ -46,8 +46,6 @@ const BannerWithBulletSingle = (props) => {
             <div key={i} className="flex items-start gap-3">
               <Image
                 src="/images/items_icon.svg"
-                placeholder="blur"
-                blurDataURL="/images/items_icon.svg"
                 alt=""
                 height={24}
                 width={24}
