@@ -63,7 +63,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       termsAndCondition: termsAndConditionData,

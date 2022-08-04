@@ -57,6 +57,7 @@ const Navbar = () => {
                     : "/images/logo.svg"
                 }
                 layout="fill"
+                objectFit="cover"
                 alt=""
               />
             </div>

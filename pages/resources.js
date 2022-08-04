@@ -26,7 +26,7 @@ const Resources = ({ serviceWhyChooseUs, resources }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       serviceWhyChooseUs: serviceWhyChooseUsData,

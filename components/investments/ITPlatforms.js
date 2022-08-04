@@ -18,7 +18,13 @@ const ITPlatforms = ({ data }) => {
                   (i === 7 && "!h-[100px] lg:!w-[160px]  xl:!w-[175px]")
                 }`}
               >
-                <Image src={item} alt="" layout="fill" />
+                <Image
+                  src={item}
+                  placeholder="blur"
+                  blurDataURL={item}
+                  alt=""
+                  layout="fill"
+                />
               </div>
             </div>
           );

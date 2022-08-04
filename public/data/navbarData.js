@@ -149,7 +149,7 @@ const navbars = [
         id: 0,
         title: "Business Verticals",
         subTitle: "Powerful solutions for Your Business",
-        link: "/investments#business-verticals",
+        link: "/investments",
       },
       {
         id: 1,

@@ -1,14 +1,13 @@
 import { useEffect, useState } from "react";
 
-import { companyAddress } from "../../public/data/contactUsData";
 import {
   TechnologiesSectionTitle,
   TextGradient,
 } from "../shared/SharedTextgroups";
 
-const CompanyLocations = () => {
+const CompanyLocations = ({ data }) => {
   const [location, setLocation] = useState(0);
-  const { id, name, country, address, city } = companyAddress[location];
+  const { id, name, country, address, city } = data[location];
 
   useEffect(() => {}, [location]);
 

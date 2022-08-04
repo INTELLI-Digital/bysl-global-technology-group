@@ -56,7 +56,7 @@ const ARVRTechnologies = ({
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   return {
     props: {
       banner: "/images/technologies/ar_vr/ar_vr_banner.mp4",

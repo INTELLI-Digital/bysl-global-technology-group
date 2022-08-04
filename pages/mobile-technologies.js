@@ -39,7 +39,7 @@ const MobileTechnologies = ({ mobileFeatures, mobileTech, banner }) => {
   );
 };
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const mobileFeatures = {
     data1: mobileFeaturesData1,
     data2: mobileFeaturesData2,
