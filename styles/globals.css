@@ -106,6 +106,44 @@ a {
 
 /* swiper slider */
 
+.bg-1{
+  animation: 
+    bg-1 15s linear infinite alternate;
+}
+.bg-2{
+  animation: 
+    bg-2 15s linear infinite alternate;
+}
+
+@keyframes bg-1 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(250px, 0);
+  }
+  
+  80% {
+    transform: translate(50px, 0);
+  }
+}
+@keyframes bg-2 {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(-250px, 0);
+  }
+  
+  80% {
+    transform: translate(50px, 0);
+  }
+}
+
+
+
 
 @media (min-width: 360px) {
   .mobileTech .swiper-slide-active .mobileTechImg {

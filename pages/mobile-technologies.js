@@ -11,7 +11,12 @@ import {
   userExperienceData,
 } from "../public/data/mobileTechnologiesData";
 
-const MobileTechnologies = ({ mobileFeatures, mobileTech, banner }) => {
+const MobileTechnologies = ({
+  mobileFeatures,
+  mobileTech,
+  banner,
+  userExperience,
+}) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="Mobile Technologies">
@@ -31,7 +36,7 @@ const MobileTechnologies = ({ mobileFeatures, mobileTech, banner }) => {
       <MobileFeatures featuresData={mobileFeatures} />
 
       {/* user experience section  */}
-      <BannerWithBulletSingle data={userExperienceData} />
+      <BannerWithBulletSingle data={userExperience} />
 
       {/* slider section  */}
       <MobileTechSlider mobileTechData={mobileTech} />
@@ -40,23 +45,20 @@ const MobileTechnologies = ({ mobileFeatures, mobileTech, banner }) => {
 };
 
 export async function getStaticProps() {
-  const mobileFeatures = {
-    data1: mobileFeaturesData1,
-    data2: mobileFeaturesData2,
-    img: "/images/technologies/mobile/features/mobile_features.png",
-  };
-
-  const mobileTech = {
-    frame:
-      "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.png",
-    mobileSliderData,
-  };
-
   return {
     props: {
-      mobileFeatures,
-      mobileTech,
+      mobileFeatures: {
+        data1: mobileFeaturesData1,
+        data2: mobileFeaturesData2,
+        img: "/images/technologies/mobile/features/mobile_features.png",
+      },
+      mobileTech: {
+        frame:
+          "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.png",
+        mobileSliderData,
+      },
       banner: "/images/banners/mobile_technologies_banner.svg",
+      userExperience: userExperienceData,
     },
   };
 }

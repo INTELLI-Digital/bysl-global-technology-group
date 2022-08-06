@@ -5,10 +5,10 @@ const LegalFeedback = () => {
         Was this article helpful?
       </p>
       <div className="flex items-center justify-center gap-5">
-        <p className="hover:cursor-pointer hover:text-gray-700 transition-all duration-300 py-[10px] px-[15px] bg-[#F9FAFD] rounded-[10px] text-[#808D9E]">
+        <p className="hover:cursor-pointer hover:text-green-700 hover:shadow-[0px_0px_5px_0px_#D0E2F4] transition-all duration-300 py-[10px] px-[15px] bg-[#F9FAFD] rounded-[10px] text-[#808D9E]">
           Yes
         </p>
-        <p className="hover:cursor-pointer hover:text-gray-700 transition-all duration-300 py-[10px] px-[15px] bg-[#F9FAFD] rounded-[10px] text-[#808D9E]">
+        <p className="hover:cursor-pointer hover:text-red-700 hover:shadow-[0px_0px_5px_0px_#D0E2F4] transition-all duration-300 py-[10px] px-[15px] bg-[#F9FAFD] rounded-[10px] text-[#808D9E]">
           No
         </p>
       </div>
