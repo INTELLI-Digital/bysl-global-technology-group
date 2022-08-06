@@ -15,7 +15,6 @@ const Navbar = () => {
   const arvrPath = getPath("/ar-vr-technologies");
   const investmentPath = getPath("/investments");
   const router = useRouter();
-  const url = router.asPath;
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -75,7 +74,7 @@ const Navbar = () => {
                   >
                     <span
                       className={`mr-1  ${
-                        url === link &&
+                        router.asPath === link &&
                         "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                       } ${!dropdowns && "pb-5"}`}
                     >
@@ -102,21 +101,22 @@ const Navbar = () => {
                               <Link key={id} href={link}>
                                 <div
                                   className={`hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] p-4  ${
-                                    url === link &&
+                                    router.asPath === link &&
                                     "text-white bg-gradient-to-r from-blue-900 to-blue-700"
                                   } rounded-lg cursor-pointer transition-all duration-500`}
                                 >
                                   <div className="flex items-center justify-between mb-2">
                                     <p
                                       className={`${
-                                        url !== link && "text-gray-800"
+                                        router.asPath !== link &&
+                                        "text-gray-800"
                                       }`}
                                     >
                                       {title}
                                     </p>
                                     <Image
                                       src={
-                                        url === link
+                                        router.asPath === link
                                           ? "/images/navIconRightWhite.svg"
                                           : "/images/navIconRight.svg"
                                       }
@@ -127,7 +127,7 @@ const Navbar = () => {
                                   </div>
                                   <p
                                     className={`lg:w-[90%] 2xl:w-4/5 font-normal text-xs ${
-                                      url === link
+                                      router.asPath === link
                                         ? "text-white/40"
                                         : "text-[#393e50]/40"
                                     }`}
