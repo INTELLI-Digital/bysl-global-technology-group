@@ -14,7 +14,7 @@ const IconCardGroup3 = (props) => {
       )}
       <div
         className={`grid grid-cols-2 ${databasePath && "sm:grid-cols-3"} ${
-          data[0].subTitle ? "xl:grid-cols-3" : "lg:grid-cols-3"
+          data[0].subTitle ? "xl:grid-cols-3" : "sm:grid-cols-3"
         } mt-10 xl:mt-10 gap-4 xl:gap-6`}
       >
         <IconCard data={data} />

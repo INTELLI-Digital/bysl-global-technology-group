@@ -479,12 +479,12 @@ const footerDataDesktop = [
       },
       {
         id: 1,
-        path: "/",
+        path: "/investments#it-platform",
         name: "IT Platforms",
       },
       {
         id: 2,
-        path: "/",
+        path: "/investments#marketplace-platform",
         name: "Marketplace Platforms",
       },
     ],
@@ -674,17 +674,17 @@ const footerDataMobile = [
     items: [
       {
         id: 0,
-        path: "/",
+        path: "/investments",
         name: "Business Verticals",
       },
       {
         id: 1,
-        path: "/",
+        path: "/investments#it-platform",
         name: "IT Platforms",
       },
       {
         id: 2,
-        path: "/",
+        path: "/investments#marketplace-platform",
         name: "Marketplace Platforms",
       },
     ],
