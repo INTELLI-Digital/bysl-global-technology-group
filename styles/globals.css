@@ -14,9 +14,9 @@ body {
   font-family: "SF Pro Display", sans-serif !important;
   background-color: #f8f8fa;
 }
-html {
+/* html {
   scroll-behavior: smooth !important;
-}
+} */
 a {
   color: inherit;
   text-decoration: none;
@@ -103,7 +103,6 @@ a {
 .card-slider .swiper-pagination {
   position: unset;
 }
-
 /* swiper slider */
 
 

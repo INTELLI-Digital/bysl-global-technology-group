@@ -40,8 +40,8 @@ const InvestmentsBanner = () => {
         alt=""
       />
 
-      <div className="absolute blur h-full w-full bg-black/10"></div>
-      <div className="flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-full">
+      {/* <div className="absolute blur h-full w-full bg-black/10"></div> */}
+      <div className="flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-full w-full">
         <div>
           <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[80px] font-semibold w-4/5 lg:w-3/4 xl:w-4/5 2xl:w-[70%] mx-auto">
             We have International Standard Brands to be Proud of.
