@@ -8,7 +8,7 @@ import {
   TechnologiesSectionTitle,
 } from "../shared/SharedTextgroups";
 
-const ITServices = ({data}) => {
+const ITServices = ({ data }) => {
   const [service, setService] = useState(0);
   const [done, setDone] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -31,8 +31,9 @@ const ITServices = ({data}) => {
     if (done === false && serviceId) {
       setService(serviceId);
       setDone(true);
+      setOpen(serviceId);
     }
-  }, [service, done, isOpen]);
+  }, [service, done, isOpen, open]);
 
   const serviceDetails = [
     <BPOCard />,

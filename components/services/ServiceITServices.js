@@ -17,7 +17,7 @@ const ServiceITServices = ({data}) => {
         We Provide Various IT services
       </TechnologiesSectionTitle>
       <div
-        className={`grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-10 xl:mt-20 gap-6 sm:gap-y-14`}
+        className={`grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 mt-10 xl:mt-20 gap-4 xl:gap-x-6 sm:gap-y-14`}
       >
         {data.map(({ id, img, title, subTitle }) => {
           return (

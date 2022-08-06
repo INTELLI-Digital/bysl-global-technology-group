@@ -19,9 +19,11 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
 
   return (
     <div
-      className={`${aiMlPath ? "items-center" : "py-10 xl:py-16"} ${
-        cyberPath && "!pb-0"
-      } ${itesPath && "!pb-0"} md:flex justify-between gap-6 max-h-max`}
+      className={`${
+        aiMlPath ? "items-center pt-10 md:pt-0" : "py-10 xl:py-16"
+      } ${cyberPath && "!pb-0"} ${
+        itesPath && "!pb-0"
+      } md:flex justify-between gap-6 max-h-max`}
     >
       <div
         className={`${
@@ -29,8 +31,8 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
         } mb-10 md:my-0 md:pt-10 ${
           webPath && "md:pt-5 lg:pt-10 xl:pt-12 2xl:pt-16"
         } ${aiMlPath && "mt-0"} ${
-          (iotPath && "!pt-20") ||
-          (cloudPath && "!pt-20") ||
+          (iotPath && "xl:!pt-20") ||
+          (cloudPath && "xl:!pt-20") ||
           (blockchainPath && "!pt-20")
         }`}
       >

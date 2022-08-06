@@ -28,19 +28,20 @@ const InvestmentsBanner = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="h-screen w-full bg-[#222] relative overflow-hidden">
+    <div className="h-[620px] lg:h-screen w-full bg-gradient-to-br from-[#272B52] lg:from-[#222] to-[#402B50] lg:to-[#222] relative overflow-hidden">
       <img
         src="/images/bg-top.png"
-        className="absolute -top-[20%] -left-[25%] h-[1080px] bg-1"
+        className="absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[50%] xl:-left-[30%] lg:h-[1080px] bg-1"
         alt=""
       />
       <img
         src="/images/bg-bottom.png"
-        className="absolute -bottom-[40%] -right-[25%] h-[1080px] bg-2"
+        className="absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[50%] xl:-right-[30%] lg:h-[1080px] bg-2"
         alt=""
       />
-      <div className="absolute blur h-screen w-full bg-black/10"></div>
-      <div className="flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-screen">
+
+      <div className="absolute blur h-full w-full bg-black/10"></div>
+      <div className="flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-full">
         <div>
           <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[80px] font-semibold w-4/5 lg:w-3/4 xl:w-4/5 2xl:w-[70%] mx-auto">
             We have International Standard Brands to be Proud of.

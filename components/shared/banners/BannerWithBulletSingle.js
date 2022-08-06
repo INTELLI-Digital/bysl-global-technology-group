@@ -58,7 +58,7 @@ const BannerWithBulletSingle = (props) => {
         </div>
       </div>
       <div
-        className={`w-full relative xs:w-4/5 lg:w-[45%] h-48 xs:h-64 sm:h-80 lg:h-[350px] xl:h-[450px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
+        className={`w-full relative xs:w-4/5 lg:w-[45%] h-80 lg:h-[350px] xl:h-[450px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
           itesPath && "lg:px-8 2xl:px-16"
         } ${digitalCommercePath && "lg:!w-[50%] 2xl:h-[490px]"} `}
       >

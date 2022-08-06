@@ -6,7 +6,7 @@ import {
   TextGradient,
 } from "../../shared/SharedTextgroups";
 
-const DatabaseFeatures = ({data}) => {
+const DatabaseFeatures = ({ data }) => {
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Features" />
@@ -26,7 +26,7 @@ const DatabaseFeatures = ({data}) => {
             return (
               <div
                 key={id}
-                className="bg-white rounded-[20px] flex flex-col justify-center items-center text-center p-2 lg:p-5 w-full self-center h-full"
+                className="bg-white rounded-[20px] flex flex-col justify-center items-center text-center p-2 py-4 lg:p-5 w-full self-center h-full"
               >
                 <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
                   <div className="relative h-6 w-6 xl:h-12 xl:w-12">
