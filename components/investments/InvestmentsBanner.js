@@ -28,15 +28,15 @@ const InvestmentsBanner = () => {
     //     </div>
     //   </div>
     // </div>
-    <div className="h-[620px] lg:h-screen w-full bg-gradient-to-br from-[#272B52] lg:from-[#222] to-[#402B50] lg:to-[#222] relative overflow-hidden">
+    <div className="h-[620px] lg:h-screen w-full bg-gradient-to-br from-[#222] to-[#222] relative overflow-hidden">
       <img
         src="/images/bg-top.png"
-        className="absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[50%] xl:-left-[30%] lg:h-[1080px] bg-1"
+        className="absolute -top-[10%] md:-top-[30%] xl:-top-[30%] -left-[50%] xl:-left-[40%] 2xl:-left-[30%] lg:h-[1080px] bg-1"
         alt=""
       />
       <img
         src="/images/bg-bottom.png"
-        className="absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[50%] xl:-right-[30%] lg:h-[1080px] bg-2"
+        className="absolute bottom-0 xs:-bottom-[30%] 3xl:-bottom-[40%] -right-[50%] xl:-right-[40%] 2xl:-right-[30%] lg:h-[1080px] bg-2"
         alt=""
       />
 

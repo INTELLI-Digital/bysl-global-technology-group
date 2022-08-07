@@ -15,7 +15,7 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // submit the message code here
+    // submitting the message
     emailjs
       .sendForm(
         "service_7hk5dfa",
@@ -26,11 +26,11 @@ const ContactForm = () => {
       .then(
         (result) => {
           e.target.reset();
-          toast.success(`Thanks for your message`);
+          toast.success("Thanks for your message");
         },
         (error) => {
           console.log(error.text);
-          toast.error(`Sorry, We couldn't send your message`);
+          toast.error("Sorry, We couldn't send your message");
         }
       );
   };
@@ -72,7 +72,7 @@ const ContactForm = () => {
                 name="name"
                 type="text"
                 placeholder="Full Name"
-                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-none border border-gray-200/30 sm:border-none"
+                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none"
               />
             </div>
             <div className="w-full">
@@ -82,7 +82,7 @@ const ContactForm = () => {
                 name="email"
                 type="email"
                 placeholder="Your Email"
-                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-none border border-gray-200/30 sm:border-none"
+                className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-blue-800/10  border border-gray-200/30 sm:border-none"
               />
             </div>
           </div>
@@ -93,13 +93,13 @@ const ContactForm = () => {
               name="message"
               rows="5"
               placeholder="Type message...."
-              className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-none border border-gray-200/30 sm:border-none resize-none"
+              className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-blue-800/10 border border-gray-200/30 sm:border-none resize-none"
             />
           </div>
           <div className="flex justify-center">
             <button
               type="submit"
-              className="w-max h-max uppercase text-center rounded xl:rounded-md text-white text-sm font-semibold py-2 md:py-2.5 px-8 md:px-8 lg:px-16 hover:cursor-pointer bg-gradient-to-r hover:from-blue-700 hover:to-blue-700  from-blue-900 to-blue-700"
+              className="w-max h-max uppercase text-center rounded xl:rounded-md text-white text-sm font-semibold py-2 md:py-2.5 px-8 md:px-8 lg:px-16 hover:cursor-pointer bg-gradient-to-r hover:from-blue-600 hover:to-blue-800  from-blue-900 to-blue-700"
             >
               send message
             </button>

@@ -34,7 +34,7 @@ const businessValuesData = [
   {
     id: 1,
     title: "Automated Reports",
-    img: "/images/technologies/web/business_values/icon_1.svg",
+    img: "/images/technologies/web/business_values/icon_1.gif",
     subTitle:
       "Flexible & custom reporting opportunity for fast & accurate decision making",
   },
@@ -54,7 +54,7 @@ const businessValuesData = [
   {
     id: 4,
     title: "Dynamic Configuration",
-    img: "/images/technologies/web/business_values/icon_4.svg",
+    img: "/images/technologies/web/business_values/icon_4.gif",
     subTitle: "Dynamic customization option creating  greater opportunities",
   },
 ];
