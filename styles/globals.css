@@ -27,6 +27,9 @@ a {
 .box {
   margin: 0 24px;
 }
+.aiml-box {
+  margin-left: 24px;
+}
 .navbar{
   display: none;
 }
@@ -116,6 +119,9 @@ a {
   .box {
     margin: 0 40px;
   }
+  .aiml-box {
+    margin-left: 40px;
+  }
 }
 @media (min-width: 768px) {
   .mobileTech .swiper-slide-active .mobileTechImg {
@@ -127,6 +133,9 @@ a {
   .resource-box {
     margin: 0 60px;
   }
+  .aiml-box {
+    margin-left: 60px;
+  }
   body {
     overflow: auto !important;
   }
@@ -136,7 +145,9 @@ a {
   .resource-box {
     margin: 0 100px;
   }
-
+  .aiml-box {
+    margin-left: 100px;
+  }
   .mobileTech .swiper-slide-active .mobileTechImg {
     height: 410px;
     width: 190px;
@@ -147,6 +158,9 @@ a {
   .resource-box {
     margin: 0 120px;
   }
+  .aiml-box {
+    margin-left: 120px;
+  }
 }
 @media (min-width: 1536px) {
   .box,
@@ -154,6 +168,16 @@ a {
   .resource-banner-box {
     max-width: 1320px;
     margin: auto !important;
+  }
+  .aiml-box {
+    max-width: 1610px;
+    margin-left: auto;
+  }
+}
+@media (min-width: 2560px) {
+  .aiml-box {
+    max-width: 1320px;
+    margin: auto;
   }
 }
 
