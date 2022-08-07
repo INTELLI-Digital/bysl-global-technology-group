@@ -36,15 +36,13 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`z-50 h-max pt-5 flex items-center fixed w-full
-      ${
-        colorChange
-          ? "bg-white shadow shadow-gray-200"
-          : arvrPath || investmentPath
-          ? "backdrop-blur-sm bg-white/10"
-          : "bg-transparent mt-5"
-      }
-      `}
+        className={`z-50 h-max pt-5 flex items-center fixed w-full ${
+          colorChange
+            ? "bg-white shadow shadow-gray-200"
+            : arvrPath || investmentPath
+            ? "backdrop-blur-sm bg-white/10"
+            : "bg-transparent mt-5"
+        }`}
       >
         <div className="box flex justify-between items-start w-full">
           <Link passHref href="/">

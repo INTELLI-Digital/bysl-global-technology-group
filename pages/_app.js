@@ -9,6 +9,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 
+// notification alert
+import "react-toastify/dist/ReactToastify.css";
+
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
