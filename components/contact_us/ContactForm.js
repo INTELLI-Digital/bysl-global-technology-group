@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef } from "react";
 import { ToastContainer, toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 import { socialIcons } from "../../public/data/contactUsData";
 import {
@@ -10,28 +11,28 @@ import {
 } from "../shared/SharedTextgroups";
 
 const ContactForm = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const userMessage = { Name: name, Email: email, Message: message };
-
+  const form = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
 
     // submit the message code here
-    console.log(userMessage);
-
-    // successful message
-    toast.success(`Thank you ${name} for your message`);
-
-    // error message
-    toast.error(`Sorry ${name}, We couldn't send your message`);
-
-    // after submitting the message clear the textfield
-    setName("");
-    setEmail("");
-    setMessage("");
+    emailjs
+      .sendForm(
+        "service_7hk5dfa",
+        "template_vebsjcb",
+        form.current,
+        "DH5QXV_AG3gc3L3wd"
+      )
+      .then(
+        (result) => {
+          e.target.reset();
+          toast.success(`Thanks for your message`);
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error(`Sorry, We couldn't send your message`);
+        }
+      );
   };
 
   const InputTitle = ({ title }) => (
@@ -62,14 +63,13 @@ const ContactForm = () => {
         </div>
       </div>
       <div className="lg:w-3/5 xs:bg-white rounded-lg lg:rounded-2xl 2xl:rounded-[20px] xs:p-4 sm:p-6 lg:p-8 2xl:px-14 2xl:py-10">
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={handleSubmit}>
           <div className="flex flex-col sm:flex-row gap-6 w-full">
             <div className="w-full">
               <InputTitle title="Enter name" />
               <input
                 required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
+                name="name"
                 type="text"
                 placeholder="Full Name"
                 className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-none border border-gray-200/30 sm:border-none"
@@ -79,8 +79,7 @@ const ContactForm = () => {
               <InputTitle title="Enter email" />
               <input
                 required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                name="email"
                 type="email"
                 placeholder="Your Email"
                 className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-none border border-gray-200/30 sm:border-none"
@@ -91,8 +90,7 @@ const ContactForm = () => {
             <InputTitle title="Enter message" />
             <textarea
               required
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
+              name="message"
               rows="5"
               placeholder="Type message...."
               className="bg-blue-400 font-medium w-full p-3.5 rounded-lg text-gray-500 focus:outline-none border border-gray-200/30 sm:border-none resize-none"
