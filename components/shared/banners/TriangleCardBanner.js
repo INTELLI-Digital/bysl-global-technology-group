@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { getPath } from "../../../utils/paths";
 import ServicesCard from "../../shared/ServicesCard";
+import { getPath } from "../../../utils/paths";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
@@ -17,11 +17,11 @@ const TriangleCardBanner = (props) => {
       {type && <SectionTitleType title={type} />}
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       <div
-        className={`md:flex ${
+        className={`md:flex items-center mt-10 gap-4 xl:gap-6 ${
           !reversed && "md:flex-row-reverse"
-        } items-center mt-10 gap-4 xl:gap-6`}
+        }`}
       >
-        <div className={`w-full md:w-[53%] mb-10 md:mb-0`}>
+        <div className="w-full md:w-[53%] mb-10 md:mb-0">
           <ServicesCard data={data} black={black} padding={padding} />
         </div>
         <div className="rounded-xl xl:rounded-[20px] overflow-hidden w-full md:w-[47%] mx-auto">

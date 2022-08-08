@@ -6,7 +6,6 @@ import { Accordion, AccordionBody } from "@material-tailwind/react";
 
 import Button from "../shared/buttons/Button";
 import { navbars } from "../../public/data/navbarData";
-// import { timeOfDay } from "../../utils/greetings";
 
 const SideDrawer = ({ showDrawer }) => {
   const router = useRouter();
@@ -23,17 +22,17 @@ const SideDrawer = ({ showDrawer }) => {
 
   return (
     <div
-      className={`invisible ${
-        showDrawer && "bg-[#c7c7c7]/40 !visible"
-      } transition-all duration-1000 w-screen h-screen overflow-hidden fixed top-14 left-0 z-50`}
+      className={`invisible transition-all duration-1000 w-screen h-screen overflow-hidden fixed top-14 left-0 z-50 
+      ${showDrawer && "bg-[#c7c7c7]/40 !visible"}`}
     >
       <div
-        className={`w-60 xxs:w-[280px] h-full translate-x-[-100%] ${
-          showDrawer && "translate-x-[0%]"
-        } transition-all duration-1000`}
+        className={`w-60 xxs:w-[280px] h-full translate-x-[-100%] transition-all duration-1000 
+        ${showDrawer && "translate-x-[0%]"}`}
       >
         <div className="flex items-end justify-center bg-[url('/images/drawer-bg.svg')] bg-no-repeat bg-center bg-cover h-[100px]">
-          <p className="text-white text-center font-bold mx-6 xxs:mx-8 mb-6">BYSL Global Technology Group</p>
+          <p className="text-white text-center font-bold mx-6 xxs:mx-8 mb-6">
+            BYSL Global Technology Group
+          </p>
         </div>
         <div className="bg-white h-[calc(100vh-156px)] overflow-y-auto px-4 py-3 flex flex-col">
           {navbars.map(({ id, title, link, dropdowns }) => {

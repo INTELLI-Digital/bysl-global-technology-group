@@ -54,8 +54,7 @@ const CyberSecurityTechnologies = ({
 
       {/* protection data  */}
       <BannerWithBullets data={cyberProtection}>
-        360° <TextGradient text=" Protection " /> from APTs, DDoS & SQL
-        injections
+        360° Protection from APTs, DDoS & SQL injections
       </BannerWithBullets>
     </BasicLayout>
   );

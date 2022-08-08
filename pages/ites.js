@@ -26,8 +26,7 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
 
       {/* updates section  */}
       <BannerWithBullets data={itesUpdate} reversed={true}>
-        Creating comprehensive solutions combining
-        <TextGradient text=" data, insights & technology" />
+        Creating comprehensive solutions combining data, insights & technology
       </BannerWithBullets>
 
       {/* Team Management section */}
@@ -35,9 +34,7 @@ const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
         img={itesAppImg}
         sub="Applying the right strategy, structure, and necessary to build lasting relationships with clients. "
       >
-        <TextGradient text="Next-gen " />
-        CRM applications
-        <br />
+        Next-gen CRM applications
       </ImageShowcase>
     </BasicLayout>
   );

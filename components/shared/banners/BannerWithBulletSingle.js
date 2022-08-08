@@ -13,17 +13,16 @@ const BannerWithBulletSingle = (props) => {
 
   const itesPath = getPath("/ites");
   const informationPath = getPath("/information-security");
-  const mobilePath = getPath("/mobile-technologies");
+  const aimlPath = getPath("/ai-ml-technologies");
   const digitalCommercePath = getPath("/digital-commerce");
 
   return (
     <div
-      className={`py-10 xl:py-16 lg:flex ${
-        reversed && "lg:flex-row-reverse"
-      } gap-6`}
+      className={`py-10 xl:py-16 lg:flex gap-6
+      ${reversed && "lg:flex-row-reverse"}`}
     >
       <div
-        className={`${informationPath ? "lg:w-[50%]" : "lg:w-[55%]"}  lg:pt-10`}
+        className={`lg:pt-10 ${informationPath ? "lg:w-[50%]" : "lg:w-[55%]"}`}
       >
         {type && <SectionTitleType title={type} start={true} />}
         <TechnologiesSectionTitle start={true}>
@@ -58,7 +57,9 @@ const BannerWithBulletSingle = (props) => {
         </div>
       </div>
       <div
-        className={`w-full relative xs:w-4/5 lg:w-[45%] h-80 lg:h-[350px] xl:h-[450px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
+        className={`w-full relative xs:w-4/5 lg:w-[45%] ${
+          aimlPath ? "h-52 xxs:h-80" : "h-80"
+        } lg:h-[350px] xl:h-[450px] mx-auto flex justify-center items-start mt-10 lg:mt-0 ${
           itesPath && "lg:px-8 2xl:px-16"
         } ${digitalCommercePath && "lg:!w-[50%] 2xl:h-[490px]"} `}
       >

@@ -66,8 +66,7 @@ const IotTechnologies = ({
 
         {/* innovative solution section  */}
         <BannerWithBullets data={iotSupport} reversed={true}>
-          Introducing <TextGradient text=" innovative " /> &
-          <TextGradient text=" pragmatic " /> solutions to old problems
+          Introducing innovative & pragmatic solutions to old problems
         </BannerWithBullets>
       </div>
     </BasicLayout>

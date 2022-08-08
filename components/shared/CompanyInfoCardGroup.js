@@ -1,6 +1,5 @@
-import { getPath } from "../../utils/paths";
-
 import CompanyInfoCard from "./CompanyInfoCard";
+import { getPath } from "../../utils/paths";
 
 const CompanyInfoCardGroup = ({ data }) => {
   const culturePath = getPath("/culture");

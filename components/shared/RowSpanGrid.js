@@ -16,16 +16,16 @@ const RowSpanGrid = (props) => {
             return (
               <div
                 key={id}
-                className={`text-center ${
+                className={`text-center bg-white rounded-[10px] md:rounded-2xl xl:rounded-[20px] p-5 xl:px-8 border-[1px] border-[#393E50]/10 ${
                   id === 0
                     ? "lg:row-span-2 xl:p-8 2xl:p-10"
                     : "flex flex-col items-center justify-center xl:py-0"
-                } bg-white rounded-[10px] md:rounded-2xl xl:rounded-[20px] p-5 xl:px-8 border-[1px] border-[#393E50]/10`}
+                }`}
               >
                 <div
-                  className={`${
+                  className={`h-12 xl:h-16 w-12 xl:w-16 rounded-full flex items-center justify-center mx-auto ${
                     blockchainPath ? "bg-[#F2F2F3]" : "bg-blue-200"
-                  } h-12 xl:h-16 w-12 xl:w-16 rounded-full flex items-center justify-center mx-auto`}
+                  }`}
                 >
                   <div className="h-6 w-6 xl:h-10 xl:w-10 relative">
                     <Image src={img} layout="fill" alt="" />

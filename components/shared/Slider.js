@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
-import Image from "next/image";
 
 const Slider = ({ size, data }) => {
   return (
@@ -10,6 +10,7 @@ const Slider = ({ size, data }) => {
       slidesPerGroup={1}
       centeredSlides={true}
       loop={true}
+      grabCursor={true}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,

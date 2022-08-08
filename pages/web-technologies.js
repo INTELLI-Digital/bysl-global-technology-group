@@ -37,13 +37,12 @@ const WebTechnologies = ({
       <RowSpanGrid data={businessValues}>
         Flexible, secure & dynamic
         <br />
-        <TextGradient text=" web soloutions " />
+        web soloutions
       </RowSpanGrid>
 
       {/* services section  */}
       <TextBanner data={webServicesBanner}>
-        Create impact <TextGradient text=" unlocking " /> the
-        <TextGradient text=" power " /> of web technologies
+        Create impact unlocking the power of web technologies
       </TextBanner>
 
       {/* process section  */}
@@ -57,8 +56,7 @@ const WebTechnologies = ({
 
       {/* features section  */}
       <FeaturedBanner data={webFeatures}>
-        Advanced features serving
-        <TextGradient text=" specific busniess needs " />
+        Advanced features serving specific busniess needs
       </FeaturedBanner>
     </BasicLayout>
   );

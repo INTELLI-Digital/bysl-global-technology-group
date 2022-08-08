@@ -59,13 +59,14 @@ const ictSectorsData = [
 
 const ictSolutionsData = {
   subTitle:
-    "BYSL Global Technology Group stands on four core values regarded as the fundamental ideological constants to govern the organization.",
-  img: "/images/technologies/database/database_solution_banner.svg",
+    "Ours is the platform where design ideas unify with engineering vigor, empathy unifies with economics and inspiration streams from the vision of transforming the world into a better place.",
+  img: "/images/divisions/ict/ict_solution_banner.svg",
   features: [
-    "Graphics nad Multimedia",
-    "Web Development",
-    "App & Software Development",
-    "3D Model and Architecture",
+    "Digital Core & AR/VR Development",
+    "UI/UX Design & Development ",
+    "Mobile Application & Web Application Development",
+    "3D Modeling, Industrial Design & Architectural Visualization",
+    "Graphics & Multimedia",
   ],
 };
 

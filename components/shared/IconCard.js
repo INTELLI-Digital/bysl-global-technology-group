@@ -4,9 +4,6 @@ import HoverImage from "./HoverImage";
 const IconCard = (props) => {
   const { data, padding } = props;
   const faqPath = getPath("/faq");
-  const dataSciencePath = getPath("/data-science");
-  const adminPath = getPath("/administration");
-  const dataPath = getPath("/database-technologies");
   const arVrPath = getPath("/ar-vr-technologies");
 
   return (
@@ -16,7 +13,7 @@ const IconCard = (props) => {
           <div
             key={id}
             className={`group gradient-bg px-2 py-5 sm:p-5 hover:cursor-pointer ${
-              !subTitle && "lg:py-14"
+              !subTitle && !arVrPath && "lg:py-14"
             } ${!arVrPath && "sm:py-6"}`}
           >
             <div

@@ -5,7 +5,6 @@ import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
 const SecondaryLargeBanner = ({ data, children }) => {
   const { heading, subTitle, img } = data;
-  const adminPath = getPath("/administration");
   const bigDataPath = getPath("/bigdata-technologies");
 
   return (
@@ -17,9 +16,7 @@ const SecondaryLargeBanner = ({ data, children }) => {
       <p className="xs:px-4 sm:w-4/5 lg:w-[62%] mx-auto mt-6 text-gray-300 leading-5 text-sm md:text-base text-center">
         {subTitle}
       </p>
-      <div
-        className={`mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto`}
-      >
+      <div className="mt-5 lg:mt-10 flex justify-center max-w-[1240px] mx-auto">
         <Image
           src={img}
           alt=""

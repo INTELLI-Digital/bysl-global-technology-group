@@ -71,7 +71,7 @@ const Navbar = () => {
                     } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
                   >
                     <span
-                      className={`mr-1  ${
+                      className={`mr-1 ${
                         router.asPath === link &&
                         "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                       } ${!dropdowns && "pb-5"}`}
@@ -98,17 +98,17 @@ const Navbar = () => {
                             return (
                               <Link key={id} href={link}>
                                 <div
-                                  className={`hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] p-4  ${
+                                  className={`hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] p-4 rounded-lg cursor-pointer transition-all duration-500 ${
                                     router.asPath === link &&
                                     "text-white bg-gradient-to-r from-blue-900 to-blue-700"
-                                  } rounded-lg cursor-pointer transition-all duration-500`}
+                                  }`}
                                 >
                                   <div className="flex items-center justify-between mb-2">
                                     <p
-                                      className={`${
+                                      className={
                                         router.asPath !== link &&
                                         "text-gray-800"
-                                      }`}
+                                      }
                                     >
                                       {title}
                                     </p>

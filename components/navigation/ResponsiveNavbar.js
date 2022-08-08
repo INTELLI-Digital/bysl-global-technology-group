@@ -8,9 +8,8 @@ const ResponsiveNavbar = () => {
 
   return (
     <div
-      className={`pb-14 lg:pb-[100px] ${
-        (arVrPath && "!pb-0") || (investmentPath && "!pb-0")
-      }`}
+      className={`pb-14 lg:pb-[100px] 
+      ${(arVrPath && "!pb-0") || (investmentPath && "!pb-0")}`}
     >
       <div className="hidden lg:block">
         <Navbar />

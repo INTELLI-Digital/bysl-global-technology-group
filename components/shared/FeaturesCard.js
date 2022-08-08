@@ -7,14 +7,14 @@ const FeaturesCard = ({ data }) => {
         return (
           <div
             key={id}
-            className={`lg:flex justify-start ${
+            className={`lg:flex justify-start gap-5 w-10/12 ${
               !subTitle && "items-center"
-            } gap-5 w-10/12`}
+            }`}
           >
             <div
-              className={`h-12 w-12 ${
+              className={`h-12 w-12 mx-auto relative ${
                 subTitle && "xl:h-[75px] xl:w-[75px]"
-              } mx-auto relative`}
+              }`}
             >
               <Image
                 src={img}

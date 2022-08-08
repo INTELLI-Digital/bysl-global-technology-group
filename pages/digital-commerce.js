@@ -44,9 +44,8 @@ const FoodTech = ({
 
       {/* solutions section  */}
       <BannerWithBulletSingle data={digitalCommerceSolutions} reversed={true}>
-        Conferring a <TextGradient text=" continuum " /> of
-        <TextGradient text=" possibilities " /> for businesses with
-        <TextGradient text=" AI-driven automation" />
+        Conferring a continuum of possibilities for businesses with AI-driven
+        automation
       </BannerWithBulletSingle>
     </BasicLayout>
   );

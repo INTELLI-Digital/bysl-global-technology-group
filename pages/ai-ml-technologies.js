@@ -42,10 +42,9 @@ const AIMLTechnologies = ({
 
         {/* Solutions section  */}
         <ImageShowcase type="Applications" video={applicationsVideo}>
-          <TextGradient text="AI-driven " /> technology to unlock
+          AI-driven technology to unlock
           <br />
-          the potential of
-          <TextGradient text=" health data" />
+          the potential of health data
         </ImageShowcase>
 
         {/* Big Data Analysis section  */}

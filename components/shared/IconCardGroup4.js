@@ -13,9 +13,9 @@ const IconCardGroup4 = (props) => {
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       )}
       <div
-        className={`grid grid-cols-2 md:grid-cols-4 ${
+        className={`grid grid-cols-2 md:grid-cols-4 gap-5 ${
           title ? "mt-6 xl:mt-16" : "mt-10 xl:mt-20"
-        } gap-5`}
+        }`}
       >
         <IconCard data={data} padding={padding} />
       </div>

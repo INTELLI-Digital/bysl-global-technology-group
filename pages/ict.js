@@ -38,7 +38,7 @@ const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
       <TextBanner data={erpBanner} reversed={true}>
         Rising as a Global Leader in
         <br />
-        <TextGradient text="ERP Infrastructure" />
+        ERP Infrastructure
       </TextBanner>
 
       {/* Powerful product section  */}
@@ -46,8 +46,7 @@ const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
 
       {/* Solutions section  */}
       <BannerWithBulletSingle data={ictSolutions} reversed={true}>
-        All kind of <TextGradient text=" ICT Solutions " />
-        at One Place
+        World-class ICT Solutions connecting intelligence & creativity
       </BannerWithBulletSingle>
     </BasicLayout>
   );

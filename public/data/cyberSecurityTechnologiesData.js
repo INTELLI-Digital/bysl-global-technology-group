@@ -17,7 +17,7 @@ const cyberBenefitsData = [
   {
     id: 3,
     title: "Threat Prediction",
-    img: "/images/technologies/cyber_security/benefits/icon_2.svg",
+    img: "/images/technologies/cyber_security/benefits/icon_3.svg",
   },
 ];
 

@@ -48,9 +48,7 @@ const ARVRTechnologies = ({
         </FeaturedBanner>
 
         {/* How does it works */}
-        <ImageShowcase video={demoVideo}>
-          How does it <TextGradient text="works" />?
-        </ImageShowcase>
+        <ImageShowcase video={demoVideo}>How does it works?</ImageShowcase>
       </div>
     </BasicLayout>
   );

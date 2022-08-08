@@ -18,7 +18,7 @@ const OverviewCard = (props) => {
         return (
           <div
             key={id}
-            className={`p-3 xl:p-4 text-center group hover:cursor-pointer ${
+            className={`p-3 xl:p-4 text-center group ${
               (digitalCommercePath && "xl:py-10") ||
               (investmentsPath && "xl:py-10")
             }`}

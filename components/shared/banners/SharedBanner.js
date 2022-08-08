@@ -50,18 +50,18 @@ const TextBanner = (props) => {
         reversed && "flex-row-reverse"
       }`}
     >
-      <div className={`lg:w-1/2 xl:pt-10 pb-10 lg:pb-0`}>
+      <div className="lg:w-1/2 xl:pt-10 pb-10 lg:pb-0">
         {type && <SectionTitleType title={type} start={true} />}
         {children && (
           <TechnologiesSectionTitle start={true}>
             {children}
           </TechnologiesSectionTitle>
         )}
-        <p className="mt-6 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start lg:w-11/12">
+        <p className="mt-6 text-gray-300 leading-5 text-sm md:text-base text-center lg:text-start lg:w-5/6">
           {subTitle}
         </p>
       </div>
-      <div className={`flex justify-center lg:w-1/2 mx-auto`}>
+      <div className="flex justify-center lg:w-1/2 mx-auto">
         <Image
           src={img}
           placeholder="blur"

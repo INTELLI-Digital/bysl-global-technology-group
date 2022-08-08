@@ -14,7 +14,7 @@ const ServicesCard = (props) => {
             className={`bg-white rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-6 lg:px-5 w-full self-center
             ${id === 0 && "row-span-2"}
             ${id !== 0 && "h-full"}
-            ${padding && "3xl:py-16"} `}
+            ${padding && "3xl:py-16"}`}
           >
             <div className="h-14 xl:h-20 w-14 xl:w-20 mb-1 md:mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
               <div className="h-8 w-8 xl:h-12 xl:w-12 relative">
