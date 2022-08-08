@@ -1,13 +1,15 @@
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const SliderLayout = ({ size, children }) => {
+import BlogCard from "../shared/BlogCard";
+
+const ServiceSlider = ({ size, data }) => {
   return (
     <Swiper
       slidesPerView={size}
       spaceBetween={20}
       slidesPerGroup={1}
-      centeredSlides={true}
+      //   centeredSlides={true}
       loop={true}
       autoplay={{
         delay: 2500,
@@ -21,8 +23,14 @@ const SliderLayout = ({ size, children }) => {
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
-      {children}
+      {data.map((item) => {
+        return (
+          <SwiperSlide key={item.id}>
+            <BlogCard data={item} />
+          </SwiperSlide>
+        );
+      })}
     </Swiper>
   );
 };
-export default SliderLayout;
+export default ServiceSlider;

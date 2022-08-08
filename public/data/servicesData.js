@@ -200,6 +200,81 @@ const serviceBlogsData = [
   },
 ];
 
+const serviceResourceBlogData = [
+  {
+    id: 0,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "Education",
+    date: "April 02, 2022",
+    timeToRead: "5 mins",
+    button: "Read More",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 1,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "Education",
+    date: "May 22, 2022",
+    timeToRead: "8 mins",
+    button: "Read More",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 2,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "Education",
+    date: "June 13, 2022",
+    timeToRead: "2 mins",
+    button: "Read More",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 3,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "Education",
+    date: "July 30, 2022",
+    timeToRead: "5 mins",
+    button: "Read More",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 2,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "Education",
+    date: "January 17, 2022",
+    timeToRead: "7 mins",
+    button: "Read More",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+  {
+    id: 3,
+    img: "/images/services/home/blogs/services_blogs_0.svg",
+    type: "Education",
+    date: "March 27, 2022",
+    timeToRead: "5 mins",
+    button: "Read More",
+    link: "/",
+    title: "Lorem ipsum dolor sit",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
+  },
+];
+
 const serviceTimelineData = [
   {
     id: 0,
@@ -265,4 +340,5 @@ export {
   serviceResourcesData,
   serviceBlogsData,
   serviceTimelineData,
+  serviceResourceBlogData,
 };

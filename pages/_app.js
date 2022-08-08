@@ -1,3 +1,4 @@
+import "../styles/test.css";
 import "../styles/globals.css";
 import "../styles/purpose.css";
 import "../styles/web-technologies.css";

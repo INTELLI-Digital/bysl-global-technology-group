@@ -17,7 +17,7 @@ const MobileTechSlider = ({ mobileTechData }) => {
       </div>
       <div className="relative">
         <div className="md:hidden">
-          <Slider data={mobileSliderData} size={1} />
+          <Slider data={mobileSliderData} size={1.8} />
         </div>
         <div className="hidden md:block xl:hidden">
           <Slider data={mobileSliderData} size={3} />

@@ -34,7 +34,7 @@ const ProjectsCard = (props) => {
         <TextGradient text={serviceTitle} />
       </span>
       {services.map((item, i) => (
-        <div key={i} className="flex items-center mt-6">
+        <div key={i} className="flex items-center mt-4">
           <Image
             src="/images/services/individual_service/arrow_blue.svg"
             height={9}

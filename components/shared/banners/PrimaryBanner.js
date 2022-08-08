@@ -11,9 +11,11 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
   const iotPath = getPath("/iot-technologies");
   const ictPath = getPath("/ict");
   const itesPath = getPath("/ites");
+  const servicePath = getPath("/service");
   const foodTechPath = getPath("/food-tech");
   const dataSciencePath = getPath("/data-science");
   const informationPath = getPath("/information-security");
+  const mobilePath = getPath("/mobile-technologies");
   const blockchainPath = getPath("/blockchain-technologies");
   const cyberPath = getPath("/cyber-security-technologies");
 
@@ -41,7 +43,8 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           <SectionTitleGradient>{children}</SectionTitleGradient>
           <p
             className={`mt-4 text-gray-600 text-sm sm:text-base xl:text-xl 
-            ${!aiMlPath && "xl:w-5/6"}`}
+            ${!aiMlPath && "xl:w-5/6"}
+            ${servicePath && "xl:w-full xl:!text-base mt-10"}`}
           >
             {sub}
           </p>
@@ -57,6 +60,8 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
             className={`h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative 
             ${ictPath && "xl:h-[40vh]"}
             ${dataSciencePath && "xl:h-[40vh]"}
+            ${mobilePath && "xl:h-[40vh]"}
+            ${servicePath && "xl:h-[40vh]"}
             ${informationPath && "xl:h-[280px]"}
             ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"}`}
           >

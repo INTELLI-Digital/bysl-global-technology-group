@@ -62,62 +62,98 @@ const individualServiceITServicesData = [
   {
     id: 1,
     title: "BPO",
+    path:"bpo",
     img: "/images/services/individual_service/it_services/icon_0.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_0.svg",
   },
   {
     id: 2,
     title: "UI/UX Design",
+    path:"ui-ux",
     img: "/images/services/individual_service/it_services/icon_1.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_1.svg",
   },
   {
     id: 3,
     title: "Web Development",
+    path:"web",
     img: "/images/services/individual_service/it_services/icon_2.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_2.svg",
   },
   {
     id: 4,
     title: "App Development",
+    path:"app",
     img: "/images/services/individual_service/it_services/icon_3.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_3.svg",
   },
   {
     id: 5,
     title: "E-Commerce",
+    path:"e-commerce",
     img: "/images/services/individual_service/it_services/icon_4.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_4.svg",
   },
   {
     id: 6,
     title: "ERP",
+    path:"erp",
     img: "/images/services/individual_service/it_services/icon_5.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_5.svg",
   },
   {
     id: 7,
     title: "Fintech",
+    path:"fintech",
     img: "/images/services/individual_service/it_services/icon_6.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_6.svg",
   },
   {
     id: 8,
     title: "AI & ML",
+    path:"aiml",
     img: "/images/services/individual_service/it_services/icon_7.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_7.svg",
   },
   {
     id: 9,
     title: "Fulfilment Solutions",
+    path:"fulfilment",
     img: "/images/services/individual_service/it_services/icon_8.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_8.svg",
   },
   {
     id: 10,
     title: "Logistics Solutions",
+    path:"logistics",
     img: "/images/services/individual_service/it_services/icon_9.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_9.svg",
   },
   {
     id: 11,
     title: "Cloud & Cyber Security",
+    path:"cloud",
     img: "/images/services/individual_service/it_services/icon_10.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_10.svg",
   },
   {
     id: 12,
     title: "Customer Care Solutions",
+    path:"customer",
     img: "/images/services/individual_service/it_services/icon_11.svg",
+    activeImg:
+      "/images/services/individual_service/it_services/icon_active_11.svg",
   },
 ];
 

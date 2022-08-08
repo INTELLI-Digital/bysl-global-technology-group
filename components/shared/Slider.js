@@ -6,7 +6,7 @@ const Slider = ({ size, data }) => {
   return (
     <Swiper
       slidesPerView={size}
-      // spaceBetween={50}
+      spaceBetween={50}
       slidesPerGroup={1}
       centeredSlides={true}
       loop={true}

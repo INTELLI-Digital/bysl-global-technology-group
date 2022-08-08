@@ -63,7 +63,7 @@ const Navbar = () => {
               return (
                 <div key={id} id="nav" className="inline-block">
                   <button
-                    className={` ${
+                    className={`${
                       (arvrPath && !colorChange) ||
                       (investmentPath && !colorChange)
                         ? "text-white"
@@ -105,10 +105,10 @@ const Navbar = () => {
                                 >
                                   <div className="flex items-center justify-between mb-2">
                                     <p
-                                      className={
+                                      className={`${
                                         router.asPath !== link &&
                                         "text-gray-800"
-                                      }
+                                      }`}
                                     >
                                       {title}
                                     </p>

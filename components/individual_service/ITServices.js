@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -52,14 +53,14 @@ const ITServices = ({ data }) => {
 
   return (
     <div className="py-10 xl:py-16">
-      <SectionTitleType title="What We Do?" />
+      <SectionTitleType title="What We Do." />
       <TechnologiesSectionTitle>
         We Provide Various IT services
       </TechnologiesSectionTitle>
-      <div className="mt-10 xl:mt-20">
-        <div className="md:hidden">
-          <div className="flex flex-col space-y-4">
-            {data.map(({ id, title, img }) => {
+      <div className="mt-10 xl:mt-16">
+        <div className="lg:hidden bg-white px-4 py-5 rounded-md">
+          <div className="flex flex-col space-y-4 ">
+            {data.map(({ id, title, img, activeImg }) => {
               return (
                 <div key={id}>
                   <div
@@ -75,7 +76,11 @@ const ITServices = ({ data }) => {
                         open === id ? "mx-auto pl-0" : "pl-5"
                       }`}
                     >
-                      <Image src={img} height={20} width={20} alt="" />
+                      {open === id ? (
+                        <Image src={activeImg} height={20} width={20} alt="" />
+                      ) : (
+                        <Image src={img} height={20} width={20} alt="" />
+                      )}
                       <p
                         className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
                           open === id ? "text-white" : "text-gray-800"
@@ -86,8 +91,11 @@ const ITServices = ({ data }) => {
                     </div>
                   </div>
                   {open === id && (
-                    <div className=" bg-white p-5 rounded-[10px] shadow-lg shadow-gray-200 mt-4">
-                      {serviceDetails.filter((item, i) => i === service)}
+                    <div className="p-5 mt-4">
+                      {/* {serviceDetails.filter((item, i) => i === open)} */}
+                      {serviceDetails.map((el, i) => (
+                        <div key={i}>{open === i + 1 && el}</div>
+                      ))}
                     </div>
                   )}
                 </div>
@@ -96,33 +104,82 @@ const ITServices = ({ data }) => {
           </div>
         </div>
 
-        <div className="hidden md:grid grid-cols-12 gap-6">
-          <div className="col-span-4 lg:col-span-3 flex flex-col space-y-4">
-            {data.map(({ id, title, img }) => {
+        <div className="hidden lg:grid grid-cols-12 gap-6">
+          <div className="col-span-4 lg:col-span-4 2xl:col-span-3 flex flex-col space-y-4 bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
+            {data.map(({ id, title, path, img, activeImg }) => {
               return (
+                // <Link activeClass="active" smooth spy to={path}>
                 <div
                   key={id}
                   onClick={() => handleClick(id)}
-                  className={`flex items-center py-3 pl-5 rounded-[10px] hover:cursor-pointer ${
+                  className={`flex items-center py-2.5 pl-5 rounded-[10px] hover:cursor-pointer ${
                     service === id &&
                     "bg-gradient-to-r from-blue-900 to-blue-700"
                   }  `}
                 >
-                  <Image src={img} height={20} width={20} alt="" />
+                  {service === id ? (
+                    <Image src={activeImg} height={20} width={20} alt="" />
+                  ) : (
+                    <Image src={img} height={20} width={20} alt="" />
+                  )}
                   <p
                     className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
                       service === id ? "text-white" : "text-gray-800"
-                    } `}
+                    }`}
                   >
                     {title}
                   </p>
                 </div>
+                // </Link>
               );
             })}
           </div>
-          <div className="col-span-8 lg:col-span-9 bg-white p-10 rounded-[30px] shadow-lg shadow-gray-200">
-            {serviceDetails.filter((item, i) => i === service)}
+          <div className="col-span-8 lg:col-span-8 2xl:col-span-9 p-10 h-[760px]">
+            {serviceDetails.map((el, i) => (
+              <div key={i} className={`${service === i && "scroll-animation"}`}>
+                {service === i + 1 && el}
+              </div>
+            ))}
           </div>
+
+          {/* <div className="col-span-8 lg:col-span-9 p-10 h-[calc(100vh-1rem)] bg-slate-200 overflow-y-auto">
+            <div className="section" id="bpo">
+              <BPOCard />
+            </div>
+            <div className="section" id="ui-ux">
+              <UIUXCard />
+            </div>
+            <div className="section" id="web">
+              <BPOCard />
+            </div>
+            <div className="section" id="app">
+              <UIUXCard />
+            </div>
+            <div className="section" id="e-commerce">
+              <BPOCard />
+            </div>
+            <div className="section" id="erp">
+              <UIUXCard />
+            </div>
+            <div className="section" id="fintech">
+              <BPOCard />
+            </div>
+            <div className="section" id="aiml">
+              <UIUXCard />
+            </div>
+            <div className="section" id="fulfilment">
+              <BPOCard />
+            </div>
+            <div className="section" id="logistics">
+              <UIUXCard />
+            </div>
+            <div className="section" id="cloud">
+              <BPOCard />
+            </div>
+            <div className="section" id="customer">
+              <UIUXCard />
+            </div>
+          </div> */}
         </div>
       </div>
     </div>
