@@ -4,21 +4,24 @@ import ServiceWhyUs from "../components/individual_service/ServiceWhyUs";
 import ServiceTimeline from "../components/services/ServiceTimeline";
 import {
   individualServiceITServicesData,
+  ITFeaturesData,
+  serviceResourceBlogData,
   serviceWhyChooseUsData,
 } from "../public/data/individualServiceData";
 import {
   serviceBlogsData,
-  serviceResourceBlogData,
   serviceTimelineData,
 } from "../public/data/servicesData";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
 import ServiceResourcesCard from "../components/services/ServiceResourcesCard";
+import ITFeatures from "../components/individual_service/ITFeatures";
 
 const Service = ({
   banner,
   individualServiceITServices,
   serviceWhyChooseUs,
   serviceTimeline,
+  ITFeaturesData,
   serviceResourceBlog,
 }) => {
   return (
@@ -36,8 +39,8 @@ const Service = ({
       {/* IT services section  */}
       <ITServices data={individualServiceITServices} />
 
-      {/* why us section  */}
-      {/* <ServiceWhyUs data={serviceWhyChooseUs} /> */}
+      {/* features section  */}
+      <ITFeatures data={ITFeaturesData} />
 
       {/* resources section  */}
       <ServiceResourcesCard data={serviceResourceBlog} type="Resources">
@@ -55,6 +58,7 @@ export async function getStaticProps() {
       serviceWhyChooseUs: serviceWhyChooseUsData,
       serviceTimeline: serviceTimelineData,
       serviceResourceBlog: serviceResourceBlogData,
+      ITFeaturesData,
     },
   };
 }

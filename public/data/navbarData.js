@@ -82,11 +82,11 @@ const navbars = [
       },
     ],
   },
-  // {
-  //   id: 2,
-  //   title: "Services",
-  //   link: "/services",
-  // },
+  {
+    id: 2,
+    title: "Services",
+    link: "/services",
+  },
   {
     id: 3,
     title: "Divisions",

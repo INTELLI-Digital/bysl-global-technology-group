@@ -1,4 +1,3 @@
-import { Link } from "react-scroll";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -17,7 +16,8 @@ const ITServices = ({ data }) => {
 
   // function for accordion handle
   const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
+    // 99 is just a random id which doesn't exist in the service id's.
+    setOpen(open === value ? 99 : value);
   };
 
   // function for tab handle
@@ -92,9 +92,8 @@ const ITServices = ({ data }) => {
                   </div>
                   {open === id && (
                     <div className="p-5 mt-4">
-                      {/* {serviceDetails.filter((item, i) => i === open)} */}
                       {serviceDetails.map((el, i) => (
-                        <div key={i}>{open === i + 1 && el}</div>
+                        <div key={i}>{open === i && el}</div>
                       ))}
                     </div>
                   )}
@@ -108,7 +107,6 @@ const ITServices = ({ data }) => {
           <div className="col-span-4 lg:col-span-4 2xl:col-span-3 flex flex-col space-y-4 bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
             {data.map(({ id, title, path, img, activeImg }) => {
               return (
-                // <Link activeClass="active" smooth spy to={path}>
                 <div
                   key={id}
                   onClick={() => handleClick(id)}
@@ -130,26 +128,25 @@ const ITServices = ({ data }) => {
                     {title}
                   </p>
                 </div>
-                // </Link>
               );
             })}
           </div>
-          <div className="col-span-8 lg:col-span-8 2xl:col-span-9 p-10 h-[760px]">
+          <div className="col-span-8 lg:col-span-8 2xl:col-span-9 p-10 pr-0 h-[760px]">
             {serviceDetails.map((el, i) => (
               <div key={i} className={`${service === i && "scroll-animation"}`}>
-                {service === i + 1 && el}
+                {service === i && el}
               </div>
             ))}
           </div>
 
-          {/* <div className="col-span-8 lg:col-span-9 p-10 h-[calc(100vh-1rem)] bg-slate-200 overflow-y-auto">
+          {/* <div className="col-span-8 lg:col-span-9 p-10 h-[760px] overflow-y-auto scroll">
             <div className="section" id="bpo">
               <BPOCard />
             </div>
             <div className="section" id="ui-ux">
               <UIUXCard />
             </div>
-            <div className="section" id="web">
+            <div className="section" id="web" ref={myRef}>
               <BPOCard />
             </div>
             <div className="section" id="app">

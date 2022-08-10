@@ -474,7 +474,7 @@ const footerDataDesktop = [
     items: [
       {
         id: 0,
-        path: "/",
+        path: "/investments",
         name: "Business Verticals",
       },
       {

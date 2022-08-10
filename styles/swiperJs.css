@@ -1,0 +1,39 @@
+.swiper-button-next,
+.swiper-button-prev,
+.mobileTech .swiper-pagination {
+  display: none !important;
+}
+
+.mobileTech .swiper-wrapper {
+  align-items: center;
+}
+.mobileTech .swiper-slide-active .mobileTechImg {
+  height: 260px;
+  filter: none;
+}
+.card-slider .swiper-slide {
+  height: auto;
+}
+.card-slider .swiper-pagination {
+  position: unset;
+}
+
+.service-blog-slider .swiper-pagination-bullet {
+  transition: all 0.5s ease !important;
+  margin-top: 40px !important;
+}
+.service-blog-slider .swiper-pagination-bullet-active {
+  width: 50px !important;
+  border-radius: 10px !important;
+  background-image: linear-gradient(to right, #00469f, #1e79d6) !important;
+}
+
+.feature-slider .swiper-slide {
+  height: auto;
+}
+
+@media (max-width: 639px) {
+  .service-blog-slider .swiper-pagination-bullet {
+    margin-top: 20px !important;
+  }
+}

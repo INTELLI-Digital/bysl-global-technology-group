@@ -14,7 +14,7 @@ const ServiceResourcesCard = (props) => {
     <div className="py-10 xl:py-16">
       {type && <SectionTitleType title={type} />}
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
-      <div className="mt-10 card-slider pb-10 service-blog-slider relative">
+      <div className="mt-5 lg:mt-10 card-slider service-blog-slider relative">
         <div className="sm:hidden">
           <ServiceSlider size={1} data={data} />
         </div>

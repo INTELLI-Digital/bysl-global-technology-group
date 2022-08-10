@@ -1,8 +1,9 @@
-import "../styles/test.css";
 import "../styles/globals.css";
+import "../styles/swiperJs.css";
 import "../styles/purpose.css";
 import "../styles/web-technologies.css";
 import "../styles/gradient-bg.css";
+import "../styles/border-gradient.css";
 import "../styles/investments-banner.css";
 
 // important imports for swiper slider

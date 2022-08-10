@@ -34,7 +34,7 @@ const ProjectsCard = (props) => {
         <TextGradient text={serviceTitle} />
       </span>
       {services.map((item, i) => (
-        <div key={i} className="flex items-center mt-4">
+        <div key={i} className="flex items-center mt-[15px]">
           <Image
             src="/images/services/individual_service/arrow_blue.svg"
             height={9}
@@ -54,7 +54,7 @@ const BPOCard = () => {
   return (
     <>
       <p className="text-sm xl:text-base text-gray-400 mb-10">{header}</p>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <ProjectsCard
           title1={leftTitle1}
           serviceTitle={leftServiceTitle}

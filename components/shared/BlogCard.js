@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 import { TextGradient } from "./SharedTextgroups";
 
@@ -9,7 +9,7 @@ const BlogCard = ({ data }) => {
   return (
     <div className="group blog-card bg-white rounded-md shadow-sm  shadow-gray-200/50 mx-auto">
       <div className="h-52 overflow-hidden">
-        <div className="relative rounded-md w-full h-52 overflow-hidden group-hover:scale-125 transition duration-1000 ">
+        <div className="relative rounded-t-md w-full h-52 overflow-hidden group-hover:scale-125 transition duration-700 ">
           <Image
             src={img}
             placeholder="blur"
@@ -33,13 +33,13 @@ const BlogCard = ({ data }) => {
           </div>
         )}
       </div>
-      <Link passHref href={link}>
+      {/* <Link passHref href={link}> */}
         <div className="service-card-bg h-[50px] border-t-2 hover:cursor-pointer flex justify-center items-center">
-          <p className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r group-hover:from-white from-blue-900 group-hover:to-white to-blue-700 ">
+          <p className="text-sm font-bold text-transparent bg-clip-text bg-gradient-to-r group-hover:from-white from-blue-900 group-hover:to-white to-blue-700">
             {button ? button : "View Case Study"}
           </p>
         </div>
-      </Link>
+      {/* </Link> */}
     </div>
   );
 };

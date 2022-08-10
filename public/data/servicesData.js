@@ -51,82 +51,82 @@ const servicesFeaturesData = [
 
 const servicesServiceData = [
   {
-    id: 1,
+    id: 0,
     title: "BPO",
     subTitle:
       "Integrating all IT-Enabled services to provide a customized solution",
     img: "/images/services/home/services/icon_0.svg",
   },
   {
-    id: 2,
+    id: 1,
     title: "UI/UX Design",
     subTitle:
       "Balanced, intuitive, aesthetically pleasing and user-friendly wireframing, interface designs and prototyping.",
     img: "/images/services/home/services/icon_1.svg",
   },
   {
-    id: 3,
+    id: 2,
     title: "Web Development",
     subTitle:
       "Fully customized, intuitive and highly responsive designs based on business needs & marketing strategies",
     img: "/images/services/home/services/icon_2.svg",
   },
   {
-    id: 4,
+    id: 3,
     title: "App Development",
     subTitle:
       "Customized, smart, intuitive solutions for all portable platforms",
     img: "/images/services/home/services/icon_3.svg",
   },
   {
-    id: 5,
+    id: 4,
     title: "E-Commerce",
     subTitle:
       "Comprehensive E-commerce software solutions for emerging businesses",
     img: "/images/services/home/services/icon_4.svg",
   },
   {
-    id: 6,
+    id: 5,
     title: "ERP",
     subTitle:
       "Customized solutions for maintaining businesses in the most efficient way ever",
     img: "/images/services/home/services/icon_5.svg",
   },
   {
-    id: 7,
+    id: 6,
     title: "Fintech",
     subTitle: "Ultimate fintech solutions with built-in security",
     img: "/images/services/home/services/icon_6.svg",
   },
   {
-    id: 8,
+    id: 7,
     title: "AI & ML",
     subTitle: "Let the machine process and execute for you",
     img: "/images/services/home/services/icon_7.svg",
   },
   {
-    id: 9,
+    id: 8,
     title: "Fulfilment Solutions",
     subTitle:
       "Advance solutions for warehousing, inventory, order processing, delivery to returns",
     img: "/images/services/home/services/icon_8.svg",
   },
   {
-    id: 10,
+    id: 9,
     title: "Logistics Solutions",
     subTitle:
       "360° logistics solutions for retail, e-commerce and supply chain management",
     img: "/images/services/home/services/icon_9.svg",
   },
   {
-    id: 11,
+    id: 10,
     title: "Cloud & Cyber Security",
     subTitle:
       "Our advanced cloud based cyber security employs intelligent processes to maximize security.",
     img: "/images/services/home/services/icon_10.svg",
   },
   {
-    id: 12,
+    id: 11,
     title: "Customer Care Solutions",
     subTitle:
       "Full-fledged software solutions for Customer Relationship Management (CRM), Call Centres, and Marketing Communications",
@@ -200,80 +200,6 @@ const serviceBlogsData = [
   },
 ];
 
-const serviceResourceBlogData = [
-  {
-    id: 0,
-    img: "/images/services/home/blogs/services_blogs_0.svg",
-    type: "Education",
-    date: "April 02, 2022",
-    timeToRead: "5 mins",
-    button: "Read More",
-    link: "/",
-    title: "Lorem ipsum dolor sit",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  },
-  {
-    id: 1,
-    img: "/images/services/home/blogs/services_blogs_0.svg",
-    type: "Education",
-    date: "May 22, 2022",
-    timeToRead: "8 mins",
-    button: "Read More",
-    link: "/",
-    title: "Lorem ipsum dolor sit",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  },
-  {
-    id: 2,
-    img: "/images/services/home/blogs/services_blogs_0.svg",
-    type: "Education",
-    date: "June 13, 2022",
-    timeToRead: "2 mins",
-    button: "Read More",
-    link: "/",
-    title: "Lorem ipsum dolor sit",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  },
-  {
-    id: 3,
-    img: "/images/services/home/blogs/services_blogs_0.svg",
-    type: "Education",
-    date: "July 30, 2022",
-    timeToRead: "5 mins",
-    button: "Read More",
-    link: "/",
-    title: "Lorem ipsum dolor sit",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  },
-  {
-    id: 2,
-    img: "/images/services/home/blogs/services_blogs_0.svg",
-    type: "Education",
-    date: "January 17, 2022",
-    timeToRead: "7 mins",
-    button: "Read More",
-    link: "/",
-    title: "Lorem ipsum dolor sit",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  },
-  {
-    id: 3,
-    img: "/images/services/home/blogs/services_blogs_0.svg",
-    type: "Education",
-    date: "March 27, 2022",
-    timeToRead: "5 mins",
-    button: "Read More",
-    link: "/",
-    title: "Lorem ipsum dolor sit",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper risus nibh magnis habitant lectus aliquam amet, enim.",
-  },
-];
 
 const serviceTimelineData = [
   {
@@ -340,5 +266,4 @@ export {
   serviceResourcesData,
   serviceBlogsData,
   serviceTimelineData,
-  serviceResourceBlogData,
 };
