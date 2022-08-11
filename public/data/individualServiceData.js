@@ -63,104 +63,104 @@ const individualServiceITServicesData = [
     id: 0,
     title: "BPO",
     path: "bpo",
-    img: "/images/services/individual_service/it_services/icon_0.svg",
+    img: "/images/services/individual_service/it_services/icon_0.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_0.svg",
+      "/images/services/individual_service/it_services/icon_active_0.png",
   },
   {
     id: 1,
     title: "UI/UX Design",
     path: "ui-ux",
-    img: "/images/services/individual_service/it_services/icon_1.svg",
+    img: "/images/services/individual_service/it_services/icon_1.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_1.svg",
+      "/images/services/individual_service/it_services/icon_active_1.png",
   },
   {
     id: 2,
     title: "Web Development",
     path: "web",
-    img: "/images/services/individual_service/it_services/icon_2.svg",
+    img: "/images/services/individual_service/it_services/icon_2.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_2.svg",
+      "/images/services/individual_service/it_services/icon_active_2.png",
   },
   {
     id: 3,
     title: "App Development",
     path: "app",
-    img: "/images/services/individual_service/it_services/icon_3.svg",
+    img: "/images/services/individual_service/it_services/icon_3.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_3.svg",
+      "/images/services/individual_service/it_services/icon_active_3.png",
   },
   {
     id: 4,
     title: "E-Commerce",
     path: "e-commerce",
-    img: "/images/services/individual_service/it_services/icon_4.svg",
+    img: "/images/services/individual_service/it_services/icon_4.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_4.svg",
+      "/images/services/individual_service/it_services/icon_active_4.png",
   },
   {
     id: 5,
     title: "ERP",
     path: "erp",
-    img: "/images/services/individual_service/it_services/icon_5.svg",
+    img: "/images/services/individual_service/it_services/icon_5.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_5.svg",
+      "/images/services/individual_service/it_services/icon_active_5.png",
   },
   {
     id: 6,
     title: "Fintech",
     path: "fintech",
-    img: "/images/services/individual_service/it_services/icon_6.svg",
+    img: "/images/services/individual_service/it_services/icon_6.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_6.svg",
+      "/images/services/individual_service/it_services/icon_active_6.png",
   },
   {
     id: 7,
     title: "AI & ML",
     path: "aiml",
-    img: "/images/services/individual_service/it_services/icon_7.svg",
+    img: "/images/services/individual_service/it_services/icon_7.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_7.svg",
+      "/images/services/individual_service/it_services/icon_active_7.png",
   },
   {
     id: 8,
     title: "Fulfilment Solutions",
     path: "fulfilment",
-    img: "/images/services/individual_service/it_services/icon_8.svg",
+    img: "/images/services/individual_service/it_services/icon_8.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_8.svg",
+      "/images/services/individual_service/it_services/icon_active_8.png",
   },
   {
     id: 9,
     title: "Logistics Solutions",
     path: "logistics",
-    img: "/images/services/individual_service/it_services/icon_9.svg",
+    img: "/images/services/individual_service/it_services/icon_9.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_9.svg",
+      "/images/services/individual_service/it_services/icon_active_9.png",
   },
   {
     id: 10,
     title: "Cloud & Cyber Security",
     path: "cloud",
-    img: "/images/services/individual_service/it_services/icon_10.svg",
+    img: "/images/services/individual_service/it_services/icon_10.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_10.svg",
+      "/images/services/individual_service/it_services/icon_active_10.png",
   },
   {
     id: 11,
     title: "Customer Care Solutions",
     path: "customer",
-    img: "/images/services/individual_service/it_services/icon_11.svg",
+    img: "/images/services/individual_service/it_services/icon_11.png",
     activeImg:
-      "/images/services/individual_service/it_services/icon_active_11.svg",
+      "/images/services/individual_service/it_services/icon_active_11.png",
   },
 ];
 
 const serviceResourceBlogData = [
   {
     id: 0,
-    img: "/images/services/individual_service/blogs/image_0.svg",
+    img: "/images/services/individual_service/blogs/image_0.png",
     type: "Education",
     date: "April 02, 2022",
     timeToRead: "5 mins",
@@ -196,7 +196,7 @@ const serviceResourceBlogData = [
   },
   {
     id: 3,
-    img: "/images/services/individual_service/blogs/image_0.svg",
+    img: "/images/services/individual_service/blogs/image_0.png",
     type: "Education",
     date: "July 30, 2022",
     timeToRead: "5 mins",
@@ -240,42 +240,42 @@ const ITFeaturesData = {
   sliderData: [
     {
       id: 0,
-      img: "/images/services/individual_service/features/icon_0.svg",
+      img: "/images/services/individual_service/features/icon_0.png",
       title: "Dedicated Resources",
       subTitle:
         "Experience and skills are what we specialize in. We’re highly qualified professionals crafting innovative ideas and transforming those into better solutions.",
     },
     {
       id: 1,
-      img: "/images/services/individual_service/features/icon_1.svg",
+      img: "/images/services/individual_service/features/icon_1.png",
       title: "Reliable Technological Competency",
       subTitle:
         "Experience and skills are what we specialize in. We’re highly qualified professionals crafting innovative ideas and transforming those into better solutions..",
     },
     {
       id: 2,
-      img: "/images/services/individual_service/features/icon_2.svg",
+      img: "/images/services/individual_service/features/icon_2.png",
       title: "Next-generation Technologies",
       subTitle:
         "Employing cutting-edge arsenals of futuristic technology that is fast, secure, well-synchronized, highly accessible, easily deployable, modular, and dynamic, we operate on improved architecture.",
     },
     {
       id: 3,
-      img: "/images/services/individual_service/features/icon_3.svg",
+      img: "/images/services/individual_service/features/icon_3.png",
       title: "Guaranteed Timeliness & Quality",
       subTitle:
         "We equally value timeliness and the quality of our services. For us, meeting deadlines is as important as maintaining the quality and reliability of our solutions. .",
     },
     {
       id: 4,
-      img: "/images/services/individual_service/features/icon_4.svg",
+      img: "/images/services/individual_service/features/icon_4.png",
       title: "Cost Savings",
       subTitle:
         "We understand that even small businesses require big tech-integration. So, we’ve devised comprehensive, flexible and smart solution packages to reduce costs for our clients.",
     },
     {
       id: 5,
-      img: "/images/services/individual_service/features/icon_5.svg",
+      img: "/images/services/individual_service/features/icon_5.png",
       title: "Secure Exchange of Information",
       subTitle:
         "We go the extra mile to ensure the maximum data security for our clients. From customized data access to business and private communications, you are totally protected in all types of information exchanges.",

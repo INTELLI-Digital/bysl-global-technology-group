@@ -72,19 +72,19 @@ const ITServices = ({ data }) => {
                     }`}
                   >
                     <div
-                      className={`flex items-center w-max ${
+                      className={`relative flex items-center w-max ${
                         open === id ? "mx-auto pl-0" : "pl-5"
                       }`}
                     >
                       {open === id ? (
-                        <Image src={activeImg} height={20} width={20} alt="" />
+                        <Image src={activeImg} height={20} width={20} objectFit="contain" alt="" />
                       ) : (
-                        <Image src={img} height={20} width={20} alt="" />
+                        <Image src={img} height={20} width={20} objectFit="contain" alt="" />
                       )}
                       <p
                         className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
                           open === id ? "text-white" : "text-gray-800"
-                        } `}
+                        }`}
                       >
                         {title}
                       </p>
@@ -105,7 +105,7 @@ const ITServices = ({ data }) => {
 
         <div className="hidden lg:grid grid-cols-12 gap-6">
           <div className="col-span-4 lg:col-span-4 2xl:col-span-3 flex flex-col space-y-4 bg-white p-5 rounded-[20px] shadow-[-4px_-4px_25px_0px_#E5EBF3]">
-            {data.map(({ id, title, path, img, activeImg }) => {
+            {data.map(({ id, title, img, activeImg }) => {
               return (
                 <div
                   key={id}
@@ -116,9 +116,9 @@ const ITServices = ({ data }) => {
                   }  `}
                 >
                   {service === id ? (
-                    <Image src={activeImg} height={20} width={20} alt="" />
+                    <Image src={activeImg} height={20} width={20} objectFit="contain" alt="" />
                   ) : (
-                    <Image src={img} height={20} width={20} alt="" />
+                    <Image src={img} height={20} width={20} objectFit="contain" alt="" />
                   )}
                   <p
                     className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
@@ -131,7 +131,7 @@ const ITServices = ({ data }) => {
               );
             })}
           </div>
-          <div className="col-span-8 lg:col-span-8 2xl:col-span-9 p-10 pr-0 h-[760px]">
+          <div className="col-span-8 lg:col-span-8 2xl:col-span-9 p-10 pr-0">
             {serviceDetails.map((el, i) => (
               <div key={i} className={`${service === i && "scroll-animation"}`}>
                 {service === i && el}
