@@ -5,12 +5,12 @@ import ProjectsShowcase from "../components/landing_page/ProjectsShowcase";
 import SolutionsBanner from "../components/landing_page/SolutionsBanner";
 import Investments from "../components/landing_page/Investments";
 import Technologies from "../components/landing_page/Technologies";
-import { techData } from "../public/data/technologiesData";
 import { summaryData } from "../public/data/summaryData";
 import { aboutUsData } from "../public/data/aboutUsData";
 import {
   projectsShowcaseData,
   investmentData,
+  techData,
 } from "../public/data/landingPageData";
 
 const Home = ({

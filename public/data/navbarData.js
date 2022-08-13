@@ -235,6 +235,13 @@ const navbars = [
           "Our core values are our constants, our guidelines for everything we do.",
         link: "/culture",
       },
+      {
+        id: 4,
+        title: "Careers",
+        subTitle:
+          "Our core values are our constants, our guidelines for everything we do.",
+        link: "/careers",
+      },
     ],
   },
   // {

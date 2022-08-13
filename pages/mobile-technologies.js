@@ -57,7 +57,7 @@ export async function getStaticProps() {
           "/images/technologies/mobile/slider/mobileTechnologies_slider_frame.png",
         mobileSliderData,
       },
-      banner: "/images/banners/mobile_technologies_banner.svg",
+      banner: "/images/banners/mobile_technologies_banner.png",
       userExperience: userExperienceData,
     },
   };

@@ -60,7 +60,7 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
             className={`h-56 xs:h-[40vh] xl:h-[50vh] max-h-[600px] w-full relative 
             ${ictPath && "xl:h-[40vh]"}
             ${dataSciencePath && "xl:h-[40vh]"}
-            ${mobilePath && "xl:h-[40vh]"}
+            ${mobilePath && "xl:h-[42vh]"}
             ${servicePath && "xl:h-[40vh]"}
             ${informationPath && "xl:h-[280px]"}
             ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"}`}
