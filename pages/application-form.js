@@ -90,10 +90,10 @@ const ApplicationForm = () => {
           id="application-preview"
           className="modal-toggle"
         />
-        <div className="modal">
+        <div className="modal backdrop-blur-xs">
           <div className="modal-box !rounded-md w-11/12 max-w-3xl customScrollbar">
             <div className="max-w-3xl mx-auto pt-8">
-              <p className="text-gray-800 text-xl font-semibold text-center border-b pb-2">
+              <p className="text-gray-800 text-xl font-semibold text-center border-b pb-3">
                 {jobTitle}
               </p>
               <div className="max-w-[416px] mx-auto pt-4">
@@ -117,7 +117,7 @@ const ApplicationForm = () => {
             </div>
             <div className="modal-action ">
               <label
-                for="application-preview"
+                htmlFor="application-preview"
                 className="absolute right-1 top-1 p-2 hover:cursor-pointer"
               >
                 <AiOutlinePlus className="text-2xl text-red-600 rotate-45" />
@@ -239,7 +239,7 @@ const ApplicationForm = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
             <label
-              for="application-preview"
+              htmlFor="application-preview"
               className="w-[150px] h-max mx-auto lg:mx-0 text-center rounded-lg text-sm font-semibold py-2 xl:py-2.5 hover:cursor-pointer contact-us-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
             >
               Preview

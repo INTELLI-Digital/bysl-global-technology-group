@@ -148,7 +148,7 @@ const Navbar = () => {
                   {dropdowns && (
                     <div className="pt-5 bg-transparent">
                       <div className="shadow-lg shadow-[#7080B0]/10 py-12 xl:pb-[72px] absolute left-0 top-20 w-full bg-white rounded-b-lg navbar text-gray-700">
-                        <p className="box font-bold text-2xl pb-8">
+                        <p className="block box font-bold text-2xl pb-8">
                           <TextGradient text={title} />
                         </p>
                         <div className="box grid grid-cols-3 xl:grid-cols-4 gap-6">

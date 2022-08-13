@@ -1,6 +1,8 @@
 import "../styles/globals.css";
 import "../styles/swiperJs.css";
 import "../styles/purpose.css";
+import "../styles/animations.css";
+import "../styles/scrollbar.css";
 import "../styles/web-technologies.css";
 import "../styles/gradient-bg.css";
 import "../styles/border-gradient.css";

@@ -51,4 +51,31 @@ const singleJobData = {
   ],
 };
 
-export { singleJobData };
+const careerWhyJoinData = [
+  {
+    id: 0,
+    title: "Possible Heading 1",
+    subTitle:
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+  },
+  {
+    id: 1,
+    title: "Possible Heading 2",
+    subTitle:
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+  },
+  {
+    id: 2,
+    title: "Possible Heading 3",
+    subTitle:
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+  },
+  {
+    id: 3,
+    title: "Possible Heading 4",
+    subTitle:
+      "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.",
+  },
+];
+
+export { singleJobData, careerWhyJoinData };
