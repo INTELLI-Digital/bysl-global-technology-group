@@ -1,11 +1,25 @@
 import Image from "next/image";
+import { useState } from "react";
 
 import { getPath } from "../../utils/paths";
+import Modal from "./Modal";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview3Items = (props) => {
   const { data, children, type } = props;
   const iotPath = getPath("/iot-technologies");
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
+  // modal state
+  const handleOpen = (id) => {
+    setIsOpen(true);
+    setModalData(data[id]);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className={`py-10 xl:py-16 ${iotPath && "!pt-0"}`}>
@@ -14,7 +28,7 @@ const Overview3Items = (props) => {
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       )}
       <div
-        className={`w-full max-w-[1128px] mx-auto flex flex-wrap md:flex-nowrap justify-evenly gap-6 ${
+        className={`w-full max-w-[1128px] mx-auto flex flex-wrap md:flex-nowrap justify-center sm:justify-evenly gap-6 ${
           children && "mt-10 "
         }`}
       >
@@ -22,7 +36,8 @@ const Overview3Items = (props) => {
           return (
             <div
               key={id}
-              className="p-3 xl:p-5 text-center max-w-[100px] xxs:max-w-none lg:w-max"
+              onClick={() => handleOpen(id)}
+              className="p-3 xl:p-5 text-center max-w-[100px] xxs:max-w-none lg:w-max justify-self-center"
             >
               <div className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16 relative">
                 <Image
@@ -44,6 +59,11 @@ const Overview3Items = (props) => {
             </div>
           );
         })}
+        <div className="xl:hidden">
+          {isOpen && modalData.subTitle && (
+            <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} />
+          )}
+        </div>
       </div>
     </div>
   );

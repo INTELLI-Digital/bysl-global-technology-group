@@ -3,6 +3,11 @@ import { useState } from "react";
 import { RiSearchLine } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
+import {
+  departmentList,
+  positionTypeList,
+} from "../../public/data/careersData";
+
 const CareerJobCirculars = () => {
   const [departmentOpen, setDepartmentOpen] = useState(false);
   const [department, setDepartment] = useState("");
@@ -17,23 +22,6 @@ const CareerJobCirculars = () => {
     setPosition(item);
     setPositionOpen(false);
   };
-
-  const departmentList = [
-    "Graphics and Multimedia",
-    "Core Development",
-    "Web Development",
-    "Mobile App Development",
-    "Supply Chain & Logistics",
-    "Human Resource",
-  ];
-  const positionTypeList = [
-    "Jr. Executive",
-    "Executive",
-    "Sr. Executive",
-    "Executive Incharge",
-    "Assistant Manager",
-    "Deputy Manager",
-  ];
 
   const JobCircularList = ({ data }) => {
     return (
@@ -83,14 +71,18 @@ const CareerJobCirculars = () => {
               } text-gray-500 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0] hover:cursor-pointer `}
             >
               <span>{department ? department : "Departments"} </span>
-              <MdKeyboardArrowDown className="text-xl" />
+              <MdKeyboardArrowDown
+                className={`text-xl ${
+                  departmentOpen && "-rotate-180 transition duration-1000"
+                }`}
+              />
             </div>
             {departmentOpen && (
               <div className="careerScrollbar h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-12 rounded-b-[11px] left-0 px-5 ">
                 {departmentList.map((item, i) => (
                   <p
-                    onClick={() => handleDepartment(item)}
                     key={i}
+                    onClick={() => handleDepartment(item)}
                     className="py-3 text-sm text-gray-800 hover:cursor-pointer"
                   >
                     {item}
@@ -103,19 +95,28 @@ const CareerJobCirculars = () => {
           <div className="w-full relative">
             <div
               onClick={() => setPositionOpen(!positionOpen)}
-              className={`flex justify-between items-center bg-white text-sm px-5 py-4  ${
+              // onBlur={() => setPositionOpen(false)}
+              className={`flex justify-between items-center bg-white text-sm px-5 py-4 ${
                 positionOpen ? "rounded-t-[11px]" : "rounded-[11px]"
               } text-gray-500 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0] hover:cursor-pointer `}
             >
               <span>{position ? position : "Position Type"} </span>
-              <MdKeyboardArrowDown className="text-xl" />
+              <MdKeyboardArrowDown
+                className={`text-xl ${
+                  positionOpen && "-rotate-180 transition duration-1000"
+                }`}
+              />
             </div>
             {positionOpen && (
-              <div className="careerScrollbar h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-12 rounded-b-[11px] left-0 px-5 ">
+              <div
+                className={`careerScrollbar  ${
+                  positionOpen ? "max-h-[225px] transition duration-1000" : ""
+                }   divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-12 rounded-b-[11px] left-0 px-5`}
+              >
                 {positionTypeList.map((item, i) => (
                   <p
-                    onClick={() => handlePosition(item)}
                     key={i}
+                    onClick={() => handlePosition(item)}
                     className="py-3 text-sm text-gray-800 hover:cursor-pointer"
                   >
                     {item}

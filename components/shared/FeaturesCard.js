@@ -1,12 +1,27 @@
 import Image from "next/image";
+import { useState } from "react";
+import Modal from "./Modal";
 
 const FeaturesCard = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
+  // modal state
+  const handleOpen = (id) => {
+    setIsOpen(true);
+    setModalData(data[id]);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="flex lg:flex-col mb-12 lg:mb-0 gap-4 xl:gap-6 mt-10 lg:mt-8 w-full">
       {data.map(({ id, title, subTitle, img }) => {
         return (
           <div
             key={id}
+            onClick={() => handleOpen(id)}
             className={`lg:flex justify-start gap-5 w-10/12 ${
               !subTitle && "items-center"
             }`}
@@ -37,6 +52,11 @@ const FeaturesCard = ({ data }) => {
           </div>
         );
       })}
+      <div className="lg:hidden">
+        {isOpen && modalData.subTitle && (
+          <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} />
+        )}
+      </div>
     </div>
   );
 };

@@ -15,6 +15,7 @@ const Navbar = () => {
   const [colorChange, setColorchange] = useState(false);
   const arvrPath = getPath("/ar-vr-technologies");
   const investmentPath = getPath("/investments");
+  const resourcesPath = getPath("/resources");
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -42,7 +43,9 @@ const Navbar = () => {
         <div className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
           <Image
             src={
-              (arvrPath && !colorChange) || (investmentPath && !colorChange)
+              (arvrPath && !colorChange) ||
+              (investmentPath && !colorChange) ||
+              (resourcesPath && !colorChange)
                 ? "/images/logo_white.svg"
                 : "/images/logo.svg"
             }
@@ -61,7 +64,9 @@ const Navbar = () => {
     return (
       <button
         className={`${
-          (arvrPath && !colorChange) || (investmentPath && !colorChange)
+          (arvrPath && !colorChange) ||
+          (investmentPath && !colorChange) ||
+          (resourcesPath && !colorChange)
             ? "text-white"
             : "text-gray-500"
         } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
@@ -91,7 +96,7 @@ const Navbar = () => {
     return (
       <Link passHref href={link}>
         <div
-          className={`hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] border border-transparent hover:border hover:border-gray-300/10 p-4 rounded-lg cursor-pointer transition-all duration-500 ${
+          className={`h-full w-full hover:bg-[#E7F0F9] group shadow-[0px_0px_10px_1px_rgba(112,128,176,0.1)] border-transparent p-4 rounded-lg cursor-pointer transition-all duration-500 ${
             router.asPath === link &&
             "text-white bg-gradient-to-r from-blue-900 to-blue-700"
           }`}
@@ -131,7 +136,7 @@ const Navbar = () => {
         className={`z-50 h-max pt-5 flex items-center fixed w-full ${
           colorChange
             ? "bg-white shadow shadow-gray-200"
-            : arvrPath || investmentPath
+            : arvrPath || investmentPath || resourcesPath
             ? "backdrop-blur-sm bg-white/10"
             : "bg-transparent mt-5"
         }`}

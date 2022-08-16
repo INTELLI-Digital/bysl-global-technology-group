@@ -1,9 +1,22 @@
 import Image from "next/image";
+import { useState } from "react";
+import Modal from "./Modal";
 
 import { TextGradient } from "./SharedTextgroups";
 
 const ServicesCard = (props) => {
   const { data, black, padding } = props;
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
+  // modal state
+  const handleOpen = (id) => {
+    setIsOpen(true);
+    setModalData(data[id]);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="grid grid-cols-2 grid-rows-2 place-content-center gap-3 lg:gap-5 w-full">
@@ -11,6 +24,7 @@ const ServicesCard = (props) => {
         return (
           <div
             key={id}
+            onClick={() => handleOpen(id)}
             className={`bg-white rounded-[20px] flex flex-col justify-center items-center text-center px-2 py-6 lg:px-5 w-full self-center
             ${id === 0 && "row-span-2"}
             ${id !== 0 && "h-full"}
@@ -54,6 +68,16 @@ const ServicesCard = (props) => {
           </div>
         );
       })}
+      <div className="xl:hidden">
+        {isOpen && modalData.subTitle && (
+          <Modal
+            data={modalData}
+            handleClose={handleClose}
+            isOpen={isOpen}
+            shadow={true}
+          />
+        )}
+      </div>
     </div>
   );
 };

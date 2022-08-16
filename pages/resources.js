@@ -1,28 +1,26 @@
-import BasicLayout from "../layouts/BasicLayout";
+import CommonLayout from "../layouts/CommonLayout";
 import BusinessBanner from "../components/shared/banners/BusinessBanner";
 import BlogLayout from "../components/shared/BlogLayout";
 import ServiceWhyUs from "../components/individual_service/ServiceWhyUs";
 import { TextGradient } from "../components/shared/SharedTextgroups";
 import { resourcesData } from "../public/data/resourcesData";
 import { serviceWhyChooseUsData } from "../public/data/individualServiceData";
+import ResourcesBanner from "../components/resources/ResourcesBanner";
 
 const Resources = ({ serviceWhyChooseUs, resources }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
-    <BasicLayout title="Resources" noMargin={true}>
+    <CommonLayout title="Resources" noMargin={true}>
       {/* banner section  */}
-      <BusinessBanner />
+      <ResourcesBanner />
 
       <div className="box">
         {/* why us section  */}
-        <ServiceWhyUs data={serviceWhyChooseUs} />
 
         {/* resources section  */}
-        <BlogLayout data={resources} type="Resources">
-          Proud projects that <TextGradient text="make us stand out" />
-        </BlogLayout>
+        <BlogLayout data={resources} />
       </div>
-    </BasicLayout>
+    </CommonLayout>
   );
 };
 

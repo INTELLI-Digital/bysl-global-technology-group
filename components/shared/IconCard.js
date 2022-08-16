@@ -1,10 +1,25 @@
+import { useState } from "react";
+
 import { getPath } from "../../utils/paths";
 import HoverImage from "./HoverImage";
+import Modal from "./Modal";
 
 const IconCard = (props) => {
   const { data, padding } = props;
   const faqPath = getPath("/faq");
   const arVrPath = getPath("/ar-vr-technologies");
+
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
+  // modal state
+  const handleOpen = (id) => {
+    setIsOpen(true);
+    setModalData(data[id]);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <>
@@ -12,6 +27,7 @@ const IconCard = (props) => {
         return (
           <div
             key={id}
+            onClick={() => handleOpen(id)}
             className={`group gradient-bg px-2 py-5 sm:p-5 hover:cursor-pointer ${
               !subTitle && !arVrPath && "lg:py-14"
             } ${!arVrPath && "sm:py-6"}`}
@@ -51,6 +67,16 @@ const IconCard = (props) => {
           </div>
         );
       })}
+      <div className="sm:hidden">
+        {isOpen && modalData.subTitle && (
+          <Modal
+            data={modalData}
+            handleClose={handleClose}
+            isOpen={isOpen}
+            gradientBg={true}
+          />
+        )}
+      </div>
     </>
   );
 };

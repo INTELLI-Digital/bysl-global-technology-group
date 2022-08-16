@@ -4,7 +4,7 @@ import { getPath } from "../../utils/paths";
 import HoverImage from "./HoverImage";
 
 const OverviewCard = (props) => {
-  const { data, large } = props;
+  const { data, large, handleOpen } = props;
 
   const ictPath = getPath("/ict");
   const itesPath = getPath("/ites");
@@ -18,6 +18,7 @@ const OverviewCard = (props) => {
         return (
           <div
             key={id}
+            onClick={() => handleOpen(id)}
             className={`p-3 xl:p-4 text-center group ${
               (digitalCommercePath && "xl:py-10") ||
               (investmentsPath && "xl:py-10")

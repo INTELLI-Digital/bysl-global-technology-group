@@ -53,6 +53,12 @@ a {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.centered1 {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translate(-47%, -50%);
+}
 
 .text-position-middle {
   top: 50%;

@@ -1,9 +1,15 @@
-import { getPath } from "../../utils/paths";
+import { useState } from "react";
+
+import Modal from "./Modal";
 import OverviewCard from "./OverviewCard";
+import { getPath } from "../../utils/paths";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview4Items = (props) => {
   const { data, children, large, type } = props;
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
   const webPath = getPath("/web-technologies");
   const itesPath = getPath("/ites");
   const investmentsPath = getPath("/investments");
@@ -11,6 +17,15 @@ const Overview4Items = (props) => {
   const cyberPath = getPath("/cyber-security-technologies");
   const digitalCommercePath = getPath("/digital-commerce");
   const bigDataPath = getPath("/bigdata-technologies");
+
+  // modal state
+  const handleOpen = (id) => {
+    setIsOpen(true);
+    setModalData(data[id]);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div
@@ -32,7 +47,12 @@ const Overview4Items = (props) => {
           webPath && "!mt-6"
         } ${children && "mt-10"}`}
       >
-        <OverviewCard data={data} large={large} />
+        <OverviewCard data={data} large={large} handleOpen={handleOpen} />
+      </div>
+      <div className="md:hidden">
+        {isOpen && modalData.subTitle && (
+          <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} />
+        )}
       </div>
     </div>
   );

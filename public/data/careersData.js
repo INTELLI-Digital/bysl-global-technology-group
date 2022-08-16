@@ -78,4 +78,23 @@ const careerWhyJoinData = [
   },
 ];
 
-export { singleJobData, careerWhyJoinData };
+const departmentList = [
+  "All",
+  "Graphics and Multimedia",
+  "Core Development",
+  "Web Development",
+  "Mobile App Development",
+  "Supply Chain & Logistics",
+  "Human Resource",
+];
+const positionTypeList = [
+  "All",
+  "Jr. Executive",
+  "Executive",
+  "Sr. Executive",
+  "Executive Incharge",
+  "Assistant Manager",
+  "Deputy Manager",
+];
+
+export { singleJobData, careerWhyJoinData, departmentList, positionTypeList };

@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useState } from "react";
+import Modal from "../../shared/Modal";
 
 import {
   SectionTitleType,
@@ -7,6 +9,18 @@ import {
 } from "../../shared/SharedTextgroups";
 
 const DatabaseFeatures = ({ data }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [modalData, setModalData] = useState("");
+
+  // modal state
+  const handleOpen = (id) => {
+    setIsOpen(true);
+    setModalData(data[id]);
+  };
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="py-10 xl:py-16">
       <SectionTitleType title="Features" />
@@ -26,6 +40,7 @@ const DatabaseFeatures = ({ data }) => {
             return (
               <div
                 key={id}
+                onClick={() => handleOpen(id)}
                 className="bg-white rounded-[20px] flex flex-col justify-center items-center text-center p-2 py-4 lg:p-5 w-full self-center h-full"
               >
                 <div className="h-14 xl:h-20 w-14 xl:w-20 mb-5 rounded-full flex items-center justify-center shadow-[0px_0px_20px_0px_#D0E2F4]">
@@ -44,6 +59,16 @@ const DatabaseFeatures = ({ data }) => {
               </div>
             );
           })}
+          <div className="xl:hidden">
+            {isOpen && modalData.subTitle && (
+              <Modal
+                shadow={true}
+                data={modalData}
+                handleClose={handleClose}
+                isOpen={isOpen}
+              />
+            )}
+          </div>
         </div>
       </div>
     </div>

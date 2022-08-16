@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { useState } from "react";
+import Modal from "../../shared/Modal";
 
 import {
   SectionTitleType,
@@ -9,12 +11,24 @@ const MobileFeatures = ({ featuresData }) => {
   const { data1, data2, img } = featuresData;
 
   const Features = ({ data, reversed }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const [modalData, setModalData] = useState("");
+
+    // modal state
+    const handleOpen = (id) => {
+      setIsOpen(true);
+      setModalData(data[id]);
+    };
+    const handleClose = () => {
+      setIsOpen(false);
+    };
     return (
       <div className="flex lg:flex-col gap-4 md:gap-x-6 md:gap-y-12 xl:gap-x-10 xl:gap-y-20 w-full">
         {data.map(({ id, title, subTitle, img }) => {
           return (
             <div
               key={id}
+              onClick={() => handleOpen(id)}
               className={`flex flex-col gap-2 lg:gap-5 w-1/3 lg:w-full ${
                 reversed ? "xl:flex-row" : "xl:flex-row-reverse"
               }`}
@@ -47,6 +61,11 @@ const MobileFeatures = ({ featuresData }) => {
             </div>
           );
         })}
+        <div className="lg:hidden">
+          {isOpen && modalData.subTitle && (
+            <Modal data={modalData} handleClose={handleClose} isOpen={isOpen} />
+          )}
+        </div>
       </div>
     );
   };

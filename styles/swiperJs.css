@@ -8,7 +8,7 @@
   align-items: center;
 }
 .mobileTech .swiper-slide-active .mobileTechImg {
-  height: 260px;
+  /* height: 260px; */
   filter: none;
 }
 .card-slider .swiper-slide {

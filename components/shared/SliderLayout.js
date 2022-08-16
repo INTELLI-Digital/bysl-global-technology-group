@@ -4,13 +4,13 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 const SliderLayout = ({ size, children }) => {
   return (
     <Swiper
-      slidesPerView={size}
+      slidesPerView={size ? size : 1}
       spaceBetween={20}
       slidesPerGroup={1}
       centeredSlides={true}
       loop={true}
       autoplay={{
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
       }}
       loopFillGroupWithBlank={true}
