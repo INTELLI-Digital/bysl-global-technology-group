@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import { Accordion, AccordionBody } from "@material-tailwind/react";
 
 import Button from "../shared/buttons/Button";
@@ -9,9 +9,10 @@ import { navbars } from "../../public/data/navbarData";
 
 const SideDrawer = ({ showDrawer }) => {
   const router = useRouter();
-  const [open, setOpen] = useState(0);
+  const [open, setOpen] = useState("");
+
   const handleOpen = (value) => {
-    setOpen(open === value ? 0 : value);
+    setOpen(open === value ? "" : value);
   };
 
   useEffect(() => {
@@ -57,12 +58,13 @@ const SideDrawer = ({ showDrawer }) => {
                       </Link>
                     )}
                   </p>
-                  {dropdowns &&
-                    (open !== id ? (
-                      <IoIosArrowDown className="text-gray-800 text-sm font-medium" />
-                    ) : (
-                      <IoIosArrowUp className="text-gray-800 text-sm font-medium" />
-                    ))}
+                  {dropdowns && (
+                    <IoIosArrowDown
+                      className={`text-gray-800 text-sm font-medium ${
+                        open === id && "rotate-180"
+                      }`}
+                    />
+                  )}
                 </div>
                 <AccordionBody className="py-0">
                   <div className="flex flex-col gap-4 border-l border-gray-300 ">
