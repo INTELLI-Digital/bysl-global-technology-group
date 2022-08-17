@@ -1,8 +1,12 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { Link as Scroll } from "react-scroll";
 
 import { TextGradient } from "../shared/SharedTextgroups";
 
 const InvestmentsBanner = () => {
+  const router = useRouter();
+
   return (
     // <div className="flex items-center justify-center text-center text-white pt-14 lg:pt-0 h-[620px] md:h-screen bg-[url('/images/banners/investments_banner_sm.svg')] lg:bg-[url('/images/banners/investments_banner.svg')] bg-cover bg-center bg-no-repeat">
     //   <div>
@@ -52,16 +56,25 @@ const InvestmentsBanner = () => {
             necessary.
           </p>
           <div className="w-full flex gap-6 flex-col lg:flex-row justify-center items-center mt-10 lg:mt-28">
-            <Link passHref href="#it-platform">
+            <Scroll smooth={true} offset={-80} duration={500} to="it-platform">
+              {/* <Link passHref href="#it-platform"> */}
               <div className="h-max text-center rounded-lg text-sm 3xl:text-base font-semibold py-2 xl:py-3 !w-[235px] hover:cursor-pointer bg-white scrollBtn">
                 <TextGradient text="IT Platforms" />
               </div>
-            </Link>
-            <Link passHref href="#marketplace-platform">
+              {/* </Link> */}
+            </Scroll>
+            <Scroll
+              smooth={true}
+              offset={-80}
+              duration={500}
+              to="marketplace-platform"
+            >
+              {/* <Link passHref href="#marketplace-platform"> */}
               <div className="h-max text-center rounded-lg text-sm 3xl:text-base font-semibold py-2 xl:py-3 !w-[235px] hover:cursor-pointer text-white bg-gradient-to-r hover:from-blue-700 hover:to-blue-700  from-blue-900 to-blue-700">
                 Marketplace Platforms
               </div>
-            </Link>
+              {/* </Link> */}
+            </Scroll>
           </div>
         </div>
       </div>

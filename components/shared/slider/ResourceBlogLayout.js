@@ -1,15 +1,14 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-import BlogCard from "../shared/BlogCard";
+import BlogCard from "../BlogCard";
 
-const ServiceSlider = ({ size, data }) => {
+const ResourceBlogLayout = ({ size, data }) => {
   return (
     <Swiper
       slidesPerView={size}
       spaceBetween={20}
       slidesPerGroup={1}
-      //   centeredSlides={true}
       loop={true}
       autoplay={{
         delay: 2500,
@@ -33,4 +32,4 @@ const ServiceSlider = ({ size, data }) => {
     </Swiper>
   );
 };
-export default ServiceSlider;
+export default ResourceBlogLayout;

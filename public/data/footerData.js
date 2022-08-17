@@ -106,267 +106,6 @@ const oldFooterData = [
   },
 ];
 
-const footerData = [
-  {
-    id: 0,
-    title: "Solutions",
-    items: [
-      {
-        id: 0,
-        name: "Retail",
-        path: "/retail-solutions",
-      },
-      {
-        id: 1,
-        name: "Manufacturing",
-        path: "/manufacturing-solutions",
-      },
-      {
-        id: 2,
-        name: "Healthcare",
-        path: "/healthcare-solutions",
-      },
-      {
-        id: 3,
-        name: "Marketing",
-        path: "/marketing-solutions",
-      },
-      {
-        id: 4,
-        name: "Finance",
-        path: "/finance-solutions",
-      },
-      {
-        id: 5,
-        name: "Food and Beverage",
-        path: "/food-and-beverage-solutions",
-      },
-      {
-        id: 6,
-        name: "Supply Chain and Logistics",
-        path: "/supply-chain-and-logistics-solutions",
-      },
-      {
-        id: 7,
-        name: "Education",
-        path: "/education-solutions",
-      },
-    ],
-  },
-  {
-    id: 1,
-    title: "Services",
-    items: [
-      {
-        id: 0,
-        path: "/service",
-        name: "BPO",
-      },
-      {
-        id: 1,
-        path: "/service",
-        name: "UI/UX Design",
-      },
-      {
-        id: 2,
-        path: "/service",
-        name: "Web Development",
-      },
-      {
-        id: 3,
-        path: "/service",
-        name: "Mobile App Development",
-      },
-      {
-        id: 4,
-        path: "/service",
-        name: "E-Commerce Solution",
-      },
-      {
-        id: 5,
-        path: "/service",
-        name: "ERP",
-      },
-      {
-        id: 6,
-        path: "/service",
-        name: "Fintech",
-      },
-      {
-        id: 7,
-        path: "/service",
-        name: "AI & ML",
-      },
-      {
-        id: 8,
-        path: "/service",
-        name: "Fulfillment Service",
-      },
-      {
-        id: 9,
-        path: "/service",
-        name: "Logistic Service",
-      },
-      {
-        id: 10,
-        path: "/service",
-        name: "Cloud & Cyber Security",
-      },
-      {
-        id: 11,
-        path: "/service",
-        name: "Customer Care Service",
-      },
-    ],
-  },
-  {
-    id: 2,
-    title: "Technologies",
-    items: [
-      {
-        id: 0,
-        name: "Web Technologies",
-        path: "/web-technologies",
-      },
-      {
-        id: 1,
-        name: "Mobile Technologies",
-        path: "/mobile-technologies",
-      },
-      {
-        id: 2,
-        name: "Cloud Technologies",
-        path: "/cloud-technologies",
-      },
-      {
-        id: 3,
-        name: "Database Technologies",
-        path: "/database-technologies",
-      },
-      {
-        id: 4,
-        name: "AI/ML Technologies",
-        path: "/ai-ml-technologies",
-      },
-      {
-        id: 5,
-        name: "AR/VR Technologies",
-        path: "/ar-vr-technologies",
-      },
-      {
-        id: 6,
-        name: "IOT Technologies",
-        path: "/iot-technologies",
-      },
-      {
-        id: 7,
-        name: "Blockchain Technologies",
-        path: "/blockchain-technologies",
-      },
-      {
-        id: 8,
-        name: "Cyber Security",
-        path: "/cyber-security-technologies",
-      },
-      {
-        id: 9,
-        name: "Big Data",
-        path: "/bigdata-technologies",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Divisions",
-    items: [
-      {
-        id: 0,
-        name: "ICT",
-        path: "/ict",
-      },
-      {
-        id: 1,
-        name: "ITeS",
-        path: "/ites",
-      },
-      {
-        id: 2,
-        name: "Data Science",
-        path: "/data-science",
-      },
-      {
-        id: 3,
-        name: "Information Security",
-        path: "/information-security",
-      },
-      {
-        id: 4,
-        name: "Food Tech",
-        path: "/food-tech",
-      },
-      {
-        id: 5,
-        name: "Digital Commerce",
-        path: "/digital-commerce",
-      },
-      {
-        id: 6,
-        name: "Supply Chain",
-        path: "/supply-chain",
-      },
-      {
-        id: 7,
-        name: "Administration",
-        path: "/administration",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "About Us",
-    items: [
-      {
-        id: 0,
-        name: "Mission",
-        path: "/mission",
-      },
-      {
-        id: 1,
-        name: "Purpose",
-        path: "/purpose",
-      },
-      {
-        id: 2,
-        name: "Values",
-        path: "/values",
-      },
-      {
-        id: 3,
-        name: "Culture",
-        path: "/culture",
-      },
-    ],
-    title2: "Investments",
-    items2: [
-      {
-        id: 0,
-        path: "/investments",
-        name: "Business Verticals",
-      },
-      {
-        id: 1,
-        path: "/investments#it-platform",
-        name: "IT Platforms",
-      },
-      {
-        id: 2,
-        path: "/investments#marketplace-platform",
-        name: "Marketplace Platforms",
-      },
-    ],
-  },
-];
-
 const footerDataDesktop = [
   {
     id: 0,
@@ -845,6 +584,267 @@ const footerBottomData = [
     id: 4,
     path: "/cookies",
     name: "Cookies",
+  },
+];
+
+const footerData = [
+  {
+    id: 0,
+    title: "Solutions",
+    items: [
+      {
+        id: 0,
+        name: "Retail",
+        path: "/solutions/retail",
+      },
+      {
+        id: 1,
+        name: "Manufacturing",
+        path: "/solutions/manufacturing",
+      },
+      {
+        id: 2,
+        name: "Healthcare",
+        path: "/solutions/healthcare",
+      },
+      {
+        id: 3,
+        name: "Marketing",
+        path: "/solutions/marketing",
+      },
+      {
+        id: 4,
+        name: "Finance",
+        path: "/solutions/finance",
+      },
+      {
+        id: 5,
+        name: "Food and Beverage",
+        path: "/solutions/food-and-beverage",
+      },
+      {
+        id: 6,
+        name: "Supply Chain and Logistics",
+        path: "/solutions/supply-chain-and-logistics",
+      },
+      {
+        id: 7,
+        name: "Education",
+        path: "/solutions/education",
+      },
+    ],
+  },
+  {
+    id: 1,
+    title: "Services",
+    items: [
+      {
+        id: 0,
+        path: "/service",
+        name: "BPO",
+      },
+      {
+        id: 1,
+        path: "/service",
+        name: "UI/UX Design",
+      },
+      {
+        id: 2,
+        path: "/service",
+        name: "Web Development",
+      },
+      {
+        id: 3,
+        path: "/service",
+        name: "Mobile App Development",
+      },
+      {
+        id: 4,
+        path: "/service",
+        name: "E-Commerce Solution",
+      },
+      {
+        id: 5,
+        path: "/service",
+        name: "ERP",
+      },
+      {
+        id: 6,
+        path: "/service",
+        name: "Fintech",
+      },
+      {
+        id: 7,
+        path: "/service",
+        name: "AI & ML",
+      },
+      {
+        id: 8,
+        path: "/service",
+        name: "Fulfillment Service",
+      },
+      {
+        id: 9,
+        path: "/service",
+        name: "Logistic Service",
+      },
+      {
+        id: 10,
+        path: "/service",
+        name: "Cloud & Cyber Security",
+      },
+      {
+        id: 11,
+        path: "/service",
+        name: "Customer Care Service",
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Technologies",
+    items: [
+      {
+        id: 0,
+        name: "Web Technologies",
+        path: "/web-technologies",
+      },
+      {
+        id: 1,
+        name: "Mobile Technologies",
+        path: "/mobile-technologies",
+      },
+      {
+        id: 2,
+        name: "Cloud Technologies",
+        path: "/cloud-technologies",
+      },
+      {
+        id: 3,
+        name: "Database Technologies",
+        path: "/database-technologies",
+      },
+      {
+        id: 4,
+        name: "AI/ML Technologies",
+        path: "/ai-ml-technologies",
+      },
+      {
+        id: 5,
+        name: "AR/VR Technologies",
+        path: "/ar-vr-technologies",
+      },
+      {
+        id: 6,
+        name: "IOT Technologies",
+        path: "/iot-technologies",
+      },
+      {
+        id: 7,
+        name: "Blockchain Technologies",
+        path: "/blockchain-technologies",
+      },
+      {
+        id: 8,
+        name: "Cyber Security",
+        path: "/cyber-security-technologies",
+      },
+      {
+        id: 9,
+        name: "Big Data",
+        path: "/bigdata-technologies",
+      },
+    ],
+  },
+  {
+    id: 3,
+    title: "Divisions",
+    items: [
+      {
+        id: 0,
+        name: "ICT",
+        path: "/ict",
+      },
+      {
+        id: 1,
+        name: "ITeS",
+        path: "/ites",
+      },
+      {
+        id: 2,
+        name: "Data Science",
+        path: "/data-science",
+      },
+      {
+        id: 3,
+        name: "Information Security",
+        path: "/information-security",
+      },
+      {
+        id: 4,
+        name: "Food Tech",
+        path: "/food-tech",
+      },
+      {
+        id: 5,
+        name: "Digital Commerce",
+        path: "/digital-commerce",
+      },
+      {
+        id: 6,
+        name: "Supply Chain",
+        path: "/supply-chain",
+      },
+      {
+        id: 7,
+        name: "Administration",
+        path: "/administration",
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "About Us",
+    items: [
+      {
+        id: 0,
+        name: "Mission",
+        path: "/mission",
+      },
+      {
+        id: 1,
+        name: "Purpose",
+        path: "/purpose",
+      },
+      {
+        id: 2,
+        name: "Values",
+        path: "/values",
+      },
+      {
+        id: 3,
+        name: "Culture",
+        path: "/culture",
+      },
+    ],
+    title2: "Investments",
+    items2: [
+      {
+        id: 0,
+        path: "/investments",
+        name: "Business Verticals",
+      },
+      {
+        id: 1,
+        path: "/investments#it-platform",
+        name: "IT Platforms",
+      },
+      {
+        id: 2,
+        path: "/investments#marketplace-platform",
+        name: "Marketplace Platforms",
+      },
+    ],
   },
 ];
 

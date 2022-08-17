@@ -1,7 +1,7 @@
 import BasicLayout from "../layouts/BasicLayout";
 import ITServices from "../components/individual_service/ITServices";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import ServiceResourcesCard from "../components/services/ServiceResourcesCard";
+import BlogSlider from "../components/shared/slider/BlogSlider";
 import ITFeatures from "../components/individual_service/ITFeatures";
 import {
   individualServiceITServicesData,
@@ -35,9 +35,9 @@ const Service = ({
       <ITFeatures data={ITFeaturesData} />
 
       {/* resources section  */}
-      <ServiceResourcesCard data={serviceResourceBlog} type="Resources">
+      <BlogSlider data={serviceResourceBlog} type="Resources">
         Read Our Latest Tips & Tricks
-      </ServiceResourcesCard>
+      </BlogSlider>
     </BasicLayout>
   );
 };

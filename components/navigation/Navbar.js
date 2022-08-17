@@ -16,6 +16,9 @@ const Navbar = () => {
   const arvrPath = getPath("/ar-vr-technologies");
   const investmentPath = getPath("/investments");
   const resourcesPath = getPath("/resources");
+  const supplyChainSolutionsPath = getPath(
+    "/solutions/supply-chain-and-logistics"
+  );
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -45,6 +48,7 @@ const Navbar = () => {
             src={
               (arvrPath && !colorChange) ||
               (investmentPath && !colorChange) ||
+              (supplyChainSolutionsPath && !colorChange) ||
               (resourcesPath && !colorChange)
                 ? "/images/logo_white.svg"
                 : "/images/logo.svg"
@@ -66,6 +70,7 @@ const Navbar = () => {
         className={`${
           (arvrPath && !colorChange) ||
           (investmentPath && !colorChange) ||
+          (supplyChainSolutionsPath && !colorChange) ||
           (resourcesPath && !colorChange)
             ? "text-white"
             : "text-gray-500"
@@ -136,7 +141,10 @@ const Navbar = () => {
         className={`z-50 h-max pt-5 flex items-center fixed w-full ${
           colorChange
             ? "bg-white shadow shadow-gray-200"
-            : arvrPath || investmentPath || resourcesPath
+            : arvrPath ||
+              investmentPath ||
+              resourcesPath ||
+              supplyChainSolutionsPath
             ? "backdrop-blur-sm bg-white/10"
             : "bg-transparent mt-5"
         }`}

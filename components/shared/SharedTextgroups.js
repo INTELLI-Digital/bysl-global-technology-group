@@ -39,7 +39,7 @@ const TechnologiesSectionTitle = (props) => {
 
   return (
     <p
-      className={`break-words text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-bold text-center 
+      className={`break-words text-2xl md:text-3xl lg:text-4xl xl:text-4xl 2xl:text-[40px] font-bold text-center 
       ${white ? "text-white" : "text-gray-800"} 
       ${start && "lg:text-start"}`}
     >
