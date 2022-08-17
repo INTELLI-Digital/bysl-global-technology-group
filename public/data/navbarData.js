@@ -1,58 +1,58 @@
 const navbars = [
-  // {
-  //   id: 0,
-  //   title: "Solutions",
-  //   dropdowns: [
-  //     {
-  //       id: 0,
-  //       title: "Retail",
-  //       subTitle: "Powerful web solutions to scale exponentially",
-  //       link: "/retail-solutions",
-  //     },
-  //     {
-  //       id: 1,
-  //       title: "Manufacturing",
-  //       subTitle: "Database: Build, Connect, Deploy",
-  //       link: "/manufacturing-solutions",
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "Healthcare",
-  //       subTitle: "Interconnectivity  of smart devices",
-  //       link: "/healthcare-solutions",
-  //     },
-  //     {
-  //       id: 3,
-  //       title: "Marketing",
-  //       subTitle: "Big data & analytics",
-  //       link: "/marketing-solutions",
-  //     },
-  //     {
-  //       id: 4,
-  //       title: "Finance",
-  //       subTitle: "Empowering, accessible & futuristic",
-  //       link: "/finance-solutions",
-  //     },
-  //     {
-  //       id: 5,
-  //       title: "Food and Beverage",
-  //       subTitle: "Intelligent systems to make life better",
-  //       link: "/food-and-beverage-solutions",
-  //     },
-  //     {
-  //       id: 6,
-  //       title: "Supply Chain and Logistics",
-  //       subTitle: "Blockchain for greater accessibility & security of data",
-  //       link: "/supply-chain-and-logistics-solutions",
-  //     },
-  //     {
-  //       id: 7,
-  //       title: "Education",
-  //       subTitle: "Start your cloud journey",
-  //       link: "/education-solutions",
-  //     },
-  //   ],
-  // },
+  {
+    id: 0,
+    title: "Solutions",
+    dropdowns: [
+      {
+        id: 0,
+        title: "Retail",
+        subTitle: "Powerful web solutions to scale exponentially",
+        link: "/retail-solutions",
+      },
+      {
+        id: 1,
+        title: "Manufacturing",
+        subTitle: "Database: Build, Connect, Deploy",
+        link: "/manufacturing-solutions",
+      },
+      {
+        id: 2,
+        title: "Healthcare",
+        subTitle: "Interconnectivity  of smart devices",
+        link: "/healthcare-solutions",
+      },
+      {
+        id: 3,
+        title: "Marketing",
+        subTitle: "Big data & analytics",
+        link: "/marketing-solutions",
+      },
+      {
+        id: 4,
+        title: "Finance",
+        subTitle: "Empowering, accessible & futuristic",
+        link: "/finance-solutions",
+      },
+      {
+        id: 5,
+        title: "Food and Beverage",
+        subTitle: "Intelligent systems to make life better",
+        link: "/food-and-beverage-solutions",
+      },
+      {
+        id: 6,
+        title: "Supply Chain and Logistics",
+        subTitle: "Blockchain for greater accessibility & security of data",
+        link: "/supply-chain-and-logistics-solutions",
+      },
+      {
+        id: 7,
+        title: "Education",
+        subTitle: "Start your cloud journey",
+        link: "/education-solutions",
+      },
+    ],
+  },
   {
     id: 1,
     title: "Technologies",
@@ -244,11 +244,11 @@ const navbars = [
       },
     ],
   },
-  // {
-  //   id: 6,
-  //   title: "Resources",
-  //   link: "/resources",
-  // },
+  {
+    id: 6,
+    title: "Resources",
+    link: "/resources",
+  },
 ];
 
 export { navbars };

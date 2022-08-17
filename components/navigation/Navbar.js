@@ -69,7 +69,7 @@ const Navbar = () => {
           (resourcesPath && !colorChange)
             ? "text-white"
             : "text-gray-500"
-        } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
+        } text-sm xl:text-base font-normal py-2 px-3 xl:px-5 2xl:px-6 rounded inline-flex items-center`}
       >
         <span
           className={`mr-1 hover:text-gray-700 transition duration-300 ${

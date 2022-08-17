@@ -106,60 +106,50 @@ const oldFooterData = [
   },
 ];
 
-const footerDatav4 = [
+const footerData = [
   {
     id: 0,
-    title: "Technologies",
+    title: "Solutions",
     items: [
       {
         id: 0,
-        name: "Web Technologies",
-        path: "/web-technologies",
+        name: "Retail",
+        path: "/retail-solutions",
       },
       {
         id: 1,
-        name: "Mobile Technologies",
-        path: "/mobile-technologies",
+        name: "Manufacturing",
+        path: "/manufacturing-solutions",
       },
       {
         id: 2,
-        name: "Cloud Technologies",
-        path: "/cloud-technologies",
+        name: "Healthcare",
+        path: "/healthcare-solutions",
       },
       {
         id: 3,
-        name: "Database Technologies",
-        path: "/database-technologies",
+        name: "Marketing",
+        path: "/marketing-solutions",
       },
       {
         id: 4,
-        name: "AI/ML Technologies",
-        path: "/ai-ml-technologies",
+        name: "Finance",
+        path: "/finance-solutions",
       },
       {
         id: 5,
-        name: "AR/VR Technologies",
-        path: "/ar-vr-technologies",
+        name: "Food and Beverage",
+        path: "/food-and-beverage-solutions",
       },
       {
         id: 6,
-        name: "IOT Technologies",
-        path: "/iot-technologies",
+        name: "Supply Chain and Logistics",
+        path: "/supply-chain-and-logistics-solutions",
       },
       {
         id: 7,
-        name: "Blockchain Technologies",
-        path: "/blockchain-technologies",
-      },
-      {
-        id: 8,
-        name: "Cyber Security",
-        path: "/cyber-security-technologies",
-      },
-      {
-        id: 9,
-        name: "Big Data",
-        path: "/bigdata-technologies",
+        name: "Education",
+        path: "/education-solutions",
       },
     ],
   },
@@ -231,6 +221,62 @@ const footerDatav4 = [
   },
   {
     id: 2,
+    title: "Technologies",
+    items: [
+      {
+        id: 0,
+        name: "Web Technologies",
+        path: "/web-technologies",
+      },
+      {
+        id: 1,
+        name: "Mobile Technologies",
+        path: "/mobile-technologies",
+      },
+      {
+        id: 2,
+        name: "Cloud Technologies",
+        path: "/cloud-technologies",
+      },
+      {
+        id: 3,
+        name: "Database Technologies",
+        path: "/database-technologies",
+      },
+      {
+        id: 4,
+        name: "AI/ML Technologies",
+        path: "/ai-ml-technologies",
+      },
+      {
+        id: 5,
+        name: "AR/VR Technologies",
+        path: "/ar-vr-technologies",
+      },
+      {
+        id: 6,
+        name: "IOT Technologies",
+        path: "/iot-technologies",
+      },
+      {
+        id: 7,
+        name: "Blockchain Technologies",
+        path: "/blockchain-technologies",
+      },
+      {
+        id: 8,
+        name: "Cyber Security",
+        path: "/cyber-security-technologies",
+      },
+      {
+        id: 9,
+        name: "Big Data",
+        path: "/bigdata-technologies",
+      },
+    ],
+  },
+  {
+    id: 3,
     title: "Divisions",
     items: [
       {
@@ -300,22 +346,22 @@ const footerDatav4 = [
         path: "/culture",
       },
     ],
-    title2: "Company",
+    title2: "Investments",
     items2: [
       {
         id: 0,
-        path: "/faq",
-        name: "FAQ",
+        path: "/investments",
+        name: "Business Verticals",
       },
       {
         id: 1,
-        path: "/resources",
-        name: "Resources",
+        path: "/investments#it-platform",
+        name: "IT Platforms",
       },
       {
         id: 2,
-        path: "/contact-us",
-        name: "Contact Us",
+        path: "/investments#marketplace-platform",
+        name: "Marketplace Platforms",
       },
     ],
   },
@@ -777,16 +823,26 @@ const socialItems = {
 const footerBottomData = [
   {
     id: 0,
+    path: "/contact-us",
+    name: "Contact Us",
+  },
+  {
+    id: 1,
+    path: "/resources",
+    name: "Resources",
+  },
+  {
+    id: 2,
     path: "/terms&condition",
     name: "Terms of Use",
   },
   {
-    id: 1,
+    id: 3,
     path: "/privacy",
     name: "Privacy",
   },
   {
-    id: 2,
+    id: 4,
     path: "/cookies",
     name: "Cookies",
   },
@@ -794,7 +850,7 @@ const footerBottomData = [
 
 export {
   oldFooterData,
-  // footerData,
+  footerData,
   companyItems,
   socialItems,
   footerBottomData,

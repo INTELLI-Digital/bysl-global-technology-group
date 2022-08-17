@@ -9,12 +9,16 @@ const ResourcesBannerSlider2 = ({ size, children }) => {
       slidesPerGroup={1}
       centeredSlides={true}
       loop={true}
-      // autoplay={{
-      //   delay: 3500,
-      //   disableOnInteraction: false,
-      // }}
+      speed={1000}
+      autoplay={{
+        delay: 3500,
+        disableOnInteraction: false,
+      }}
       loopFillGroupWithBlank={true}
-      navigation={{ prevEl: ".resourceSlidePrev-btn", nextEl: ".resourceSlideNext-btn" }}
+      navigation={{
+        prevEl: ".resourceSlidePrev-btn",
+        nextEl: ".resourceSlideNext-btn",
+      }}
       modules={[Autoplay, Navigation]}
       className="mySwiper"
     >
