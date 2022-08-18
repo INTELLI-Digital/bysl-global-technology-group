@@ -1,7 +1,7 @@
 import { Swiper } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-const SliderLayout = ({ size, children }) => {
+const SupplyChainSliderLayout = ({ size, children }) => {
   return (
     <Swiper
       slidesPerView={size ? size : 1}
@@ -9,6 +9,7 @@ const SliderLayout = ({ size, children }) => {
       slidesPerGroup={1}
       centeredSlides={true}
       loop={true}
+      speed={1000}
       autoplay={{
         delay: 3500,
         disableOnInteraction: false,
@@ -17,7 +18,10 @@ const SliderLayout = ({ size, children }) => {
       pagination={{
         clickable: true,
       }}
-      navigation={true}
+      navigation={{
+        prevEl: ".solutionSlidePrev-btn",
+        nextEl: ".solutionSlideNext-btn",
+      }}
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
@@ -25,4 +29,4 @@ const SliderLayout = ({ size, children }) => {
     </Swiper>
   );
 };
-export default SliderLayout;
+export default SupplyChainSliderLayout;

@@ -1,9 +1,9 @@
 import { SwiperSlide } from "swiper/react";
 
 import BlogCard from "./BlogCard";
-import SliderLayout from "./SliderLayout";
 import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 import { getPath } from "../../utils/paths";
+import SliderLayout from "./slider/SliderLayout";
 
 const BlogLayout = (props) => {
   const { data, type, children } = props;

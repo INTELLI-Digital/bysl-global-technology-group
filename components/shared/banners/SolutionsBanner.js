@@ -10,7 +10,14 @@ const SolutionsBanner = ({ data, children }) => {
         className="absolute object-cover h-[490px] lg:h-screen min-w-full"
         alt=""
       /> */}
-      <Image src={img} alt="" layout="fill" objectFit="cover" />
+      <Image
+        src={img}
+        placeholder="blur"
+        blurDataURL={img}
+        layout="fill"
+        objectFit="cover"
+        alt=""
+      />
       <div className="absolute flex items-center justify-center h-full w-full text-center">
         <div className="text-white">
           <p className="text-sm md:text-base xl:text-lg font-semibold">

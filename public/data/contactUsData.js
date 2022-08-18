@@ -25,7 +25,7 @@ const companyAddress = [
   {
     id: 0,
     country: "United Arab Emirates",
-    img: "uae",
+    shortName: "UAE",
     name: "BYSL GLOBAL PLATFORMS TRADING L.L.C",
     address: "Aspin commercial tower sheikhz ayed Road, ",
     city: "dubai , uae",
@@ -33,7 +33,7 @@ const companyAddress = [
   {
     id: 1,
     country: "United States of America",
-    img: "usa",
+    shortName: "USA",
     name: "BYSL Global Technologies Inc.",
     address: "401 RYLAND ST, STE 200-A, Reno, ",
     city: "NV 89502,USA",
@@ -41,7 +41,7 @@ const companyAddress = [
   {
     id: 2,
     country: "Singapore",
-    img: "singapore",
+    shortName: "SINGAPORE",
     name: "BYSL Global Technologies Inc.",
     address: "Level 17-01, Marina Bay Financial Tower, 12 Marina Boulevard, ",
     city: "Singapore 018982, Singapore.",
@@ -49,7 +49,7 @@ const companyAddress = [
   {
     id: 3,
     country: "Bangladesh",
-    img: "bangladesh",
+    shortName: "BANGLADESH",
     name: "BYSL Global Technologies Inc.",
     address: "Plot 39/2, Kalachadpur (North Baridhara), Gulshan, ",
     city: "Dhaka 1212, Bangladesh.",

@@ -8,10 +8,10 @@ const ITFeatures = ({ data }) => {
   const SliderButtons = () => {
     return (
       <div className="flex gap-5 mt-5 md:mt-8 lg:mt-10 xl:mt-14">
-        <p className="h-[32px] w-[32px] rounded-full text-gray-800 hover:bg-gray-200 transition duration-500 flex justify-center items-center border border-gray-800 hover:cursor-pointer slidePrev-btn ">
+        <p className="h-8 w-8 rounded-full text-gray-800 hover:bg-gray-200 transition duration-500 flex justify-center items-center border border-gray-800 hover:cursor-pointer slidePrev-btn ">
           <MdKeyboardArrowLeft className="text-2xl" />
         </p>
-        <p className="h-[32px] w-[32px] rounded-full text-gray-800 hover:bg-gray-200 transition duration-500 flex justify-center items-center border border-gray-800 hover:cursor-pointer slideNext-btn ">
+        <p className="h-8 w-8 rounded-full text-gray-800 hover:bg-gray-200 transition duration-500 flex justify-center items-center border border-gray-800 hover:cursor-pointer slideNext-btn ">
           <MdKeyboardArrowRight className="text-2xl" />
         </p>
       </div>

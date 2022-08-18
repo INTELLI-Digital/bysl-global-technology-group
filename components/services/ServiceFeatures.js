@@ -2,11 +2,11 @@ import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 
 import HoverImage from "../shared/HoverImage";
-import SliderLayout from "../shared/SliderLayout";
 import {
   SectionTitleType,
   TechnologiesSectionTitle,
 } from "../shared/SharedTextgroups";
+import SliderLayout from "../shared/slider/SliderLayout";
 // import { servicesFeaturesData } from "../../public/data/servicesData";
 
 const ServiceFeatures = ({data}) => {

@@ -138,14 +138,15 @@ const Navbar = () => {
   return (
     <div className="relative">
       <div
-        className={`z-50 h-max pt-5 flex items-center fixed w-full ${
+        className={`z-50 h-max pt-5 flex items-center fixed w-full transition-all duration-500 ${
           colorChange
-            ? "bg-white shadow shadow-gray-200"
+            ? //  ? "bg-white shadow shadow-gray-200"
+              "bg-white shadow-[0px_-5px_20px_#d7d7d7]"
             : arvrPath ||
               investmentPath ||
               resourcesPath ||
               supplyChainSolutionsPath
-            ? "backdrop-blur-sm bg-white/10"
+            ? "backdrop-blur-sm bg-white/10 "
             : "bg-transparent mt-5"
         }`}
       >

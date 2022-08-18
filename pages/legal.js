@@ -35,7 +35,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
     <BasicLayout title="Legal">
       <div className="py-10 lg:py-16 grid grid-cols-12">
         <div className="col-span-12 md:col-span-3 overflow-x-scroll md:overflow-hidden">
-          <div className="flex flex-nowrap md:flex-col gap-6 mb-10 md:mb-0 md:mt-6 w-max mx-auto md:mx-0">
+          <div className="flex items-center md:items-start flex-nowrap md:flex-col gap-6 mb-10 md:mb-0 md:mt-6 w-max mx-auto md:mx-0">
             {["Terms of Use", "Privacy Policy", "Cookies Policy"].map(
               (item, i) => (
                 <p
@@ -43,7 +43,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
                   onClick={() => handleClick(i)}
                   className={`w-max hover:cursor-pointer hover:text-blue-700 transition-all duration-150 text-sm lg:text-base  ${
                     legal === i
-                      ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 text-lg font-semibold transition-all duration-700 "
+                      ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 font-semibold transition-all duration-700 "
                       : "text-[#808D9E]"
                   }`}
                 >

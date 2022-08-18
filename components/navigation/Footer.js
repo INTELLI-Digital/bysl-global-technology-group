@@ -4,14 +4,20 @@ import Router from "next/router";
 import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
 import { FaPinterestP } from "react-icons/fa";
 
-import { footerBottomData, footerData } from "../../public/data/footerData";
 import ButtonWhite from "../shared/buttons/ButtonWhite";
-import { setItem } from "../../utils/sessionStorage";
+import { footerBottomData, footerData } from "../../public/data/footerData";
+import { setItem, setLegalState } from "../../utils/sessionStorage";
 
 const Footer = () => {
   const handleClick = (id) => {
     setItem(id);
     window.location.pathname === "/service" &&
+      Router.reload(window.location.pathname);
+  };
+
+  const handleLegal = (id) => {
+    setLegalState(id);
+    window.location.pathname === "/legal" &&
       Router.reload(window.location.pathname);
   };
 
@@ -108,7 +114,10 @@ const Footer = () => {
             {footerBottomData.map(({ id, name, path }) => {
               return (
                 <Link passHref key={id} href={path}>
-                  <p className="text-white/40 text-xs xxs:text-sm hover:cursor-pointer hover:text-white transition duration-300">
+                  <p
+                    onClick={() => handleLegal(id)}
+                    className="text-white/40 text-sm hover:cursor-pointer hover:text-white"
+                  >
                     {name}
                   </p>
                 </Link>

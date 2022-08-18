@@ -22,7 +22,14 @@ const ResourcesDemo = () => {
               key={id}
               className="relative group rounded-md w-full h-44 sm:h-52 3xl:h-64 overflow-hidden"
             >
-              <Image src={img} layout="fill" objectFit="cover" alt="" />
+              <Image
+                src={img}
+                layout="fill"
+                placeholder="blur"
+                blurDataURL={img}
+                objectFit="cover"
+                alt=""
+              />
               <div className="centered opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-500">
                 <Button title="View Project" px={48} />
               </div>

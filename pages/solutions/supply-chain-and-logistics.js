@@ -7,12 +7,14 @@ import { SolutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   supplyChainAndLogisticsBannerData,
   supplyChainSolutionsOverviewData,
+  supplyChainAndLogisticsProblemsAndSolutionsData,
 } from "../../public/data/solutions/supplyChainAndLogisticsData";
 
 const SupplyChainAndLogistics = ({
   banner,
   overviewData,
   SolutionsResources,
+  problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
@@ -28,14 +30,20 @@ const SupplyChainAndLogistics = ({
         <SolutionsOverview data={overviewData} />
 
         {/* problems section  */}
-        <SupplyChainSolutionProblems type="Problems">
+        <SupplyChainSolutionProblems
+          type="Problems"
+          data={problemsAndSolutionsData}
+        >
           The problems we found in education&nbsp;
           <br className="hidden xs:block" />
           industries
         </SupplyChainSolutionProblems>
 
         {/* solutions section  */}
-        <SupplyChainSolutionsSolution type="Solutions">
+        <SupplyChainSolutionsSolution
+          type="Solutions"
+          data={problemsAndSolutionsData}
+        >
           Progressing advanced Education Solutions&nbsp;
           <br className="hidden sm:block" /> for the digital era
         </SupplyChainSolutionsSolution>
@@ -50,6 +58,7 @@ export async function getStaticProps() {
       banner: supplyChainAndLogisticsBannerData,
       SolutionsResources: SolutionsResourcesData,
       overviewData: supplyChainSolutionsOverviewData,
+      problemsAndSolutionsData: supplyChainAndLogisticsProblemsAndSolutionsData,
     },
   };
 }

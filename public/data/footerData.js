@@ -560,29 +560,30 @@ const socialItems = {
 };
 
 const footerBottomData = [
+  // do not change this id. it will break functionality in legal page
   {
-    id: 0,
+    id: 3,
     path: "/contact-us",
     name: "Contact Us",
   },
   {
-    id: 1,
+    id: 4,
     path: "/resources",
     name: "Resources",
   },
   {
-    id: 2,
-    path: "/terms&condition",
+    id: 0,
+    path: "/legal",
     name: "Terms of Use",
   },
   {
-    id: 3,
-    path: "/privacy",
+    id: 1,
+    path: "/legal",
     name: "Privacy",
   },
   {
-    id: 4,
-    path: "/cookies",
+    id: 2,
+    path: "/legal",
     name: "Cookies",
   },
 ];

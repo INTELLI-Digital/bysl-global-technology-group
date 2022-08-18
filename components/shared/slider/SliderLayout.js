@@ -1,19 +1,17 @@
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
-import BlogCard from "../BlogCard";
-
-const ResourceBlogLayout = ({ size, data }) => {
+const SliderLayout = ({ size, children }) => {
   return (
     <Swiper
-      slidesPerView={size}
+      slidesPerView={size ? size : 1}
       spaceBetween={20}
       slidesPerGroup={1}
-      grabCursor={true}
+      centeredSlides={true}
       loop={true}
       speed={1000}
       autoplay={{
-        delay: 2500,
+        delay: 3500,
         disableOnInteraction: false,
       }}
       loopFillGroupWithBlank={true}
@@ -24,14 +22,8 @@ const ResourceBlogLayout = ({ size, data }) => {
       modules={[Autoplay, Pagination, Navigation]}
       className="mySwiper"
     >
-      {data.map((item) => {
-        return (
-          <SwiperSlide key={item.id}>
-            <BlogCard data={item} />
-          </SwiperSlide>
-        );
-      })}
+      {children}
     </Swiper>
   );
 };
-export default ResourceBlogLayout;
+export default SliderLayout;

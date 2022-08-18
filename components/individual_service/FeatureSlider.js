@@ -11,6 +11,7 @@ const FeatureSlider = ({ size, data }) => {
       slidesPerGroup={1}
       loop={true}
       grabCursor={true}
+      speed={1000}
       autoplay={{
         delay: 2500,
         disableOnInteraction: false,

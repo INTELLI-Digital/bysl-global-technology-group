@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { useState } from "react";
 
 import {
@@ -5,7 +6,7 @@ import {
   TechnologiesSectionTitle,
 } from "../../shared/SharedTextgroups";
 
-const SupplyChainSolutionProblems = ({ type, children }) => {
+const SupplyChainSolutionProblems = ({ type, children, data }) => {
   const [open, setOpen] = useState(0);
 
   return (
@@ -13,53 +14,73 @@ const SupplyChainSolutionProblems = ({ type, children }) => {
       <SectionTitleType title={type} />
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       <div className="mt-6 lg:mt-10 grid grid-cols-12 gap-6 items-center">
-        <div className="col-span-3">
-          <div className="flex flex-col gap-y-6">
-            {[
-              "Controlling cost",
-              "Standardized learning",
-              "Cost & performance cost",
-              "Wasted resources",
-            ].map((item, i) => (
-              <div className="flex items-center gap-5">
+        <div className="col-span-12 lg:col-span-3 overflow-x-auto">
+          <div className="flex lg:flex-col gap-y-6 gap-x-10">
+            {data.map(({ id, problem }) => (
+              <div
+                key={id}
+                className="flex flex-col lg:flex-row items-center gap-x-5 gap-y-2 hover:cursor-pointer min-w-max"
+              >
                 <hr
-                  className={`h-6 w-[3px] rounded-xl ${
-                    open === i
+                  className={`hidden lg:block h-6 w-[3px] rounded-xl ${
+                    open === id
                       ? "bg-gradient-to-b from-blue-900 to-blue-700"
                       : "bg-transparent"
                   }`}
                 />
                 <p
-                  key={i}
-                  onClick={() => setOpen(i)}
-                  className={`font-medium lg:text-xl ${
-                    open === i
+                  key={id}
+                  onClick={() => setOpen(id)}
+                  className={`font-medium xl:text-xl ${
+                    open === id
                       ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
-                      : "text-gray-900"
-                  } `}
+                      : "text-gray-800"
+                  }`}
                 >
-                  {item}
+                  {problem}
                 </p>
+                <span
+                  className={`lg:hidden h-[3px] w-full rounded-xl ${
+                    open === id
+                      ? "bg-gradient-to-b from-blue-900 to-blue-700"
+                      : "bg-transparent"
+                  }`}
+                />
               </div>
             ))}
           </div>
         </div>
-        <div className="col-span-9 grid grid-cols-9 gap-6">
-          <div className="col-span-5">
-            <p className="text-2xl lg:mt-10 mb-6 text-gray-900">
-              Controlling cost
-            </p>
-            <p className="text-gray-300">
-              BYSL Global Technology Group stands on four core values regarded
-              as the fundamental ideological constants to govern the
-              organization.BYSL Global Technology Group stands on four core
-              values regarded as the fundamental ideological constants to govern
-              the organization.BYSL Global Technology Group stands on four core
-              values regarded as the fundamental ideological constants to govern
-              the organization
-            </p>
-          </div>
-          <div className="col-span-4">{open} image</div>
+        <div className="col-span-12 lg:col-span-9">
+          {data.map(({ id, problem, problemInfo, problemImg }) => {
+            return (
+              id === open && (
+                <div
+                  key={id}
+                  className="grid grid-cols-9 gap-6 items-center supplyTab-animation"
+                >
+                  <div className="col-span-9 md:col-span-5">
+                    <p className="text-center font-medium md:text-start text-xl xl:text-2xl lg:mt-5 2xl:mt-10 mb-6 text-gray-800">
+                      {problem}
+                    </p>
+                    <p className="text-center md:text-start text-sm xl:text-base text-gray-600">
+                      {problemInfo}
+                    </p>
+                  </div>
+                  <div className="col-span-9 md:col-span-4 text-center">
+                    <Image
+                      src={problemImg}
+                      placeholder="blur"
+                      blurDataURL={problemImg}
+                      height={232}
+                      width={404}
+                      objectFit="cover"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              )
+            );
+          })}
         </div>
       </div>
     </div>
