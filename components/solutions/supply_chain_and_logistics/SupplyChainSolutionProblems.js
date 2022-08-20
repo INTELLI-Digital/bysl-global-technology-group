@@ -1,18 +1,14 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import {
-  SectionTitleType,
-  TechnologiesSectionTitle,
-} from "../../shared/SharedTextgroups";
+import SectionHeader from "../../shared/SectionHeader";
 
 const SupplyChainSolutionProblems = ({ type, children, data }) => {
   const [open, setOpen] = useState(0);
 
   return (
     <div id="problems" className="py-10 xl:py-16">
-      <SectionTitleType title={type} />
-      <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
+      <SectionHeader type={type}>{children}</SectionHeader>
       <div className="mt-6 lg:mt-10 grid grid-cols-12 gap-6 items-center">
         <div className="col-span-12 lg:col-span-3 overflow-x-auto">
           <div className="flex lg:flex-col gap-y-6 gap-x-10">
@@ -56,7 +52,7 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
               id === open && (
                 <div
                   key={id}
-                  className="grid grid-cols-9 gap-6 items-center supplyTab-animation"
+                  className="grid grid-cols-9 gap-6 items-center zooming-animation"
                 >
                   <div className="col-span-9 md:col-span-5">
                     <p className="text-center font-medium md:text-start text-xl xl:text-2xl lg:mt-5 2xl:mt-10 mb-6 text-gray-800">

@@ -10,6 +10,7 @@ const Slider = ({ size, data }) => {
       slidesPerGroup={1}
       centeredSlides={true}
       loop={true}
+      speed={800}
       grabCursor={true}
       autoplay={{
         delay: 2500,
