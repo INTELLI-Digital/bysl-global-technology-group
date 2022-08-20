@@ -7,9 +7,9 @@ const BlogCard = ({ data }) => {
   const { img, type, title, subTitle, link, button, date, timeToRead } = data;
 
   return (
-    <div className="group blog-card bg-white rounded-md shadow-sm  shadow-gray-200/50 mx-auto">
+    <div className="group blog-card bg-white rounded-md shadow-sm  shadow-gray-200/50 mx-auto overflow-hidden">
       <div className="h-52 overflow-hidden">
-        <div className="relative rounded-t-md w-full h-52 overflow-hidden group-hover:scale-125 transition duration-700 ">
+        <div className="relative rounded-t-md w-full h-52 group-hover:scale-125 transition duration-700 ">
           <Image
             src={img}
             placeholder="blur"

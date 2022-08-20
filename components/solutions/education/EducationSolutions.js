@@ -26,7 +26,7 @@ const EducationSolutions = ({ data }) => {
                   "text-white bg-gradient-to-r from-blue-900 to-blue-700"
                 }`}
               >
-                Solution {id + 1}
+                Solutions {id + 1}
               </p>
             ))}
           </div>
