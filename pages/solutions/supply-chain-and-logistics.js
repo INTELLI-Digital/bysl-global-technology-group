@@ -3,7 +3,7 @@ import SolutionsOverview from "../../components/solutions/SolutionsOverview";
 import SupplyChainSolutionBanner from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionBanner";
 import SupplyChainSolutionProblems from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionProblems";
 import SupplyChainSolutionsSolution from "../../components/solutions/supply_chain_and_logistics/SupplyChainSolutionsSolution";
-import { SolutionsResourcesData } from "../../public/data/solutions/blogData";
+import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   supplyChainAndLogisticsBannerData,
   supplyChainSolutionsOverviewData,
@@ -13,18 +13,18 @@ import {
 const SupplyChainAndLogistics = ({
   banner,
   overviewData,
-  SolutionsResources,
+  solutionsResources,
   problemsAndSolutionsData,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout
       title="Supply Chain and Logistics"
-      data={SolutionsResources}
+      data={solutionsResources}
       noMargin={true}
     >
       {/* banner section  */}
-      <SupplyChainSolutionBanner data={banner}></SupplyChainSolutionBanner>
+      <SupplyChainSolutionBanner data={banner} />
       <div className="box">
         {/* overview section  */}
         <SolutionsOverview data={overviewData} />
@@ -56,7 +56,7 @@ export async function getStaticProps() {
   return {
     props: {
       banner: supplyChainAndLogisticsBannerData,
-      SolutionsResources: SolutionsResourcesData,
+      solutionsResources: solutionsResourcesData,
       overviewData: supplyChainSolutionsOverviewData,
       problemsAndSolutionsData: supplyChainAndLogisticsProblemsAndSolutionsData,
     },

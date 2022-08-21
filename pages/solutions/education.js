@@ -4,10 +4,10 @@ import EducationSolutionsOverview from "../../components/solutions/education/Edu
 import EducationSolutions from "../../components/solutions/education/EducationSolutions";
 import EducationProblems from "../../components/solutions/education/EducationProblems";
 import { educationProblemsAndSolutionsData } from "../../public/data/solutions/educationSolutionData";
-import { SolutionsResourcesData } from "../../public/data/solutions/blogData";
+import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 
 const Education = ({
-  SolutionsResources,
+  solutionsResources,
   banner,
   problemsAndSolutionsData,
 }) => {
@@ -15,7 +15,7 @@ const Education = ({
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <SolutionsLayout
       title="Education"
-      data={SolutionsResources}
+      data={solutionsResources}
       noMargin={true}
     >
       {/* banner section  */}
@@ -38,7 +38,7 @@ export async function getStaticProps() {
   return {
     props: {
       banner: "/images/banners/education_solutions_banner.png",
-      SolutionsResources: SolutionsResourcesData,
+      solutionsResources: solutionsResourcesData,
       problemsAndSolutionsData: educationProblemsAndSolutionsData,
     },
   };

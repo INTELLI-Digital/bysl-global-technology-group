@@ -9,6 +9,7 @@ const ResponsiveNavbar = () => {
   const supplyChainSolutionsPath = getPath(
     "/solutions/supply-chain-and-logistics"
   );
+  const healthcarePath = getPath("/solutions/healthcare");
 
   return (
     <div
@@ -17,6 +18,7 @@ const ResponsiveNavbar = () => {
         (arVrPath && "!pb-0") ||
         (investmentPath && "!pb-0") ||
         (supplyChainSolutionsPath && "!pb-0") ||
+        (healthcarePath && "!pb-0") ||
         (resourcesPath && "!pb-0")
       }`}
     >

@@ -4,7 +4,7 @@ const SolutionsBanner = ({ data, children }) => {
   const { img, heading, title, subTitle } = data;
 
   return (
-    <div className="pt-14 lg:pt-0 mb-12 lg:mb-0 relative h-[490px] lg:h-screen">
+    <div className="pt-8 lg:pt-0 mb-12 lg:mb-0 relative h-[490px] lg:h-screen">
       {/* <img
         src={img}
         className="absolute object-cover h-[490px] lg:h-screen min-w-full"
@@ -26,7 +26,7 @@ const SolutionsBanner = ({ data, children }) => {
           <p className="text-2xl sm:text-3xl lg:text-5xl xl:text-6xl 3xl:text-[64px] 3xl:leading-[76px] font-semibold max-w-[1286px] mx-auto">
             {title}
           </p>
-          <p className="text-sm xl:text-base w-5/6 max-w-[690px] mx-auto mt-5">
+          <p className="text-sm xl:text-base mx-2 max-w-[690px] sm:mx-auto mt-5">
             {subTitle}
           </p>
           <div className="mt-10 xl:mt-16">{children}</div>

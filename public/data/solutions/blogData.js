@@ -1,4 +1,4 @@
-const SolutionsResourcesData = [
+const solutionsResourcesData = [
   {
     id: 0,
     img: "/images/resources/blogs/image_0.png",
@@ -49,4 +49,4 @@ const SolutionsResourcesData = [
   },
 ];
 
-export { SolutionsResourcesData };
+export { solutionsResourcesData };

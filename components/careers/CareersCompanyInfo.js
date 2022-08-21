@@ -7,11 +7,8 @@ const CareersCompanyInfo = () => {
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
         {["mission", "purpose", "values", "culture"].map((item, i) => {
           return (
-            <Link passHref href={item}>
-              <div
-                key={i}
-                className="p-5 hover:bg-[#EDF1F8] rounded-[20px] transition duration-500 hover:cursor-pointer "
-              >
+            <Link key={i} passHref href={`/${item}`}>
+              <div className="p-5 hover:bg-[#EDF1F8] rounded-[20px] transition duration-500 hover:cursor-pointer ">
                 <div
                   className={`mx-auto relative mb-7 ${
                     i == 2

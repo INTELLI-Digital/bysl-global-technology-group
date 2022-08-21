@@ -19,6 +19,7 @@ const Navbar = () => {
   const supplyChainSolutionsPath = getPath(
     "/solutions/supply-chain-and-logistics"
   );
+  const healthcarePath = getPath("/solutions/healthcare");
 
   const changeNavbarColor = () => {
     if (window.scrollY >= 80) {
@@ -49,6 +50,7 @@ const Navbar = () => {
               (arvrPath && !colorChange) ||
               (investmentPath && !colorChange) ||
               (supplyChainSolutionsPath && !colorChange) ||
+              (healthcarePath && !colorChange) ||
               (resourcesPath && !colorChange)
                 ? "/images/logo_white.svg"
                 : "/images/logo.svg"
@@ -71,6 +73,7 @@ const Navbar = () => {
           (arvrPath && !colorChange) ||
           (investmentPath && !colorChange) ||
           (supplyChainSolutionsPath && !colorChange) ||
+          (healthcarePath && !colorChange) ||
           (resourcesPath && !colorChange)
             ? "text-white"
             : "text-gray-500"
@@ -145,6 +148,7 @@ const Navbar = () => {
             : arvrPath ||
               investmentPath ||
               resourcesPath ||
+              healthcarePath ||
               supplyChainSolutionsPath
             ? "backdrop-blur-sm bg-white/10 "
             : "bg-transparent mt-5"
