@@ -8,6 +8,11 @@ const HealthcareProblemsAndSolutions = ({ data }) => {
   const [problems, setProblems] = useState(true);
   const [solutions, setSolutions] = useState(false);
 
+  const toggleHandler = () => {
+    setProblems(!problems);
+    setSolutions(!solutions);
+  };
+
   const handleProblems = () => {
     setProblems(true);
     setSolutions(false);
@@ -25,7 +30,7 @@ const HealthcareProblemsAndSolutions = ({ data }) => {
         industries
       </SectionHeader>
       <div className="mt-10 xl:mt-16">
-        <div className="mb-10 xl:mb-16 w-max mx-auto flex items-center gap-10">
+        <div className="mb-10 xl:mb-16 w-max mx-auto flex items-center gap-10 ">
           <p
             onClick={handleProblems}
             className={`text-xl xl:text-2xl font-medium hover:cursor-pointer ${
@@ -35,7 +40,8 @@ const HealthcareProblemsAndSolutions = ({ data }) => {
             <TextGradient text="Problems" />
           </p>
           <div
-            className={`h-5 w-10 xl:h-6 xl:w-12 bg-[#E1EAF4] rounded-[20px] flex hover:cursor-pointer ${
+            onClick={toggleHandler}
+            className={`h-5 w-10 xl:h-6 xl:w-12 bg-[#E1EAF4] rounded-[20px] flex hover:cursor-pointer transition-all duration-1000 ${
               !problems && "justify-end"
             }`}
           >

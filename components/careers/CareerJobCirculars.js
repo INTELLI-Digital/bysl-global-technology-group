@@ -44,7 +44,7 @@ const CareerJobCirculars = () => {
     setFilteredData(matchedJob);
   };
 
-  useEffect(() => {}, [position, department, filteredData]);
+  // useEffect(() => {}, [position, department, filteredData]);
 
   const JobCircularList = ({ data }) => {
     const { id, position, experience, lastDate, jobType } = data;
@@ -98,12 +98,16 @@ const CareerJobCirculars = () => {
               <span>{department ? department : "Departments"} </span>
               <MdKeyboardArrowDown
                 className={`text-xl ${
-                  departmentOpen && "-rotate-180 transition duration-1000"
+                  departmentOpen && "-rotate-180 transition duration-700"
                 }`}
               />
             </div>
             {departmentOpen && (
-              <div className="careerScrollbar h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5 ">
+              <div
+                className={`careerScrollbar ${
+                  departmentOpen && "opened"
+                } h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5 `}
+              >
                 {departmentList.map((item, i) => (
                   <p
                     key={i}
