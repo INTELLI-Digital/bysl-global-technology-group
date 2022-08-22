@@ -1,10 +1,8 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Lottie from "lottie-react";
 import { RiSearchLine } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
-import noData from "../../public/data/noData.json";
 import {
   departmentList,
   jobList,
