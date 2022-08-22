@@ -377,7 +377,6 @@ const careerWhyJoinData = [
 ];
 
 const departmentList = [
-  "All",
   "Graphics and Multimedia",
   "Digital Core",
   "UI/UX Design",
@@ -386,7 +385,6 @@ const departmentList = [
   "Human Resource",
 ];
 const positionTypeList = [
-  "All",
   "Jr. Executive",
   "Executive",
   "Sr. Executive",

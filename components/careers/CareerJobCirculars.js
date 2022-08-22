@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Lottie from "lottie-react";
 import { RiSearchLine } from "react-icons/ri";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
+import noData from "../../public/data/noData.json";
 import {
   departmentList,
   jobList,
@@ -14,27 +16,29 @@ const CareerJobCirculars = () => {
   const [filteredData, setFilteredData] = useState(data);
 
   const [departmentOpen, setDepartmentOpen] = useState(false);
-  const [department, setDepartment] = useState("");
+  const [department, setDepartment] = useState("Departments");
   const [positionOpen, setPositionOpen] = useState(false);
-  const [position, setPosition] = useState("");
+  const [position, setPosition] = useState("Positions");
+
+  const matchedData = data.filter(
+    (item) =>
+      (item.department == department || department == "Departments") &&
+      (item.designation == position || position == "Positions")
+  );
 
   const handleDepartment = (item) => {
     setDepartment(item);
     setDepartmentOpen(false);
-    const matchedDepartment = data.filter(
-      (item) => item.department == department
-    );
-    setFilteredData(matchedDepartment);
   };
 
   const handlePosition = (item) => {
     setPosition(item);
     setPositionOpen(false);
-    const matchedPosition = data.filter(
-      (item) => item.designation === position
-    );
-    setFilteredData(matchedPosition);
   };
+
+  useEffect(() => {
+    setFilteredData(matchedData);
+  }, [position, department]);
 
   const handleSearch = (e) => {
     const searchText = e.target.value;
@@ -42,9 +46,9 @@ const CareerJobCirculars = () => {
       item.position.toLowerCase().includes(searchText.toLowerCase())
     );
     setFilteredData(matchedJob);
+    setDepartment("Departments");
+    setPosition("Positions");
   };
-
-  // useEffect(() => {}, [position, department, filteredData]);
 
   const JobCircularList = ({ data }) => {
     const { id, position, experience, lastDate, jobType } = data;
@@ -103,11 +107,7 @@ const CareerJobCirculars = () => {
               />
             </div>
             {departmentOpen && (
-              <div
-                className={`careerScrollbar ${
-                  departmentOpen && "opened"
-                } h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5 `}
-              >
+              <div className="z-20 careerScrollbar shadow-[-3px_10px_15px_0px_#dcdcdc] h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5">
                 {departmentList.map((item, i) => (
                   <p
                     key={i}
@@ -139,11 +139,7 @@ const CareerJobCirculars = () => {
               />
             </div>
             {positionOpen && (
-              <div
-                className={`careerScrollbar  ${
-                  positionOpen ? "max-h-[225px] transition duration-1000" : ""
-                }   divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5`}
-              >
+              <div className="z-20 careerScrollbar shadow-[-3px_10px_15px_0px_#dcdcdc] h-max max-h-[225px] divide-y divide-solid divide-gray-200/50 w-full bg-white absolute top-8 lg:top-12 rounded-b-[11px] left-0 px-5">
                 {positionTypeList.map((item, i) => (
                   <p
                     key={i}
@@ -158,11 +154,17 @@ const CareerJobCirculars = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-[1076px] mx-auto mt-10 lg:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-0">
-        {filteredData.map((item) => (
-          <JobCircularList key={item.id} data={item} />
-        ))}
-      </div>
+      {filteredData.length > 0 ? (
+        <div className="max-w-[1076px] mt-10 lg:mt-16 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4 lg:gap-0">
+          {filteredData.map((item) => (
+            <JobCircularList key={item.id} data={item} />
+          ))}
+        </div>
+      ) : (
+        <p className="shadow-[0px_4px_15px_0px_#F1F0F0] text-xl text-gray-500 font-semibold mt-10 h-32 max-w-[1076px] mx-auto rounded-lg bg-white flex justify-center items-center">
+          No Data Found
+        </p>
+      )}
     </div>
   );
 };
