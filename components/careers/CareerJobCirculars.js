@@ -22,8 +22,12 @@ const CareerJobCirculars = () => {
 
   const matchedData = data.filter(
     (item) =>
-      (item.department == department || department == "Departments") &&
-      (item.designation == position || position == "Positions")
+      (item.department == department ||
+        department == "Departments" ||
+        department == "All") &&
+      (item.designation == position ||
+        position == "Positions" ||
+        position == "All")
   );
 
   const handleDepartment = (item) => {
