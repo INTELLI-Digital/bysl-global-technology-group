@@ -26,6 +26,7 @@ const Marketing = ({
       <div className="box">
         {/* overview section  */}
         <MarketingOverview data={marketingOverview} />
+
         {/* problems and solutions section  */}
         <MarketingProblemsAndSolutions data={problemsAndSolutionsData} />
       </div>
