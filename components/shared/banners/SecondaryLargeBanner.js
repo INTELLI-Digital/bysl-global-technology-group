@@ -5,7 +5,7 @@ import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
 const SecondaryLargeBanner = ({ data, children }) => {
   const { heading, subTitle, img } = data;
-  const bigDataPath = getPath("/bigdata-technologies");
+  const bigDataPath = getPath("/technologies/bigdata");
 
   return (
     <div className={`py-10 xl:py-16 ${bigDataPath && "!pb-10"}`}>

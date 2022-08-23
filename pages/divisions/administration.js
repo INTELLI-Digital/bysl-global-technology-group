@@ -1,14 +1,14 @@
-import BasicLayout from "../layouts/BasicLayout";
-import SecondaryLargeBanner from "../components/shared/banners/SecondaryLargeBanner";
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import SecondaryLargeBanner from "../../components/shared/banners/SecondaryLargeBanner";
+import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   administrationBannerData,
   administrationControlPanelData,
   administrationMangementData,
   workplaceBannerData,
-} from "../public/data/administrationData";
+} from "../../public/data/divisions/administrationData";
 
 const Administration = ({
   banner,

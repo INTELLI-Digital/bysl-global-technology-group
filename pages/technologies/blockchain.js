@@ -1,15 +1,15 @@
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import RowSpanGrid from "../components/shared/RowSpanGrid";
-import BasicLayout from "../layouts/BasicLayout";
-import { TextBanner } from "../components/shared/banners/SharedBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import RowSpanGrid from "../../components/shared/RowSpanGrid";
+import BasicLayout from "../../layouts/BasicLayout";
+import { TextBanner } from "../../components/shared/banners/SharedBanner";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   blockchainFeaturesData,
   blockchainHealthBannerData,
   blockchainServicesData,
-} from "../public/data/blockchainTechnologiesData";
+} from "../../public/data/technologies/blockchainTechnologiesData";
 
 const BlockchainTechnologies = ({
   banner,

@@ -1,16 +1,16 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import PowerfulProducts from "../components/divisions_pages/ict/PowerfulProducts";
-import Overview4Items from "../components/shared/Overview4Items";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import { TextGradient } from "../components/shared/SharedTextgroups";
-import { TextBanner } from "../components/shared/banners/SharedBanner";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import PowerfulProducts from "../../components/divisions_pages/ict/PowerfulProducts";
+import Overview4Items from "../../components/shared/Overview4Items";
+import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { TextBanner } from "../../components/shared/banners/SharedBanner";
 import {
   erpBannerData,
   ictSectorsData,
   ictSolutionsData,
   productsData,
-} from "../public/data/ictData";
+} from "../../public/data/divisions/ictData";
 
 const ICT = ({ banner, ictSectors, erpBanner, ictSolutions, products }) => {
   return (

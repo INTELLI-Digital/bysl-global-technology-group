@@ -1,14 +1,14 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   cloudFeaturesData,
   cloudServicesData,
   cloudSupportData,
-} from "../public/data/cloudTechnologiesData";
+} from "../../public/data/technologies/cloudTechnologiesData";
 
 const CloudTechnologies = ({
   banner,

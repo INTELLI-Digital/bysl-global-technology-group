@@ -9,8 +9,8 @@ import {
 
 const TriangleCardBanner = (props) => {
   const { children, data, img, video, black, padding, type, reversed } = props;
-  const iotPath = getPath("/iot-technologies");
-  const arVrPath = getPath("/ar-vr-technologies");
+  const iotPath = getPath("/technologies/iot");
+  const arVrPath = getPath("/technologies/ar-vr");
 
   return (
     <div className="py-10 xl:py-16">

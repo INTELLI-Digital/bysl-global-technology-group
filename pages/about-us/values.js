@@ -1,8 +1,8 @@
-import CompanyInfoLayout from "../layouts/CompanyInfoLayout";
-import { TextGradient } from "../components/shared/SharedTextgroups";
-import { valuesButtonData } from "../public/data/buttonGroupData";
-import { valuesBannerData } from "../public/data/companyInfoBannerData";
-import { valuesCardData } from "../public/data/companyInfoCardData";
+import CompanyInfoLayout from "../../layouts/CompanyInfoLayout";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { valuesButtonData } from "../../public/data/buttonGroupData";
+import { valuesBannerData } from "../../public/data/companyInfoBannerData";
+import { valuesCardData } from "../../public/data/companyInfoCardData";
 
 const CompanyValues = ({ valuesBanner, valuesCard, valuesButton }) => {
   return (

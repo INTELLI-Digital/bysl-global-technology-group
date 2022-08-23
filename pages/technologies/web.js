@@ -1,17 +1,17 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import FeaturedBanner from "../components/shared/banners/FeaturedBanner";
-import Overview4Items from "../components/shared/Overview4Items";
-import RowSpanGrid from "../components/shared/RowSpanGrid";
-import { TextBanner } from "../components/shared/banners/SharedBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import FeaturedBanner from "../../components/shared/banners/FeaturedBanner";
+import Overview4Items from "../../components/shared/Overview4Items";
+import RowSpanGrid from "../../components/shared/RowSpanGrid";
+import { TextBanner } from "../../components/shared/banners/SharedBanner";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   businessValuesData,
   webBannerData,
   webFeaturesData,
   webProcessData,
   webServicesBannerData,
-} from "../public/data/webTechnologiesData";
+} from "../../public/data/technologies/webTechnologiesData";
 
 const WebTechnologies = ({
   banner,

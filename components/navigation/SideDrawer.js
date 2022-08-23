@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Accordion, AccordionBody } from "@material-tailwind/react";
 
 import Button from "../shared/buttons/Button";
-import { navbars } from "../../public/data/navbarData";
+import { navbars } from "../../public/data/navigation/navbarData";
 
 const SideDrawer = ({ showDrawer }) => {
   const router = useRouter();

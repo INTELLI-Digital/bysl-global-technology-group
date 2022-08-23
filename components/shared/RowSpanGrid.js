@@ -5,7 +5,7 @@ import { TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const RowSpanGrid = (props) => {
   const { children, data } = props;
-  const blockchainPath = getPath("/blockchain-technologies");
+  const blockchainPath = getPath("/technologies/blockchain");
 
   return (
     <div className="py-10 xl:py-16">

@@ -1,14 +1,14 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import Overview4Items from "../components/shared/Overview4Items";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import Overview4Items from "../../components/shared/Overview4Items";
+import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
+import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   supplyChainConnectivityData,
   supplyChainOverviewData,
   supplyChainPerceivabilityData,
-} from "../public/data/supplyChainData";
+} from "../../public/data/divisions/supplyChainData";
 
 const SupplyChain = ({
   banner,

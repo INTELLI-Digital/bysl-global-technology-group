@@ -5,19 +5,19 @@ import { getPath } from "../../../utils/paths";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
 
 const PrimaryBanner = ({ title, sub, img, video, children }) => {
-  const webPath = getPath("/web-technologies");
-  const aiMlPath = getPath("/ai-ml-technologies");
-  const cloudPath = getPath("/cloud-technologies");
-  const iotPath = getPath("/iot-technologies");
-  const ictPath = getPath("/ict");
-  const itesPath = getPath("/ites");
+  const webPath = getPath("/technologies/web");
+  const aiMlPath = getPath("/technologies/ai-ml");
+  const cloudPath = getPath("/technologies/cloud");
+  const iotPath = getPath("/technologies/iot");
+  const mobilePath = getPath("/technologies/mobile");
+  const blockchainPath = getPath("/technologies/blockchain");
+  const cyberPath = getPath("/technologies/cyber-security");
+  const ictPath = getPath("/divisions/ict");
+  const itesPath = getPath("/divisions/ites");
+  const foodTechPath = getPath("/divisions/food-tech");
+  const dataSciencePath = getPath("/divisions/data-science");
+  const informationPath = getPath("/divisions/information-security");
   const servicePath = getPath("/service");
-  const foodTechPath = getPath("/food-tech");
-  const dataSciencePath = getPath("/data-science");
-  const informationPath = getPath("/information-security");
-  const mobilePath = getPath("/mobile-technologies");
-  const blockchainPath = getPath("/blockchain-technologies");
-  const cyberPath = getPath("/cyber-security-technologies");
 
   return (
     <div

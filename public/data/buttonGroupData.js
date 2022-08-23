@@ -2,29 +2,37 @@ const data = [
   {
     id: 0,
     title: "Mission",
-    link: "/mission",
+    link: "/about-us/mission",
   },
   {
     id: 1,
     title: "Purpose",
-    link: "/purpose",
+    link: "/about-us/purpose",
   },
   {
     id: 2,
     title: "Values",
-    link: "/values",
+    link: "/about-us/values",
   },
   {
     id: 3,
     title: "Culture",
-    link: "/culture",
+    link: "/about-us/culture",
   },
 ];
 
-const missionButtonData = data.filter((item) => item.link !== "/mission");
-const purposeButtonData = data.filter((item) => item.link !== "/purpose");
-const valuesButtonData = data.filter((item) => item.link !== "/values");
-const cultureButtonData = data.filter((item) => item.link !== "/culture");
+const missionButtonData = data.filter(
+  (item) => item.link !== "/about-us/mission"
+);
+const purposeButtonData = data.filter(
+  (item) => item.link !== "/about-us/purpose"
+);
+const valuesButtonData = data.filter(
+  (item) => item.link !== "/about-us/values"
+);
+const cultureButtonData = data.filter(
+  (item) => item.link !== "/about-us/culture"
+);
 
 export {
   missionButtonData,

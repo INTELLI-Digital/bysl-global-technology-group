@@ -7,7 +7,7 @@ import Modal from "./Modal";
 const IconCard = (props) => {
   const { data, padding } = props;
   const faqPath = getPath("/faq");
-  const arVrPath = getPath("/ar-vr-technologies");
+  const arVrPath = getPath("/technologies/ar-vr");
 
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState("");

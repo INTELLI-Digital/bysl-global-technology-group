@@ -1,8 +1,8 @@
-import CompanyInfoLayout from "../layouts/CompanyInfoLayout";
-import { TextGradient } from "../components/shared/SharedTextgroups";
-import { cultureButtonData } from "../public/data/buttonGroupData";
-import { cultureBannerData } from "../public/data/companyInfoBannerData";
-import { cultureCardData } from "../public/data/companyInfoCardData";
+import CompanyInfoLayout from "../../layouts/CompanyInfoLayout";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { cultureButtonData } from "../../public/data/buttonGroupData";
+import { cultureBannerData } from "../../public/data/companyInfoBannerData";
+import { cultureCardData } from "../../public/data/companyInfoCardData";
 
 const CompanyCulture = ({ cultureBanner, cultureCard, cultureButton }) => {
   return (

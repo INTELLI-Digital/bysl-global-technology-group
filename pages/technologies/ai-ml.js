@@ -1,15 +1,15 @@
-import BasicLayout from "../layouts/BasicLayout";
-import AIMLBanner from "../components/technologies_pages/ai_ml_technologies/AIMLBanner";
-import Overview4Items from "../components/shared/Overview4Items";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import AIMLServices from "../components/technologies_pages/ai_ml_technologies/AIMLServices";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import AIMLBanner from "../../components/technologies_pages/ai_ml_technologies/AIMLBanner";
+import Overview4Items from "../../components/shared/Overview4Items";
+import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
+import AIMLServices from "../../components/technologies_pages/ai_ml_technologies/AIMLServices";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   aimlFeaturesData,
   aimlUserExperienceData,
   aimlServicesData,
-} from "../public/data/aimlTechnologiesData";
+} from "../../public/data/technologies/aimlTechnologiesData";
 
 const AIMLTechnologies = ({
   banner,

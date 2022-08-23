@@ -1,8 +1,8 @@
-import CompanyInfoLayout from "../layouts/CompanyInfoLayout";
-import { TextGradient } from "../components/shared/SharedTextgroups";
-import { purposeButtonData } from "../public/data/buttonGroupData";
-import { purposeBannerData } from "../public/data/companyInfoBannerData";
-import { purposeCardData } from "../public/data/companyInfoCardData";
+import CompanyInfoLayout from "../../layouts/CompanyInfoLayout";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { purposeButtonData } from "../../public/data/buttonGroupData";
+import { purposeBannerData } from "../../public/data/companyInfoBannerData";
+import { purposeCardData } from "../../public/data/companyInfoCardData";
 
 const CompanyPurpose = ({ purposeBanner, purposeCard, purposeButton }) => {
   return (

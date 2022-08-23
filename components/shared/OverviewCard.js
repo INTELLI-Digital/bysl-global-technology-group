@@ -6,11 +6,11 @@ import HoverImage from "./HoverImage";
 const OverviewCard = (props) => {
   const { data, large, handleOpen } = props;
 
-  const ictPath = getPath("/ict");
-  const itesPath = getPath("/ites");
+  const ictPath = getPath("/divisions/ict");
+  const itesPath = getPath("/divisions/ites");
+  const digitalCommercePath = getPath("/divisions/digital-commerce");
+  const bigDataPath = getPath("/technologies/bigdata");
   const investmentsPath = getPath("/investments");
-  const digitalCommercePath = getPath("/digital-commerce");
-  const bigDataPath = getPath("/bigdata-technologies");
 
   return (
     <>

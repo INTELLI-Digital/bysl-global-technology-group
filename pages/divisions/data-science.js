@@ -1,12 +1,12 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import FeaturedBanner from "../components/shared/banners/FeaturedBanner";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import FeaturedBanner from "../../components/shared/banners/FeaturedBanner";
 import {
   dataScienceAnalysisData,
   dataScienceControlPanelData,
-} from "../public/data/dataScienceData";
+} from "../../public/data/divisions/dataScienceData";
 
 const DataScience = ({
   banner,

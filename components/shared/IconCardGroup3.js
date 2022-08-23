@@ -4,7 +4,7 @@ import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const IconCardGroup3 = (props) => {
   const { children, data, type } = props;
-  const databasePath = getPath("/database-technologies");
+  const databasePath = getPath("/technologies/database");
 
   return (
     <div className="py-10 xl:py-16">

@@ -1,10 +1,10 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import Overview4Items from "../components/shared/Overview4Items";
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
-import { TextGradient } from "../components/shared/SharedTextgroups";
-import { itesOverviewData, itesUpdateData } from "../public/data/itesData";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import Overview4Items from "../../components/shared/Overview4Items";
+import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
+import { itesOverviewData, itesUpdateData } from "../../public/data/divisions/itesData";
 
 const ITeS = ({ banner, itesOverview, itesUpdate, itesAppImg }) => {
   return (

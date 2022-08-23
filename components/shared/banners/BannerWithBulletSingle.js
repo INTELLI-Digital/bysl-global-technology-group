@@ -11,10 +11,10 @@ const BannerWithBulletSingle = (props) => {
   const { data, reversed, children, type } = props;
   const { title, colored, subTitle, img, features, newLine } = data;
 
-  const itesPath = getPath("/ites");
-  const informationPath = getPath("/information-security");
-  const aimlPath = getPath("/ai-ml-technologies");
-  const digitalCommercePath = getPath("/digital-commerce");
+  const aimlPath = getPath("/technologies/ai-ml");
+  const itesPath = getPath("/divisions/ites");
+  const informationPath = getPath("/divisions/information-security");
+  const digitalCommercePath = getPath("/divisions/digital-commerce");
 
   return (
     <div

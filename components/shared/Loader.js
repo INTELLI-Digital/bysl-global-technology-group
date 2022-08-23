@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 
-import loader from "../../public/data/loader.json";
+import loader from "../../public/data/lottieAnimations/loader.json";
 
 const Loader = () => {
   return (

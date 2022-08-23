@@ -1,13 +1,13 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import Overview4Items from "../components/shared/Overview4Items";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import Overview4Items from "../../components/shared/Overview4Items";
+import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   digitalCommerceOverviewData,
   digitalCommerceSolutionsData,
-} from "../public/data/digitalCommerceData";
+} from "../../public/data/divisions/digitalCommerceData";
 
 const FoodTech = ({
   banner,

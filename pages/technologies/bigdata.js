@@ -1,17 +1,17 @@
-import BasicLayout from "../layouts/BasicLayout";
-import SecondaryLargeBanner from "../components/shared/banners/SecondaryLargeBanner";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import Overview4Items from "../components/shared/Overview4Items";
-import BigdataServices from "../components/technologies_pages/bigdata_technologies/BigdataServices";
-import WhyBigdata from "../components/technologies_pages/bigdata_technologies/WhyBigdata";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import SecondaryLargeBanner from "../../components/shared/banners/SecondaryLargeBanner";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import Overview4Items from "../../components/shared/Overview4Items";
+import BigdataServices from "../../components/technologies_pages/bigdata_technologies/BigdataServices";
+import WhyBigdata from "../../components/technologies_pages/bigdata_technologies/WhyBigdata";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   bigdataBannerData,
   bigdataFeaturesData,
   bigdataOverviewData,
   whyBigdataData,
   bigdataServicesData,
-} from "../public/data/bigdataTechnologiesData";
+} from "../../public/data/technologies/bigdataTechnologiesData";
 
 const BigdataTechnologies = ({
   bigdataBanner,

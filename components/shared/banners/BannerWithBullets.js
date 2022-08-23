@@ -7,9 +7,9 @@ const BannerWithBullets = (props) => {
   const { data, reversed, group, children } = props;
   const { subTitle, img, video, features, title } = data;
 
-  const cloudPath = getPath("/cloud-technologies");
-  const bigDataPath = getPath("/bigdata-technologies");
-  const databasePath = getPath("/database-technologies");
+  const cloudPath = getPath("/technologies/cloud");
+  const bigDataPath = getPath("/technologies/bigdata");
+  const databasePath = getPath("/technologies/database");
 
   return (
     <div

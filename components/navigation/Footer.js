@@ -5,7 +5,7 @@ import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
 import { FaPinterestP } from "react-icons/fa";
 
 import ButtonWhite from "../shared/buttons/ButtonWhite";
-import { footerBottomData, footerData } from "../../public/data/footerData";
+import { footerBottomData, footerData } from "../../public/data/navigation/footerData";
 import { setItem, setLegalState } from "../../utils/sessionStorage";
 
 const Footer = () => {

@@ -1,13 +1,13 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import Overview4Items from "../components/shared/Overview4Items";
-import IconCardGroup4 from "../components/shared/IconCardGroup4";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import Overview4Items from "../../components/shared/Overview4Items";
+import IconCardGroup4 from "../../components/shared/IconCardGroup4";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   foodTechAreasData,
   foodTechOverviewData,
-} from "../public/data/foodTechData";
+} from "../../public/data/divisions/foodTechData";
 
 const FoodTech = ({ banner, foodTechOverview, foodTechAreas, foodBanner }) => {
   return (

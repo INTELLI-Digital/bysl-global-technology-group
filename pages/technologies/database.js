@@ -1,15 +1,15 @@
-import SecondaryLargeBanner from "../components/shared/banners/SecondaryLargeBanner";
-import DatabaseFeatures from "../components/technologies_pages/database_technologies/DatabaseFeatures";
-import BasicLayout from "../layouts/BasicLayout";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import SecondaryLargeBanner from "../../components/shared/banners/SecondaryLargeBanner";
+import DatabaseFeatures from "../../components/technologies_pages/database_technologies/DatabaseFeatures";
+import BasicLayout from "../../layouts/BasicLayout";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   databaseBannerData,
   databaseSolutionsData,
   managingDatabaseData,
   databaseFeaturesData,
-} from "../public/data/databaseTechnologiesData";
+} from "../../public/data/technologies/databaseTechnologiesData";
 
 const BigdataTechnologies = ({
   databaseBanner,

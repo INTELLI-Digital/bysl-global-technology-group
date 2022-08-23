@@ -7,7 +7,7 @@ import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const Overview3Items = (props) => {
   const { data, children, type } = props;
-  const iotPath = getPath("/iot-technologies");
+  const iotPath = getPath("/technologies/iot");
 
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState("");

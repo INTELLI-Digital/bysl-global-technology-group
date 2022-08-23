@@ -1,15 +1,15 @@
-import BasicLayout from "../layouts/BasicLayout";
-import FeaturedBanner from "../components/shared/banners/FeaturedBanner";
-import TriangleCardBanner from "../components/shared/banners/TriangleCardBanner";
-import IconCardGroup3 from "../components/shared/IconCardGroup3";
-import ImageShowcase from "../components/shared/ImageShowcase";
-import ARVRBanner from "../components/technologies_pages/ar_vr_technologies/ARVRBanner";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import FeaturedBanner from "../../components/shared/banners/FeaturedBanner";
+import TriangleCardBanner from "../../components/shared/banners/TriangleCardBanner";
+import IconCardGroup3 from "../../components/shared/IconCardGroup3";
+import ImageShowcase from "../../components/shared/ImageShowcase";
+import ARVRBanner from "../../components/technologies_pages/ar_vr_technologies/ARVRBanner";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   arVrFeaturesData,
   arVrServicesData,
   arVrWorldData,
-} from "../public/data/arVrTechnologiesData";
+} from "../../public/data/technologies/arVrTechnologiesData";
 
 const ARVRTechnologies = ({
   banner,

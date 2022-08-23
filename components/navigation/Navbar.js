@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
-import { navbars } from "../../public/data/navbarData";
+import { navbars } from "../../public/data/navigation/navbarData";
 import { getPath } from "../../utils/paths";
 import { getState, setState } from "../../utils/sessionStorage";
 
@@ -13,7 +13,7 @@ const Navbar = () => {
   const router = useRouter();
   const navState = getState();
   const [colorChange, setColorchange] = useState(false);
-  const arvrPath = getPath("/ar-vr-technologies");
+  const arvrPath = getPath("/technologies/ar-vr");
   const investmentPath = getPath("/investments");
   const resourcesPath = getPath("/resources");
   const supplyChainSolutionsPath = getPath(

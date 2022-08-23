@@ -10,13 +10,13 @@ const Overview4Items = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [modalData, setModalData] = useState("");
 
-  const webPath = getPath("/web-technologies");
-  const itesPath = getPath("/ites");
+  const webPath = getPath("/technologies/web");
+  const aiMlPath = getPath("/technologies/ai-ml");
+  const cyberPath = getPath("/technologies/cyber-security");
+  const bigDataPath = getPath("/technologies/bigdata");
+  const itesPath = getPath("/divisions/ites");
+  const digitalCommercePath = getPath("/divisions/digital-commerce");
   const investmentsPath = getPath("/investments");
-  const aiMlPath = getPath("/ai-ml-technologies");
-  const cyberPath = getPath("/cyber-security-technologies");
-  const digitalCommercePath = getPath("/digital-commerce");
-  const bigDataPath = getPath("/bigdata-technologies");
 
   // modal state
   const handleOpen = (id) => {

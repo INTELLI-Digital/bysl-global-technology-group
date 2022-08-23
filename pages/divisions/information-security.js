@@ -1,14 +1,14 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import BannerWithBullets from "../components/shared/banners/BannerWithBullets";
-import Overview4Items from "../components/shared/Overview4Items";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
+import BannerWithBullets from "../../components/shared/banners/BannerWithBullets";
+import Overview4Items from "../../components/shared/Overview4Items";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   informationSecurityOverviewData,
   informationSecurityServicesData,
   informationSecurityShortcomingsData,
-} from "../public/data/informationSecurityData";
+} from "../../public/data/divisions/informationSecurityData";
 
 const InformationSecurity = ({
   banner,

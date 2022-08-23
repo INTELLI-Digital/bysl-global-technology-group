@@ -1,56 +1,43 @@
 import BasicLayout from "../layouts/BasicLayout";
-import ServiceFeatures from "../components/services/ServiceFeatures";
-import ServiceITServices from "../components/services/ServiceITServices";
-// import ServiceResources from "../components/services/ServiceResources";
-import ServiceTimeline from "../components/services/ServiceTimeline";
+import ITServices from "../components/individual_service/ITServices";
 import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import BlogLayout from "../components/shared/BlogLayout";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BlogSlider from "../components/shared/slider/BlogSlider";
+import ITFeatures from "../components/individual_service/ITFeatures";
 import {
-  serviceBlogsData,
-  servicesFeaturesData,
-  servicesServiceData,
-  serviceTimelineData,
-} from "../public/data/servicesData";
+  individualServiceITServicesData,
+  ITFeaturesData,
+  serviceResourceBlogData,
+  serviceWhyChooseUsData,
+} from "../public/data/individualServiceData";
 
-const Services = ({
+const Service = ({
   banner,
-  servicesFeatures,
-  servicesService,
-  serviceBlogs,
-  serviceTimeline,
+  individualServiceITServices,
+  ITFeaturesData,
+  serviceResourceBlog,
 }) => {
   return (
     // this component is wrapped in a layout which contains some of the common components in maximum pages
     <BasicLayout title="IT Services">
       {/* banner section  */}
       <PrimaryBanner
-        title="IT Services"
+        title="Services"
         sub="Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs."
         img={banner}
       >
-        Creating Value Through True
-        <TextGradient text=" Convergence" />
+        DISCOVER BETTER VALUE. FASTER.
       </PrimaryBanner>
 
+      {/* IT services section  */}
+      <ITServices data={individualServiceITServices} />
+
       {/* features section  */}
-      <ServiceFeatures data={servicesFeatures} />
-
-      {/* services section  */}
-      <ServiceITServices data={servicesService} />
-
-      {/* timeline section  */}
-      <ServiceTimeline data={serviceTimeline} />
+      <ITFeatures data={ITFeaturesData} />
 
       {/* resources section  */}
-      {/* <ServiceResources /> */}
-
-      {/* blogs section  */}
-      <BlogLayout data={serviceBlogs} type="Resources">
-        Read Our
-        <TextGradient text=" Latest " />
-        Tips & Tricks
-      </BlogLayout>
+      <BlogSlider data={serviceResourceBlog} type="Resources">
+        Read Our Latest Tips & Tricks
+      </BlogSlider>
     </BasicLayout>
   );
 };
@@ -58,13 +45,13 @@ const Services = ({
 export async function getStaticProps() {
   return {
     props: {
-      banner: "/images/banners/services_banner.svg",
-      servicesFeatures: servicesFeaturesData,
-      servicesService: servicesServiceData,
-      serviceBlogs: serviceBlogsData,
-      serviceTimeline: serviceTimelineData,
+      banner: "/images/banners/service_banner.svg",
+      individualServiceITServices: individualServiceITServicesData,
+      serviceWhyChooseUs: serviceWhyChooseUsData,
+      serviceResourceBlog: serviceResourceBlogData,
+      ITFeaturesData,
     },
   };
 }
 
-export default Services;
+export default Service;

@@ -7,7 +7,7 @@ import {
   financeBannerData,
   financeOverviewData,
   financeProblemsAndSolutionsData,
-} from "../../public/data/solutions/financeBannerData";
+} from "../../public/data/solutions/financeSolutionsData";
 
 const Finance = ({
   banner,

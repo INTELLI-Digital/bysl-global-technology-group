@@ -5,12 +5,12 @@ import { SectionTitleType, TechnologiesSectionTitle } from "./SharedTextgroups";
 
 const ImageShowcase = (props) => {
   const { children, sub, img, type, video } = props;
-  const arVrPath = getPath("/ar-vr-technologies");
-  const itesPath = getPath("/ites");
-  const aiMlPath = getPath("/ai-ml-technologies");
-  const dataSciencePath = getPath("/data-science");
-  const foodTechPath = getPath("/food-tech");
-  const digitalCommercePath = getPath("/digital-commerce");
+  const arVrPath = getPath("/technologies/ar-vr");
+  const aiMlPath = getPath("/technologies/ai-ml");
+  const itesPath = getPath("/divisions/ites");
+  const dataSciencePath = getPath("/divisions/data-science");
+  const foodTechPath = getPath("/divisions/food-tech");
+  const digitalCommercePath = getPath("/divisions/digital-commerce");
 
   return (
     <div className="py-10 xl:py-16">

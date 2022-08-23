@@ -3,7 +3,7 @@ import NavbarSmall from "./NavbarSmall";
 import { getPath } from "../../utils/paths";
 
 const ResponsiveNavbar = () => {
-  const arVrPath = getPath("/ar-vr-technologies");
+  const arVrPath = getPath("/technologies/ar-vr");
   const investmentPath = getPath("/investments");
   const resourcesPath = getPath("/resources");
   const supplyChainSolutionsPath = getPath(

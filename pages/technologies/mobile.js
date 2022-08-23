@@ -1,15 +1,15 @@
-import BasicLayout from "../layouts/BasicLayout";
-import PrimaryBanner from "../components/shared/banners/PrimaryBanner";
-import BannerWithBulletSingle from "../components/shared/banners/BannerWithBulletSingle";
-import MobileFeatures from "../components/technologies_pages/mobile_technologies/MobileFeatures";
-import MobileTechSlider from "../components/technologies_pages/mobile_technologies/MobileTechSlider";
-import { TextGradient } from "../components/shared/SharedTextgroups";
+import BasicLayout from "../../layouts/BasicLayout";
+import PrimaryBanner from "../../components/shared/banners/PrimaryBanner";
+import BannerWithBulletSingle from "../../components/shared/banners/BannerWithBulletSingle";
+import MobileFeatures from "../../components/technologies_pages/mobile_technologies/MobileFeatures";
+import MobileTechSlider from "../../components/technologies_pages/mobile_technologies/MobileTechSlider";
+import { TextGradient } from "../../components/shared/SharedTextgroups";
 import {
   mobileFeaturesData1,
   mobileFeaturesData2,
   mobileSliderData,
   userExperienceData,
-} from "../public/data/mobileTechnologiesData";
+} from "../../public/data/technologies/mobileTechnologiesData";
 
 const MobileTechnologies = ({
   mobileFeatures,

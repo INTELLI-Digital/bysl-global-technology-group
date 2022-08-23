@@ -16,7 +16,7 @@ const CareerJobCirculars = () => {
   const [departmentOpen, setDepartmentOpen] = useState(false);
   const [department, setDepartment] = useState("Departments");
   const [positionOpen, setPositionOpen] = useState(false);
-  const [position, setPosition] = useState("Positions");
+  const [position, setPosition] = useState("Position Type");
 
   const matchedData = data.filter(
     (item) =>
@@ -24,7 +24,7 @@ const CareerJobCirculars = () => {
         department == "Departments" ||
         department == "All") &&
       (item.designation == position ||
-        position == "Positions" ||
+        position == "Position Type" ||
         position == "All")
   );
 
@@ -49,7 +49,7 @@ const CareerJobCirculars = () => {
     );
     setFilteredData(matchedJob);
     setDepartment("Departments");
-    setPosition("Positions");
+    setPosition("Position Type");
   };
 
   const JobCircularList = ({ data }) => {
@@ -81,7 +81,6 @@ const CareerJobCirculars = () => {
       <div className="max-w-[856px] mx-auto">
         <div className="relative max-w-[416px] mx-auto">
           <input
-            //   value={phone}
             onChange={(e) => handleSearch(e)}
             required
             name="phone"
@@ -101,7 +100,7 @@ const CareerJobCirculars = () => {
                   : "rounded-lg lg:rounded-[11px]"
               } text-gray-500 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0] hover:cursor-pointer `}
             >
-              <span>{department ? department : "Departments"} </span>
+              <span>{department} </span>
               <MdKeyboardArrowDown
                 className={`text-xl ${
                   departmentOpen && "-rotate-180 transition duration-700"
@@ -133,7 +132,7 @@ const CareerJobCirculars = () => {
                   : "rounded-lg lg:rounded-[11px]"
               } text-gray-500 focus:outline-gray-500/10 shadow-[0px_4px_15px_0px_#F1F0F0] hover:cursor-pointer `}
             >
-              <span>{position ? position : "Position Type"} </span>
+              <span>{position} </span>
               <MdKeyboardArrowDown
                 className={`text-xl ${
                   positionOpen && "-rotate-180 transition duration-1000"
