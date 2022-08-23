@@ -4,11 +4,13 @@ import MarketingOverview from "../../components/solutions/marketing/MarketingOve
 import MarketingProblemsAndSolutions from "../../components/solutions/marketing/MarketingProblemsAndSolutions";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
+  marketingBannerData,
   marketingOverviewData,
   marketingProblemsAndSolutionsData,
 } from "../../public/data/solutions/marketingSolutionsData";
 
 const Marketing = ({
+  banner,
   solutionsResources,
   marketingOverview,
   problemsAndSolutionsData,
@@ -21,7 +23,7 @@ const Marketing = ({
       noMargin={true}
     >
       {/* banner section  */}
-      <MarketingBanner />
+      <MarketingBanner data={banner} />
 
       <div className="box">
         {/* overview section  */}
@@ -37,6 +39,7 @@ const Marketing = ({
 export async function getStaticProps() {
   return {
     props: {
+      banner: marketingBannerData,
       solutionsResources: solutionsResourcesData,
       marketingOverview: marketingOverviewData,
       problemsAndSolutionsData: marketingProblemsAndSolutionsData,

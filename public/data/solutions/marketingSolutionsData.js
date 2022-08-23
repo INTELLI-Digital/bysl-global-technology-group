@@ -1,3 +1,12 @@
+const marketingBannerData = {
+  img: "/images/banners/marketing_solutions_banner.svg",
+  imgSmall: "/images/banners/marketing_solutions_banner_sm.svg",
+  type: "Marketing",
+  heading: "Innovation Solutions forward your business",
+  subHeading:
+    "Coordinate applications on top of existing frameworks that can adjust and scale to your business needs. Coordinate applications on top of existing frameworks that can adjust and scale to your business needs.",
+};
+
 const marketingOverviewData = {
   img: "/images/solutions/marketing/overview.svg",
   details1:
@@ -126,4 +135,8 @@ const marketingProblemsAndSolutionsData = [
   },
 ];
 
-export { marketingOverviewData, marketingProblemsAndSolutionsData };
+export {
+  marketingBannerData,
+  marketingOverviewData,
+  marketingProblemsAndSolutionsData,
+};

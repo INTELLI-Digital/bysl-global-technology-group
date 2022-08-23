@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import BulletPoints from "../../shared/BulletPoints";
 
 import SectionHeader from "../../shared/SectionHeader";
+import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
 
 const MarketingProblemsAndSolutions = ({ data }) => {
   const [tabOpen, setTabOpen] = useState(0);
@@ -20,33 +22,6 @@ const MarketingProblemsAndSolutions = ({ data }) => {
     solutionImg,
     benefits,
   } = tabData;
-
-  const Title = ({ label }) => (
-    <div className="mb-2">
-      <p className="text-sm lg:text-base xl:text-xl font-medium text-gray-800">
-        {label}
-      </p>
-      <p className="mx-auto lg:mx-0 h-[2px] w-14 lg:w-16 xl:w-[82px] bg-gradient-to-r from-blue-900 to-blue-700 rounded-lg"></p>
-    </div>
-  );
-
-  const Heading = ({ label }) => (
-    <p className="mb-6 lg:text-xl xl:text-2xl font-semibold text-gray-800">
-      {label}
-    </p>
-  );
-
-  const Info = (props) => {
-    const { text, noMargin } = props;
-
-    return (
-      <p
-        className={`${!noMargin && "mb-6"}  text-sm xl:text-base text-gray-500`}
-      >
-        {text}
-      </p>
-    );
-  };
 
   return (
     <div id="problems&solutions" className="py-10 xl:py-16">
@@ -91,23 +66,7 @@ const MarketingProblemsAndSolutions = ({ data }) => {
             <Title label="Solutions" />
             <Heading label={solution} />
             <Info text={solutionInfo} />
-            <div className="flex flex-col gap-3">
-              {solutionPoints?.map((item, i) => {
-                return (
-                  <div key={i} className="flex items-start text-start gap-3">
-                    <Image
-                      src="/images/items_icon.svg"
-                      alt=""
-                      height={24}
-                      width={24}
-                    />
-                    <p className="text-gray-500 text-sm break-words w-full">
-                      {item}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+            <BulletPoints data={solutionPoints} />
           </div>
           <div className="col-span-12 lg:col-span-4">
             <Image src={solutionImg} alt="" height={400} width={444} />

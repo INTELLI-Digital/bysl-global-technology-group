@@ -8,7 +8,7 @@ const BlogSlider = (props) => {
   const { data, type, children } = props;
 
   return (
-    <div className="py-10 xl:py-16">
+    <div className="py-6 xl:py-10">
       {type && <SectionTitleType title={type} />}
       <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       <div className="mt-5 lg:mt-10 card-slider service-blog-slider relative">

@@ -77,9 +77,21 @@ const ITServices = ({ data }) => {
                       }`}
                     >
                       {open === id ? (
-                        <Image src={activeImg} height={20} width={20} objectFit="contain" alt="" />
+                        <Image
+                          src={activeImg}
+                          height={20}
+                          width={20}
+                          objectFit="contain"
+                          alt=""
+                        />
                       ) : (
-                        <Image src={img} height={20} width={20} objectFit="contain" alt="" />
+                        <Image
+                          src={img}
+                          height={20}
+                          width={20}
+                          objectFit="contain"
+                          alt=""
+                        />
                       )}
                       <p
                         className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
@@ -116,9 +128,21 @@ const ITServices = ({ data }) => {
                   }  `}
                 >
                   {service === id ? (
-                    <Image src={activeImg} height={20} width={20} objectFit="contain" alt="" />
+                    <Image
+                      src={activeImg}
+                      height={20}
+                      width={20}
+                      objectFit="contain"
+                      alt=""
+                    />
                   ) : (
-                    <Image src={img} height={20} width={20} objectFit="contain" alt="" />
+                    <Image
+                      src={img}
+                      height={20}
+                      width={20}
+                      objectFit="contain"
+                      alt=""
+                    />
                   )}
                   <p
                     className={`ml-5 text-sm xl:text-base font-bold md:font-extrabold ${
@@ -138,45 +162,6 @@ const ITServices = ({ data }) => {
               </div>
             ))}
           </div>
-
-          {/* <div className="col-span-8 lg:col-span-9 p-10 h-[760px] overflow-y-auto scroll">
-            <div className="section" id="bpo">
-              <BPOCard />
-            </div>
-            <div className="section" id="ui-ux">
-              <UIUXCard />
-            </div>
-            <div className="section" id="web" ref={myRef}>
-              <BPOCard />
-            </div>
-            <div className="section" id="app">
-              <UIUXCard />
-            </div>
-            <div className="section" id="e-commerce">
-              <BPOCard />
-            </div>
-            <div className="section" id="erp">
-              <UIUXCard />
-            </div>
-            <div className="section" id="fintech">
-              <BPOCard />
-            </div>
-            <div className="section" id="aiml">
-              <UIUXCard />
-            </div>
-            <div className="section" id="fulfilment">
-              <BPOCard />
-            </div>
-            <div className="section" id="logistics">
-              <UIUXCard />
-            </div>
-            <div className="section" id="cloud">
-              <BPOCard />
-            </div>
-            <div className="section" id="customer">
-              <UIUXCard />
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
