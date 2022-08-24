@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const MarketingOverview = ({ data }) => {
+const SolutionsImageOverview = ({ data }) => {
   const { img, details1, details2, details3 } = data;
 
   return (
@@ -29,4 +29,4 @@ const MarketingOverview = ({ data }) => {
   );
 };
 
-export default MarketingOverview;
+export default SolutionsImageOverview;

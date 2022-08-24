@@ -47,7 +47,7 @@ const ResourcesBanner = ({ banner }) => {
                           <p className="text-[#888B96]">5 mins to read</p>
                         </div>
                       </div>
-                      <button className="contact-us-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2 px-9">
+                      <button className="light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700 py-2 px-9">
                         Read More
                       </button>
                     </div>

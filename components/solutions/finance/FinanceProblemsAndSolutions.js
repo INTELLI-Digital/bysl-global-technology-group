@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import BulletPoints from "../../shared/BulletPoints";
+import { BulletPoints } from "../../shared/BulletPoints";
 import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
 import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 

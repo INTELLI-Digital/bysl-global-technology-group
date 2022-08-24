@@ -36,6 +36,18 @@
   .zooming-animation {
     animation: zooming 0.6s ease-in-out !important;
   }
+@keyframes zoomingLess {
+    0% {
+      transform: scale(99%);
+    }
+    100% {
+      transform: scale(100%);
+    }
+  }
+  
+  .zooming-less-animation {
+    animation: zoomingLess 0.6s ease-in-out !important;
+  }
     
  @keyframes careerScrollbar {
     0% {

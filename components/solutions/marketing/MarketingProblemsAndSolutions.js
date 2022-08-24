@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import BulletPoints from "../../shared/BulletPoints";
+import {BulletPoints} from "../../shared/BulletPoints";
 
 import SectionHeader from "../../shared/SectionHeader";
 import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
@@ -46,6 +46,8 @@ const MarketingProblemsAndSolutions = ({ data }) => {
               <div className="relative h-8 w-8 lg:h-14 lg:w-14 2xl:h-20 2xl:w-20 lg:mx-auto">
                 <Image
                   src={id === tabOpen ? problemImgWhite : problemImg}
+                  placeholder="blur"
+                  blurDataURL={id === tabOpen ? problemImgWhite : problemImg}
                   alt=""
                   layout="fill"
                 />
@@ -69,7 +71,14 @@ const MarketingProblemsAndSolutions = ({ data }) => {
             <BulletPoints data={solutionPoints} />
           </div>
           <div className="col-span-12 lg:col-span-4">
-            <Image src={solutionImg} alt="" height={400} width={444} />
+            <Image
+              src={solutionImg}
+              placeholder="blur"
+              blurDataURL={solutionImg}
+              height={400}
+              width={444}
+              alt=""
+            />
           </div>
         </div>
         <Title label="Benefits" />

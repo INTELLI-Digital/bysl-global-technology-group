@@ -1,17 +1,17 @@
 .border-gradient,
-.contact-us-border-gradient {
+.light-border-gradient {
   position: relative;
 }
 .border-gradient::before {
   border-radius: 10px;
   padding: 2px;
 }
-.contact-us-border-gradient::before {
+.light-border-gradient::before {
   border-radius: 5px;
   padding: 1px;
 }
 .border-gradient::before,
-.contact-us-border-gradient::before {
+.light-border-gradient::before {
   content: "";
   position: absolute;
   inset: 0;

@@ -1,6 +1,5 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-import HealthcareSolutionBanner from "../../components/solutions/healthcare/HealthcareSolutionBanner";
 import HealthcareProblemsAndSolutions from "../../components/solutions/healthcare/HealthcareProblemsAndSolutions";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
@@ -8,6 +7,7 @@ import {
   healthcareProblemsAndSolutionsData,
   healthcareSolutionsBannerData,
 } from "../../public/data/solutions/healthcareSolutionsData";
+import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 
 const HealthCare = ({
   solutionsResources,
@@ -23,7 +23,7 @@ const HealthCare = ({
       noMargin={true}
     >
       {/* banner section  */}
-      <HealthcareSolutionBanner data={banner} />
+      <SolutionButtonBanner data={banner} />
 
       <div className="box">
         {/* overview section  */}

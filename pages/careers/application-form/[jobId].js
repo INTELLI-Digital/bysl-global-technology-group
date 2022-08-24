@@ -210,7 +210,7 @@ const ApplicationForm = () => {
               <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-10">
                 <label
                   htmlFor="application-preview"
-                  className="w-[150px] h-max mx-auto lg:mx-0 text-center rounded-lg text-sm font-semibold py-2 xl:py-2.5 hover:cursor-pointer contact-us-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
+                  className="w-[150px] h-max mx-auto lg:mx-0 text-center rounded-lg text-sm font-semibold py-2 xl:py-2.5 hover:cursor-pointer light-border-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
                 >
                   Preview
                 </label>

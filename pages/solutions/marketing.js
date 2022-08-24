@@ -1,7 +1,7 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import MarketingBanner from "../../components/solutions/marketing/Marketingbanner";
-import MarketingOverview from "../../components/solutions/marketing/MarketingOverview";
 import MarketingProblemsAndSolutions from "../../components/solutions/marketing/MarketingProblemsAndSolutions";
+import SolutionsImageOverview from "../../components/solutions/SolutionsImageOverview";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   marketingBannerData,
@@ -27,7 +27,7 @@ const Marketing = ({
 
       <div className="box">
         {/* overview section  */}
-        <MarketingOverview data={marketingOverview} />
+        <SolutionsImageOverview data={marketingOverview} />
 
         {/* problems and solutions section  */}
         <MarketingProblemsAndSolutions data={problemsAndSolutionsData} />

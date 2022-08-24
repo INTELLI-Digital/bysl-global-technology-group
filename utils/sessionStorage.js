@@ -13,6 +13,7 @@ const getState = () => {
     return JSON.parse(sessionStorage.getItem("navState"));
   } else return [];
 };
+
 // const getState = () => JSON.parse(sessionStorage.getItem("navState"));
 const setState = (param) =>
   sessionStorage.setItem("navState", JSON.stringify(param));

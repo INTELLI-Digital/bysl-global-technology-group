@@ -1,42 +1,45 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
 import { getPath } from "../../utils/paths";
-import { getState, setState } from "../../utils/sessionStorage";
+// import { getState, setState } from "../../utils/sessionStorage";
 
-const Navbar = () => {
+const Navbar = ({ colorChange }) => {
+  // const [colorChange, setColorchange] = useState(false);
+
   const router = useRouter();
-  const navState = getState();
-  const [colorChange, setColorchange] = useState(false);
+  // const navState = getState();
+
   const arvrPath = getPath("/technologies/ar-vr");
   const investmentPath = getPath("/investments");
   const resourcesPath = getPath("/resources");
+  const foodAndBeveragePath = getPath("/solutions/food-and-beverage");
+  const healthcarePath = getPath("/solutions/healthcare");
   const supplyChainSolutionsPath = getPath(
     "/solutions/supply-chain-and-logistics"
   );
-  const healthcarePath = getPath("/solutions/healthcare");
 
-  const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
-      setState(true);
-      setColorchange(true);
-    } else {
-      setState(false);
-      setColorchange(false);
-    }
-  };
+  // const changeNavbarColor = () => {
+  //   if (window.scrollY >= 80) {
+  //     setState(true);
+  //     setColorchange(true);
+  //   } else {
+  //     setState(false);
+  //     setColorchange(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    setColorchange(
-      typeof window !== "undefined" && window.scrollY >= 80 ? true : false
-    );
-    window.addEventListener("scroll", changeNavbarColor);
-  }, [colorChange, arvrPath, navState]);
+  // useEffect(() => {
+  //   setColorchange(
+  //     typeof window !== "undefined" && window.scrollY >= 80 ? true : false
+  //   );
+  //   window.addEventListener("scroll", changeNavbarColor);
+  // }, [colorChange, navState]);
 
   // breaking navbar code into components start
 
@@ -51,6 +54,7 @@ const Navbar = () => {
               (investmentPath && !colorChange) ||
               (supplyChainSolutionsPath && !colorChange) ||
               (healthcarePath && !colorChange) ||
+              (foodAndBeveragePath && !colorChange) ||
               (resourcesPath && !colorChange)
                 ? "/images/logo_white.svg"
                 : "/images/logo.svg"
@@ -74,6 +78,7 @@ const Navbar = () => {
           (investmentPath && !colorChange) ||
           (supplyChainSolutionsPath && !colorChange) ||
           (healthcarePath && !colorChange) ||
+          (foodAndBeveragePath && !colorChange) ||
           (resourcesPath && !colorChange)
             ? "text-white"
             : "text-gray-500"
@@ -149,6 +154,7 @@ const Navbar = () => {
               investmentPath ||
               resourcesPath ||
               healthcarePath ||
+              foodAndBeveragePath ||
               supplyChainSolutionsPath
             ? "backdrop-blur-sm bg-white/10 "
             : "bg-transparent mt-5"
