@@ -4,12 +4,7 @@ const SolutionsBanner = ({ data, children }) => {
   const { img, heading, title, subTitle } = data;
 
   return (
-    <div className="pt-8 lg:pt-0 mb-12 lg:mb-0 relative h-[490px] lg:h-screen">
-      {/* <img
-        src={img}
-        className="absolute object-cover h-[490px] lg:h-screen min-w-full"
-        alt=""
-      /> */}
+    <div className="relative h-[500px] lg:h-screen">
       <Image
         src={img}
         placeholder="blur"

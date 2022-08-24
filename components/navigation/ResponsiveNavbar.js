@@ -44,11 +44,7 @@ const ResponsiveNavbar = () => {
     supplyChainSolutionsPath;
 
   return (
-    <div
-      className={`pb-14 lg:pb-[100px] 
-      ${specificPath && "!pb-0"}
-      `}
-    >
+    <div className={`pb-14 lg:pb-[100px] ${specificPath && "!pb-0"}`}>
       <div className="hidden lg:block">
         <Navbar colorChange={colorChange} specificPath={specificPath} />
       </div>

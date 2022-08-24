@@ -45,16 +45,17 @@ const SideDrawer = ({ showDrawer }) => {
               >
                 <div className="flex justify-between py-3">
                   <p
-                    className={`text-gray-800 text-sm font-medium ${
-                      router.pathname === link &&
-                      "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
+                    className={`text-sm font-medium w-full ${
+                      router.pathname === link
+                        ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"
+                        : "text-gray-800"
                     }`}
                   >
                     {dropdowns ? (
                       title
                     ) : (
                       <Link href={link} passHref>
-                        {title}
+                        <span className="block">{title}</span>
                       </Link>
                     )}
                   </p>

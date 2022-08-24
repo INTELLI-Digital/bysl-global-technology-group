@@ -3,12 +3,12 @@ import EducationSolutionsBanner from "../../components/solutions/education/Educa
 import EducationSolutionsOverview from "../../components/solutions/education/EducationSolutionsOverview";
 import EducationSolutions from "../../components/solutions/education/EducationSolutions";
 import EducationProblems from "../../components/solutions/education/EducationProblems";
-import { educationProblemsAndSolutionsData } from "../../public/data/solutions/educationSolutionData";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
+import { educationProblemsAndSolutionsData } from "../../public/data/solutions/educationSolutionData";
 
 const Education = ({
-  solutionsResources,
   banner,
+  solutionsResources,
   problemsAndSolutionsData,
 }) => {
   return (

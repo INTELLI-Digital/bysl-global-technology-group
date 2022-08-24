@@ -244,11 +244,6 @@ const navbars = [
       },
     ],
   },
-  // {
-  //   id: 6,
-  //   title: "Resources",
-  //   link: "/resources",
-  // },
 ];
 
 export { navbars };

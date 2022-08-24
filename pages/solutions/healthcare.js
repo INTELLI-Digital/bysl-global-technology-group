@@ -1,17 +1,17 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
 import HealthcareProblemsAndSolutions from "../../components/solutions/healthcare/HealthcareProblemsAndSolutions";
+import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
   healthcareOverviewData,
   healthcareProblemsAndSolutionsData,
   healthcareSolutionsBannerData,
 } from "../../public/data/solutions/healthcareSolutionsData";
-import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 
 const HealthCare = ({
-  solutionsResources,
   banner,
+  solutionsResources,
   overviewData,
   problemsAndSolutionsData,
 }) => {

@@ -5,8 +5,11 @@ import { ImFacebook, ImLinkedin2, ImTwitter } from "react-icons/im";
 import { FaPinterestP } from "react-icons/fa";
 
 import ButtonWhite from "../shared/buttons/ButtonWhite";
-import { footerBottomData, footerData } from "../../public/data/navigation/footerData";
 import { setItem, setLegalState } from "../../utils/sessionStorage";
+import {
+  footerBottomData,
+  footerData,
+} from "../../public/data/navigation/footerData";
 
 const Footer = () => {
   const handleClick = (id) => {
@@ -22,14 +25,14 @@ const Footer = () => {
   };
 
   const Items = ({ title, data }) => {
+    const customItems =
+      title !== "Solutions" && title !== "Technologies" && title !== "About Us";
+
     return (
       <>
         <p
           className={`text-white mb-6 ${title === "Company" && "mt-10"} ${
-            title !== "Solutions" &&
-            title !== "Technologies" &&
-            title !== "About Us" &&
-            "xxxs:text-end sm:text-start"
+            customItems && "xxxs:text-end sm:text-start"
           } font-semibold`}
         >
           {title}
@@ -40,10 +43,7 @@ const Footer = () => {
               <span
                 onClick={() => title === "Services" && handleClick(id)}
                 className={`block hover:cursor-pointer text-xs xxs:text-sm leading-5 mb-2 lg:mb-4 text-white/60 hover:text-white transition duration-300 ${
-                  title !== "Solutions" &&
-                  title !== "Technologies" &&
-                  title !== "About Us" &&
-                  "xxxs:text-end sm:text-start"
+                  customItems && "xxxs:text-end sm:text-start"
                 }`}
               >
                 {name}
