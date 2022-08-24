@@ -2,33 +2,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-import { getPath } from "../../utils/paths";
 import SideDrawer from "./SideDrawer";
 
-const NavbarSmall = ({ colorChange }) => {
+const NavbarSmall = ({ colorChange, specificPath }) => {
   const [showDrawer, setShowDrawer] = useState(false);
 
-  const arvrPath = getPath("/technologies/ar-vr");
-  const investmentPath = getPath("/investments");
-  const resourcesPath = getPath("/resources");
-  const foodAndBeveragePath = getPath("/solutions/food-and-beverage");
-  const healthcarePath = getPath("/solutions/healthcare");
-  const supplyChainSolutionsPath = getPath(
-    "/solutions/supply-chain-and-logistics"
-  );
-
   return (
-    <div>
+    <>
       <div
         className={`h-14 bg-white shadow ${
-          colorChange
-            ? ""
-            : arvrPath ||
-              investmentPath ||
-              resourcesPath ||
-              healthcarePath ||
-              foodAndBeveragePath ||
-              supplyChainSolutionsPath
+          !colorChange && specificPath
             ? "backdrop-blur-sm bg-white/10 "
             : "bg-white"
         } px-4 sm:px-8 flex items-center fixed w-full z-[100]`}
@@ -40,12 +23,7 @@ const NavbarSmall = ({ colorChange }) => {
         >
           <Image
             src={
-              (arvrPath && !colorChange) ||
-              (investmentPath && !colorChange) ||
-              (supplyChainSolutionsPath && !colorChange) ||
-              (healthcarePath && !colorChange) ||
-              (foodAndBeveragePath && !colorChange) ||
-              (resourcesPath && !colorChange)
+              !colorChange && specificPath
                 ? "/images/menuBar_white.svg"
                 : "/images/menuBar.svg"
             }
@@ -57,12 +35,7 @@ const NavbarSmall = ({ colorChange }) => {
           <div className="w-max mx-auto flex justify-center items-center">
             <Image
               src={
-                (arvrPath && !colorChange) ||
-                (investmentPath && !colorChange) ||
-                (supplyChainSolutionsPath && !colorChange) ||
-                (healthcarePath && !colorChange) ||
-                (foodAndBeveragePath && !colorChange) ||
-                (resourcesPath && !colorChange)
+                !colorChange && specificPath
                   ? "/images/logo_white.svg"
                   : "/images/logo.svg"
               }
@@ -74,7 +47,7 @@ const NavbarSmall = ({ colorChange }) => {
         </Link>
       </div>
       <SideDrawer showDrawer={showDrawer} />
-    </div>
+    </>
   );
 };
 

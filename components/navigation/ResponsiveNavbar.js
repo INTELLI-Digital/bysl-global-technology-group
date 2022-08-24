@@ -29,29 +29,31 @@ const ResponsiveNavbar = () => {
   const arVrPath = getPath("/technologies/ar-vr");
   const investmentPath = getPath("/investments");
   const resourcesPath = getPath("/resources");
+  const foodAndBeveragePath = getPath("/solutions/food-and-beverage");
+  const healthcarePath = getPath("/solutions/healthcare");
   const supplyChainSolutionsPath = getPath(
     "/solutions/supply-chain-and-logistics"
   );
-  const healthcarePath = getPath("/solutions/healthcare");
-  const foodAndBeveragePath = getPath("/solutions/food-and-beverage");
+
+  const specificPath =
+    arVrPath ||
+    investmentPath ||
+    resourcesPath ||
+    healthcarePath ||
+    foodAndBeveragePath ||
+    supplyChainSolutionsPath;
 
   return (
     <div
       className={`pb-14 lg:pb-[100px] 
-      ${
-        (arVrPath && "!pb-0") ||
-        (investmentPath && "!pb-0") ||
-        (supplyChainSolutionsPath && "!pb-0") ||
-        (healthcarePath && "!pb-0") ||
-        (foodAndBeveragePath && "!pb-0") ||
-        (resourcesPath && "!pb-0")
-      }`}
+      ${specificPath && "!pb-0"}
+      `}
     >
       <div className="hidden lg:block">
-        <Navbar colorChange={colorChange} />
+        <Navbar colorChange={colorChange} specificPath={specificPath} />
       </div>
       <div className="block lg:hidden">
-        <NavbarSmall colorChange={colorChange} />
+        <NavbarSmall colorChange={colorChange} specificPath={specificPath} />
       </div>
     </div>
   );

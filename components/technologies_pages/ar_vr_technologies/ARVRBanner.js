@@ -1,6 +1,6 @@
-const ARVRBanner = ({banner}) => {
+const ARVRBanner = ({ banner }) => {
   return (
-    <div className="pt-14 lg:pt-0 mb-12 lg:mb-0 relative h-[480px] lg:h-screen">
+    <div className="mb-12 lg:mb-0 relative h-[480px] lg:h-screen">
       <video
         autoPlay
         muted
@@ -8,10 +8,7 @@ const ARVRBanner = ({banner}) => {
         playsInline
         className="absolute object-cover h-[480px] lg:h-screen min-w-full"
       >
-        <source
-          src={banner}
-          type="video/mp4"
-        />
+        <source src={banner} type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
       <div className="absolute flex items-center justify-center h-full w-full text-center">

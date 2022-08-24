@@ -8,10 +8,7 @@ const Modal = (props) => {
   const { title, title2, subTitle, img, hoverImg } = data;
 
   return (
-    <div
-      onBlur={handleClose}
-      className="z-30 backdrop-blur-xs h-screen w-screen fixed top-0 left-0"
-    >
+    <div className="z-30 backdrop-blur-xs h-screen w-screen fixed top-0 left-0">
       <div className="centered bg-white px-5 py-10 w-[95%] max-w-[500px] mx-auto rounded-[15px] ">
         <div
           className={`mx-auto ${

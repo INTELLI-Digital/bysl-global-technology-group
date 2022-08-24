@@ -1,45 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-// import { useEffect, useState } from "react";
 
 import Button from "../shared/buttons/Button";
 import { TextGradient } from "../shared/SharedTextgroups";
 import { navbars } from "../../public/data/navigation/navbarData";
-import { getPath } from "../../utils/paths";
-// import { getState, setState } from "../../utils/sessionStorage";
 
-const Navbar = ({ colorChange }) => {
-  // const [colorChange, setColorchange] = useState(false);
-
+const Navbar = ({ colorChange, specificPath }) => {
   const router = useRouter();
-  // const navState = getState();
-
-  const arvrPath = getPath("/technologies/ar-vr");
-  const investmentPath = getPath("/investments");
-  const resourcesPath = getPath("/resources");
-  const foodAndBeveragePath = getPath("/solutions/food-and-beverage");
-  const healthcarePath = getPath("/solutions/healthcare");
-  const supplyChainSolutionsPath = getPath(
-    "/solutions/supply-chain-and-logistics"
-  );
-
-  // const changeNavbarColor = () => {
-  //   if (window.scrollY >= 80) {
-  //     setState(true);
-  //     setColorchange(true);
-  //   } else {
-  //     setState(false);
-  //     setColorchange(false);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   setColorchange(
-  //     typeof window !== "undefined" && window.scrollY >= 80 ? true : false
-  //   );
-  //   window.addEventListener("scroll", changeNavbarColor);
-  // }, [colorChange, navState]);
 
   // breaking navbar code into components start
 
@@ -50,12 +18,7 @@ const Navbar = ({ colorChange }) => {
         <div className="relative h-10 w-16 xl:w-20 hover:cursor-pointer">
           <Image
             src={
-              (arvrPath && !colorChange) ||
-              (investmentPath && !colorChange) ||
-              (supplyChainSolutionsPath && !colorChange) ||
-              (healthcarePath && !colorChange) ||
-              (foodAndBeveragePath && !colorChange) ||
-              (resourcesPath && !colorChange)
+              !colorChange && specificPath
                 ? "/images/logo_white.svg"
                 : "/images/logo.svg"
             }
@@ -74,14 +37,7 @@ const Navbar = ({ colorChange }) => {
     return (
       <button
         className={`${
-          (arvrPath && !colorChange) ||
-          (investmentPath && !colorChange) ||
-          (supplyChainSolutionsPath && !colorChange) ||
-          (healthcarePath && !colorChange) ||
-          (foodAndBeveragePath && !colorChange) ||
-          (resourcesPath && !colorChange)
-            ? "text-white"
-            : "text-gray-500"
+          !colorChange && specificPath ? "text-white" : "text-gray-500"
         } text-sm lg:text-base font-normal py-2 px-4 xl:px-6 rounded inline-flex items-center`}
       >
         <span
@@ -148,14 +104,8 @@ const Navbar = ({ colorChange }) => {
       <div
         className={`z-50 h-max pt-5 flex items-center fixed w-full transition-all duration-500 ${
           colorChange
-            ? //  ? "bg-white shadow shadow-gray-200"
-              "bg-white shadow-[0px_-5px_20px_#d7d7d7]"
-            : arvrPath ||
-              investmentPath ||
-              resourcesPath ||
-              healthcarePath ||
-              foodAndBeveragePath ||
-              supplyChainSolutionsPath
+            ? "bg-white shadow-[0px_-5px_20px_#d7d7d7]"
+            : specificPath
             ? "backdrop-blur-sm bg-white/10 "
             : "bg-transparent mt-5"
         }`}
