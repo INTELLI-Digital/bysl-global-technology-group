@@ -1,5 +1,5 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
-import MarketingBanner from "../../components/solutions/marketing/Marketingbanner";
+import MarketingBanner from "../../components/solutions/marketing/MarketingBanner";
 import MarketingProblemsAndSolutions from "../../components/solutions/marketing/MarketingProblemsAndSolutions";
 import SolutionsImageOverview from "../../components/solutions/SolutionsImageOverview";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
