@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
-// import Router from "next/router";
 
 import BasicLayout from "../layouts/BasicLayout";
 import CookiesPolicy from "../components/legal/CookiesPolicy";
 import PrivacyPolicy from "../components/legal/PrivacyPolicy";
 import TearmsOfUse from "../components/legal/TearmsOfUse";
+import { getLegalState, setLegalState } from "../utils/sessionStorage";
+import { scrollCenter } from "../utils/scroller";
 import {
   cookiesPolicyData,
   privacyPolicyData,
   termsAndConditionData,
 } from "../public/data/legalPagesData";
-import { getLegalState, setLegalState } from "../utils/sessionStorage";
-import { scrollCenter } from "../utils/scroller";
 
 const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   const [legal, setLegal] = useState(0);
-  const [done, setDone] = useState(false);
 
   // function for tab handle
   const handleClick = (id) => {
@@ -26,10 +24,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
 
   useEffect(() => {
     const tabState = getLegalState();
-    if (done === false && tabState) {
-      setLegal(tabState);
-      setDone(true);
-    }
+    setLegal(tabState);
   }, []);
 
   return (
