@@ -14,7 +14,7 @@
 
 @keyframes scrollFromBottomAnimationLess {
     0% {
-      transform: translateY(5%);
+      transform: translateY(1%);
     }
     100% {
       transform: translateY(0%);
@@ -24,6 +24,7 @@
   .scroll-animation-less {
     animation: scrollFromBottomAnimationLess 0.8s !important;
   }
+
 
 
 @keyframes scrollFromTopAnimation {
@@ -78,3 +79,12 @@
   .careerScrollbar {
     animation: careerScrollbar 0.7s;
   } 
+
+  .service-scroll {
+    animation: scrollFromBottomAnimationLess 0.8s !important;
+  }
+  @media (min-width: 1024px) {
+    .service-scroll {
+      animation: scrollFromBottomAnimation 0.8s !important;
+    }
+  }

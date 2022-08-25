@@ -13,6 +13,7 @@ import {
 } from "../public/data/legalPagesData";
 
 const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
+  const tabState = getLegalState();
   const [legal, setLegal] = useState(0);
 
   // function for tab handle
@@ -23,7 +24,6 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   };
 
   useEffect(() => {
-    const tabState = getLegalState();
     setLegal(tabState);
   }, []);
 

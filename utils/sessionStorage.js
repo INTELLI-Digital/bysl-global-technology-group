@@ -1,10 +1,31 @@
-const getItem = () => JSON.parse(sessionStorage.getItem("serviceId"));
+// service
+
+const getItem = () => {
+  if (
+    typeof window !== "undefined" &&
+    sessionStorage.hasOwnProperty("serviceId")
+  ) {
+    return JSON.parse(sessionStorage.getItem("serviceId"));
+  } else return [];
+};
+
 const setItem = (param) =>
   sessionStorage.setItem("serviceId", JSON.stringify(param));
-const getLegalState = () => JSON.parse(sessionStorage.getItem("legalId"));
+
+// legal
+const getLegalState = () => {
+  if (
+    typeof window !== "undefined" &&
+    sessionStorage.hasOwnProperty("legalId")
+  ) {
+    return JSON.parse(sessionStorage.getItem("legalId"));
+  } else return [];
+};
+
 const setLegalState = (param) =>
   sessionStorage.setItem("legalId", JSON.stringify(param));
 
+// navbar state
 const getState = () => {
   if (
     typeof window !== "undefined" &&
@@ -14,7 +35,6 @@ const getState = () => {
   } else return [];
 };
 
-// const getState = () => JSON.parse(sessionStorage.getItem("navState"));
 const setState = (param) =>
   sessionStorage.setItem("navState", JSON.stringify(param));
 
