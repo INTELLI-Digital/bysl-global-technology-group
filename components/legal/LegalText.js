@@ -50,7 +50,7 @@ const LegalText = ({ data }) => {
                 <a
                   href={link}
                   target="_blank"
-                  className="hover:text-blue-700 transition-all duration-300"
+                  className="hover:text-blue-700 transition-all duration-300 break-all"
                 >
                   {link}
                 </a>

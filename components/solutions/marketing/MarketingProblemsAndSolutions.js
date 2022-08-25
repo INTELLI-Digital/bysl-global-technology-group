@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import {BulletPoints} from "../../shared/BulletPoints";
 
 import SectionHeader from "../../shared/SectionHeader";
 import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
+import { BulletPoints } from "../../shared/BulletPoints";
+import { scrollCenterTop } from "../../../utils/scroller";
 
 const MarketingProblemsAndSolutions = ({ data }) => {
   const [tabOpen, setTabOpen] = useState(0);
@@ -12,6 +13,11 @@ const MarketingProblemsAndSolutions = ({ data }) => {
   useEffect(() => {
     setTabData(data[tabOpen]);
   }, [tabOpen]);
+
+  const handleClick = (id) => {
+    setTabOpen(id);
+    scrollCenterTop(id);
+  };
 
   const {
     problem,
@@ -35,8 +41,9 @@ const MarketingProblemsAndSolutions = ({ data }) => {
         {data.map(({ id, problemImg, problemImgWhite, problem }) => {
           return (
             <div
+              id={id}
               key={id}
-              onClick={() => setTabOpen(id)}
+              onClick={() => handleClick(id)}
               className={`w-max lg:w-full px-2 xl:px-5 2xl:px-10 rounded-lg lg:rounded-[20px] flex lg:flex-col items-center hover:cursor-pointer gap-2 lg:gap-4 transition-all duration-700 ${
                 tabOpen === id
                   ? "bg-gradient-to-r from-blue-900 to-blue-700  text-white"

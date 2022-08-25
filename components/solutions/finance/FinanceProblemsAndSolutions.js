@@ -3,14 +3,27 @@ import { useEffect, useState } from "react";
 import { BulletPoints } from "../../shared/BulletPoints";
 import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
 import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
+import { scrollYFocus } from "../../../utils/scroller";
 
 const FinanceProblemsAndSolutions = ({ data }) => {
+  const [margin, setMargin] = useState(false);
   const [tabOpen, setTabOpen] = useState(0);
   const [tabData, setTabData] = useState(data[0]);
 
   useEffect(() => {
     setTabData(data[tabOpen === "" ? 0 : tabOpen]);
   }, [tabOpen]);
+
+  const handleClick = (id) => {
+    setTabOpen("");
+    setMargin(true);
+
+    setTimeout(() => {
+      scrollYFocus(id);
+      setTabOpen(tabOpen === id ? "" : id);
+      setMargin(false);
+    }, 1);
+  };
 
   const Tab = ({ data }) => {
     const { id, problem, problemInfo } = data;
@@ -20,7 +33,7 @@ const FinanceProblemsAndSolutions = ({ data }) => {
         className={`rounded-lg lg:p-0 ${
           tabOpen === id
             ? "bg-white p-3 pt-0"
-            : "bg-[#EBEFF5] lg:bg-transparent pl-3 "
+            : "bg-[#EBEFF5] lg:bg-transparent px-3"
         }`}
       >
         <div
@@ -51,31 +64,34 @@ const FinanceProblemsAndSolutions = ({ data }) => {
           </div>
         </div>
         {tabOpen === id && (
-          <div className="lg:hidden p-3">
-            {tabOpen !== "" && <TabContent />}
+          <div className={`lg:hidden p-3`}>
+            {tabOpen !== "" && <TabContent animation={true} />}
           </div>
         )}
       </div>
     );
   };
 
-  const TabContent = () => {
+  const TabContent = (props) => {
     const { solution, solutionInfo, solutionPoints, benefits } = tabData;
 
     return (
-      <>
+      <div className={`${props.animation && "scroll-animation-less"}`}>
         <Title label="Solution" />
         <Heading label={solution} />
         <Info text={solutionInfo} />
         <Info text={benefits} />
         <Title label="Benefits" />
         <BulletPoints data={solutionPoints} />
-      </>
+      </div>
     );
   };
 
   return (
-    <div id="problems&solutions" className="py-6 xl:py-10">
+    <div
+      id="problems&solutions"
+      className={`py-6 xl:py-10  ${margin && "mb-[1000px]"}`}
+    >
       <TechnologiesSectionTitle>Problem & Solution</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-12 lg:items-center gap-6">
         <div className="col-span-12 lg:col-span-5 xl:col-span-4 flex flex-col gap-6 lg:block">
@@ -86,7 +102,10 @@ const FinanceProblemsAndSolutions = ({ data }) => {
                   <Tab data={item} />
                 </div>
                 <div
-                  onClick={() => setTabOpen(tabOpen === i ? "" : i)}
+                  id={i}
+                  onClick={() =>
+                    tabOpen === i ? setTabOpen("") : handleClick(i)
+                  }
                   className="lg:hidden"
                 >
                   <Tab data={item} />

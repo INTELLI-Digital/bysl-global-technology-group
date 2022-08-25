@@ -11,6 +11,7 @@ import {
   termsAndConditionData,
 } from "../public/data/legalPagesData";
 import { getLegalState, setLegalState } from "../utils/sessionStorage";
+import { scrollCenter } from "../utils/scroller";
 
 const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   const [legal, setLegal] = useState(0);
@@ -20,6 +21,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
   const handleClick = (id) => {
     setLegal(id);
     setLegalState(id);
+    screen.width < 375 && scrollCenter(id);
   };
 
   useEffect(() => {
@@ -28,7 +30,6 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
       setLegal(tabState);
       setDone(true);
     }
-    // Router.reload(window.location.pathname) && setLegal(0);
   }, []);
 
   return (
@@ -39,6 +40,7 @@ const Legal = ({ termsAndCondition, privacyPolicy, cookiesPolicy }) => {
             {["Terms of Use", "Privacy Policy", "Cookies Policy"].map(
               (item, i) => (
                 <p
+                  id={i}
                   key={i}
                   onClick={() => handleClick(i)}
                   className={`w-max hover:cursor-pointer hover:text-blue-700 transition-all duration-150 text-sm lg:text-base  ${

@@ -2,16 +2,22 @@ import Image from "next/image";
 import { useState } from "react";
 
 import SectionHeader from "../../shared/SectionHeader";
+import { scrollCenter } from "../../../utils/scroller";
 
 const SupplyChainSolutionProblems = ({ type, children, data }) => {
   const [open, setOpen] = useState(0);
+
+  const handleClick = (id) => {
+    setOpen(id);
+    screen.width < 1024 && scrollCenter(id);
+  };
 
   return (
     <div id="problems" className="py-10 xl:py-16">
       <SectionHeader type={type}>{children}</SectionHeader>
       <div className="mt-6 lg:mt-10 grid grid-cols-12 gap-6 items-center">
         <div className="col-span-12 lg:col-span-3 overflow-x-auto">
-          <div className="flex lg:flex-col gap-y-6 gap-x-10">
+          <div className="flex lg:flex-col gap-y-6 gap-x-8">
             {data.map(({ id, problem }) => (
               <div
                 key={id}
@@ -25,8 +31,9 @@ const SupplyChainSolutionProblems = ({ type, children, data }) => {
                   }`}
                 />
                 <p
+                  id={id}
                   key={id}
-                  onClick={() => setOpen(id)}
+                  onClick={() => handleClick(id)}
                   className={`font-medium xl:text-xl ${
                     open === id
                       ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-blue-700"

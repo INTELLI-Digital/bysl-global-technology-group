@@ -11,6 +11,21 @@
   .scroll-animation {
     animation: scrollFromBottomAnimation 0.8s !important;
   }
+
+@keyframes scrollFromBottomAnimationLess {
+    0% {
+      transform: translateY(5%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+  .scroll-animation-less {
+    animation: scrollFromBottomAnimationLess 0.8s !important;
+  }
+
+
 @keyframes scrollFromTopAnimation {
     0% {
       transform: translateY(-20%);

@@ -1,17 +1,30 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
+import { scrollYFocus } from "../../../utils/scroller";
 import { BulletPointsDouble } from "../../shared/BulletPoints";
 import { TechnologiesSectionTitle } from "../../shared/SharedTextgroups";
 import { Info } from "../SolutionsSharedTextStyle";
 
 const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
+  const [margin, setMargin] = useState(false);
   const [tabOpen, setTabOpen] = useState(0);
   const [tabData, setTabData] = useState(data[0]);
 
   useEffect(() => {
     setTabData(data[tabOpen === "" ? 0 : tabOpen]);
   }, [tabOpen]);
+
+  const handleClick = (id) => {
+    setTabOpen("");
+    setMargin(true);
+
+    setTimeout(() => {
+      scrollYFocus(id);
+      setTabOpen(tabOpen === id ? "" : id);
+      setMargin(false);
+    }, 1);
+  };
 
   const Tab = ({ data }) => {
     const { id, problem, problemInfo } = data;
@@ -36,18 +49,18 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
         </div>
         {tabOpen === id && (
           <div className="lg:hidden p-3">
-            {tabOpen !== "" && <TabContent />}
+            {tabOpen !== "" && <TabContent animation={true} />}
           </div>
         )}
       </div>
     );
   };
 
-  const TabContent = () => {
+  const TabContent = (props) => {
     const { problem, solutionInfo, solutionImg, solutionPoints } = tabData;
 
     return (
-      <>
+      <div className={`${props.animation && "scroll-animation-less"}`}>
         <Image
           src={solutionImg}
           placeholder="blur"
@@ -68,12 +81,15 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
             Let&apos;s Talk
           </div>
         </div>
-      </>
+      </div>
     );
   };
 
   return (
-    <div id="problems&solutions" className="py-6 xl:py-10">
+    <div
+      id="problems&solutions"
+      className={`py-6 xl:py-10  ${margin && "mb-[1000px]"}`}
+    >
       <TechnologiesSectionTitle>Problem & Solution</TechnologiesSectionTitle>
       <div className="mt-6 xl:mt-10 grid grid-cols-12 lg:items-center gap-6">
         <div className="col-span-12 lg:col-span-5 xl:col-span-4 flex flex-col gap-6">
@@ -84,7 +100,10 @@ const FoodAndBeverageProblemsAndSolutions = ({ data }) => {
                   <Tab data={item} />
                 </div>
                 <div
-                  onClick={() => setTabOpen(tabOpen === i ? "" : i)}
+                  id={i}
+                  onClick={() =>
+                    tabOpen === i ? setTabOpen("") : handleClick(i)
+                  }
                   className="lg:hidden"
                 >
                   <Tab data={item} />
