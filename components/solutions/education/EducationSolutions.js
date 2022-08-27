@@ -2,14 +2,15 @@ import { useState } from "react";
 
 import SectionHeader from "../../shared/SectionHeader";
 import SolutionCard from "../SolutionCard";
-import { scrollCenter } from "../../../utils/scroller";
+import { supplyScroll, educationScroll } from "../../../utils/scroller";
 
 const EducationSolutions = ({ data }) => {
   const [open, setOpen] = useState(0);
 
   const handleClick = (id) => {
     setOpen(id);
-    screen.width < 560 && scrollCenter(id);
+    screen.width < 560 && supplyScroll(id);
+    screen.width >= 560 && screen.width < 1024 && educationScroll(id);
   };
 
   return (

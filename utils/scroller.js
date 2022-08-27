@@ -1,4 +1,4 @@
-const scrollCenter = (id) => {
+const ScrollCenterCommon = (id, offset) => {
   document.getElementById(id).scrollIntoView({
     behavior: "auto",
     block: "center",
@@ -8,22 +8,26 @@ const scrollCenter = (id) => {
   const position =
     document.getElementById(id).getBoundingClientRect().top +
     window.pageYOffset -
-    150;
+    offset;
   window.scrollTo({ top: position, behavior: "smooth" });
 };
 
-const scrollCenterTop = (id) => {
-  document.getElementById(id).scrollIntoView({
-    behavior: "auto",
-    block: "center",
-    inline: "center",
-  });
+const scrollCenter = (id) => {
+  ScrollCenterCommon(id, 150);
+};
+const supplyScroll = (id) => {
+  ScrollCenterCommon(id, 180);
+};
+const educationScroll = (id) => {
+  ScrollCenterCommon(id, 190);
+};
 
-  const position =
-    document.getElementById(id).getBoundingClientRect().top +
-    window.pageYOffset -
-    110;
-  window.scrollTo({ top: position, behavior: "smooth" });
+const scrollCenterTop = (id) => {
+  ScrollCenterCommon(id, 110);
+};
+
+const marketingScroll = (id) => {
+  ScrollCenterCommon(id, 70);
 };
 
 const scrollYFocus = (id) => {
@@ -34,4 +38,11 @@ const scrollYFocus = (id) => {
   window.scrollTo({ top: position, behavior: "smooth" });
 };
 
-export { scrollCenter, scrollYFocus, scrollCenterTop };
+export {
+  scrollCenter,
+  scrollYFocus,
+  scrollCenterTop,
+  marketingScroll,
+  supplyScroll,
+  educationScroll,
+};

@@ -2,14 +2,14 @@ import Image from "next/image";
 import { useState } from "react";
 
 import SectionHeader from "../../shared/SectionHeader";
-import { scrollCenter } from "../../../utils/scroller";
+import { supplyScroll } from "../../../utils/scroller";
 
 const SupplyChainSolutionProblems = ({ type, children, data }) => {
   const [open, setOpen] = useState(0);
 
   const handleClick = (id) => {
     setOpen(id);
-    screen.width < 1024 && scrollCenter(id);
+    screen.width < 1024 && supplyScroll(id);
   };
 
   return (

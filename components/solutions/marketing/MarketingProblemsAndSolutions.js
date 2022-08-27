@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import SectionHeader from "../../shared/SectionHeader";
 import { Heading, Info, Title } from "../SolutionsSharedTextStyle";
 import { BulletPoints } from "../../shared/BulletPoints";
-import { scrollCenterTop } from "../../../utils/scroller";
+import { marketingScroll } from "../../../utils/scroller";
 
 const MarketingProblemsAndSolutions = ({ data }) => {
   const [tabOpen, setTabOpen] = useState(0);
@@ -16,7 +16,7 @@ const MarketingProblemsAndSolutions = ({ data }) => {
 
   const handleClick = (id) => {
     setTabOpen(id);
-    screen.width <= 768 && scrollCenterTop(id);
+    screen.width <= 768 && marketingScroll(id);
   };
 
   const {
