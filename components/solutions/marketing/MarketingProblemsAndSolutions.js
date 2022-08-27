@@ -16,7 +16,7 @@ const MarketingProblemsAndSolutions = ({ data }) => {
 
   const handleClick = (id) => {
     setTabOpen(id);
-    scrollCenterTop(id);
+    screen.width <= 768 && scrollCenterTop(id);
   };
 
   const {
