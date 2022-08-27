@@ -15,9 +15,11 @@ const ScrollCenterCommon = (id, offset) => {
 const scrollCenter = (id) => {
   ScrollCenterCommon(id, 150);
 };
+
 const supplyScroll = (id) => {
   ScrollCenterCommon(id, 180);
 };
+
 const educationScroll = (id) => {
   ScrollCenterCommon(id, 190);
 };
