@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { useState } from "react";
 
-import SectionHeader from "../../shared/SectionHeader";
-import { TextGradient } from "../../shared/SharedTextgroups";
+import SectionHeader from "../shared/SectionHeader";
+import { TextGradient } from "../shared/SharedTextgroups";
 
-const HealthcareProblemsAndSolutions = ({ data }) => {
+const ProblemsAndSolutionsToggle = ({ data, children }) => {
   const [problems, setProblems] = useState(true);
   const [solutions, setSolutions] = useState(false);
 
@@ -25,10 +25,7 @@ const HealthcareProblemsAndSolutions = ({ data }) => {
 
   return (
     <div id="problems&solutions" className="py-10 xl:py-16">
-      <SectionHeader>
-        The problems we found in <br className="hidden xxs:block" /> education
-        industries
-      </SectionHeader>
+      <SectionHeader>{children}</SectionHeader>
       <div className="mt-10 2xl:mt-16">
         <div className="mb-10 2xl:mb-16 w-max mx-auto flex items-center gap-10 ">
           <p
@@ -98,4 +95,4 @@ const HealthcareProblemsAndSolutions = ({ data }) => {
   );
 };
 
-export default HealthcareProblemsAndSolutions;
+export default ProblemsAndSolutionsToggle;

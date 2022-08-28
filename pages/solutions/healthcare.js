@@ -1,6 +1,5 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import SolutionsOverview from "../../components/solutions/SolutionsOverview";
-import HealthcareProblemsAndSolutions from "../../components/solutions/healthcare/HealthcareProblemsAndSolutions";
 import SolutionButtonBanner from "../../components/solutions/SolutionButtonBanner";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
 import {
@@ -8,6 +7,7 @@ import {
   healthcareProblemsAndSolutionsData,
   healthcareSolutionsBannerData,
 } from "../../public/data/solutions/healthcareSolutionsData";
+import ProblemsAndSolutionsToggle from "../../components/solutions/ProblemsAndSolutionsToggle";
 
 const HealthCare = ({
   banner,
@@ -29,7 +29,10 @@ const HealthCare = ({
         {/* overview section  */}
         <SolutionsOverview data={overviewData} />
         {/* problems & solutions section  */}
-        <HealthcareProblemsAndSolutions data={problemsAndSolutionsData} />
+        <ProblemsAndSolutionsToggle data={problemsAndSolutionsData}>
+          The problems we found in <br className="hidden xxs:block" /> education
+          industries
+        </ProblemsAndSolutionsToggle>
       </div>
     </SolutionsLayout>
   );

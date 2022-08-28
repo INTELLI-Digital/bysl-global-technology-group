@@ -8,6 +8,7 @@ const ResourcesBannerSlider2 = ({ size, children }) => {
       spaceBetween={20}
       slidesPerGroup={1}
       centeredSlides={true}
+      allowTouchMove={false}
       loop={true}
       speed={1000}
       autoplay={{

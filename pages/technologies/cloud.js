@@ -50,9 +50,8 @@ const CloudTechnologies = ({
 
       {/* support section  */}
       <BannerWithBullets data={cloudSupport} reversed={true}>
-        We <TextGradient text=" lead " /> & <TextGradient text=" support " />
-        our
-        <br className="hidden xs:block" /> customer&apos;s
+        We lead & support
+        <br className="" /> customers
       </BannerWithBullets>
     </BasicLayout>
   );

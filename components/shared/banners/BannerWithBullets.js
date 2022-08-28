@@ -17,7 +17,7 @@ const BannerWithBullets = (props) => {
       ${reversed && "lg:flex-row-reverse"}
       ${group ? "pb-20 xl:pb-16" : "py-10 xl:py-16"}`}
     >
-      <div className="lg:w-[52%] mt-10">
+      <div className="lg:w-[52%] lg:mt-10">
         <TechnologiesSectionTitle start={true}>
           {children ? children : title}
         </TechnologiesSectionTitle>

@@ -36,7 +36,7 @@ const NavbarSmall = ({ colorChange, specificPath }) => {
             <Image
               src={
                 !colorChange && specificPath
-                  ? "/images/logo_white.svg"
+                  ? "/images/logo_light.svg"
                   : "/images/logo.svg"
               }
               alt=""

@@ -10,6 +10,7 @@ const ResourcesBannerSlider1 = ({ size, children }) => {
       centeredSlides={true}
       loop={true}
       speed={1000}
+      allowTouchMove={false}
       autoplay={{
         delay: 3500,
         reverseDirection: true,

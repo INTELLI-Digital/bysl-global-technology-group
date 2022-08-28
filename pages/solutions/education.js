@@ -1,13 +1,17 @@
 import SolutionsLayout from "../../layouts/SolutionsLayout";
 import EducationSolutionsBanner from "../../components/solutions/education/EducationSolutionsBanner";
-import EducationSolutionsOverview from "../../components/solutions/education/EducationSolutionsOverview";
 import EducationSolutions from "../../components/solutions/education/EducationSolutions";
 import EducationProblems from "../../components/solutions/education/EducationProblems";
+import SolutionsOverviewFull from "../../components/solutions/SolutionsOverviewFull";
 import { solutionsResourcesData } from "../../public/data/solutions/blogData";
-import { educationProblemsAndSolutionsData } from "../../public/data/solutions/educationSolutionData";
+import {
+  educationOverviewData,
+  educationProblemsAndSolutionsData,
+} from "../../public/data/solutions/educationSolutionData";
 
 const Education = ({
   banner,
+  overviewData,
   solutionsResources,
   problemsAndSolutionsData,
 }) => {
@@ -22,7 +26,7 @@ const Education = ({
       <EducationSolutionsBanner banner={banner} />
 
       {/* overview section  */}
-      <EducationSolutionsOverview />
+      <SolutionsOverviewFull data={overviewData} />
       <div className="box">
         {/* problems section  */}
         <EducationProblems data={problemsAndSolutionsData} />
@@ -39,6 +43,7 @@ export async function getStaticProps() {
     props: {
       banner: "/images/banners/education_solutions_banner.png",
       solutionsResources: solutionsResourcesData,
+      overviewData: educationOverviewData,
       problemsAndSolutionsData: educationProblemsAndSolutionsData,
     },
   };

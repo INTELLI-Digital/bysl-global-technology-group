@@ -28,7 +28,7 @@ const Overview3Items = (props) => {
         <TechnologiesSectionTitle>{children}</TechnologiesSectionTitle>
       )}
       <div
-        className={`w-full max-w-[1128px] mx-auto flex flex-wrap md:flex-nowrap justify-center sm:justify-evenly gap-6 ${
+        className={`w-full max-w-[1128px] mx-auto flex flex-wrap md:flex-nowrap justify-center sm:justify-evenly gap-4 sm:gap-6 ${
           children && "mt-10 "
         }`}
       >
@@ -37,7 +37,7 @@ const Overview3Items = (props) => {
             <div
               key={id}
               onClick={() => handleOpen(id)}
-              className="p-3 xl:p-5 text-center max-w-[100px] xxs:max-w-none lg:w-max justify-self-center"
+              className="p-3 xl:p-5 text-center xxs:max-w-none xs:w-max justify-self-center"
             >
               <div className="mx-auto h-10 2xl:h-16 w-10 2xl:w-16 relative">
                 <Image

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import WebBanner from "../../technologies_pages/web_technologies/WebBanner";
-import { getPath } from "../../../utils/paths";
 import { SectionTitleGradient, TextGradient } from "../SharedTextgroups";
+import { getPath } from "../../../utils/paths";
 
 const PrimaryBanner = ({ title, sub, img, video, children }) => {
   const webPath = getPath("/technologies/web");
@@ -18,6 +18,7 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
   const dataSciencePath = getPath("/divisions/data-science");
   const informationPath = getPath("/divisions/information-security");
   const servicePath = getPath("/service");
+  const manufacturingPath = getPath("/solutions/manufacturing");
 
   return (
     <div
@@ -43,7 +44,6 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
           <SectionTitleGradient>{children}</SectionTitleGradient>
           <p
             className={`mt-4 text-gray-600 text-sm sm:text-base xl:text-xl 
-            ${!aiMlPath && "xl:w-5/6"}
             ${servicePath && "xl:w-full xl:!text-base mt-10"}`}
           >
             {sub}
@@ -62,6 +62,7 @@ const PrimaryBanner = ({ title, sub, img, video, children }) => {
             ${dataSciencePath && "xl:h-[40vh]"}
             ${mobilePath && "xl:h-[42vh]"}
             ${servicePath && "xl:h-[40vh]"}
+            ${manufacturingPath && "xl:h-[450px]"}
             ${informationPath && "xl:h-[280px]"}
             ${foodTechPath && "!h-48 xs:!h-[40vh] xl:!h-[360px]"}`}
           >
